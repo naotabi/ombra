@@ -1,0 +1,308 @@
+{
+ "id": "corso3",
+ "title": "In giro per la città",
+ "subtitle": "Getting around & shopping",
+ "level": "A1",
+ "sentences": [
+  {
+   "id": "corso3-001",
+   "it": "Dov'è la stazione?",
+   "en": "Where is the station?",
+   "audio": "content/it/audio/corso3/001.mp3"
+  },
+  {
+   "id": "corso3-002",
+   "it": "È lontano da qui?",
+   "en": "Is it far from here?",
+   "audio": "content/it/audio/corso3/002.mp3"
+  },
+  {
+   "id": "corso3-003",
+   "it": "Puoi mostrarmi sulla mappa?",
+   "en": "Can you show me on the map?",
+   "audio": "content/it/audio/corso3/003.mp3"
+  },
+  {
+   "id": "corso3-004",
+   "it": "Giri a destra al semaforo.",
+   "en": "Turn right at the traffic light.",
+   "audio": "content/it/audio/corso3/004.mp3"
+  },
+  {
+   "id": "corso3-005",
+   "it": "Sempre dritto, poi a sinistra.",
+   "en": "Straight ahead, then left.",
+   "audio": "content/it/audio/corso3/005.mp3"
+  },
+  {
+   "id": "corso3-006",
+   "it": "È vicino al duomo.",
+   "en": "It's near the cathedral.",
+   "audio": "content/it/audio/corso3/006.mp3"
+  },
+  {
+   "id": "corso3-007",
+   "it": "Quanto ci vuole a piedi?",
+   "en": "How long does it take on foot?",
+   "audio": "content/it/audio/corso3/007.mp3"
+  },
+  {
+   "id": "corso3-008",
+   "it": "Dieci minuti, più o meno.",
+   "en": "Ten minutes, more or less.",
+   "audio": "content/it/audio/corso3/008.mp3"
+  },
+  {
+   "id": "corso3-009",
+   "it": "Che autobus devo prendere?",
+   "en": "Which bus do I need to take?",
+   "audio": "content/it/audio/corso3/009.mp3"
+  },
+  {
+   "id": "corso3-010",
+   "it": "Il ventitré passa ogni ora.",
+   "en": "The 23 comes every hour.",
+   "audio": "content/it/audio/corso3/010.mp3"
+  },
+  {
+   "id": "corso3-011",
+   "it": "Dove si comprano i biglietti?",
+   "en": "Where do you buy tickets?",
+   "audio": "content/it/audio/corso3/011.mp3"
+  },
+  {
+   "id": "corso3-012",
+   "it": "Un biglietto per Firenze, per favore.",
+   "en": "A ticket to Florence, please.",
+   "audio": "content/it/audio/corso3/012.mp3"
+  },
+  {
+   "id": "corso3-013",
+   "it": "Solo andata o andata e ritorno?",
+   "en": "One way or round trip?",
+   "audio": "content/it/audio/corso3/013.mp3"
+  },
+  {
+   "id": "corso3-014",
+   "it": "Il treno parte dal binario due.",
+   "en": "The train leaves from platform two.",
+   "audio": "content/it/audio/corso3/014.mp3"
+  },
+  {
+   "id": "corso3-015",
+   "it": "Il prossimo treno è alle nove.",
+   "en": "The next train is at nine.",
+   "audio": "content/it/audio/corso3/015.mp3"
+  },
+  {
+   "id": "corso3-016",
+   "it": "Sono in ritardo!",
+   "en": "I'm late!",
+   "audio": "content/it/audio/corso3/016.mp3"
+  },
+  {
+   "id": "corso3-017",
+   "it": "Il museo è aperto oggi?",
+   "en": "Is the museum open today?",
+   "audio": "content/it/audio/corso3/017.mp3"
+  },
+  {
+   "id": "corso3-018",
+   "it": "Chiude il lunedì.",
+   "en": "It's closed on Mondays.",
+   "audio": "content/it/audio/corso3/018.mp3"
+  },
+  {
+   "id": "corso3-019",
+   "it": "L'ingresso è gratuito.",
+   "en": "Admission is free.",
+   "audio": "content/it/audio/corso3/019.mp3"
+  },
+  {
+   "id": "corso3-020",
+   "it": "Due biglietti per il museo.",
+   "en": "Two tickets for the museum.",
+   "audio": "content/it/audio/corso3/020.mp3"
+  },
+  {
+   "id": "corso3-021",
+   "it": "Posso fare una foto qui?",
+   "en": "Can I take a photo here?",
+   "audio": "content/it/audio/corso3/021.mp3"
+  },
+  {
+   "id": "corso3-022",
+   "it": "Che bella piazza!",
+   "en": "What a beautiful square!",
+   "audio": "content/it/audio/corso3/022.mp3"
+  },
+  {
+   "id": "corso3-023",
+   "it": "Questa chiesa è antica.",
+   "en": "This church is old.",
+   "audio": "content/it/audio/corso3/023.mp3"
+  },
+  {
+   "id": "corso3-024",
+   "it": "Cerco una farmacia.",
+   "en": "I'm looking for a pharmacy.",
+   "audio": "content/it/audio/corso3/024.mp3"
+  },
+  {
+   "id": "corso3-025",
+   "it": "C'è un supermercato qui vicino?",
+   "en": "Is there a supermarket nearby?",
+   "audio": "content/it/audio/corso3/025.mp3"
+  },
+  {
+   "id": "corso3-026",
+   "it": "Apre alle otto e mezza.",
+   "en": "It opens at half past eight.",
+   "audio": "content/it/audio/corso3/026.mp3"
+  },
+  {
+   "id": "corso3-027",
+   "it": "Quanto costano queste scarpe?",
+   "en": "How much are these shoes?",
+   "audio": "content/it/audio/corso3/027.mp3"
+  },
+  {
+   "id": "corso3-028",
+   "it": "Sono in saldo.",
+   "en": "They're on sale.",
+   "audio": "content/it/audio/corso3/028.mp3"
+  },
+  {
+   "id": "corso3-029",
+   "it": "Posso provarlo?",
+   "en": "Can I try it on?",
+   "audio": "content/it/audio/corso3/029.mp3"
+  },
+  {
+   "id": "corso3-030",
+   "it": "Che taglia porta?",
+   "en": "What size do you wear?",
+   "audio": "content/it/audio/corso3/030.mp3"
+  },
+  {
+   "id": "corso3-031",
+   "it": "Porto la quarantadue.",
+   "en": "I wear a forty-two.",
+   "audio": "content/it/audio/corso3/031.mp3"
+  },
+  {
+   "id": "corso3-032",
+   "it": "È troppo caro per me.",
+   "en": "It's too expensive for me.",
+   "audio": "content/it/audio/corso3/032.mp3"
+  },
+  {
+   "id": "corso3-033",
+   "it": "Avete qualcosa di più economico?",
+   "en": "Do you have something cheaper?",
+   "audio": "content/it/audio/corso3/033.mp3"
+  },
+  {
+   "id": "corso3-034",
+   "it": "Lo prendo!",
+   "en": "I'll take it!",
+   "audio": "content/it/audio/corso3/034.mp3"
+  },
+  {
+   "id": "corso3-035",
+   "it": "Mi dà una busta, per favore?",
+   "en": "Can you give me a bag, please?",
+   "audio": "content/it/audio/corso3/035.mp3"
+  },
+  {
+   "id": "corso3-036",
+   "it": "Dove posso cambiare i soldi?",
+   "en": "Where can I change money?",
+   "audio": "content/it/audio/corso3/036.mp3"
+  },
+  {
+   "id": "corso3-037",
+   "it": "C'è un bancomat qui?",
+   "en": "Is there an ATM here?",
+   "audio": "content/it/audio/corso3/037.mp3"
+  },
+  {
+   "id": "corso3-038",
+   "it": "Ho perso il portafoglio.",
+   "en": "I lost my wallet.",
+   "audio": "content/it/audio/corso3/038.mp3"
+  },
+  {
+   "id": "corso3-039",
+   "it": "Aiuto, per favore!",
+   "en": "Help, please!",
+   "audio": "content/it/audio/corso3/039.mp3"
+  },
+  {
+   "id": "corso3-040",
+   "it": "Chiamo la polizia?",
+   "en": "Should I call the police?",
+   "audio": "content/it/audio/corso3/040.mp3"
+  },
+  {
+   "id": "corso3-041",
+   "it": "Non è niente di grave.",
+   "en": "It's nothing serious.",
+   "audio": "content/it/audio/corso3/041.mp3"
+  },
+  {
+   "id": "corso3-042",
+   "it": "La città è piena di turisti.",
+   "en": "The city is full of tourists.",
+   "audio": "content/it/audio/corso3/042.mp3"
+  },
+  {
+   "id": "corso3-043",
+   "it": "Oggi c'è il mercato.",
+   "en": "Today there's the market.",
+   "audio": "content/it/audio/corso3/043.mp3"
+  },
+  {
+   "id": "corso3-044",
+   "it": "Compro frutta e verdura.",
+   "en": "I'm buying fruit and vegetables.",
+   "audio": "content/it/audio/corso3/044.mp3"
+  },
+  {
+   "id": "corso3-045",
+   "it": "Un chilo di mele, grazie.",
+   "en": "A kilo of apples, thanks.",
+   "audio": "content/it/audio/corso3/045.mp3"
+  },
+  {
+   "id": "corso3-046",
+   "it": "Queste arance sono dolci?",
+   "en": "Are these oranges sweet?",
+   "audio": "content/it/audio/corso3/046.mp3"
+  },
+  {
+   "id": "corso3-047",
+   "it": "Assaggi pure!",
+   "en": "Go ahead and taste!",
+   "audio": "content/it/audio/corso3/047.mp3"
+  },
+  {
+   "id": "corso3-048",
+   "it": "Il centro è chiuso al traffico.",
+   "en": "The center is closed to traffic.",
+   "audio": "content/it/audio/corso3/048.mp3"
+  },
+  {
+   "id": "corso3-049",
+   "it": "Andiamo a piedi.",
+   "en": "Let's walk.",
+   "audio": "content/it/audio/corso3/049.mp3"
+  },
+  {
+   "id": "corso3-050",
+   "it": "Ci vediamo davanti al cinema.",
+   "en": "See you in front of the cinema.",
+   "audio": "content/it/audio/corso3/050.mp3"
+  }
+ ]
+}

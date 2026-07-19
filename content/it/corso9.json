@@ -1,0 +1,312 @@
+{
+ "id": "corso9",
+ "title": "Usciamo insieme?",
+ "subtitle": "Invitations, phone & plans",
+ "level": "A1",
+ "sentences": [
+  {
+   "id": "corso9-001",
+   "it": "Sei libero stasera?",
+   "en": "Are you free tonight?",
+   "audio": "content/it/audio/corso9/001.mp3",
+   "g": "m",
+   "note": "To a woman: libera?"
+  },
+  {
+   "id": "corso9-002",
+   "it": "Ti va di uscire?",
+   "en": "Do you feel like going out?",
+   "audio": "content/it/audio/corso9/002.mp3"
+  },
+  {
+   "id": "corso9-003",
+   "it": "Volentieri, a che ora?",
+   "en": "Gladly, at what time?",
+   "audio": "content/it/audio/corso9/003.mp3"
+  },
+  {
+   "id": "corso9-004",
+   "it": "Alle otto va benissimo.",
+   "en": "Eight o'clock works great.",
+   "audio": "content/it/audio/corso9/004.mp3"
+  },
+  {
+   "id": "corso9-005",
+   "it": "Dove ci incontriamo?",
+   "en": "Where shall we meet?",
+   "audio": "content/it/audio/corso9/005.mp3"
+  },
+  {
+   "id": "corso9-006",
+   "it": "Davanti alla stazione, va bene?",
+   "en": "In front of the station, okay?",
+   "audio": "content/it/audio/corso9/006.mp3"
+  },
+  {
+   "id": "corso9-007",
+   "it": "Perfetto, a stasera!",
+   "en": "Perfect, see you tonight!",
+   "audio": "content/it/audio/corso9/007.mp3"
+  },
+  {
+   "id": "corso9-008",
+   "it": "Ti chiamo più tardi.",
+   "en": "I'll call you later.",
+   "audio": "content/it/audio/corso9/008.mp3"
+  },
+  {
+   "id": "corso9-009",
+   "it": "Un momento, ho una chiamata.",
+   "en": "One moment, I have a call.",
+   "audio": "content/it/audio/corso9/009.mp3"
+  },
+  {
+   "id": "corso9-010",
+   "it": "Pronto? Chi parla?",
+   "en": "Hello? Who's speaking?",
+   "audio": "content/it/audio/corso9/010.mp3"
+  },
+  {
+   "id": "corso9-011",
+   "it": "Sono Anna, mi senti?",
+   "en": "It's Anna, can you hear me?",
+   "audio": "content/it/audio/corso9/011.mp3"
+  },
+  {
+   "id": "corso9-012",
+   "it": "Adesso ti sento benissimo.",
+   "en": "Now I can hear you perfectly.",
+   "audio": "content/it/audio/corso9/012.mp3"
+  },
+  {
+   "id": "corso9-013",
+   "it": "Ti richiamo tra cinque minuti.",
+   "en": "I'll call you back in five minutes.",
+   "audio": "content/it/audio/corso9/013.mp3"
+  },
+  {
+   "id": "corso9-014",
+   "it": "Mandami un messaggio dopo.",
+   "en": "Send me a message later.",
+   "audio": "content/it/audio/corso9/014.mp3"
+  },
+  {
+   "id": "corso9-015",
+   "it": "Ho ricevuto il tuo messaggio.",
+   "en": "I got your message.",
+   "audio": "content/it/audio/corso9/015.mp3"
+  },
+  {
+   "id": "corso9-016",
+   "it": "Scusa, ho risposto tardi.",
+   "en": "Sorry, I replied late.",
+   "audio": "content/it/audio/corso9/016.mp3"
+  },
+  {
+   "id": "corso9-017",
+   "it": "Vieni alla festa sabato?",
+   "en": "Are you coming to the party on Saturday?",
+   "audio": "content/it/audio/corso9/017.mp3"
+  },
+  {
+   "id": "corso9-018",
+   "it": "Chi viene con noi?",
+   "en": "Who's coming with us?",
+   "audio": "content/it/audio/corso9/018.mp3"
+  },
+  {
+   "id": "corso9-019",
+   "it": "Porto mia sorella.",
+   "en": "I'm bringing my sister.",
+   "audio": "content/it/audio/corso9/019.mp3"
+  },
+  {
+   "id": "corso9-020",
+   "it": "Invitiamo anche Paolo.",
+   "en": "Let's invite Paolo too.",
+   "audio": "content/it/audio/corso9/020.mp3"
+  },
+  {
+   "id": "corso9-021",
+   "it": "A che ora comincia la festa?",
+   "en": "What time does the party start?",
+   "audio": "content/it/audio/corso9/021.mp3"
+  },
+  {
+   "id": "corso9-022",
+   "it": "Verso le nove, credo.",
+   "en": "Around nine, I think.",
+   "audio": "content/it/audio/corso9/022.mp3"
+  },
+  {
+   "id": "corso9-023",
+   "it": "Porto io il dolce.",
+   "en": "I'll bring the dessert.",
+   "audio": "content/it/audio/corso9/023.mp3"
+  },
+  {
+   "id": "corso9-024",
+   "it": "Io penso alle bevande.",
+   "en": "I'll take care of the drinks.",
+   "audio": "content/it/audio/corso9/024.mp3"
+  },
+  {
+   "id": "corso9-025",
+   "it": "Che cosa ti metti stasera?",
+   "en": "What are you wearing tonight?",
+   "audio": "content/it/audio/corso9/025.mp3"
+  },
+  {
+   "id": "corso9-026",
+   "it": "Mi metto il vestito nuovo.",
+   "en": "I'm wearing my new dress.",
+   "audio": "content/it/audio/corso9/026.mp3"
+  },
+  {
+   "id": "corso9-027",
+   "it": "La festa è stata un successo.",
+   "en": "The party was a success.",
+   "audio": "content/it/audio/corso9/027.mp3"
+  },
+  {
+   "id": "corso9-028",
+   "it": "Balliamo tutta la notte!",
+   "en": "Let's dance all night!",
+   "audio": "content/it/audio/corso9/028.mp3"
+  },
+  {
+   "id": "corso9-029",
+   "it": "Questa canzone mi piace tanto.",
+   "en": "I really like this song.",
+   "audio": "content/it/audio/corso9/029.mp3"
+  },
+  {
+   "id": "corso9-030",
+   "it": "Andiamo a un concerto domenica?",
+   "en": "Shall we go to a concert on Sunday?",
+   "audio": "content/it/audio/corso9/030.mp3"
+  },
+  {
+   "id": "corso9-031",
+   "it": "I biglietti costano venti euro.",
+   "en": "The tickets cost twenty euros.",
+   "audio": "content/it/audio/corso9/031.mp3"
+  },
+  {
+   "id": "corso9-032",
+   "it": "Purtroppo domenica non posso.",
+   "en": "Unfortunately I can't on Sunday.",
+   "audio": "content/it/audio/corso9/032.mp3"
+  },
+  {
+   "id": "corso9-033",
+   "it": "Ho già un impegno.",
+   "en": "I already have a commitment.",
+   "audio": "content/it/audio/corso9/033.mp3"
+  },
+  {
+   "id": "corso9-034",
+   "it": "Facciamo un'altra volta?",
+   "en": "Shall we do it another time?",
+   "audio": "content/it/audio/corso9/034.mp3"
+  },
+  {
+   "id": "corso9-035",
+   "it": "Martedì sono libera tutto il giorno.",
+   "en": "On Tuesday I'm free all day.",
+   "audio": "content/it/audio/corso9/035.mp3",
+   "g": "f",
+   "note": "He says: ... libero ..."
+  },
+  {
+   "id": "corso9-036",
+   "it": "Segno la data sul calendario.",
+   "en": "I'm marking the date on the calendar.",
+   "audio": "content/it/audio/corso9/036.mp3"
+  },
+  {
+   "id": "corso9-037",
+   "it": "Non dimenticare l'appuntamento!",
+   "en": "Don't forget the appointment!",
+   "audio": "content/it/audio/corso9/037.mp3"
+  },
+  {
+   "id": "corso9-038",
+   "it": "Arrivo sempre puntuale.",
+   "en": "I always arrive on time.",
+   "audio": "content/it/audio/corso9/038.mp3"
+  },
+  {
+   "id": "corso9-039",
+   "it": "Scusa il ritardo!",
+   "en": "Sorry I'm late!",
+   "audio": "content/it/audio/corso9/039.mp3"
+  },
+  {
+   "id": "corso9-040",
+   "it": "Ti aspetto da mezz'ora!",
+   "en": "I've been waiting for you for half an hour!",
+   "audio": "content/it/audio/corso9/040.mp3"
+  },
+  {
+   "id": "corso9-041",
+   "it": "Ho trovato tanto traffico.",
+   "en": "I hit a lot of traffic.",
+   "audio": "content/it/audio/corso9/041.mp3"
+  },
+  {
+   "id": "corso9-042",
+   "it": "Ti offro un caffè, dai.",
+   "en": "Let me buy you a coffee, come on.",
+   "audio": "content/it/audio/corso9/042.mp3"
+  },
+  {
+   "id": "corso9-043",
+   "it": "Restiamo ancora un po'?",
+   "en": "Shall we stay a little longer?",
+   "audio": "content/it/audio/corso9/043.mp3"
+  },
+  {
+   "id": "corso9-044",
+   "it": "Si è fatto tardi.",
+   "en": "It's gotten late.",
+   "audio": "content/it/audio/corso9/044.mp3"
+  },
+  {
+   "id": "corso9-045",
+   "it": "Devo proprio andare adesso.",
+   "en": "I really have to go now.",
+   "audio": "content/it/audio/corso9/045.mp3"
+  },
+  {
+   "id": "corso9-046",
+   "it": "Grazie per la bella serata.",
+   "en": "Thanks for the lovely evening.",
+   "audio": "content/it/audio/corso9/046.mp3"
+  },
+  {
+   "id": "corso9-047",
+   "it": "Ci sentiamo domani, ok?",
+   "en": "Let's talk tomorrow, okay?",
+   "audio": "content/it/audio/corso9/047.mp3"
+  },
+  {
+   "id": "corso9-048",
+   "it": "Organizziamo una cena presto.",
+   "en": "Let's organize a dinner soon.",
+   "audio": "content/it/audio/corso9/048.mp3"
+  },
+  {
+   "id": "corso9-049",
+   "it": "Venite a cena da me?",
+   "en": "Will you come to dinner at my place?",
+   "audio": "content/it/audio/corso9/049.mp3"
+  },
+  {
+   "id": "corso9-050",
+   "it": "Che bello stare insieme!",
+   "en": "How nice it is to be together!",
+   "audio": "content/it/audio/corso9/050.mp3"
+  }
+ ]
+}

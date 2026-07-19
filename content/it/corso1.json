@@ -1,0 +1,312 @@
+{
+ "id": "corso1",
+ "title": "Primi passi",
+ "subtitle": "Everyday basics",
+ "level": "A1",
+ "sentences": [
+  {
+   "id": "corso1-001",
+   "it": "Ciao, come stai?",
+   "en": "Hi, how are you?",
+   "audio": "content/it/audio/corso1/001.mp3"
+  },
+  {
+   "id": "corso1-002",
+   "it": "Sto bene, grazie.",
+   "en": "I'm fine, thanks.",
+   "audio": "content/it/audio/corso1/002.mp3"
+  },
+  {
+   "id": "corso1-003",
+   "it": "Buongiorno, signora Rossi.",
+   "en": "Good morning, Mrs. Rossi.",
+   "audio": "content/it/audio/corso1/003.mp3"
+  },
+  {
+   "id": "corso1-004",
+   "it": "Buonasera a tutti.",
+   "en": "Good evening, everyone.",
+   "audio": "content/it/audio/corso1/004.mp3"
+  },
+  {
+   "id": "corso1-005",
+   "it": "Mi chiamo Marco.",
+   "en": "My name is Marco.",
+   "audio": "content/it/audio/corso1/005.mp3"
+  },
+  {
+   "id": "corso1-006",
+   "it": "Come ti chiami?",
+   "en": "What's your name?",
+   "audio": "content/it/audio/corso1/006.mp3"
+  },
+  {
+   "id": "corso1-007",
+   "it": "Piacere di conoscerti.",
+   "en": "Nice to meet you.",
+   "audio": "content/it/audio/corso1/007.mp3"
+  },
+  {
+   "id": "corso1-008",
+   "it": "Di dove sei?",
+   "en": "Where are you from?",
+   "audio": "content/it/audio/corso1/008.mp3"
+  },
+  {
+   "id": "corso1-009",
+   "it": "Sono di Tokyo.",
+   "en": "I'm from Tokyo.",
+   "audio": "content/it/audio/corso1/009.mp3"
+  },
+  {
+   "id": "corso1-010",
+   "it": "Abito a Roma.",
+   "en": "I live in Rome.",
+   "audio": "content/it/audio/corso1/010.mp3"
+  },
+  {
+   "id": "corso1-011",
+   "it": "Parli inglese?",
+   "en": "Do you speak English?",
+   "audio": "content/it/audio/corso1/011.mp3"
+  },
+  {
+   "id": "corso1-012",
+   "it": "Parlo un po' di italiano.",
+   "en": "I speak a little Italian.",
+   "audio": "content/it/audio/corso1/012.mp3"
+  },
+  {
+   "id": "corso1-013",
+   "it": "Non capisco.",
+   "en": "I don't understand.",
+   "audio": "content/it/audio/corso1/013.mp3"
+  },
+  {
+   "id": "corso1-014",
+   "it": "Puoi ripetere, per favore?",
+   "en": "Can you repeat, please?",
+   "audio": "content/it/audio/corso1/014.mp3"
+  },
+  {
+   "id": "corso1-015",
+   "it": "Parla più lentamente, per favore.",
+   "en": "Speak more slowly, please.",
+   "audio": "content/it/audio/corso1/015.mp3"
+  },
+  {
+   "id": "corso1-016",
+   "it": "Grazie mille.",
+   "en": "Thanks a lot.",
+   "audio": "content/it/audio/corso1/016.mp3"
+  },
+  {
+   "id": "corso1-017",
+   "it": "Prego!",
+   "en": "You're welcome!",
+   "audio": "content/it/audio/corso1/017.mp3"
+  },
+  {
+   "id": "corso1-018",
+   "it": "Scusa, dov'è il bagno?",
+   "en": "Excuse me, where is the bathroom?",
+   "audio": "content/it/audio/corso1/018.mp3"
+  },
+  {
+   "id": "corso1-019",
+   "it": "Quanto costa questo?",
+   "en": "How much does this cost?",
+   "audio": "content/it/audio/corso1/019.mp3"
+  },
+  {
+   "id": "corso1-020",
+   "it": "Vorrei un caffè, per favore.",
+   "en": "I'd like a coffee, please.",
+   "audio": "content/it/audio/corso1/020.mp3"
+  },
+  {
+   "id": "corso1-021",
+   "it": "Il conto, per favore.",
+   "en": "The bill, please.",
+   "audio": "content/it/audio/corso1/021.mp3"
+  },
+  {
+   "id": "corso1-022",
+   "it": "Che ore sono?",
+   "en": "What time is it?",
+   "audio": "content/it/audio/corso1/022.mp3"
+  },
+  {
+   "id": "corso1-023",
+   "it": "Sono le tre.",
+   "en": "It's three o'clock.",
+   "audio": "content/it/audio/corso1/023.mp3"
+  },
+  {
+   "id": "corso1-024",
+   "it": "Oggi è lunedì.",
+   "en": "Today is Monday.",
+   "audio": "content/it/audio/corso1/024.mp3"
+  },
+  {
+   "id": "corso1-025",
+   "it": "Domani lavoro.",
+   "en": "Tomorrow I work.",
+   "audio": "content/it/audio/corso1/025.mp3"
+  },
+  {
+   "id": "corso1-026",
+   "it": "Ho fame.",
+   "en": "I'm hungry.",
+   "audio": "content/it/audio/corso1/026.mp3"
+  },
+  {
+   "id": "corso1-027",
+   "it": "Ho sete.",
+   "en": "I'm thirsty.",
+   "audio": "content/it/audio/corso1/027.mp3"
+  },
+  {
+   "id": "corso1-028",
+   "it": "Sono stanco.",
+   "en": "I'm tired.",
+   "audio": "content/it/audio/corso1/028.mp3",
+   "g": "m",
+   "note": "She says: Sono stanca."
+  },
+  {
+   "id": "corso1-029",
+   "it": "Va bene.",
+   "en": "All right.",
+   "audio": "content/it/audio/corso1/029.mp3"
+  },
+  {
+   "id": "corso1-030",
+   "it": "Non lo so.",
+   "en": "I don't know.",
+   "audio": "content/it/audio/corso1/030.mp3"
+  },
+  {
+   "id": "corso1-031",
+   "it": "Certo, perché no?",
+   "en": "Sure, why not?",
+   "audio": "content/it/audio/corso1/031.mp3"
+  },
+  {
+   "id": "corso1-032",
+   "it": "Mi piace la pizza.",
+   "en": "I like pizza.",
+   "audio": "content/it/audio/corso1/032.mp3"
+  },
+  {
+   "id": "corso1-033",
+   "it": "Non mi piace il pesce.",
+   "en": "I don't like fish.",
+   "audio": "content/it/audio/corso1/033.mp3"
+  },
+  {
+   "id": "corso1-034",
+   "it": "Ho una sorella.",
+   "en": "I have a sister.",
+   "audio": "content/it/audio/corso1/034.mp3"
+  },
+  {
+   "id": "corso1-035",
+   "it": "Questo è mio fratello.",
+   "en": "This is my brother.",
+   "audio": "content/it/audio/corso1/035.mp3"
+  },
+  {
+   "id": "corso1-036",
+   "it": "La mia famiglia è grande.",
+   "en": "My family is big.",
+   "audio": "content/it/audio/corso1/036.mp3"
+  },
+  {
+   "id": "corso1-037",
+   "it": "Dove abiti?",
+   "en": "Where do you live?",
+   "audio": "content/it/audio/corso1/037.mp3"
+  },
+  {
+   "id": "corso1-038",
+   "it": "Lavoro in un ufficio.",
+   "en": "I work in an office.",
+   "audio": "content/it/audio/corso1/038.mp3"
+  },
+  {
+   "id": "corso1-039",
+   "it": "Studio l'italiano.",
+   "en": "I study Italian.",
+   "audio": "content/it/audio/corso1/039.mp3"
+  },
+  {
+   "id": "corso1-040",
+   "it": "Quanti anni hai?",
+   "en": "How old are you?",
+   "audio": "content/it/audio/corso1/040.mp3"
+  },
+  {
+   "id": "corso1-041",
+   "it": "Ho trent'anni.",
+   "en": "I'm thirty years old.",
+   "audio": "content/it/audio/corso1/041.mp3"
+  },
+  {
+   "id": "corso1-042",
+   "it": "Che lavoro fai?",
+   "en": "What do you do for work?",
+   "audio": "content/it/audio/corso1/042.mp3"
+  },
+  {
+   "id": "corso1-043",
+   "it": "Sono insegnante.",
+   "en": "I'm a teacher.",
+   "audio": "content/it/audio/corso1/043.mp3"
+  },
+  {
+   "id": "corso1-044",
+   "it": "A domani!",
+   "en": "See you tomorrow!",
+   "audio": "content/it/audio/corso1/044.mp3"
+  },
+  {
+   "id": "corso1-045",
+   "it": "A presto!",
+   "en": "See you soon!",
+   "audio": "content/it/audio/corso1/045.mp3"
+  },
+  {
+   "id": "corso1-046",
+   "it": "Buona giornata!",
+   "en": "Have a good day!",
+   "audio": "content/it/audio/corso1/046.mp3"
+  },
+  {
+   "id": "corso1-047",
+   "it": "Buonanotte, dormi bene.",
+   "en": "Good night, sleep well.",
+   "audio": "content/it/audio/corso1/047.mp3"
+  },
+  {
+   "id": "corso1-048",
+   "it": "Arrivederci!",
+   "en": "Goodbye!",
+   "audio": "content/it/audio/corso1/048.mp3"
+  },
+  {
+   "id": "corso1-049",
+   "it": "Benvenuto in Italia!",
+   "en": "Welcome to Italy!",
+   "audio": "content/it/audio/corso1/049.mp3",
+   "g": "m",
+   "note": "To a woman: Benvenuta!"
+  },
+  {
+   "id": "corso1-050",
+   "it": "In bocca al lupo!",
+   "en": "Good luck!",
+   "audio": "content/it/audio/corso1/050.mp3"
+  }
+ ]
+}

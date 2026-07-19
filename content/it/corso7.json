@@ -1,0 +1,324 @@
+{
+ "id": "corso7",
+ "title": "Ieri e il weekend",
+ "subtitle": "Talking about the past",
+ "level": "A1",
+ "sentences": [
+  {
+   "id": "corso7-001",
+   "it": "Che cosa hai fatto ieri?",
+   "en": "What did you do yesterday?",
+   "audio": "content/it/audio/corso7/001.mp3"
+  },
+  {
+   "id": "corso7-002",
+   "it": "Ho lavorato tutto il giorno.",
+   "en": "I worked all day.",
+   "audio": "content/it/audio/corso7/002.mp3"
+  },
+  {
+   "id": "corso7-003",
+   "it": "Ho dormito fino a tardi.",
+   "en": "I slept in late.",
+   "audio": "content/it/audio/corso7/003.mp3"
+  },
+  {
+   "id": "corso7-004",
+   "it": "Sono andato al cinema.",
+   "en": "I went to the movies.",
+   "audio": "content/it/audio/corso7/004.mp3",
+   "g": "m",
+   "note": "She says: Sono andata ..."
+  },
+  {
+   "id": "corso7-005",
+   "it": "Ho visto un film bellissimo.",
+   "en": "I saw a wonderful film.",
+   "audio": "content/it/audio/corso7/005.mp3"
+  },
+  {
+   "id": "corso7-006",
+   "it": "Abbiamo mangiato una pizza enorme.",
+   "en": "We ate a huge pizza.",
+   "audio": "content/it/audio/corso7/006.mp3"
+  },
+  {
+   "id": "corso7-007",
+   "it": "Ho incontrato un vecchio amico.",
+   "en": "I ran into an old friend.",
+   "audio": "content/it/audio/corso7/007.mp3"
+  },
+  {
+   "id": "corso7-008",
+   "it": "Abbiamo parlato per ore.",
+   "en": "We talked for hours.",
+   "audio": "content/it/audio/corso7/008.mp3"
+  },
+  {
+   "id": "corso7-009",
+   "it": "Sono tornata a casa a mezzanotte.",
+   "en": "I came home at midnight.",
+   "audio": "content/it/audio/corso7/009.mp3",
+   "g": "f",
+   "note": "He says: Sono tornato ..."
+  },
+  {
+   "id": "corso7-010",
+   "it": "Ho perso l'autobus stamattina.",
+   "en": "I missed the bus this morning.",
+   "audio": "content/it/audio/corso7/010.mp3"
+  },
+  {
+   "id": "corso7-011",
+   "it": "Sono arrivata in ritardo al lavoro.",
+   "en": "I arrived late to work.",
+   "audio": "content/it/audio/corso7/011.mp3",
+   "g": "f",
+   "note": "He says: Sono arrivato ..."
+  },
+  {
+   "id": "corso7-012",
+   "it": "Il capo non ha detto niente.",
+   "en": "The boss didn't say anything.",
+   "audio": "content/it/audio/corso7/012.mp3"
+  },
+  {
+   "id": "corso7-013",
+   "it": "Hai visto la partita ieri sera?",
+   "en": "Did you see the game last night?",
+   "audio": "content/it/audio/corso7/013.mp3"
+  },
+  {
+   "id": "corso7-014",
+   "it": "La nostra squadra ha vinto!",
+   "en": "Our team won!",
+   "audio": "content/it/audio/corso7/014.mp3"
+  },
+  {
+   "id": "corso7-015",
+   "it": "Ho comprato una giacca nuova.",
+   "en": "I bought a new jacket.",
+   "audio": "content/it/audio/corso7/015.mp3"
+  },
+  {
+   "id": "corso7-016",
+   "it": "Quanto hai pagato?",
+   "en": "How much did you pay?",
+   "audio": "content/it/audio/corso7/016.mp3"
+  },
+  {
+   "id": "corso7-017",
+   "it": "Ho speso troppo questo mese.",
+   "en": "I spent too much this month.",
+   "audio": "content/it/audio/corso7/017.mp3"
+  },
+  {
+   "id": "corso7-018",
+   "it": "Dove sei stato in vacanza?",
+   "en": "Where did you go on holiday?",
+   "audio": "content/it/audio/corso7/018.mp3",
+   "g": "m",
+   "note": "To a woman: sei stata?"
+  },
+  {
+   "id": "corso7-019",
+   "it": "Sono stata al mare in Sicilia.",
+   "en": "I was at the seaside in Sicily.",
+   "audio": "content/it/audio/corso7/019.mp3",
+   "g": "f",
+   "note": "He says: Sono stato ..."
+  },
+  {
+   "id": "corso7-020",
+   "it": "Abbiamo visitato tre città.",
+   "en": "We visited three cities.",
+   "audio": "content/it/audio/corso7/020.mp3"
+  },
+  {
+   "id": "corso7-021",
+   "it": "Il viaggio è durato dieci ore.",
+   "en": "The trip took ten hours.",
+   "audio": "content/it/audio/corso7/021.mp3"
+  },
+  {
+   "id": "corso7-022",
+   "it": "Ho preso il treno delle sette.",
+   "en": "I took the seven o'clock train.",
+   "audio": "content/it/audio/corso7/022.mp3"
+  },
+  {
+   "id": "corso7-023",
+   "it": "Ho dimenticato l'ombrello a casa.",
+   "en": "I forgot my umbrella at home.",
+   "audio": "content/it/audio/corso7/023.mp3"
+  },
+  {
+   "id": "corso7-024",
+   "it": "È piovuto tutta la notte.",
+   "en": "It rained all night.",
+   "audio": "content/it/audio/corso7/024.mp3"
+  },
+  {
+   "id": "corso7-025",
+   "it": "Finalmente è uscito il sole.",
+   "en": "Finally the sun came out.",
+   "audio": "content/it/audio/corso7/025.mp3"
+  },
+  {
+   "id": "corso7-026",
+   "it": "Ho conosciuto una persona simpatica.",
+   "en": "I met a nice person.",
+   "audio": "content/it/audio/corso7/026.mp3"
+  },
+  {
+   "id": "corso7-027",
+   "it": "Ci siamo divertiti molto.",
+   "en": "We had a lot of fun.",
+   "audio": "content/it/audio/corso7/027.mp3",
+   "g": "m",
+   "note": "All women: divertite."
+  },
+  {
+   "id": "corso7-028",
+   "it": "Ieri non ho fatto niente.",
+   "en": "Yesterday I did nothing.",
+   "audio": "content/it/audio/corso7/028.mp3"
+  },
+  {
+   "id": "corso7-029",
+   "it": "Mi sono riposato tutto il weekend.",
+   "en": "I rested all weekend.",
+   "audio": "content/it/audio/corso7/029.mp3",
+   "g": "m",
+   "note": "She says: ... riposata ..."
+  },
+  {
+   "id": "corso7-030",
+   "it": "Ho pulito tutta la casa.",
+   "en": "I cleaned the whole house.",
+   "audio": "content/it/audio/corso7/030.mp3"
+  },
+  {
+   "id": "corso7-031",
+   "it": "Ho cucinato per i miei amici.",
+   "en": "I cooked for my friends.",
+   "audio": "content/it/audio/corso7/031.mp3"
+  },
+  {
+   "id": "corso7-032",
+   "it": "La cena è venuta benissimo.",
+   "en": "The dinner turned out great.",
+   "audio": "content/it/audio/corso7/032.mp3"
+  },
+  {
+   "id": "corso7-033",
+   "it": "Abbiamo bevuto un buon vino.",
+   "en": "We drank a good wine.",
+   "audio": "content/it/audio/corso7/033.mp3"
+  },
+  {
+   "id": "corso7-034",
+   "it": "Chi ha lavato i piatti?",
+   "en": "Who washed the dishes?",
+   "audio": "content/it/audio/corso7/034.mp3"
+  },
+  {
+   "id": "corso7-035",
+   "it": "Ho letto un libro in due giorni.",
+   "en": "I read a book in two days.",
+   "audio": "content/it/audio/corso7/035.mp3"
+  },
+  {
+   "id": "corso7-036",
+   "it": "Ho ascoltato musica tutta la sera.",
+   "en": "I listened to music all evening.",
+   "audio": "content/it/audio/corso7/036.mp3"
+  },
+  {
+   "id": "corso7-037",
+   "it": "Siamo usciti sabato sera.",
+   "en": "We went out Saturday night.",
+   "audio": "content/it/audio/corso7/037.mp3"
+  },
+  {
+   "id": "corso7-038",
+   "it": "Ho ballato fino alle due.",
+   "en": "I danced until two.",
+   "audio": "content/it/audio/corso7/038.mp3"
+  },
+  {
+   "id": "corso7-039",
+   "it": "Mi sono svegliata tardi domenica.",
+   "en": "I woke up late on Sunday.",
+   "audio": "content/it/audio/corso7/039.mp3",
+   "g": "f",
+   "note": "He says: ... svegliato ..."
+  },
+  {
+   "id": "corso7-040",
+   "it": "Ho fatto colazione al bar.",
+   "en": "I had breakfast at the café.",
+   "audio": "content/it/audio/corso7/040.mp3"
+  },
+  {
+   "id": "corso7-041",
+   "it": "Poi ho camminato nel parco.",
+   "en": "Then I walked in the park.",
+   "audio": "content/it/audio/corso7/041.mp3"
+  },
+  {
+   "id": "corso7-042",
+   "it": "Ho trovato un gatto per strada.",
+   "en": "I found a cat in the street.",
+   "audio": "content/it/audio/corso7/042.mp3"
+  },
+  {
+   "id": "corso7-043",
+   "it": "Ha bevuto tutto il latte.",
+   "en": "It drank all the milk.",
+   "audio": "content/it/audio/corso7/043.mp3"
+  },
+  {
+   "id": "corso7-044",
+   "it": "Hai sentito la novità?",
+   "en": "Have you heard the news?",
+   "audio": "content/it/audio/corso7/044.mp3"
+  },
+  {
+   "id": "corso7-045",
+   "it": "Marco ha cambiato lavoro.",
+   "en": "Marco changed jobs.",
+   "audio": "content/it/audio/corso7/045.mp3"
+  },
+  {
+   "id": "corso7-046",
+   "it": "Che sorpresa!",
+   "en": "What a surprise!",
+   "audio": "content/it/audio/corso7/046.mp3"
+  },
+  {
+   "id": "corso7-047",
+   "it": "Il weekend è passato veloce.",
+   "en": "The weekend went by fast.",
+   "audio": "content/it/audio/corso7/047.mp3"
+  },
+  {
+   "id": "corso7-048",
+   "it": "Ho studiato l'italiano anche ieri.",
+   "en": "I studied Italian yesterday too.",
+   "audio": "content/it/audio/corso7/048.mp3"
+  },
+  {
+   "id": "corso7-049",
+   "it": "Ho ripetuto le frasi ad alta voce.",
+   "en": "I repeated the sentences out loud.",
+   "audio": "content/it/audio/corso7/049.mp3"
+  },
+  {
+   "id": "corso7-050",
+   "it": "Oggi comincio una nuova settimana.",
+   "en": "Today I start a new week.",
+   "audio": "content/it/audio/corso7/050.mp3"
+  }
+ ]
+}

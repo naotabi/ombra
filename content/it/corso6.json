@@ -1,0 +1,308 @@
+{
+ "id": "corso6",
+ "title": "In viaggio",
+ "subtitle": "Hotels, transport & holidays",
+ "level": "A1",
+ "sentences": [
+  {
+   "id": "corso6-001",
+   "it": "Ho una prenotazione a nome Rossi.",
+   "en": "I have a reservation under the name Rossi.",
+   "audio": "content/it/audio/corso6/001.mp3"
+  },
+  {
+   "id": "corso6-002",
+   "it": "Vorrei una camera doppia.",
+   "en": "I'd like a double room.",
+   "audio": "content/it/audio/corso6/002.mp3"
+  },
+  {
+   "id": "corso6-003",
+   "it": "Quanto costa a notte?",
+   "en": "How much is it per night?",
+   "audio": "content/it/audio/corso6/003.mp3"
+  },
+  {
+   "id": "corso6-004",
+   "it": "La colazione è inclusa?",
+   "en": "Is breakfast included?",
+   "audio": "content/it/audio/corso6/004.mp3"
+  },
+  {
+   "id": "corso6-005",
+   "it": "A che piano è la camera?",
+   "en": "What floor is the room on?",
+   "audio": "content/it/audio/corso6/005.mp3"
+  },
+  {
+   "id": "corso6-006",
+   "it": "Ecco il mio passaporto.",
+   "en": "Here is my passport.",
+   "audio": "content/it/audio/corso6/006.mp3"
+  },
+  {
+   "id": "corso6-007",
+   "it": "C'è il wifi in camera?",
+   "en": "Is there wifi in the room?",
+   "audio": "content/it/audio/corso6/007.mp3"
+  },
+  {
+   "id": "corso6-008",
+   "it": "C'è un balcone con vista?",
+   "en": "Is there a balcony with a view?",
+   "audio": "content/it/audio/corso6/008.mp3"
+  },
+  {
+   "id": "corso6-009",
+   "it": "Il mare è vicino all'albergo?",
+   "en": "Is the sea close to the hotel?",
+   "audio": "content/it/audio/corso6/009.mp3"
+  },
+  {
+   "id": "corso6-010",
+   "it": "Posso lasciare qui la valigia?",
+   "en": "Can I leave my suitcase here?",
+   "audio": "content/it/audio/corso6/010.mp3"
+  },
+  {
+   "id": "corso6-011",
+   "it": "La mia valigia è pesante.",
+   "en": "My suitcase is heavy.",
+   "audio": "content/it/audio/corso6/011.mp3"
+  },
+  {
+   "id": "corso6-012",
+   "it": "Partiamo domenica mattina.",
+   "en": "We leave Sunday morning.",
+   "audio": "content/it/audio/corso6/012.mp3"
+  },
+  {
+   "id": "corso6-013",
+   "it": "L'aereo parte alle sei.",
+   "en": "The plane leaves at six.",
+   "audio": "content/it/audio/corso6/013.mp3"
+  },
+  {
+   "id": "corso6-014",
+   "it": "Il volo è in ritardo.",
+   "en": "The flight is delayed.",
+   "audio": "content/it/audio/corso6/014.mp3"
+  },
+  {
+   "id": "corso6-015",
+   "it": "Dov'è l'uscita quattro?",
+   "en": "Where is gate four?",
+   "audio": "content/it/audio/corso6/015.mp3"
+  },
+  {
+   "id": "corso6-016",
+   "it": "Devo cambiare a Milano?",
+   "en": "Do I have to change in Milan?",
+   "audio": "content/it/audio/corso6/016.mp3"
+  },
+  {
+   "id": "corso6-017",
+   "it": "Questo posto è occupato?",
+   "en": "Is this seat taken?",
+   "audio": "content/it/audio/corso6/017.mp3"
+  },
+  {
+   "id": "corso6-018",
+   "it": "Posso aprire il finestrino?",
+   "en": "May I open the window?",
+   "audio": "content/it/audio/corso6/018.mp3"
+  },
+  {
+   "id": "corso6-019",
+   "it": "Scendo alla prossima fermata.",
+   "en": "I get off at the next stop.",
+   "audio": "content/it/audio/corso6/019.mp3"
+  },
+  {
+   "id": "corso6-020",
+   "it": "Dove si prende il taxi?",
+   "en": "Where do you get a taxi?",
+   "audio": "content/it/audio/corso6/020.mp3"
+  },
+  {
+   "id": "corso6-021",
+   "it": "Quanto costa fino al centro?",
+   "en": "How much is it to the center?",
+   "audio": "content/it/audio/corso6/021.mp3"
+  },
+  {
+   "id": "corso6-022",
+   "it": "Manca molto?",
+   "en": "Is it much farther?",
+   "audio": "content/it/audio/corso6/022.mp3"
+  },
+  {
+   "id": "corso6-023",
+   "it": "Che bel panorama!",
+   "en": "What a beautiful view!",
+   "audio": "content/it/audio/corso6/023.mp3"
+  },
+  {
+   "id": "corso6-024",
+   "it": "Facciamo una pausa qui.",
+   "en": "Let's take a break here.",
+   "audio": "content/it/audio/corso6/024.mp3"
+  },
+  {
+   "id": "corso6-025",
+   "it": "Ho bisogno di riposare.",
+   "en": "I need to rest.",
+   "audio": "content/it/audio/corso6/025.mp3"
+  },
+  {
+   "id": "corso6-026",
+   "it": "L'albergo è pieno.",
+   "en": "The hotel is full.",
+   "audio": "content/it/audio/corso6/026.mp3"
+  },
+  {
+   "id": "corso6-027",
+   "it": "C'è una camera libera per stasera?",
+   "en": "Is there a room available for tonight?",
+   "audio": "content/it/audio/corso6/027.mp3"
+  },
+  {
+   "id": "corso6-028",
+   "it": "L'ascensore non funziona.",
+   "en": "The elevator doesn't work.",
+   "audio": "content/it/audio/corso6/028.mp3"
+  },
+  {
+   "id": "corso6-029",
+   "it": "La chiave non apre la porta.",
+   "en": "The key doesn't open the door.",
+   "audio": "content/it/audio/corso6/029.mp3"
+  },
+  {
+   "id": "corso6-030",
+   "it": "Mi serve un asciugamano pulito.",
+   "en": "I need a clean towel.",
+   "audio": "content/it/audio/corso6/030.mp3"
+  },
+  {
+   "id": "corso6-031",
+   "it": "L'aria condizionata è rotta.",
+   "en": "The air conditioning is broken.",
+   "audio": "content/it/audio/corso6/031.mp3"
+  },
+  {
+   "id": "corso6-032",
+   "it": "Posso cambiare camera?",
+   "en": "Can I change rooms?",
+   "audio": "content/it/audio/corso6/032.mp3"
+  },
+  {
+   "id": "corso6-033",
+   "it": "A che ora devo lasciare la camera?",
+   "en": "What time do I have to leave the room?",
+   "audio": "content/it/audio/corso6/033.mp3"
+  },
+  {
+   "id": "corso6-034",
+   "it": "Pago adesso o dopo?",
+   "en": "Do I pay now or later?",
+   "audio": "content/it/audio/corso6/034.mp3"
+  },
+  {
+   "id": "corso6-035",
+   "it": "Mi chiama un taxi, per favore?",
+   "en": "Will you call me a taxi, please?",
+   "audio": "content/it/audio/corso6/035.mp3"
+  },
+  {
+   "id": "corso6-036",
+   "it": "Noleggiamo due biciclette domani.",
+   "en": "We're renting two bikes tomorrow.",
+   "audio": "content/it/audio/corso6/036.mp3"
+  },
+  {
+   "id": "corso6-037",
+   "it": "La spiaggia è piena stamattina.",
+   "en": "The beach is packed this morning.",
+   "audio": "content/it/audio/corso6/037.mp3"
+  },
+  {
+   "id": "corso6-038",
+   "it": "Nuoto ogni mattina in mare.",
+   "en": "I swim in the sea every morning.",
+   "audio": "content/it/audio/corso6/038.mp3"
+  },
+  {
+   "id": "corso6-039",
+   "it": "Oggi prendo il sole.",
+   "en": "Today I'm sunbathing.",
+   "audio": "content/it/audio/corso6/039.mp3"
+  },
+  {
+   "id": "corso6-040",
+   "it": "Dopo il bagno, un gelato!",
+   "en": "After the swim, an ice cream!",
+   "audio": "content/it/audio/corso6/040.mp3"
+  },
+  {
+   "id": "corso6-041",
+   "it": "Mando una cartolina ai nonni.",
+   "en": "I'm sending a postcard to my grandparents.",
+   "audio": "content/it/audio/corso6/041.mp3"
+  },
+  {
+   "id": "corso6-042",
+   "it": "Porto un regalo a mia madre.",
+   "en": "I'm bringing a gift for my mother.",
+   "audio": "content/it/audio/corso6/042.mp3"
+  },
+  {
+   "id": "corso6-043",
+   "it": "La guida parla molto veloce.",
+   "en": "The guide speaks very fast.",
+   "audio": "content/it/audio/corso6/043.mp3"
+  },
+  {
+   "id": "corso6-044",
+   "it": "Il castello apre alle dieci?",
+   "en": "Does the castle open at ten?",
+   "audio": "content/it/audio/corso6/044.mp3"
+  },
+  {
+   "id": "corso6-045",
+   "it": "Facciamo una foto qui?",
+   "en": "Shall we take a photo here?",
+   "audio": "content/it/audio/corso6/045.mp3"
+  },
+  {
+   "id": "corso6-046",
+   "it": "Il viaggio in nave è lungo.",
+   "en": "The boat trip is long.",
+   "audio": "content/it/audio/corso6/046.mp3"
+  },
+  {
+   "id": "corso6-047",
+   "it": "Ho il mal di mare.",
+   "en": "I'm seasick.",
+   "audio": "content/it/audio/corso6/047.mp3"
+  },
+  {
+   "id": "corso6-048",
+   "it": "Torniamo in albergo verso sera.",
+   "en": "We go back to the hotel towards evening.",
+   "audio": "content/it/audio/corso6/048.mp3"
+  },
+  {
+   "id": "corso6-049",
+   "it": "Le vacanze finiscono domani.",
+   "en": "The holidays end tomorrow.",
+   "audio": "content/it/audio/corso6/049.mp3"
+  },
+  {
+   "id": "corso6-050",
+   "it": "Voglio restare ancora una settimana.",
+   "en": "I want to stay one more week.",
+   "audio": "content/it/audio/corso6/050.mp3"
+  }
+ ]
+}

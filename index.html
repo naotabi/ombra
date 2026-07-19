@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#f7f3ec">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>Ombra — Italian Shadowing</title>
+<style>
+  :root{
+    --bg:#f7f3ec; --card:#ffffff; --ink:#2a2723; --sub:#97907f;
+    --green:#1f7a5c; --terra:#c65f46; --line:#e9e2d5; --radius:18px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;min-height:100vh;-webkit-user-select:none;user-select:none}
+  input,textarea{-webkit-user-select:text;user-select:text}
+  button,select,input{touch-action:manipulation}
+  .screen{display:none;max-width:480px;margin:0 auto;padding:28px 22px 44px}
+  .screen.active{display:block}
+  .brand{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:34px;letter-spacing:.5px}
+  .brand em{color:var(--terra);font-style:italic}
+  .tagline{color:var(--sub);font-size:14px;margin-top:2px}
+  .stats{display:flex;gap:10px;margin:22px 0}
+  .stat{flex:1;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 8px;text-align:center}
+  .stat b{font-size:22px;display:block;color:var(--green)}
+  .stat span{font-size:11px;color:var(--sub)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:14px}
+  .card h3{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--sub);margin-bottom:14px;font-weight:600}
+  select{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:9px 12px;font-size:14px;color:var(--ink);max-width:210px;-webkit-appearance:none;appearance:none}
+  .note{font-size:13px;color:var(--terra);margin-top:12px;min-height:16px}
+  .row{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+  .row:last-child{margin-bottom:0}
+  .row label{font-size:14px;color:var(--ink)}
+  .seg{display:flex;background:var(--bg);border-radius:12px;padding:3px;gap:2px}
+  .seg button{background:none;border:none;color:var(--sub);padding:7px 10px;font-size:13px;cursor:pointer;border-radius:9px;min-width:38px}
+  .seg button.sel{background:var(--green);color:#fff;font-weight:600}
+  .stepper{display:flex;align-items:center;gap:0;background:var(--bg);border-radius:12px;padding:3px}
+  .stepper button{width:38px;height:32px;border:none;background:none;color:var(--green);font-size:20px;font-weight:700;cursor:pointer}
+  .stepper input{width:52px;height:32px;border:none;background:var(--card);border-radius:9px;text-align:center;font-size:15px;font-weight:600;color:var(--ink)}
+  .stepper input:focus{outline:2px solid var(--green)}
+  .stepper .val{width:44px;text-align:center;font-size:15px;font-weight:600}
+  .btn-main{width:100%;padding:18px;font-size:17px;font-weight:700;border:none;border-radius:var(--radius);background:var(--green);color:#fff;cursor:pointer;margin-top:8px;box-shadow:0 4px 14px rgba(31,122,92,.25)}
+  .btn-main:active{opacity:.85}
+  .tip{font-size:12px;color:var(--sub);text-align:center;margin-top:16px;line-height:1.7}
+  .linkbtn{background:none;border:none;color:var(--sub);font-size:12px;text-decoration:underline;cursor:pointer;display:block;margin:14px auto 0}
+  .settings-toggle{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px;margin-bottom:14px;background:none;border:1px solid var(--line);border-radius:var(--radius);color:var(--sub);font-size:14px;font-weight:600;cursor:pointer}
+  .settings-toggle svg{width:16px;height:16px;fill:currentColor}
+  .settings-toggle .chev{width:12px;height:12px;transition:transform .25s}
+  .settings-toggle.open .chev{transform:rotate(180deg)}
+  #settingsCard{display:none}
+  #settingsCard.open{display:block}
+  /* session */
+  .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+  .top .x{background:none;border:none;color:var(--sub);font-size:20px;cursor:pointer;padding:6px}
+  .counter{font-size:13px;color:var(--sub);letter-spacing:1px}
+  .chip{background:none;border:1px solid var(--line);color:var(--sub);border-radius:14px;padding:4px 12px;font-size:13px;font-weight:600;cursor:pointer}
+  .bar{height:5px;background:var(--line);border-radius:3px;margin-bottom:40px}
+  .bar i{display:block;height:100%;width:0;background:var(--terra);border-radius:3px;transition:width .3s}
+  .sent{min-height:190px;display:flex;flex-direction:column;justify-content:center;text-align:center}
+  .it{font-size:30px;font-weight:700;line-height:1.35;font-family:Georgia,serif}
+  .it.masked{color:var(--sub);font-size:18px;font-weight:400;font-family:inherit}
+  .en{font-size:16px;color:var(--sub);margin-top:18px;line-height:1.5}
+  .reps{display:flex;gap:6px;justify-content:center;margin:32px 0 8px}
+  .reps i{width:26px;height:5px;border-radius:3px;background:var(--line)}
+  .reps i.on{background:var(--green)}
+  .phase{font-size:13px;color:var(--sub);text-align:center;height:18px}
+  .controls{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:26px}
+  .controls button{width:58px;height:58px;border-radius:18px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center}
+  .controls .play{width:74px;height:74px;border-radius:24px;background:var(--green);border:none;color:#fff;box-shadow:0 4px 14px rgba(31,122,92,.3)}
+  .controls svg{width:24px;height:24px;fill:currentColor}
+  .controls .play svg{width:30px;height:30px}
+  .under{display:flex;justify-content:center;margin-top:24px}
+  .flag{background:none;border:1px solid var(--line);color:var(--sub);border-radius:20px;padding:8px 16px;font-size:13px;cursor:pointer}
+  .flag.flagged{color:var(--terra);border-color:var(--terra)}
+  /* done */
+  .done-emoji{font-size:54px;text-align:center;margin:60px 0 10px}
+  .done-h{font-size:26px;font-weight:700;text-align:center;font-family:Georgia,serif;font-style:italic}
+  .done-sub{color:var(--sub);text-align:center;margin:12px 0 32px;line-height:1.7}
+  .toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 20px;border-radius:20px;font-size:13px;opacity:0;transition:opacity .3s;pointer-events:none;z-index:99}
+  .toast.show{opacity:1}
+  /* modal */
+  .modal-bg{position:fixed;inset:0;background:rgba(42,39,35,.45);display:none;align-items:flex-end;justify-content:center;z-index:50}
+  .modal-bg.open{display:flex}
+  .modal{background:var(--card);border-radius:20px 20px 0 0;padding:22px;width:100%;max-width:480px}
+  .modal h4{font-size:16px;margin-bottom:14px}
+  .choice{display:block;width:100%;text-align:left;padding:12px;border:1.5px solid var(--line);border-radius:12px;margin-bottom:8px;background:none;font-size:14px;cursor:pointer;color:var(--ink)}
+  .choice.sel{border-color:var(--green);background:#f2f8f5}
+  .modal textarea{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:10px;font-size:14px;min-height:70px;font-family:inherit;margin-top:4px}
+  .modal-actions{display:flex;gap:10px;margin-top:14px}
+  .btn-sec{flex:1;padding:13px;border-radius:12px;border:1.5px solid var(--line);background:none;font-size:15px;cursor:pointer;color:var(--ink)}
+  a.choice{text-decoration:none;line-height:1.5}
+  a.choice b{color:var(--green)}
+  .support-note{font-size:13px;color:var(--sub);line-height:1.6;margin-bottom:12px}
+  .support-fine{font-size:11px;color:var(--sub);margin-top:8px;text-align:center}
+  .support-fine a{color:var(--sub)}
+  .btn-pri{flex:1;padding:13px;border-radius:12px;border:none;background:var(--green);color:#fff;font-weight:600;font-size:15px;cursor:pointer}
+</style>
+</head>
+<body>
+
+<!-- HOME -->
+<div class="screen active" id="home">
+  <div class="brand">Ombra<em>.</em></div>
+  <div class="tagline">Speak Italian from day one — one sentence at a time.</div>
+
+  <div class="stats">
+    <div class="stat"><b id="stStreak">0</b><span>day streak</span></div>
+    <div class="stat"><b id="stSessions">0</b><span>sessions</span></div>
+    <div class="stat"><b id="stMinutes">0</b><span>minutes</span></div>
+  </div>
+
+  <div class="card">
+    <h3>Session</h3>
+    <div class="row"><label>Course</label><select id="courseSel"></select></div>
+    <button class="btn-main" id="startBtn">Start session</button>
+  </div>
+
+  <button class="settings-toggle" id="settingsToggle">
+    <svg viewBox="0 0 24 24"><path d="M19.4 13c.04-.33.07-.66.07-1s-.03-.67-.07-1l2.1-1.65a.5.5 0 0 0 .12-.64l-2-3.46a.5.5 0 0 0-.6-.22l-2.49 1a7.3 7.3 0 0 0-1.73-1l-.38-2.65A.5.5 0 0 0 13.93 2h-4a.5.5 0 0 0-.5.42l-.37 2.65c-.63.26-1.2.6-1.74 1l-2.48-1a.5.5 0 0 0-.61.22l-2 3.46a.5.5 0 0 0 .12.64L4.47 11c-.04.33-.07.66-.07 1s.03.67.07 1l-2.1 1.65a.5.5 0 0 0-.12.64l2 3.46c.13.23.4.32.6.22l2.49-1c.54.42 1.11.76 1.74 1l.37 2.65c.05.24.25.42.5.42h4a.5.5 0 0 0 .5-.42l.37-2.65c.63-.26 1.2-.6 1.73-1l2.49 1c.23.1.48 0 .6-.22l2-3.46a.5.5 0 0 0-.12-.64L19.4 13zm-7.47 2.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/></svg>
+    Settings
+    <svg class="chev" viewBox="0 0 24 24"><path d="M12 15.5 4.5 8l1.4-1.4L12 12.7l6.1-6.1L19.5 8z"/></svg>
+  </button>
+
+  <div class="card" id="settingsCard">
+    <div class="row"><label>Text</label><div class="seg" data-k="text">
+      <button data-v="show">Show</button><button data-v="hide">Hide</button></div></div>
+    <div class="row"><label>Translation</label><div class="seg" data-k="trans">
+      <button data-v="show">Show</button><button data-v="hide">Hide</button></div></div>
+    <div class="row"><label>Order</label><div class="seg" data-k="order">
+      <button data-v="seq">In order</button><button data-v="random">Random</button></div></div>
+    <div class="row"><label>Sentences</label>
+      <div class="stepper">
+        <button id="cntMinus">−</button>
+        <input id="cntInput" type="number" inputmode="numeric" min="5" max="50" step="5">
+        <button id="cntPlus">＋</button>
+      </div></div>
+    <div class="row"><label>Speed</label><div class="seg" data-k="speed">
+      <button data-v="0.5">.5</button><button data-v="0.75">.75</button><button data-v="1">1</button><button data-v="1.25">1.25</button><button data-v="1.5">1.5</button></div></div>
+    <div class="row"><label>Repeats per sentence</label>
+      <div class="stepper">
+        <button id="repMinus">−</button>
+        <span class="val" id="repVal">3</span>
+        <button id="repPlus">＋</button>
+      </div></div>
+    <div class="row"><label>Your turn</label><div class="seg" data-k="pause">
+      <button data-v="0.5">×.5</button><button data-v="0.75">×.75</button><button data-v="1">×1</button><button data-v="1.5">×1.5</button><button data-v="2">×2</button></div></div>
+    <button class="linkbtn" id="resetBtn">Reset settings to default</button>
+  </div>
+
+  <div class="tip">New here? Keep <b>Text: Show</b> and speak along with the audio.<br>Once a sentence feels easy, set <b>Text: Hide</b> and echo it by ear.</div>
+  <button class="linkbtn" id="appFbBtn">Send feedback about Ombra</button>
+  <!-- ネイティブアプリ（Capacitor）でのみ表示（JSで hidden を外す） -->
+  <button class="linkbtn" id="iapBtn" hidden>Remove ads &amp; support Ombra</button>
+  <!-- 紹介リンクの広告主許可待ちのため一時非表示（hidden を外せば復活） -->
+  <button class="linkbtn" id="supportBtn" hidden>Support the developer</button>
+</div>
+
+<!-- SESSION -->
+<div class="screen" id="session">
+  <div class="top">
+    <button class="x" id="exitBtn">✕</button>
+    <span class="counter"><span id="cur">1</span> / <span id="total">25</span></span>
+    <button class="chip" id="revealBtn" style="visibility:hidden">Aa</button>
+  </div>
+  <div class="bar"><i id="barFill"></i></div>
+
+  <div class="sent">
+    <div class="it" id="itText"></div>
+    <div class="en" id="enText"></div>
+    <div class="note" id="noteText"></div>
+  </div>
+
+  <div class="reps" id="reps"></div>
+  <div class="phase" id="phase"></div>
+
+  <div class="controls">
+    <button id="prevBtn" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M6 6h2.5v12H6zM19 6v12l-9.5-6z"/></svg></button>
+    <button class="play" id="playBtn" aria-label="Pause"><svg viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg></button>
+    <button id="nextBtn" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M5 6v12l9.5-6zM15.5 6H18v12h-2.5z"/></svg></button>
+  </div>
+  <div class="under">
+    <button class="flag" id="flagBtn">Report this sentence</button>
+  </div>
+</div>
+
+<!-- DONE -->
+<div class="screen" id="done">
+  <div class="done-emoji">🌿</div>
+  <div class="done-h">Ben fatto!</div>
+  <div class="done-sub" id="doneSub"></div>
+  <button class="btn-main" id="homeBtn">Back to home</button>
+</div>
+
+<!-- REPORT MODAL -->
+<div class="modal-bg" id="reportModal">
+  <div class="modal">
+    <h4>What's wrong with this sentence?</h4>
+    <div id="reportChoices">
+      <button class="choice" data-v="audio">Audio problem</button>
+      <button class="choice" data-v="italian">The Italian sounds wrong / unnatural</button>
+      <button class="choice" data-v="translation">Translation is wrong or unclear</button>
+      <button class="choice" data-v="other">Other</button>
+    </div>
+    <textarea id="reportComment" placeholder="Comment (optional)"></textarea>
+    <div class="modal-actions">
+      <button class="btn-sec" id="reportCancel">Cancel</button>
+      <button class="btn-pri" id="reportSend">Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- APP FEEDBACK MODAL -->
+<div class="modal-bg" id="fbModal">
+  <div class="modal">
+    <h4>Send feedback</h4>
+    <div id="fbChoices">
+      <button class="choice" data-v="bug">Something is broken</button>
+      <button class="choice" data-v="idea">Feature idea</button>
+      <button class="choice" data-v="content">About courses / sentences</button>
+      <button class="choice" data-v="other">Other</button>
+    </div>
+    <textarea id="fbComment" placeholder="Tell us more (optional)"></textarea>
+    <div class="modal-actions">
+      <button class="btn-sec" id="fbCancel">Cancel</button>
+      <button class="btn-pri" id="fbSend">Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- RESUME MODAL -->
+<div class="modal-bg" id="resumeModal">
+  <div class="modal">
+    <h4 id="resumeTitle">Continue where you left off?</h4>
+    <div class="modal-actions">
+      <button class="btn-sec" id="resumeRestart">Start over</button>
+      <button class="btn-pri" id="resumeGo">Continue</button>
+    </div>
+  </div>
+</div>
+
+<!-- SUPPORT MODAL -->
+<div class="modal-bg" id="supportModal">
+  <div class="modal">
+    <h4>Support Ombra</h4>
+    <p class="support-note">Ombra is built by one person. If the app helps you, using these referral links for travel services I actually use is a free way to support development — at no extra cost to you.</p>
+    <a class="choice" href="#" data-support target="_blank" rel="noopener"><b>Airalo</b> — travel eSIMs for 200+ countries</a>
+    <a class="choice" href="#" data-support target="_blank" rel="noopener"><b>Wise</b> — multi-currency account &amp; card</a>
+    <a class="choice" href="#" data-support target="_blank" rel="noopener"><b>TravelSpend</b> — track your travel budget</a>
+    <a class="choice" href="#" data-support target="_blank" rel="noopener"><b>Omio</b> — trains &amp; buses across Europe</a>
+    <a class="choice" href="#" data-support target="_blank" rel="noopener"><b>SafetyWing</b> — travel &amp; nomad insurance</a>
+    <p class="support-fine">These are referral links. &middot; <a href="privacy.html">Privacy policy</a></p>
+    <div class="modal-actions">
+      <button class="btn-sec" id="supportClose">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- IAP MODAL (native app only) -->
+<div class="modal-bg" id="iapModal">
+  <div class="modal">
+    <h4>Support Ombra</h4>
+    <p class="support-note">Ombra is built by one person and all courses are free. If it helps you, you can support development here.</p>
+    <button class="choice" id="buyRemoveAds"><b>Remove ads</b> — no more ads, forever <span id="priceRemoveAds"></span></button>
+    <p class="support-note" id="adFreeMsg" hidden>✓ Ads are off — grazie for your support!</p>
+    <button class="choice" data-tip="tip_small">☕ Offer a caffè <span class="tipPrice" data-p="tip_small"></span></button>
+    <button class="choice" data-tip="tip_medium">🍹 Offer an aperitivo <span class="tipPrice" data-p="tip_medium"></span></button>
+    <button class="choice" data-tip="tip_large">🍝 Offer a cena <span class="tipPrice" data-p="tip_large"></span></button>
+    <button class="linkbtn" id="restoreBtn">Restore purchases</button>
+    <div class="modal-actions">
+      <button class="btn-sec" id="iapClose">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+'use strict';
+/* ================= DATA (injected by content_gen.py) ================= */
+const COURSES = [{"id": "corso1", "title": "Primi passi", "subtitle": "Everyday basics", "level": "A1", "sentences": [{"id": "corso1-001", "it": "Ciao, come stai?", "en": "Hi, how are you?", "audio": "content/it/audio/corso1/001.mp3"}, {"id": "corso1-002", "it": "Sto bene, grazie.", "en": "I'm fine, thanks.", "audio": "content/it/audio/corso1/002.mp3"}, {"id": "corso1-003", "it": "Buongiorno, signora Rossi.", "en": "Good morning, Mrs. Rossi.", "audio": "content/it/audio/corso1/003.mp3"}, {"id": "corso1-004", "it": "Buonasera a tutti.", "en": "Good evening, everyone.", "audio": "content/it/audio/corso1/004.mp3"}, {"id": "corso1-005", "it": "Mi chiamo Marco.", "en": "My name is Marco.", "audio": "content/it/audio/corso1/005.mp3"}, {"id": "corso1-006", "it": "Come ti chiami?", "en": "What's your name?", "audio": "content/it/audio/corso1/006.mp3"}, {"id": "corso1-007", "it": "Piacere di conoscerti.", "en": "Nice to meet you.", "audio": "content/it/audio/corso1/007.mp3"}, {"id": "corso1-008", "it": "Di dove sei?", "en": "Where are you from?", "audio": "content/it/audio/corso1/008.mp3"}, {"id": "corso1-009", "it": "Sono di Tokyo.", "en": "I'm from Tokyo.", "audio": "content/it/audio/corso1/009.mp3"}, {"id": "corso1-010", "it": "Abito a Roma.", "en": "I live in Rome.", "audio": "content/it/audio/corso1/010.mp3"}, {"id": "corso1-011", "it": "Parli inglese?", "en": "Do you speak English?", "audio": "content/it/audio/corso1/011.mp3"}, {"id": "corso1-012", "it": "Parlo un po' di italiano.", "en": "I speak a little Italian.", "audio": "content/it/audio/corso1/012.mp3"}, {"id": "corso1-013", "it": "Non capisco.", "en": "I don't understand.", "audio": "content/it/audio/corso1/013.mp3"}, {"id": "corso1-014", "it": "Puoi ripetere, per favore?", "en": "Can you repeat, please?", "audio": "content/it/audio/corso1/014.mp3"}, {"id": "corso1-015", "it": "Parla più lentamente, per favore.", "en": "Speak more slowly, please.", "audio": "content/it/audio/corso1/015.mp3"}, {"id": "corso1-016", "it": "Grazie mille.", "en": "Thanks a lot.", "audio": "content/it/audio/corso1/016.mp3"}, {"id": "corso1-017", "it": "Prego!", "en": "You're welcome!", "audio": "content/it/audio/corso1/017.mp3"}, {"id": "corso1-018", "it": "Scusa, dov'è il bagno?", "en": "Excuse me, where is the bathroom?", "audio": "content/it/audio/corso1/018.mp3"}, {"id": "corso1-019", "it": "Quanto costa questo?", "en": "How much does this cost?", "audio": "content/it/audio/corso1/019.mp3"}, {"id": "corso1-020", "it": "Vorrei un caffè, per favore.", "en": "I'd like a coffee, please.", "audio": "content/it/audio/corso1/020.mp3"}, {"id": "corso1-021", "it": "Il conto, per favore.", "en": "The bill, please.", "audio": "content/it/audio/corso1/021.mp3"}, {"id": "corso1-022", "it": "Che ore sono?", "en": "What time is it?", "audio": "content/it/audio/corso1/022.mp3"}, {"id": "corso1-023", "it": "Sono le tre.", "en": "It's three o'clock.", "audio": "content/it/audio/corso1/023.mp3"}, {"id": "corso1-024", "it": "Oggi è lunedì.", "en": "Today is Monday.", "audio": "content/it/audio/corso1/024.mp3"}, {"id": "corso1-025", "it": "Domani lavoro.", "en": "Tomorrow I work.", "audio": "content/it/audio/corso1/025.mp3"}, {"id": "corso1-026", "it": "Ho fame.", "en": "I'm hungry.", "audio": "content/it/audio/corso1/026.mp3"}, {"id": "corso1-027", "it": "Ho sete.", "en": "I'm thirsty.", "audio": "content/it/audio/corso1/027.mp3"}, {"id": "corso1-028", "it": "Sono stanco.", "en": "I'm tired.", "audio": "content/it/audio/corso1/028.mp3", "g": "m", "note": "She says: Sono stanca."}, {"id": "corso1-029", "it": "Va bene.", "en": "All right.", "audio": "content/it/audio/corso1/029.mp3"}, {"id": "corso1-030", "it": "Non lo so.", "en": "I don't know.", "audio": "content/it/audio/corso1/030.mp3"}, {"id": "corso1-031", "it": "Certo, perché no?", "en": "Sure, why not?", "audio": "content/it/audio/corso1/031.mp3"}, {"id": "corso1-032", "it": "Mi piace la pizza.", "en": "I like pizza.", "audio": "content/it/audio/corso1/032.mp3"}, {"id": "corso1-033", "it": "Non mi piace il pesce.", "en": "I don't like fish.", "audio": "content/it/audio/corso1/033.mp3"}, {"id": "corso1-034", "it": "Ho una sorella.", "en": "I have a sister.", "audio": "content/it/audio/corso1/034.mp3"}, {"id": "corso1-035", "it": "Questo è mio fratello.", "en": "This is my brother.", "audio": "content/it/audio/corso1/035.mp3"}, {"id": "corso1-036", "it": "La mia famiglia è grande.", "en": "My family is big.", "audio": "content/it/audio/corso1/036.mp3"}, {"id": "corso1-037", "it": "Dove abiti?", "en": "Where do you live?", "audio": "content/it/audio/corso1/037.mp3"}, {"id": "corso1-038", "it": "Lavoro in un ufficio.", "en": "I work in an office.", "audio": "content/it/audio/corso1/038.mp3"}, {"id": "corso1-039", "it": "Studio l'italiano.", "en": "I study Italian.", "audio": "content/it/audio/corso1/039.mp3"}, {"id": "corso1-040", "it": "Quanti anni hai?", "en": "How old are you?", "audio": "content/it/audio/corso1/040.mp3"}, {"id": "corso1-041", "it": "Ho trent'anni.", "en": "I'm thirty years old.", "audio": "content/it/audio/corso1/041.mp3"}, {"id": "corso1-042", "it": "Che lavoro fai?", "en": "What do you do for work?", "audio": "content/it/audio/corso1/042.mp3"}, {"id": "corso1-043", "it": "Sono insegnante.", "en": "I'm a teacher.", "audio": "content/it/audio/corso1/043.mp3"}, {"id": "corso1-044", "it": "A domani!", "en": "See you tomorrow!", "audio": "content/it/audio/corso1/044.mp3"}, {"id": "corso1-045", "it": "A presto!", "en": "See you soon!", "audio": "content/it/audio/corso1/045.mp3"}, {"id": "corso1-046", "it": "Buona giornata!", "en": "Have a good day!", "audio": "content/it/audio/corso1/046.mp3"}, {"id": "corso1-047", "it": "Buonanotte, dormi bene.", "en": "Good night, sleep well.", "audio": "content/it/audio/corso1/047.mp3"}, {"id": "corso1-048", "it": "Arrivederci!", "en": "Goodbye!", "audio": "content/it/audio/corso1/048.mp3"}, {"id": "corso1-049", "it": "Benvenuto in Italia!", "en": "Welcome to Italy!", "audio": "content/it/audio/corso1/049.mp3", "g": "m", "note": "To a woman: Benvenuta!"}, {"id": "corso1-050", "it": "In bocca al lupo!", "en": "Good luck!", "audio": "content/it/audio/corso1/050.mp3"}]}, {"id": "corso2", "title": "Al bar e al ristorante", "subtitle": "Ordering food & drinks", "level": "A1", "sentences": [{"id": "corso2-001", "it": "Un tavolo per due, per favore.", "en": "A table for two, please.", "audio": "content/it/audio/corso2/001.mp3"}, {"id": "corso2-002", "it": "Avete un menù in inglese?", "en": "Do you have a menu in English?", "audio": "content/it/audio/corso2/002.mp3"}, {"id": "corso2-003", "it": "Cosa mi consiglia?", "en": "What do you recommend?", "audio": "content/it/audio/corso2/003.mp3"}, {"id": "corso2-004", "it": "Prendo una pizza margherita.", "en": "I'll have a margherita pizza.", "audio": "content/it/audio/corso2/004.mp3"}, {"id": "corso2-005", "it": "Per me, un bicchiere di vino rosso.", "en": "For me, a glass of red wine.", "audio": "content/it/audio/corso2/005.mp3"}, {"id": "corso2-006", "it": "Vorrei dell'acqua naturale.", "en": "I'd like still water.", "audio": "content/it/audio/corso2/006.mp3"}, {"id": "corso2-007", "it": "L'acqua frizzante, per favore.", "en": "Sparkling water, please.", "audio": "content/it/audio/corso2/007.mp3"}, {"id": "corso2-008", "it": "Qual è il piatto del giorno?", "en": "What's the dish of the day?", "audio": "content/it/audio/corso2/008.mp3"}, {"id": "corso2-009", "it": "Sono vegetariano.", "en": "I'm vegetarian.", "audio": "content/it/audio/corso2/009.mp3", "g": "m", "note": "She says: Sono vegetariana."}, {"id": "corso2-010", "it": "Senza cipolla, per favore.", "en": "Without onion, please.", "audio": "content/it/audio/corso2/010.mp3"}, {"id": "corso2-011", "it": "Il pesce è fresco?", "en": "Is the fish fresh?", "audio": "content/it/audio/corso2/011.mp3"}, {"id": "corso2-012", "it": "Un caffè macchiato, grazie.", "en": "A macchiato, thanks.", "audio": "content/it/audio/corso2/012.mp3"}, {"id": "corso2-013", "it": "Posso avere ancora pane?", "en": "Can I have more bread?", "audio": "content/it/audio/corso2/013.mp3"}, {"id": "corso2-014", "it": "Questo è delizioso!", "en": "This is delicious!", "audio": "content/it/audio/corso2/014.mp3"}, {"id": "corso2-015", "it": "La pasta è troppo salata.", "en": "The pasta is too salty.", "audio": "content/it/audio/corso2/015.mp3"}, {"id": "corso2-016", "it": "Un gelato al cioccolato, per favore.", "en": "A chocolate ice cream, please.", "audio": "content/it/audio/corso2/016.mp3"}, {"id": "corso2-017", "it": "Che gusti avete?", "en": "What flavors do you have?", "audio": "content/it/audio/corso2/017.mp3"}, {"id": "corso2-018", "it": "Prendiamo un antipasto da dividere.", "en": "We'll have an appetizer to share.", "audio": "content/it/audio/corso2/018.mp3"}, {"id": "corso2-019", "it": "A che ora chiudete?", "en": "What time do you close?", "audio": "content/it/audio/corso2/019.mp3"}, {"id": "corso2-020", "it": "È libero questo tavolo?", "en": "Is this table free?", "audio": "content/it/audio/corso2/020.mp3"}, {"id": "corso2-021", "it": "Possiamo sederci fuori?", "en": "Can we sit outside?", "audio": "content/it/audio/corso2/021.mp3"}, {"id": "corso2-022", "it": "Il servizio è incluso?", "en": "Is service included?", "audio": "content/it/audio/corso2/022.mp3"}, {"id": "corso2-023", "it": "Posso pagare con la carta?", "en": "Can I pay by card?", "audio": "content/it/audio/corso2/023.mp3"}, {"id": "corso2-024", "it": "Solo contanti, mi dispiace.", "en": "Cash only, I'm sorry.", "audio": "content/it/audio/corso2/024.mp3"}, {"id": "corso2-025", "it": "Tenga il resto.", "en": "Keep the change.", "audio": "content/it/audio/corso2/025.mp3"}, {"id": "corso2-026", "it": "Era tutto buonissimo.", "en": "Everything was very good.", "audio": "content/it/audio/corso2/026.mp3"}, {"id": "corso2-027", "it": "Ho prenotato per le otto.", "en": "I booked for eight o'clock.", "audio": "content/it/audio/corso2/027.mp3"}, {"id": "corso2-028", "it": "Siamo in quattro.", "en": "There are four of us.", "audio": "content/it/audio/corso2/028.mp3"}, {"id": "corso2-029", "it": "Aspettiamo un amico.", "en": "We're waiting for a friend.", "audio": "content/it/audio/corso2/029.mp3"}, {"id": "corso2-030", "it": "Prendo il dolce dopo.", "en": "I'll have dessert later.", "audio": "content/it/audio/corso2/030.mp3"}, {"id": "corso2-031", "it": "Cameriere, scusi!", "en": "Waiter, excuse me!", "audio": "content/it/audio/corso2/031.mp3"}, {"id": "corso2-032", "it": "Manca una forchetta.", "en": "A fork is missing.", "audio": "content/it/audio/corso2/032.mp3"}, {"id": "corso2-033", "it": "Mi porta il conto?", "en": "Will you bring me the bill?", "audio": "content/it/audio/corso2/033.mp3"}, {"id": "corso2-034", "it": "Facciamo alla romana.", "en": "Let's split the bill.", "audio": "content/it/audio/corso2/034.mp3"}, {"id": "corso2-035", "it": "Offro io.", "en": "It's my treat.", "audio": "content/it/audio/corso2/035.mp3"}, {"id": "corso2-036", "it": "Vuoi assaggiare il mio?", "en": "Do you want to taste mine?", "audio": "content/it/audio/corso2/036.mp3"}, {"id": "corso2-037", "it": "Non bevo alcolici.", "en": "I don't drink alcohol.", "audio": "content/it/audio/corso2/037.mp3"}, {"id": "corso2-038", "it": "Una birra piccola, per favore.", "en": "A small beer, please.", "audio": "content/it/audio/corso2/038.mp3"}, {"id": "corso2-039", "it": "Il cappuccino è per me.", "en": "The cappuccino is for me.", "audio": "content/it/audio/corso2/039.mp3"}, {"id": "corso2-040", "it": "Faccio colazione al bar.", "en": "I have breakfast at the café.", "audio": "content/it/audio/corso2/040.mp3"}, {"id": "corso2-041", "it": "Un cornetto e un succo, grazie.", "en": "A croissant and a juice, thanks.", "audio": "content/it/audio/corso2/041.mp3"}, {"id": "corso2-042", "it": "C'è troppo zucchero.", "en": "There's too much sugar.", "audio": "content/it/audio/corso2/042.mp3"}, {"id": "corso2-043", "it": "Preferisco il tè al caffè.", "en": "I prefer tea to coffee.", "audio": "content/it/audio/corso2/043.mp3"}, {"id": "corso2-044", "it": "Che cosa prendi tu?", "en": "What are you having?", "audio": "content/it/audio/corso2/044.mp3"}, {"id": "corso2-045", "it": "Ancora un momento, per favore.", "en": "One more moment, please.", "audio": "content/it/audio/corso2/045.mp3"}, {"id": "corso2-046", "it": "Siamo pronti per ordinare.", "en": "We're ready to order.", "audio": "content/it/audio/corso2/046.mp3"}, {"id": "corso2-047", "it": "Com'è la zuppa oggi?", "en": "How's the soup today?", "audio": "content/it/audio/corso2/047.mp3"}, {"id": "corso2-048", "it": "Niente dolce per me, grazie.", "en": "No dessert for me, thanks.", "audio": "content/it/audio/corso2/048.mp3"}, {"id": "corso2-049", "it": "Era la mia prima volta qui.", "en": "It was my first time here.", "audio": "content/it/audio/corso2/049.mp3"}, {"id": "corso2-050", "it": "Torniamo presto!", "en": "We'll come back soon!", "audio": "content/it/audio/corso2/050.mp3"}]}, {"id": "corso3", "title": "In giro per la città", "subtitle": "Getting around & shopping", "level": "A1", "sentences": [{"id": "corso3-001", "it": "Dov'è la stazione?", "en": "Where is the station?", "audio": "content/it/audio/corso3/001.mp3"}, {"id": "corso3-002", "it": "È lontano da qui?", "en": "Is it far from here?", "audio": "content/it/audio/corso3/002.mp3"}, {"id": "corso3-003", "it": "Puoi mostrarmi sulla mappa?", "en": "Can you show me on the map?", "audio": "content/it/audio/corso3/003.mp3"}, {"id": "corso3-004", "it": "Giri a destra al semaforo.", "en": "Turn right at the traffic light.", "audio": "content/it/audio/corso3/004.mp3"}, {"id": "corso3-005", "it": "Sempre dritto, poi a sinistra.", "en": "Straight ahead, then left.", "audio": "content/it/audio/corso3/005.mp3"}, {"id": "corso3-006", "it": "È vicino al duomo.", "en": "It's near the cathedral.", "audio": "content/it/audio/corso3/006.mp3"}, {"id": "corso3-007", "it": "Quanto ci vuole a piedi?", "en": "How long does it take on foot?", "audio": "content/it/audio/corso3/007.mp3"}, {"id": "corso3-008", "it": "Dieci minuti, più o meno.", "en": "Ten minutes, more or less.", "audio": "content/it/audio/corso3/008.mp3"}, {"id": "corso3-009", "it": "Che autobus devo prendere?", "en": "Which bus do I need to take?", "audio": "content/it/audio/corso3/009.mp3"}, {"id": "corso3-010", "it": "Il ventitré passa ogni ora.", "en": "The 23 comes every hour.", "audio": "content/it/audio/corso3/010.mp3"}, {"id": "corso3-011", "it": "Dove si comprano i biglietti?", "en": "Where do you buy tickets?", "audio": "content/it/audio/corso3/011.mp3"}, {"id": "corso3-012", "it": "Un biglietto per Firenze, per favore.", "en": "A ticket to Florence, please.", "audio": "content/it/audio/corso3/012.mp3"}, {"id": "corso3-013", "it": "Solo andata o andata e ritorno?", "en": "One way or round trip?", "audio": "content/it/audio/corso3/013.mp3"}, {"id": "corso3-014", "it": "Il treno parte dal binario due.", "en": "The train leaves from platform two.", "audio": "content/it/audio/corso3/014.mp3"}, {"id": "corso3-015", "it": "Il prossimo treno è alle nove.", "en": "The next train is at nine.", "audio": "content/it/audio/corso3/015.mp3"}, {"id": "corso3-016", "it": "Sono in ritardo!", "en": "I'm late!", "audio": "content/it/audio/corso3/016.mp3"}, {"id": "corso3-017", "it": "Il museo è aperto oggi?", "en": "Is the museum open today?", "audio": "content/it/audio/corso3/017.mp3"}, {"id": "corso3-018", "it": "Chiude il lunedì.", "en": "It's closed on Mondays.", "audio": "content/it/audio/corso3/018.mp3"}, {"id": "corso3-019", "it": "L'ingresso è gratuito.", "en": "Admission is free.", "audio": "content/it/audio/corso3/019.mp3"}, {"id": "corso3-020", "it": "Due biglietti per il museo.", "en": "Two tickets for the museum.", "audio": "content/it/audio/corso3/020.mp3"}, {"id": "corso3-021", "it": "Posso fare una foto qui?", "en": "Can I take a photo here?", "audio": "content/it/audio/corso3/021.mp3"}, {"id": "corso3-022", "it": "Che bella piazza!", "en": "What a beautiful square!", "audio": "content/it/audio/corso3/022.mp3"}, {"id": "corso3-023", "it": "Questa chiesa è antica.", "en": "This church is old.", "audio": "content/it/audio/corso3/023.mp3"}, {"id": "corso3-024", "it": "Cerco una farmacia.", "en": "I'm looking for a pharmacy.", "audio": "content/it/audio/corso3/024.mp3"}, {"id": "corso3-025", "it": "C'è un supermercato qui vicino?", "en": "Is there a supermarket nearby?", "audio": "content/it/audio/corso3/025.mp3"}, {"id": "corso3-026", "it": "Apre alle otto e mezza.", "en": "It opens at half past eight.", "audio": "content/it/audio/corso3/026.mp3"}, {"id": "corso3-027", "it": "Quanto costano queste scarpe?", "en": "How much are these shoes?", "audio": "content/it/audio/corso3/027.mp3"}, {"id": "corso3-028", "it": "Sono in saldo.", "en": "They're on sale.", "audio": "content/it/audio/corso3/028.mp3"}, {"id": "corso3-029", "it": "Posso provarlo?", "en": "Can I try it on?", "audio": "content/it/audio/corso3/029.mp3"}, {"id": "corso3-030", "it": "Che taglia porta?", "en": "What size do you wear?", "audio": "content/it/audio/corso3/030.mp3"}, {"id": "corso3-031", "it": "Porto la quarantadue.", "en": "I wear a forty-two.", "audio": "content/it/audio/corso3/031.mp3"}, {"id": "corso3-032", "it": "È troppo caro per me.", "en": "It's too expensive for me.", "audio": "content/it/audio/corso3/032.mp3"}, {"id": "corso3-033", "it": "Avete qualcosa di più economico?", "en": "Do you have something cheaper?", "audio": "content/it/audio/corso3/033.mp3"}, {"id": "corso3-034", "it": "Lo prendo!", "en": "I'll take it!", "audio": "content/it/audio/corso3/034.mp3"}, {"id": "corso3-035", "it": "Mi dà una busta, per favore?", "en": "Can you give me a bag, please?", "audio": "content/it/audio/corso3/035.mp3"}, {"id": "corso3-036", "it": "Dove posso cambiare i soldi?", "en": "Where can I change money?", "audio": "content/it/audio/corso3/036.mp3"}, {"id": "corso3-037", "it": "C'è un bancomat qui?", "en": "Is there an ATM here?", "audio": "content/it/audio/corso3/037.mp3"}, {"id": "corso3-038", "it": "Ho perso il portafoglio.", "en": "I lost my wallet.", "audio": "content/it/audio/corso3/038.mp3"}, {"id": "corso3-039", "it": "Aiuto, per favore!", "en": "Help, please!", "audio": "content/it/audio/corso3/039.mp3"}, {"id": "corso3-040", "it": "Chiamo la polizia?", "en": "Should I call the police?", "audio": "content/it/audio/corso3/040.mp3"}, {"id": "corso3-041", "it": "Non è niente di grave.", "en": "It's nothing serious.", "audio": "content/it/audio/corso3/041.mp3"}, {"id": "corso3-042", "it": "La città è piena di turisti.", "en": "The city is full of tourists.", "audio": "content/it/audio/corso3/042.mp3"}, {"id": "corso3-043", "it": "Oggi c'è il mercato.", "en": "Today there's the market.", "audio": "content/it/audio/corso3/043.mp3"}, {"id": "corso3-044", "it": "Compro frutta e verdura.", "en": "I'm buying fruit and vegetables.", "audio": "content/it/audio/corso3/044.mp3"}, {"id": "corso3-045", "it": "Un chilo di mele, grazie.", "en": "A kilo of apples, thanks.", "audio": "content/it/audio/corso3/045.mp3"}, {"id": "corso3-046", "it": "Queste arance sono dolci?", "en": "Are these oranges sweet?", "audio": "content/it/audio/corso3/046.mp3"}, {"id": "corso3-047", "it": "Assaggi pure!", "en": "Go ahead and taste!", "audio": "content/it/audio/corso3/047.mp3"}, {"id": "corso3-048", "it": "Il centro è chiuso al traffico.", "en": "The center is closed to traffic.", "audio": "content/it/audio/corso3/048.mp3"}, {"id": "corso3-049", "it": "Andiamo a piedi.", "en": "Let's walk.", "audio": "content/it/audio/corso3/049.mp3"}, {"id": "corso3-050", "it": "Ci vediamo davanti al cinema.", "en": "See you in front of the cinema.", "audio": "content/it/audio/corso3/050.mp3"}]}, {"id": "corso4", "title": "La mia giornata", "subtitle": "Daily routine & time", "level": "A1", "sentences": [{"id": "corso4-001", "it": "Mi sveglio alle sette.", "en": "I wake up at seven.", "audio": "content/it/audio/corso4/001.mp3"}, {"id": "corso4-002", "it": "Mi alzo subito.", "en": "I get up right away.", "audio": "content/it/audio/corso4/002.mp3"}, {"id": "corso4-003", "it": "Faccio la doccia ogni mattina.", "en": "I take a shower every morning.", "audio": "content/it/audio/corso4/003.mp3"}, {"id": "corso4-004", "it": "Mi vesto in fretta.", "en": "I get dressed quickly.", "audio": "content/it/audio/corso4/004.mp3"}, {"id": "corso4-005", "it": "Bevo un caffè a casa.", "en": "I drink a coffee at home.", "audio": "content/it/audio/corso4/005.mp3"}, {"id": "corso4-006", "it": "Esco di casa alle otto.", "en": "I leave home at eight.", "audio": "content/it/audio/corso4/006.mp3"}, {"id": "corso4-007", "it": "Vado al lavoro in bici.", "en": "I go to work by bike.", "audio": "content/it/audio/corso4/007.mp3"}, {"id": "corso4-008", "it": "Il viaggio dura venti minuti.", "en": "The trip takes twenty minutes.", "audio": "content/it/audio/corso4/008.mp3"}, {"id": "corso4-009", "it": "Comincio alle nove in punto.", "en": "I start at nine sharp.", "audio": "content/it/audio/corso4/009.mp3"}, {"id": "corso4-010", "it": "Ho una pausa a mezzogiorno.", "en": "I have a break at noon.", "audio": "content/it/audio/corso4/010.mp3"}, {"id": "corso4-011", "it": "Pranzo con i colleghi.", "en": "I have lunch with my colleagues.", "audio": "content/it/audio/corso4/011.mp3"}, {"id": "corso4-012", "it": "Il pomeriggio passa veloce.", "en": "The afternoon goes by fast.", "audio": "content/it/audio/corso4/012.mp3"}, {"id": "corso4-013", "it": "Finisco alle sei di sera.", "en": "I finish at six in the evening.", "audio": "content/it/audio/corso4/013.mp3"}, {"id": "corso4-014", "it": "Torno a casa stanco.", "en": "I come home tired.", "audio": "content/it/audio/corso4/014.mp3", "g": "m", "note": "She says: ... stanca."}, {"id": "corso4-015", "it": "Prima faccio la spesa.", "en": "First I do the grocery shopping.", "audio": "content/it/audio/corso4/015.mp3"}, {"id": "corso4-016", "it": "Cucino la cena per due.", "en": "I cook dinner for two.", "audio": "content/it/audio/corso4/016.mp3"}, {"id": "corso4-017", "it": "Ceniamo alle otto.", "en": "We have dinner at eight.", "audio": "content/it/audio/corso4/017.mp3"}, {"id": "corso4-018", "it": "Dopo cena guardo un film.", "en": "After dinner I watch a movie.", "audio": "content/it/audio/corso4/018.mp3"}, {"id": "corso4-019", "it": "Leggo un libro a letto.", "en": "I read a book in bed.", "audio": "content/it/audio/corso4/019.mp3"}, {"id": "corso4-020", "it": "Vado a dormire a mezzanotte.", "en": "I go to sleep at midnight.", "audio": "content/it/audio/corso4/020.mp3"}, {"id": "corso4-021", "it": "Dormo otto ore.", "en": "I sleep eight hours.", "audio": "content/it/audio/corso4/021.mp3"}, {"id": "corso4-022", "it": "Il sabato è diverso.", "en": "Saturday is different.", "audio": "content/it/audio/corso4/022.mp3"}, {"id": "corso4-023", "it": "Resto a letto fino a tardi.", "en": "I stay in bed until late.", "audio": "content/it/audio/corso4/023.mp3"}, {"id": "corso4-024", "it": "Faccio colazione con calma.", "en": "I have breakfast without rushing.", "audio": "content/it/audio/corso4/024.mp3"}, {"id": "corso4-025", "it": "Pulisco la casa il weekend.", "en": "I clean the house on weekends.", "audio": "content/it/audio/corso4/025.mp3"}, {"id": "corso4-026", "it": "Lavo i vestiti la domenica.", "en": "I wash clothes on Sundays.", "audio": "content/it/audio/corso4/026.mp3"}, {"id": "corso4-027", "it": "Vado in palestra due volte a settimana.", "en": "I go to the gym twice a week.", "audio": "content/it/audio/corso4/027.mp3"}, {"id": "corso4-028", "it": "Corro nel parco la mattina.", "en": "I run in the park in the morning.", "audio": "content/it/audio/corso4/028.mp3"}, {"id": "corso4-029", "it": "Non ho mai tempo.", "en": "I never have time.", "audio": "content/it/audio/corso4/029.mp3"}, {"id": "corso4-030", "it": "Ogni tanto arrivo tardi.", "en": "Sometimes I arrive late.", "audio": "content/it/audio/corso4/030.mp3"}, {"id": "corso4-031", "it": "Di solito prendo il treno.", "en": "I usually take the train.", "audio": "content/it/audio/corso4/031.mp3"}, {"id": "corso4-032", "it": "Oggi lavoro da casa.", "en": "Today I work from home.", "audio": "content/it/audio/corso4/032.mp3"}, {"id": "corso4-033", "it": "La riunione è alle dieci.", "en": "The meeting is at ten.", "audio": "content/it/audio/corso4/033.mp3"}, {"id": "corso4-034", "it": "Scrivo molte email.", "en": "I write a lot of emails.", "audio": "content/it/audio/corso4/034.mp3"}, {"id": "corso4-035", "it": "Telefono a mia madre.", "en": "I call my mother.", "audio": "content/it/audio/corso4/035.mp3"}, {"id": "corso4-036", "it": "Parliamo per un'ora.", "en": "We talk for an hour.", "audio": "content/it/audio/corso4/036.mp3"}, {"id": "corso4-037", "it": "Porto fuori il cane.", "en": "I take the dog out.", "audio": "content/it/audio/corso4/037.mp3"}, {"id": "corso4-038", "it": "Il mio gatto dorme sempre.", "en": "My cat always sleeps.", "audio": "content/it/audio/corso4/038.mp3"}, {"id": "corso4-039", "it": "Innaffio le piante.", "en": "I water the plants.", "audio": "content/it/audio/corso4/039.mp3"}, {"id": "corso4-040", "it": "Butto la spazzatura.", "en": "I take out the trash.", "audio": "content/it/audio/corso4/040.mp3"}, {"id": "corso4-041", "it": "Controllo troppo il telefono.", "en": "I check my phone too much.", "audio": "content/it/audio/corso4/041.mp3"}, {"id": "corso4-042", "it": "Stasera esco con gli amici.", "en": "Tonight I'm going out with friends.", "audio": "content/it/audio/corso4/042.mp3"}, {"id": "corso4-043", "it": "Domani mi riposo.", "en": "Tomorrow I'll rest.", "audio": "content/it/audio/corso4/043.mp3"}, {"id": "corso4-044", "it": "Che giornata lunga!", "en": "What a long day!", "audio": "content/it/audio/corso4/044.mp3"}, {"id": "corso4-045", "it": "Non vedo l'ora del weekend.", "en": "I can't wait for the weekend.", "audio": "content/it/audio/corso4/045.mp3"}, {"id": "corso4-046", "it": "Il lunedì è sempre difficile.", "en": "Monday is always hard.", "audio": "content/it/audio/corso4/046.mp3"}, {"id": "corso4-047", "it": "A pranzo mangio un panino.", "en": "For lunch I eat a sandwich.", "audio": "content/it/audio/corso4/047.mp3"}, {"id": "corso4-048", "it": "Ripasso le parole ogni sera.", "en": "I review words every evening.", "audio": "content/it/audio/corso4/048.mp3"}, {"id": "corso4-049", "it": "Ascolto musica in cucina.", "en": "I listen to music in the kitchen.", "audio": "content/it/audio/corso4/049.mp3"}, {"id": "corso4-050", "it": "Mi piace questa vita semplice.", "en": "I like this simple life.", "audio": "content/it/audio/corso4/050.mp3"}]}, {"id": "corso5", "title": "Parlare di sé", "subtitle": "Family, hobbies & weather", "level": "A1", "sentences": [{"id": "corso5-001", "it": "Sono sposato da cinque anni.", "en": "I've been married for five years.", "audio": "content/it/audio/corso5/001.mp3", "g": "m", "note": "She says: Sono sposata ..."}, {"id": "corso5-002", "it": "Abbiamo due figli piccoli.", "en": "We have two small children.", "audio": "content/it/audio/corso5/002.mp3"}, {"id": "corso5-003", "it": "Mia figlia ha sei anni.", "en": "My daughter is six years old.", "audio": "content/it/audio/corso5/003.mp3"}, {"id": "corso5-004", "it": "I miei genitori vivono al mare.", "en": "My parents live by the sea.", "audio": "content/it/audio/corso5/004.mp3"}, {"id": "corso5-005", "it": "Mio nonno ha novant'anni.", "en": "My grandfather is ninety years old.", "audio": "content/it/audio/corso5/005.mp3"}, {"id": "corso5-006", "it": "Siamo una famiglia allegra.", "en": "We're a cheerful family.", "audio": "content/it/audio/corso5/006.mp3"}, {"id": "corso5-007", "it": "Vivo da solo in città.", "en": "I live alone in the city.", "audio": "content/it/audio/corso5/007.mp3", "g": "m", "note": "She says: ... da sola ..."}, {"id": "corso5-008", "it": "Il mio appartamento è piccolo.", "en": "My apartment is small.", "audio": "content/it/audio/corso5/008.mp3"}, {"id": "corso5-009", "it": "Ho un balcone con fiori.", "en": "I have a balcony with flowers.", "audio": "content/it/audio/corso5/009.mp3"}, {"id": "corso5-010", "it": "Nel tempo libero dipingo.", "en": "In my free time I paint.", "audio": "content/it/audio/corso5/010.mp3"}, {"id": "corso5-011", "it": "Suono la chitarra da poco.", "en": "I've been playing guitar for a short time.", "audio": "content/it/audio/corso5/011.mp3"}, {"id": "corso5-012", "it": "Gioco a calcio il giovedì.", "en": "I play soccer on Thursdays.", "audio": "content/it/audio/corso5/012.mp3"}, {"id": "corso5-013", "it": "Amo viaggiare in treno.", "en": "I love traveling by train.", "audio": "content/it/audio/corso5/013.mp3"}, {"id": "corso5-014", "it": "Faccio molte fotografie.", "en": "I take a lot of photos.", "audio": "content/it/audio/corso5/014.mp3"}, {"id": "corso5-015", "it": "Il mio hobby è cucinare.", "en": "My hobby is cooking.", "audio": "content/it/audio/corso5/015.mp3"}, {"id": "corso5-016", "it": "Preparo una torta ogni domenica.", "en": "I make a cake every Sunday.", "audio": "content/it/audio/corso5/016.mp3"}, {"id": "corso5-017", "it": "Colleziono cartoline vecchie.", "en": "I collect old postcards.", "audio": "content/it/audio/corso5/017.mp3"}, {"id": "corso5-018", "it": "Mi interessa la storia.", "en": "I'm interested in history.", "audio": "content/it/audio/corso5/018.mp3"}, {"id": "corso5-019", "it": "Guardo poco la televisione.", "en": "I don't watch much TV.", "audio": "content/it/audio/corso5/019.mp3"}, {"id": "corso5-020", "it": "Preferisco i libri gialli.", "en": "I prefer mystery novels.", "audio": "content/it/audio/corso5/020.mp3"}, {"id": "corso5-021", "it": "Che tempo fa oggi?", "en": "What's the weather like today?", "audio": "content/it/audio/corso5/021.mp3"}, {"id": "corso5-022", "it": "C'è il sole ma fa freddo.", "en": "It's sunny but cold.", "audio": "content/it/audio/corso5/022.mp3"}, {"id": "corso5-023", "it": "Piove da tre giorni.", "en": "It's been raining for three days.", "audio": "content/it/audio/corso5/023.mp3"}, {"id": "corso5-024", "it": "Domani arriva la neve.", "en": "Tomorrow the snow is coming.", "audio": "content/it/audio/corso5/024.mp3"}, {"id": "corso5-025", "it": "Odio il vento forte.", "en": "I hate strong wind.", "audio": "content/it/audio/corso5/025.mp3"}, {"id": "corso5-026", "it": "In estate fa molto caldo.", "en": "In summer it's very hot.", "audio": "content/it/audio/corso5/026.mp3"}, {"id": "corso5-027", "it": "La primavera è la mia stagione.", "en": "Spring is my season.", "audio": "content/it/audio/corso5/027.mp3"}, {"id": "corso5-028", "it": "Sono contento del mio lavoro.", "en": "I'm happy with my job.", "audio": "content/it/audio/corso5/028.mp3", "g": "m", "note": "She says: Sono contenta ..."}, {"id": "corso5-029", "it": "A volte sono un po' pigro.", "en": "Sometimes I'm a bit lazy.", "audio": "content/it/audio/corso5/029.mp3", "g": "m", "note": "She says: ... pigra."}, {"id": "corso5-030", "it": "Sono una persona curiosa.", "en": "I'm a curious person.", "audio": "content/it/audio/corso5/030.mp3"}, {"id": "corso5-031", "it": "Parlo tre lingue.", "en": "I speak three languages.", "audio": "content/it/audio/corso5/031.mp3"}, {"id": "corso5-032", "it": "Imparo parole nuove ogni giorno.", "en": "I learn new words every day.", "audio": "content/it/audio/corso5/032.mp3"}, {"id": "corso5-033", "it": "Il mio sogno è vivere in Italia.", "en": "My dream is to live in Italy.", "audio": "content/it/audio/corso5/033.mp3"}, {"id": "corso5-034", "it": "Vengo in Italia ogni anno.", "en": "I come to Italy every year.", "audio": "content/it/audio/corso5/034.mp3"}, {"id": "corso5-035", "it": "Conosco bene Venezia.", "en": "I know Venice well.", "audio": "content/it/audio/corso5/035.mp3"}, {"id": "corso5-036", "it": "Il mare mi rilassa.", "en": "The sea relaxes me.", "audio": "content/it/audio/corso5/036.mp3"}, {"id": "corso5-037", "it": "Ho paura dei ragni.", "en": "I'm afraid of spiders.", "audio": "content/it/audio/corso5/037.mp3"}, {"id": "corso5-038", "it": "Non mangio carne rossa.", "en": "I don't eat red meat.", "audio": "content/it/audio/corso5/038.mp3"}, {"id": "corso5-039", "it": "Bevo solo acqua e tè.", "en": "I drink only water and tea.", "audio": "content/it/audio/corso5/039.mp3"}, {"id": "corso5-040", "it": "Il caffè mi tiene sveglio.", "en": "Coffee keeps me awake.", "audio": "content/it/audio/corso5/040.mp3"}, {"id": "corso5-041", "it": "Mia moglie lavora in ospedale.", "en": "My wife works at the hospital.", "audio": "content/it/audio/corso5/041.mp3", "g": "m", "note": "Or: Mio marito ... (my husband)"}, {"id": "corso5-042", "it": "Mio cugino vive in Germania.", "en": "My cousin lives in Germany.", "audio": "content/it/audio/corso5/042.mp3"}, {"id": "corso5-043", "it": "Ho tanti amici stranieri.", "en": "I have many foreign friends.", "audio": "content/it/audio/corso5/043.mp3"}, {"id": "corso5-044", "it": "Scrivo un diario in italiano.", "en": "I write a diary in Italian.", "audio": "content/it/audio/corso5/044.mp3"}, {"id": "corso5-045", "it": "La musica italiana mi piace molto.", "en": "I really like Italian music.", "audio": "content/it/audio/corso5/045.mp3"}, {"id": "corso5-046", "it": "Canto sotto la doccia.", "en": "I sing in the shower.", "audio": "content/it/audio/corso5/046.mp3"}, {"id": "corso5-047", "it": "Il weekend visito i musei.", "en": "On weekends I visit museums.", "audio": "content/it/audio/corso5/047.mp3"}, {"id": "corso5-048", "it": "Sogno di parlare bene l'italiano.", "en": "I dream of speaking Italian well.", "audio": "content/it/audio/corso5/048.mp3"}, {"id": "corso5-049", "it": "Ogni giorno faccio un piccolo passo.", "en": "Every day I take a small step.", "audio": "content/it/audio/corso5/049.mp3"}, {"id": "corso5-050", "it": "Questa è la mia vita.", "en": "This is my life.", "audio": "content/it/audio/corso5/050.mp3"}]}, {"id": "corso6", "title": "In viaggio", "subtitle": "Hotels, transport & holidays", "level": "A1", "sentences": [{"id": "corso6-001", "it": "Ho una prenotazione a nome Rossi.", "en": "I have a reservation under the name Rossi.", "audio": "content/it/audio/corso6/001.mp3"}, {"id": "corso6-002", "it": "Vorrei una camera doppia.", "en": "I'd like a double room.", "audio": "content/it/audio/corso6/002.mp3"}, {"id": "corso6-003", "it": "Quanto costa a notte?", "en": "How much is it per night?", "audio": "content/it/audio/corso6/003.mp3"}, {"id": "corso6-004", "it": "La colazione è inclusa?", "en": "Is breakfast included?", "audio": "content/it/audio/corso6/004.mp3"}, {"id": "corso6-005", "it": "A che piano è la camera?", "en": "What floor is the room on?", "audio": "content/it/audio/corso6/005.mp3"}, {"id": "corso6-006", "it": "Ecco il mio passaporto.", "en": "Here is my passport.", "audio": "content/it/audio/corso6/006.mp3"}, {"id": "corso6-007", "it": "C'è il wifi in camera?", "en": "Is there wifi in the room?", "audio": "content/it/audio/corso6/007.mp3"}, {"id": "corso6-008", "it": "C'è un balcone con vista?", "en": "Is there a balcony with a view?", "audio": "content/it/audio/corso6/008.mp3"}, {"id": "corso6-009", "it": "Il mare è vicino all'albergo?", "en": "Is the sea close to the hotel?", "audio": "content/it/audio/corso6/009.mp3"}, {"id": "corso6-010", "it": "Posso lasciare qui la valigia?", "en": "Can I leave my suitcase here?", "audio": "content/it/audio/corso6/010.mp3"}, {"id": "corso6-011", "it": "La mia valigia è pesante.", "en": "My suitcase is heavy.", "audio": "content/it/audio/corso6/011.mp3"}, {"id": "corso6-012", "it": "Partiamo domenica mattina.", "en": "We leave Sunday morning.", "audio": "content/it/audio/corso6/012.mp3"}, {"id": "corso6-013", "it": "L'aereo parte alle sei.", "en": "The plane leaves at six.", "audio": "content/it/audio/corso6/013.mp3"}, {"id": "corso6-014", "it": "Il volo è in ritardo.", "en": "The flight is delayed.", "audio": "content/it/audio/corso6/014.mp3"}, {"id": "corso6-015", "it": "Dov'è l'uscita quattro?", "en": "Where is gate four?", "audio": "content/it/audio/corso6/015.mp3"}, {"id": "corso6-016", "it": "Devo cambiare a Milano?", "en": "Do I have to change in Milan?", "audio": "content/it/audio/corso6/016.mp3"}, {"id": "corso6-017", "it": "Questo posto è occupato?", "en": "Is this seat taken?", "audio": "content/it/audio/corso6/017.mp3"}, {"id": "corso6-018", "it": "Posso aprire il finestrino?", "en": "May I open the window?", "audio": "content/it/audio/corso6/018.mp3"}, {"id": "corso6-019", "it": "Scendo alla prossima fermata.", "en": "I get off at the next stop.", "audio": "content/it/audio/corso6/019.mp3"}, {"id": "corso6-020", "it": "Dove si prende il taxi?", "en": "Where do you get a taxi?", "audio": "content/it/audio/corso6/020.mp3"}, {"id": "corso6-021", "it": "Quanto costa fino al centro?", "en": "How much is it to the center?", "audio": "content/it/audio/corso6/021.mp3"}, {"id": "corso6-022", "it": "Manca molto?", "en": "Is it much farther?", "audio": "content/it/audio/corso6/022.mp3"}, {"id": "corso6-023", "it": "Che bel panorama!", "en": "What a beautiful view!", "audio": "content/it/audio/corso6/023.mp3"}, {"id": "corso6-024", "it": "Facciamo una pausa qui.", "en": "Let's take a break here.", "audio": "content/it/audio/corso6/024.mp3"}, {"id": "corso6-025", "it": "Ho bisogno di riposare.", "en": "I need to rest.", "audio": "content/it/audio/corso6/025.mp3"}, {"id": "corso6-026", "it": "L'albergo è pieno.", "en": "The hotel is full.", "audio": "content/it/audio/corso6/026.mp3"}, {"id": "corso6-027", "it": "C'è una camera libera per stasera?", "en": "Is there a room available for tonight?", "audio": "content/it/audio/corso6/027.mp3"}, {"id": "corso6-028", "it": "L'ascensore non funziona.", "en": "The elevator doesn't work.", "audio": "content/it/audio/corso6/028.mp3"}, {"id": "corso6-029", "it": "La chiave non apre la porta.", "en": "The key doesn't open the door.", "audio": "content/it/audio/corso6/029.mp3"}, {"id": "corso6-030", "it": "Mi serve un asciugamano pulito.", "en": "I need a clean towel.", "audio": "content/it/audio/corso6/030.mp3"}, {"id": "corso6-031", "it": "L'aria condizionata è rotta.", "en": "The air conditioning is broken.", "audio": "content/it/audio/corso6/031.mp3"}, {"id": "corso6-032", "it": "Posso cambiare camera?", "en": "Can I change rooms?", "audio": "content/it/audio/corso6/032.mp3"}, {"id": "corso6-033", "it": "A che ora devo lasciare la camera?", "en": "What time do I have to leave the room?", "audio": "content/it/audio/corso6/033.mp3"}, {"id": "corso6-034", "it": "Pago adesso o dopo?", "en": "Do I pay now or later?", "audio": "content/it/audio/corso6/034.mp3"}, {"id": "corso6-035", "it": "Mi chiama un taxi, per favore?", "en": "Will you call me a taxi, please?", "audio": "content/it/audio/corso6/035.mp3"}, {"id": "corso6-036", "it": "Noleggiamo due biciclette domani.", "en": "We're renting two bikes tomorrow.", "audio": "content/it/audio/corso6/036.mp3"}, {"id": "corso6-037", "it": "La spiaggia è piena stamattina.", "en": "The beach is packed this morning.", "audio": "content/it/audio/corso6/037.mp3"}, {"id": "corso6-038", "it": "Nuoto ogni mattina in mare.", "en": "I swim in the sea every morning.", "audio": "content/it/audio/corso6/038.mp3"}, {"id": "corso6-039", "it": "Oggi prendo il sole.", "en": "Today I'm sunbathing.", "audio": "content/it/audio/corso6/039.mp3"}, {"id": "corso6-040", "it": "Dopo il bagno, un gelato!", "en": "After the swim, an ice cream!", "audio": "content/it/audio/corso6/040.mp3"}, {"id": "corso6-041", "it": "Mando una cartolina ai nonni.", "en": "I'm sending a postcard to my grandparents.", "audio": "content/it/audio/corso6/041.mp3"}, {"id": "corso6-042", "it": "Porto un regalo a mia madre.", "en": "I'm bringing a gift for my mother.", "audio": "content/it/audio/corso6/042.mp3"}, {"id": "corso6-043", "it": "La guida parla molto veloce.", "en": "The guide speaks very fast.", "audio": "content/it/audio/corso6/043.mp3"}, {"id": "corso6-044", "it": "Il castello apre alle dieci?", "en": "Does the castle open at ten?", "audio": "content/it/audio/corso6/044.mp3"}, {"id": "corso6-045", "it": "Facciamo una foto qui?", "en": "Shall we take a photo here?", "audio": "content/it/audio/corso6/045.mp3"}, {"id": "corso6-046", "it": "Il viaggio in nave è lungo.", "en": "The boat trip is long.", "audio": "content/it/audio/corso6/046.mp3"}, {"id": "corso6-047", "it": "Ho il mal di mare.", "en": "I'm seasick.", "audio": "content/it/audio/corso6/047.mp3"}, {"id": "corso6-048", "it": "Torniamo in albergo verso sera.", "en": "We go back to the hotel towards evening.", "audio": "content/it/audio/corso6/048.mp3"}, {"id": "corso6-049", "it": "Le vacanze finiscono domani.", "en": "The holidays end tomorrow.", "audio": "content/it/audio/corso6/049.mp3"}, {"id": "corso6-050", "it": "Voglio restare ancora una settimana.", "en": "I want to stay one more week.", "audio": "content/it/audio/corso6/050.mp3"}]}, {"id": "corso7", "title": "Ieri e il weekend", "subtitle": "Talking about the past", "level": "A1", "sentences": [{"id": "corso7-001", "it": "Che cosa hai fatto ieri?", "en": "What did you do yesterday?", "audio": "content/it/audio/corso7/001.mp3"}, {"id": "corso7-002", "it": "Ho lavorato tutto il giorno.", "en": "I worked all day.", "audio": "content/it/audio/corso7/002.mp3"}, {"id": "corso7-003", "it": "Ho dormito fino a tardi.", "en": "I slept in late.", "audio": "content/it/audio/corso7/003.mp3"}, {"id": "corso7-004", "it": "Sono andato al cinema.", "en": "I went to the movies.", "audio": "content/it/audio/corso7/004.mp3", "g": "m", "note": "She says: Sono andata ..."}, {"id": "corso7-005", "it": "Ho visto un film bellissimo.", "en": "I saw a wonderful film.", "audio": "content/it/audio/corso7/005.mp3"}, {"id": "corso7-006", "it": "Abbiamo mangiato una pizza enorme.", "en": "We ate a huge pizza.", "audio": "content/it/audio/corso7/006.mp3"}, {"id": "corso7-007", "it": "Ho incontrato un vecchio amico.", "en": "I ran into an old friend.", "audio": "content/it/audio/corso7/007.mp3"}, {"id": "corso7-008", "it": "Abbiamo parlato per ore.", "en": "We talked for hours.", "audio": "content/it/audio/corso7/008.mp3"}, {"id": "corso7-009", "it": "Sono tornata a casa a mezzanotte.", "en": "I came home at midnight.", "audio": "content/it/audio/corso7/009.mp3", "g": "f", "note": "He says: Sono tornato ..."}, {"id": "corso7-010", "it": "Ho perso l'autobus stamattina.", "en": "I missed the bus this morning.", "audio": "content/it/audio/corso7/010.mp3"}, {"id": "corso7-011", "it": "Sono arrivata in ritardo al lavoro.", "en": "I arrived late to work.", "audio": "content/it/audio/corso7/011.mp3", "g": "f", "note": "He says: Sono arrivato ..."}, {"id": "corso7-012", "it": "Il capo non ha detto niente.", "en": "The boss didn't say anything.", "audio": "content/it/audio/corso7/012.mp3"}, {"id": "corso7-013", "it": "Hai visto la partita ieri sera?", "en": "Did you see the game last night?", "audio": "content/it/audio/corso7/013.mp3"}, {"id": "corso7-014", "it": "La nostra squadra ha vinto!", "en": "Our team won!", "audio": "content/it/audio/corso7/014.mp3"}, {"id": "corso7-015", "it": "Ho comprato una giacca nuova.", "en": "I bought a new jacket.", "audio": "content/it/audio/corso7/015.mp3"}, {"id": "corso7-016", "it": "Quanto hai pagato?", "en": "How much did you pay?", "audio": "content/it/audio/corso7/016.mp3"}, {"id": "corso7-017", "it": "Ho speso troppo questo mese.", "en": "I spent too much this month.", "audio": "content/it/audio/corso7/017.mp3"}, {"id": "corso7-018", "it": "Dove sei stato in vacanza?", "en": "Where did you go on holiday?", "audio": "content/it/audio/corso7/018.mp3", "g": "m", "note": "To a woman: sei stata?"}, {"id": "corso7-019", "it": "Sono stata al mare in Sicilia.", "en": "I was at the seaside in Sicily.", "audio": "content/it/audio/corso7/019.mp3", "g": "f", "note": "He says: Sono stato ..."}, {"id": "corso7-020", "it": "Abbiamo visitato tre città.", "en": "We visited three cities.", "audio": "content/it/audio/corso7/020.mp3"}, {"id": "corso7-021", "it": "Il viaggio è durato dieci ore.", "en": "The trip took ten hours.", "audio": "content/it/audio/corso7/021.mp3"}, {"id": "corso7-022", "it": "Ho preso il treno delle sette.", "en": "I took the seven o'clock train.", "audio": "content/it/audio/corso7/022.mp3"}, {"id": "corso7-023", "it": "Ho dimenticato l'ombrello a casa.", "en": "I forgot my umbrella at home.", "audio": "content/it/audio/corso7/023.mp3"}, {"id": "corso7-024", "it": "È piovuto tutta la notte.", "en": "It rained all night.", "audio": "content/it/audio/corso7/024.mp3"}, {"id": "corso7-025", "it": "Finalmente è uscito il sole.", "en": "Finally the sun came out.", "audio": "content/it/audio/corso7/025.mp3"}, {"id": "corso7-026", "it": "Ho conosciuto una persona simpatica.", "en": "I met a nice person.", "audio": "content/it/audio/corso7/026.mp3"}, {"id": "corso7-027", "it": "Ci siamo divertiti molto.", "en": "We had a lot of fun.", "audio": "content/it/audio/corso7/027.mp3", "g": "m", "note": "All women: divertite."}, {"id": "corso7-028", "it": "Ieri non ho fatto niente.", "en": "Yesterday I did nothing.", "audio": "content/it/audio/corso7/028.mp3"}, {"id": "corso7-029", "it": "Mi sono riposato tutto il weekend.", "en": "I rested all weekend.", "audio": "content/it/audio/corso7/029.mp3", "g": "m", "note": "She says: ... riposata ..."}, {"id": "corso7-030", "it": "Ho pulito tutta la casa.", "en": "I cleaned the whole house.", "audio": "content/it/audio/corso7/030.mp3"}, {"id": "corso7-031", "it": "Ho cucinato per i miei amici.", "en": "I cooked for my friends.", "audio": "content/it/audio/corso7/031.mp3"}, {"id": "corso7-032", "it": "La cena è venuta benissimo.", "en": "The dinner turned out great.", "audio": "content/it/audio/corso7/032.mp3"}, {"id": "corso7-033", "it": "Abbiamo bevuto un buon vino.", "en": "We drank a good wine.", "audio": "content/it/audio/corso7/033.mp3"}, {"id": "corso7-034", "it": "Chi ha lavato i piatti?", "en": "Who washed the dishes?", "audio": "content/it/audio/corso7/034.mp3"}, {"id": "corso7-035", "it": "Ho letto un libro in due giorni.", "en": "I read a book in two days.", "audio": "content/it/audio/corso7/035.mp3"}, {"id": "corso7-036", "it": "Ho ascoltato musica tutta la sera.", "en": "I listened to music all evening.", "audio": "content/it/audio/corso7/036.mp3"}, {"id": "corso7-037", "it": "Siamo usciti sabato sera.", "en": "We went out Saturday night.", "audio": "content/it/audio/corso7/037.mp3"}, {"id": "corso7-038", "it": "Ho ballato fino alle due.", "en": "I danced until two.", "audio": "content/it/audio/corso7/038.mp3"}, {"id": "corso7-039", "it": "Mi sono svegliata tardi domenica.", "en": "I woke up late on Sunday.", "audio": "content/it/audio/corso7/039.mp3", "g": "f", "note": "He says: ... svegliato ..."}, {"id": "corso7-040", "it": "Ho fatto colazione al bar.", "en": "I had breakfast at the café.", "audio": "content/it/audio/corso7/040.mp3"}, {"id": "corso7-041", "it": "Poi ho camminato nel parco.", "en": "Then I walked in the park.", "audio": "content/it/audio/corso7/041.mp3"}, {"id": "corso7-042", "it": "Ho trovato un gatto per strada.", "en": "I found a cat in the street.", "audio": "content/it/audio/corso7/042.mp3"}, {"id": "corso7-043", "it": "Ha bevuto tutto il latte.", "en": "It drank all the milk.", "audio": "content/it/audio/corso7/043.mp3"}, {"id": "corso7-044", "it": "Hai sentito la novità?", "en": "Have you heard the news?", "audio": "content/it/audio/corso7/044.mp3"}, {"id": "corso7-045", "it": "Marco ha cambiato lavoro.", "en": "Marco changed jobs.", "audio": "content/it/audio/corso7/045.mp3"}, {"id": "corso7-046", "it": "Che sorpresa!", "en": "What a surprise!", "audio": "content/it/audio/corso7/046.mp3"}, {"id": "corso7-047", "it": "Il weekend è passato veloce.", "en": "The weekend went by fast.", "audio": "content/it/audio/corso7/047.mp3"}, {"id": "corso7-048", "it": "Ho studiato l'italiano anche ieri.", "en": "I studied Italian yesterday too.", "audio": "content/it/audio/corso7/048.mp3"}, {"id": "corso7-049", "it": "Ho ripetuto le frasi ad alta voce.", "en": "I repeated the sentences out loud.", "audio": "content/it/audio/corso7/049.mp3"}, {"id": "corso7-050", "it": "Oggi comincio una nuova settimana.", "en": "Today I start a new week.", "audio": "content/it/audio/corso7/050.mp3"}]}, {"id": "corso8", "title": "Salute e benessere", "subtitle": "Health & how you feel", "level": "A1", "sentences": [{"id": "corso8-001", "it": "Come ti senti oggi?", "en": "How do you feel today?", "audio": "content/it/audio/corso8/001.mp3"}, {"id": "corso8-002", "it": "Non mi sento bene.", "en": "I don't feel well.", "audio": "content/it/audio/corso8/002.mp3"}, {"id": "corso8-003", "it": "Ho mal di testa.", "en": "I have a headache.", "audio": "content/it/audio/corso8/003.mp3"}, {"id": "corso8-004", "it": "Ho anche mal di gola.", "en": "I also have a sore throat.", "audio": "content/it/audio/corso8/004.mp3"}, {"id": "corso8-005", "it": "Forse ho la febbre.", "en": "Maybe I have a fever.", "audio": "content/it/audio/corso8/005.mp3"}, {"id": "corso8-006", "it": "Ho misurato la temperatura.", "en": "I took my temperature.", "audio": "content/it/audio/corso8/006.mp3"}, {"id": "corso8-007", "it": "Trentotto e mezzo, è alta.", "en": "Thirty-eight point five, it's high.", "audio": "content/it/audio/corso8/007.mp3"}, {"id": "corso8-008", "it": "Devo restare a letto.", "en": "I have to stay in bed.", "audio": "content/it/audio/corso8/008.mp3"}, {"id": "corso8-009", "it": "Hai preso una medicina?", "en": "Did you take any medicine?", "audio": "content/it/audio/corso8/009.mp3"}, {"id": "corso8-010", "it": "Prendo la medicina dopo i pasti.", "en": "I take the medicine after meals.", "audio": "content/it/audio/corso8/010.mp3"}, {"id": "corso8-011", "it": "Mi fa male la schiena.", "en": "My back hurts.", "audio": "content/it/audio/corso8/011.mp3"}, {"id": "corso8-012", "it": "Le gambe sono pesanti oggi.", "en": "My legs feel heavy today.", "audio": "content/it/audio/corso8/012.mp3"}, {"id": "corso8-013", "it": "Ho camminato troppo ieri.", "en": "I walked too much yesterday.", "audio": "content/it/audio/corso8/013.mp3"}, {"id": "corso8-014", "it": "Devo andare dal medico.", "en": "I have to go to the doctor.", "audio": "content/it/audio/corso8/014.mp3"}, {"id": "corso8-015", "it": "Il dottore può vedermi oggi?", "en": "Can the doctor see me today?", "audio": "content/it/audio/corso8/015.mp3"}, {"id": "corso8-016", "it": "Ho un appuntamento alle undici.", "en": "I have an appointment at eleven.", "audio": "content/it/audio/corso8/016.mp3"}, {"id": "corso8-017", "it": "La sala d'aspetto è piena.", "en": "The waiting room is full.", "audio": "content/it/audio/corso8/017.mp3"}, {"id": "corso8-018", "it": "Respiri profondamente, per favore.", "en": "Breathe deeply, please.", "audio": "content/it/audio/corso8/018.mp3"}, {"id": "corso8-019", "it": "Apra la bocca, per favore.", "en": "Open your mouth, please.", "audio": "content/it/audio/corso8/019.mp3"}, {"id": "corso8-020", "it": "È solo un raffreddore.", "en": "It's just a cold.", "audio": "content/it/audio/corso8/020.mp3"}, {"id": "corso8-021", "it": "Ho il naso chiuso.", "en": "My nose is blocked.", "audio": "content/it/audio/corso8/021.mp3"}, {"id": "corso8-022", "it": "Ho la tosse da tre giorni.", "en": "I've had a cough for three days.", "audio": "content/it/audio/corso8/022.mp3"}, {"id": "corso8-023", "it": "Mi gira la testa.", "en": "I feel dizzy.", "audio": "content/it/audio/corso8/023.mp3"}, {"id": "corso8-024", "it": "Le arance hanno tanta vitamina C.", "en": "Oranges have a lot of vitamin C.", "audio": "content/it/audio/corso8/024.mp3"}, {"id": "corso8-025", "it": "Bevi molta acqua calda.", "en": "Drink plenty of warm water.", "audio": "content/it/audio/corso8/025.mp3"}, {"id": "corso8-026", "it": "Il riposo è la cura migliore.", "en": "Rest is the best cure.", "audio": "content/it/audio/corso8/026.mp3"}, {"id": "corso8-027", "it": "Mi sento già meglio.", "en": "I already feel better.", "audio": "content/it/audio/corso8/027.mp3"}, {"id": "corso8-028", "it": "Sono guarito in una settimana.", "en": "I recovered in a week.", "audio": "content/it/audio/corso8/028.mp3", "g": "m", "note": "She says: Sono guarita ..."}, {"id": "corso8-029", "it": "Lo sport fa bene alla salute.", "en": "Sport is good for your health.", "audio": "content/it/audio/corso8/029.mp3"}, {"id": "corso8-030", "it": "Faccio ginnastica ogni mattina.", "en": "I exercise every morning.", "audio": "content/it/audio/corso8/030.mp3"}, {"id": "corso8-031", "it": "Mangio tanta frutta e verdura.", "en": "I eat lots of fruit and vegetables.", "audio": "content/it/audio/corso8/031.mp3"}, {"id": "corso8-032", "it": "Dormo poco e male.", "en": "I sleep little and badly.", "audio": "content/it/audio/corso8/032.mp3"}, {"id": "corso8-033", "it": "Sono sempre stressato per il lavoro.", "en": "I'm always stressed about work.", "audio": "content/it/audio/corso8/033.mp3", "g": "m", "note": "She says: ... stressata ..."}, {"id": "corso8-034", "it": "Ho bisogno di una pausa.", "en": "I need a break.", "audio": "content/it/audio/corso8/034.mp3"}, {"id": "corso8-035", "it": "Oggi ho molta energia.", "en": "Today I have a lot of energy.", "audio": "content/it/audio/corso8/035.mp3"}, {"id": "corso8-036", "it": "Il mio cuore batte forte.", "en": "My heart is beating fast.", "audio": "content/it/audio/corso8/036.mp3"}, {"id": "corso8-037", "it": "Sono caduto dalla bici.", "en": "I fell off my bike.", "audio": "content/it/audio/corso8/037.mp3", "g": "m", "note": "She says: Sono caduta ..."}, {"id": "corso8-038", "it": "Mi sono fatto male al braccio.", "en": "I hurt my arm.", "audio": "content/it/audio/corso8/038.mp3", "g": "m", "note": "She says: ... fatta male ..."}, {"id": "corso8-039", "it": "Non è rotto, per fortuna.", "en": "It's not broken, luckily.", "audio": "content/it/audio/corso8/039.mp3"}, {"id": "corso8-040", "it": "Ho gli occhi stanchi.", "en": "My eyes are tired.", "audio": "content/it/audio/corso8/040.mp3"}, {"id": "corso8-041", "it": "Guardo troppo lo schermo.", "en": "I look at the screen too much.", "audio": "content/it/audio/corso8/041.mp3"}, {"id": "corso8-042", "it": "Porto gli occhiali da un anno.", "en": "I've worn glasses for a year.", "audio": "content/it/audio/corso8/042.mp3"}, {"id": "corso8-043", "it": "Il dentista mi aspetta domani.", "en": "The dentist is expecting me tomorrow.", "audio": "content/it/audio/corso8/043.mp3"}, {"id": "corso8-044", "it": "Ho paura del dentista.", "en": "I'm afraid of the dentist.", "audio": "content/it/audio/corso8/044.mp3"}, {"id": "corso8-045", "it": "Un dente mi fa male.", "en": "One of my teeth hurts.", "audio": "content/it/audio/corso8/045.mp3"}, {"id": "corso8-046", "it": "Mi lavo i denti tre volte al giorno.", "en": "I brush my teeth three times a day.", "audio": "content/it/audio/corso8/046.mp3"}, {"id": "corso8-047", "it": "La farmacia è aperta fino alle otto.", "en": "The pharmacy is open until eight.", "audio": "content/it/audio/corso8/047.mp3"}, {"id": "corso8-048", "it": "Serve la ricetta per questo?", "en": "Do I need a prescription for this?", "audio": "content/it/audio/corso8/048.mp3"}, {"id": "corso8-049", "it": "Guarisci presto!", "en": "Get well soon!", "audio": "content/it/audio/corso8/049.mp3"}, {"id": "corso8-050", "it": "La salute prima di tutto.", "en": "Health comes first.", "audio": "content/it/audio/corso8/050.mp3"}]}, {"id": "corso9", "title": "Usciamo insieme?", "subtitle": "Invitations, phone & plans", "level": "A1", "sentences": [{"id": "corso9-001", "it": "Sei libero stasera?", "en": "Are you free tonight?", "audio": "content/it/audio/corso9/001.mp3", "g": "m", "note": "To a woman: libera?"}, {"id": "corso9-002", "it": "Ti va di uscire?", "en": "Do you feel like going out?", "audio": "content/it/audio/corso9/002.mp3"}, {"id": "corso9-003", "it": "Volentieri, a che ora?", "en": "Gladly, at what time?", "audio": "content/it/audio/corso9/003.mp3"}, {"id": "corso9-004", "it": "Alle otto va benissimo.", "en": "Eight o'clock works great.", "audio": "content/it/audio/corso9/004.mp3"}, {"id": "corso9-005", "it": "Dove ci incontriamo?", "en": "Where shall we meet?", "audio": "content/it/audio/corso9/005.mp3"}, {"id": "corso9-006", "it": "Davanti alla stazione, va bene?", "en": "In front of the station, okay?", "audio": "content/it/audio/corso9/006.mp3"}, {"id": "corso9-007", "it": "Perfetto, a stasera!", "en": "Perfect, see you tonight!", "audio": "content/it/audio/corso9/007.mp3"}, {"id": "corso9-008", "it": "Ti chiamo più tardi.", "en": "I'll call you later.", "audio": "content/it/audio/corso9/008.mp3"}, {"id": "corso9-009", "it": "Un momento, ho una chiamata.", "en": "One moment, I have a call.", "audio": "content/it/audio/corso9/009.mp3"}, {"id": "corso9-010", "it": "Pronto? Chi parla?", "en": "Hello? Who's speaking?", "audio": "content/it/audio/corso9/010.mp3"}, {"id": "corso9-011", "it": "Sono Anna, mi senti?", "en": "It's Anna, can you hear me?", "audio": "content/it/audio/corso9/011.mp3"}, {"id": "corso9-012", "it": "Adesso ti sento benissimo.", "en": "Now I can hear you perfectly.", "audio": "content/it/audio/corso9/012.mp3"}, {"id": "corso9-013", "it": "Ti richiamo tra cinque minuti.", "en": "I'll call you back in five minutes.", "audio": "content/it/audio/corso9/013.mp3"}, {"id": "corso9-014", "it": "Mandami un messaggio dopo.", "en": "Send me a message later.", "audio": "content/it/audio/corso9/014.mp3"}, {"id": "corso9-015", "it": "Ho ricevuto il tuo messaggio.", "en": "I got your message.", "audio": "content/it/audio/corso9/015.mp3"}, {"id": "corso9-016", "it": "Scusa, ho risposto tardi.", "en": "Sorry, I replied late.", "audio": "content/it/audio/corso9/016.mp3"}, {"id": "corso9-017", "it": "Vieni alla festa sabato?", "en": "Are you coming to the party on Saturday?", "audio": "content/it/audio/corso9/017.mp3"}, {"id": "corso9-018", "it": "Chi viene con noi?", "en": "Who's coming with us?", "audio": "content/it/audio/corso9/018.mp3"}, {"id": "corso9-019", "it": "Porto mia sorella.", "en": "I'm bringing my sister.", "audio": "content/it/audio/corso9/019.mp3"}, {"id": "corso9-020", "it": "Invitiamo anche Paolo.", "en": "Let's invite Paolo too.", "audio": "content/it/audio/corso9/020.mp3"}, {"id": "corso9-021", "it": "A che ora comincia la festa?", "en": "What time does the party start?", "audio": "content/it/audio/corso9/021.mp3"}, {"id": "corso9-022", "it": "Verso le nove, credo.", "en": "Around nine, I think.", "audio": "content/it/audio/corso9/022.mp3"}, {"id": "corso9-023", "it": "Porto io il dolce.", "en": "I'll bring the dessert.", "audio": "content/it/audio/corso9/023.mp3"}, {"id": "corso9-024", "it": "Io penso alle bevande.", "en": "I'll take care of the drinks.", "audio": "content/it/audio/corso9/024.mp3"}, {"id": "corso9-025", "it": "Che cosa ti metti stasera?", "en": "What are you wearing tonight?", "audio": "content/it/audio/corso9/025.mp3"}, {"id": "corso9-026", "it": "Mi metto il vestito nuovo.", "en": "I'm wearing my new dress.", "audio": "content/it/audio/corso9/026.mp3"}, {"id": "corso9-027", "it": "La festa è stata un successo.", "en": "The party was a success.", "audio": "content/it/audio/corso9/027.mp3"}, {"id": "corso9-028", "it": "Balliamo tutta la notte!", "en": "Let's dance all night!", "audio": "content/it/audio/corso9/028.mp3"}, {"id": "corso9-029", "it": "Questa canzone mi piace tanto.", "en": "I really like this song.", "audio": "content/it/audio/corso9/029.mp3"}, {"id": "corso9-030", "it": "Andiamo a un concerto domenica?", "en": "Shall we go to a concert on Sunday?", "audio": "content/it/audio/corso9/030.mp3"}, {"id": "corso9-031", "it": "I biglietti costano venti euro.", "en": "The tickets cost twenty euros.", "audio": "content/it/audio/corso9/031.mp3"}, {"id": "corso9-032", "it": "Purtroppo domenica non posso.", "en": "Unfortunately I can't on Sunday.", "audio": "content/it/audio/corso9/032.mp3"}, {"id": "corso9-033", "it": "Ho già un impegno.", "en": "I already have a commitment.", "audio": "content/it/audio/corso9/033.mp3"}, {"id": "corso9-034", "it": "Facciamo un'altra volta?", "en": "Shall we do it another time?", "audio": "content/it/audio/corso9/034.mp3"}, {"id": "corso9-035", "it": "Martedì sono libera tutto il giorno.", "en": "On Tuesday I'm free all day.", "audio": "content/it/audio/corso9/035.mp3", "g": "f", "note": "He says: ... libero ..."}, {"id": "corso9-036", "it": "Segno la data sul calendario.", "en": "I'm marking the date on the calendar.", "audio": "content/it/audio/corso9/036.mp3"}, {"id": "corso9-037", "it": "Non dimenticare l'appuntamento!", "en": "Don't forget the appointment!", "audio": "content/it/audio/corso9/037.mp3"}, {"id": "corso9-038", "it": "Arrivo sempre puntuale.", "en": "I always arrive on time.", "audio": "content/it/audio/corso9/038.mp3"}, {"id": "corso9-039", "it": "Scusa il ritardo!", "en": "Sorry I'm late!", "audio": "content/it/audio/corso9/039.mp3"}, {"id": "corso9-040", "it": "Ti aspetto da mezz'ora!", "en": "I've been waiting for you for half an hour!", "audio": "content/it/audio/corso9/040.mp3"}, {"id": "corso9-041", "it": "Ho trovato tanto traffico.", "en": "I hit a lot of traffic.", "audio": "content/it/audio/corso9/041.mp3"}, {"id": "corso9-042", "it": "Ti offro un caffè, dai.", "en": "Let me buy you a coffee, come on.", "audio": "content/it/audio/corso9/042.mp3"}, {"id": "corso9-043", "it": "Restiamo ancora un po'?", "en": "Shall we stay a little longer?", "audio": "content/it/audio/corso9/043.mp3"}, {"id": "corso9-044", "it": "Si è fatto tardi.", "en": "It's gotten late.", "audio": "content/it/audio/corso9/044.mp3"}, {"id": "corso9-045", "it": "Devo proprio andare adesso.", "en": "I really have to go now.", "audio": "content/it/audio/corso9/045.mp3"}, {"id": "corso9-046", "it": "Grazie per la bella serata.", "en": "Thanks for the lovely evening.", "audio": "content/it/audio/corso9/046.mp3"}, {"id": "corso9-047", "it": "Ci sentiamo domani, ok?", "en": "Let's talk tomorrow, okay?", "audio": "content/it/audio/corso9/047.mp3"}, {"id": "corso9-048", "it": "Organizziamo una cena presto.", "en": "Let's organize a dinner soon.", "audio": "content/it/audio/corso9/048.mp3"}, {"id": "corso9-049", "it": "Venite a cena da me?", "en": "Will you come to dinner at my place?", "audio": "content/it/audio/corso9/049.mp3"}, {"id": "corso9-050", "it": "Che bello stare insieme!", "en": "How nice it is to be together!", "audio": "content/it/audio/corso9/050.mp3"}]}, {"id": "corso10", "title": "Progetti e sogni", "subtitle": "Plans & dreams", "level": "A1", "sentences": [{"id": "corso10-001", "it": "Che programmi hai per domani?", "en": "What plans do you have for tomorrow?", "audio": "content/it/audio/corso10/001.mp3"}, {"id": "corso10-002", "it": "Domani mi taglio i capelli.", "en": "Tomorrow I'm getting a haircut.", "audio": "content/it/audio/corso10/002.mp3"}, {"id": "corso10-003", "it": "Il prossimo weekend partiamo per Napoli.", "en": "Next weekend we're leaving for Naples.", "audio": "content/it/audio/corso10/003.mp3"}, {"id": "corso10-004", "it": "Penso di cambiare casa.", "en": "I'm thinking of moving house.", "audio": "content/it/audio/corso10/004.mp3"}, {"id": "corso10-005", "it": "Cerco un appartamento più grande.", "en": "I'm looking for a bigger apartment.", "audio": "content/it/audio/corso10/005.mp3"}, {"id": "corso10-006", "it": "Voglio imparare a cucinare bene.", "en": "I want to learn to cook well.", "audio": "content/it/audio/corso10/006.mp3"}, {"id": "corso10-007", "it": "Comincio un corso di cucina a settembre.", "en": "I'm starting a cooking course in September.", "audio": "content/it/audio/corso10/007.mp3"}, {"id": "corso10-008", "it": "L'anno prossimo studio in Italia.", "en": "Next year I'm studying in Italy.", "audio": "content/it/audio/corso10/008.mp3"}, {"id": "corso10-009", "it": "Prima devo risparmiare un po'.", "en": "First I have to save a little.", "audio": "content/it/audio/corso10/009.mp3"}, {"id": "corso10-010", "it": "Metto da parte cento euro al mese.", "en": "I put aside a hundred euros a month.", "audio": "content/it/audio/corso10/010.mp3"}, {"id": "corso10-011", "it": "Un giorno apro un piccolo bar.", "en": "One day I'll open a little café.", "audio": "content/it/audio/corso10/011.mp3"}, {"id": "corso10-012", "it": "È il mio progetto segreto.", "en": "It's my secret project.", "audio": "content/it/audio/corso10/012.mp3"}, {"id": "corso10-013", "it": "Tu che cosa sogni?", "en": "What do you dream of?", "audio": "content/it/audio/corso10/013.mp3"}, {"id": "corso10-014", "it": "Sogno una casa con giardino.", "en": "I dream of a house with a garden.", "audio": "content/it/audio/corso10/014.mp3"}, {"id": "corso10-015", "it": "Vorrei anche un cane grande.", "en": "I'd also like a big dog.", "audio": "content/it/audio/corso10/015.mp3"}, {"id": "corso10-016", "it": "Presto comincia l'estate.", "en": "Summer is starting soon.", "audio": "content/it/audio/corso10/016.mp3"}, {"id": "corso10-017", "it": "Quest'estate resto in città.", "en": "This summer I'm staying in the city.", "audio": "content/it/audio/corso10/017.mp3"}, {"id": "corso10-018", "it": "Forse ad agosto vado in montagna.", "en": "Maybe in August I'll go to the mountains.", "audio": "content/it/audio/corso10/018.mp3"}, {"id": "corso10-019", "it": "Cammino volentieri nella natura.", "en": "I love walking in nature.", "audio": "content/it/audio/corso10/019.mp3"}, {"id": "corso10-020", "it": "Compro uno zaino nuovo.", "en": "I'm buying a new backpack.", "audio": "content/it/audio/corso10/020.mp3"}, {"id": "corso10-021", "it": "Dopo l'estate voglio cambiare lavoro.", "en": "After the summer I want to change jobs.", "audio": "content/it/audio/corso10/021.mp3"}, {"id": "corso10-022", "it": "Studio l'inglese per il lavoro.", "en": "I'm studying English for work.", "audio": "content/it/audio/corso10/022.mp3"}, {"id": "corso10-023", "it": "Il futuro mi fa un po' paura.", "en": "The future scares me a little.", "audio": "content/it/audio/corso10/023.mp3"}, {"id": "corso10-024", "it": "Ma sono anche molto curioso.", "en": "But I'm also very curious.", "audio": "content/it/audio/corso10/024.mp3", "g": "m", "note": "She says: ... curiosa."}, {"id": "corso10-025", "it": "Un passo alla volta, sempre avanti.", "en": "One step at a time, always forward.", "audio": "content/it/audio/corso10/025.mp3"}, {"id": "corso10-026", "it": "Quest'anno leggo dodici libri.", "en": "This year I'm reading twelve books.", "audio": "content/it/audio/corso10/026.mp3"}, {"id": "corso10-027", "it": "Uno al mese, è possibile.", "en": "One a month, it's possible.", "audio": "content/it/audio/corso10/027.mp3"}, {"id": "corso10-028", "it": "Scrivo i miei piani sul quaderno.", "en": "I write my plans in a notebook.", "audio": "content/it/audio/corso10/028.mp3"}, {"id": "corso10-029", "it": "Domenica pianto fiori nuovi sul balcone.", "en": "On Sunday I'm planting new flowers on the balcony.", "audio": "content/it/audio/corso10/029.mp3"}, {"id": "corso10-030", "it": "Il balcone diventa un giardino.", "en": "The balcony is becoming a garden.", "audio": "content/it/audio/corso10/030.mp3"}, {"id": "corso10-031", "it": "Voglio bere meno caffè.", "en": "I want to drink less coffee.", "audio": "content/it/audio/corso10/031.mp3"}, {"id": "corso10-032", "it": "Da lunedì vado a letto presto.", "en": "From Monday I'm going to bed early.", "audio": "content/it/audio/corso10/032.mp3"}, {"id": "corso10-033", "it": "Le buone abitudini cambiano la vita.", "en": "Good habits change your life.", "audio": "content/it/audio/corso10/033.mp3"}, {"id": "corso10-034", "it": "Quest'inverno provo a sciare.", "en": "This winter I'm trying skiing.", "audio": "content/it/audio/corso10/034.mp3"}, {"id": "corso10-035", "it": "Mia figlia impara a nuotare.", "en": "My daughter is learning to swim.", "audio": "content/it/audio/corso10/035.mp3"}, {"id": "corso10-036", "it": "Tra due anni parlo bene l'italiano.", "en": "In two years I'll speak Italian well.", "audio": "content/it/audio/corso10/036.mp3"}, {"id": "corso10-037", "it": "Ripasso ogni giorno per dieci minuti.", "en": "I review every day for ten minutes.", "audio": "content/it/audio/corso10/037.mp3"}, {"id": "corso10-038", "it": "Piano piano, senza fretta.", "en": "Little by little, no rush.", "audio": "content/it/audio/corso10/038.mp3"}, {"id": "corso10-039", "it": "Il mese prossimo compio quarant'anni.", "en": "Next month I turn forty.", "audio": "content/it/audio/corso10/039.mp3"}, {"id": "corso10-040", "it": "Organizzo una grande festa.", "en": "I'm organizing a big party.", "audio": "content/it/audio/corso10/040.mp3"}, {"id": "corso10-041", "it": "Invito tutti i miei amici.", "en": "I'm inviting all my friends.", "audio": "content/it/audio/corso10/041.mp3"}, {"id": "corso10-042", "it": "Ogni età ha qualcosa di bello.", "en": "Every age has something beautiful.", "audio": "content/it/audio/corso10/042.mp3"}, {"id": "corso10-043", "it": "Preparo un viaggio in Giappone.", "en": "I'm planning a trip to Japan.", "audio": "content/it/audio/corso10/043.mp3"}, {"id": "corso10-044", "it": "Parto a primavera, da solo.", "en": "I'm leaving in spring, on my own.", "audio": "content/it/audio/corso10/044.mp3", "g": "m", "note": "She says: ... da sola."}, {"id": "corso10-045", "it": "Prenoto i voli a gennaio.", "en": "I'm booking the flights in January.", "audio": "content/it/audio/corso10/045.mp3"}, {"id": "corso10-046", "it": "Il biglietto costa mille euro.", "en": "The ticket costs a thousand euros.", "audio": "content/it/audio/corso10/046.mp3"}, {"id": "corso10-047", "it": "Ne vale la pena.", "en": "It's worth it.", "audio": "content/it/audio/corso10/047.mp3"}, {"id": "corso10-048", "it": "I sogni non hanno età.", "en": "Dreams have no age.", "audio": "content/it/audio/corso10/048.mp3"}, {"id": "corso10-049", "it": "Il primo passo è oggi.", "en": "The first step is today.", "audio": "content/it/audio/corso10/049.mp3"}, {"id": "corso10-050", "it": "Il futuro comincia adesso.", "en": "The future starts now.", "audio": "content/it/audio/corso10/050.mp3"}]}];
+
+/* ================= STORAGE ================= */
+const store = {
+  load(){ try{ return JSON.parse(localStorage.getItem('ombra')||'{}'); }catch(e){ return {}; } },
+  save(d){ localStorage.setItem('ombra', JSON.stringify(d)); }
+};
+let data = Object.assign({streak:0,lastDay:null,sessions:0,minutes:0,flags:[],reports:[],appFeedback:[],pos:{},settings:null}, store.load());
+if(!data.reports) data.reports=[];
+if(!data.appFeedback) data.appFeedback=[];
+if(!data.pos) data.pos={};
+
+/* ================= SETTINGS ================= */
+const defaults = {text:'show', count:25, speed:'1', reps:3, pause:'1.5', trans:'show', order:'seq', course:COURSES.length?COURSES[0].id:''};
+let settings = Object.assign({}, defaults, data.settings||{});
+if(settings.mode){                                            // migrate old mode setting → text show/hide
+  if(!data.settings || data.settings.text===undefined) settings.text = (settings.mode==='shadow') ? 'hide' : 'show';
+  delete settings.mode;
+}
+if(!COURSES.some(c=>c.id===settings.course)) settings.course = defaults.course;
+function curCourse(){ return COURSES.find(c=>c.id===settings.course) || COURSES[0]; }
+settings.count = Math.min(Math.max(parseInt(settings.count)||25, 5), curCourse()?curCourse().sentences.length:50);
+settings.reps  = Math.min(Math.max(parseInt(settings.reps)||3, 1), 5);
+function saveSettings(){ data.settings=settings; store.save(data); }
+
+/* segmented controls */
+function initSegs(){
+  document.querySelectorAll('.seg').forEach(seg=>{
+    const k = seg.dataset.k;
+    seg.querySelectorAll('button').forEach(b=>{
+      b.classList.toggle('sel', b.dataset.v===String(settings[k]));
+      b.onclick=()=>{
+        seg.querySelectorAll('button').forEach(x=>x.classList.remove('sel'));
+        b.classList.add('sel');
+        settings[k]=b.dataset.v;
+        saveSettings();
+      };
+    });
+  });
+}
+initSegs();
+
+/* course pulldown */
+const courseSel = document.getElementById('courseSel');
+COURSES.forEach(c=>{
+  const o=document.createElement('option');
+  o.value=c.id; o.textContent=`${c.level} · ${c.title}`;
+  courseSel.appendChild(o);
+});
+courseSel.value = settings.course;
+courseSel.onchange = ()=>{
+  settings.course = courseSel.value;
+  settings.count = Math.min(settings.count, curCourse().sentences.length);
+  document.getElementById('cntInput').value = settings.count;
+  saveSettings();
+};
+
+/* sentence count stepper (free numeric input) */
+const cntInput = document.getElementById('cntInput');
+cntInput.value = settings.count;
+function setCount(v){
+  const max = curCourse() ? curCourse().sentences.length : 50;
+  v = Math.min(Math.max(parseInt(v)||5, 5), max);
+  settings.count = v; cntInput.value = v; saveSettings();
+}
+document.getElementById('cntMinus').onclick=()=>setCount(settings.count-5);
+document.getElementById('cntPlus').onclick=()=>setCount(settings.count+5);
+cntInput.onchange=()=>setCount(cntInput.value);
+
+/* repeats stepper 1–5 */
+const repVal = document.getElementById('repVal');
+repVal.textContent = settings.reps;
+function setReps(v){
+  v = Math.min(Math.max(v,1),5);
+  settings.reps=v; repVal.textContent=v; saveSettings();
+}
+document.getElementById('repMinus').onclick=()=>setReps(settings.reps-1);
+document.getElementById('repPlus').onclick=()=>setReps(settings.reps+1);
+
+/* settings panel toggle */
+const settingsToggle = document.getElementById('settingsToggle');
+const settingsCard = document.getElementById('settingsCard');
+settingsToggle.onclick = ()=>{
+  const open = settingsCard.classList.toggle('open');
+  settingsToggle.classList.toggle('open', open);
+};
+
+/* reset settings */
+document.getElementById('resetBtn').onclick=()=>{
+  settings = Object.assign({}, defaults);
+  saveSettings();
+  courseSel.value = settings.course;
+  cntInput.value = settings.count;
+  repVal.textContent = settings.reps;
+  initSegs();
+  toast('Settings reset');
+};
+
+/* ================= STATS ================= */
+function todayStr(){ return new Date().toISOString().slice(0,10); }
+function renderStats(){
+  document.getElementById('stStreak').textContent = data.streak;
+  document.getElementById('stSessions').textContent = data.sessions;
+  document.getElementById('stMinutes').textContent = Math.round(data.minutes);
+}
+renderStats();
+function creditTimeAndStreak(mins){
+  const today = todayStr();
+  if(data.lastDay !== today){
+    const y = new Date(); y.setDate(y.getDate()-1);
+    data.streak = (data.lastDay === y.toISOString().slice(0,10)) ? data.streak+1 : 1;
+    data.lastDay = today;
+  }
+  data.minutes += mins;
+}
+
+/* ================= TTS (fallback) ================= */
+const synth = window.speechSynthesis;
+let itVoice = null;
+function pickVoice(){
+  const vs = synth ? synth.getVoices() : [];
+  itVoice = vs.find(v=>v.lang.replace('_','-').toLowerCase().startsWith('it') && v.localService)
+         || vs.find(v=>v.lang.replace('_','-').toLowerCase().startsWith('it')) || null;
+}
+if(synth){ pickVoice(); synth.onvoiceschanged = pickVoice; }
+
+/* silent loop: keeps the audio session alive during your-turn pauses
+   (required for lock-screen / background playback in the native app) */
+const keeper = new Audio('data:audio/wav;base64,UklGRsQPAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YaAPAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA');
+keeper.loop = true;
+function keeperOn(){ keeper.play().catch(()=>{}); }
+function keeperOff(){ try{ keeper.pause(); }catch(e){} }
+
+/* recorded-audio player (primary) */
+const player = new Audio();
+player.preload = 'auto';
+function stopPlayback(){
+  if(synth) synth.cancel();
+  player.onended=null; player.onerror=null;
+  try{ player.pause(); }catch(e){}
+}
+
+/* ================= SESSION ENGINE ================= */
+const S = { list:[], idx:0, rep:0, playing:false, timer:null, startTime:0, revealed:false, reported:new Set() };
+const $ = id=>document.getElementById(id);
+const ICON_PLAY  = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>';
+function show(id){ document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active')); $(id).classList.add('active'); }
+function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1800); }
+
+let wakeLock=null;
+async function keepAwake(){ try{ if('wakeLock' in navigator){ wakeLock = await navigator.wakeLock.request('screen'); } }catch(e){} }
+function releaseWake(){ try{ if(wakeLock){ wakeLock.release(); wakeLock=null; } }catch(e){} }
+
+function beginSession(startIdx){
+  S.list = curCourse().sentences.map(s=>[s.it, s.en, s.note||'', s.audio||'']);
+  if(settings.order==='random'){
+    for(let i=S.list.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [S.list[i],S.list[j]]=[S.list[j],S.list[i]]; }
+  }
+  S.list = S.list.slice(0, settings.count);
+  S.idx=Math.min(startIdx, S.list.length-1); S.rep=0; S.playing=true; S.startTime=Date.now(); S.revealed=false;
+  S.reported = new Set();
+  $('total').textContent = S.list.length;
+  $('playBtn').innerHTML = ICON_PAUSE;
+  buildReps();
+  show('session');
+  keepAwake();
+  keeperOn();
+  playCurrent();
+}
+
+$('startBtn').onclick = ()=>{
+  if(!curCourse()){ toast('No course data'); return; }
+  pickVoice();
+  const saved = data.pos[settings.course] || 0;
+  if(settings.order==='seq' && saved > 0 && saved < settings.count){
+    $('resumeTitle').textContent = `Continue from sentence ${saved+1}?`;
+    $('resumeModal').classList.add('open');
+  }else{
+    beginSession(0);
+  }
+};
+$('resumeGo').onclick = ()=>{ $('resumeModal').classList.remove('open'); beginSession(data.pos[settings.course]||0); };
+$('resumeRestart').onclick = ()=>{ $('resumeModal').classList.remove('open'); delete data.pos[settings.course]; store.save(data); beginSession(0); };
+
+function savePos(){
+  if(settings.order==='seq'){ data.pos[settings.course] = S.idx; store.save(data); }
+}
+
+function buildReps(){
+  const d = $('reps'); d.innerHTML='';
+  for(let i=0;i<settings.reps;i++){ d.appendChild(document.createElement('i')); }
+}
+function renderSentence(){
+  const [it,en,note] = S.list[S.idx];
+  const itEl = $('itText');
+  const hintable = settings.text==='hide' || settings.trans==='hide';
+  const itVisible = !(settings.text==='hide' && !S.revealed);
+  if(!itVisible){
+    itEl.textContent='Listen and echo…';
+    itEl.classList.add('masked');
+  }else{
+    itEl.textContent=it;
+    itEl.classList.remove('masked');
+  }
+  $('enText').textContent = (settings.trans==='show' || S.revealed) ? en : '';
+  $('noteText').textContent = (itVisible && note) ? note : '';
+  $('revealBtn').style.visibility = hintable ? 'visible' : 'hidden';
+  $('cur').textContent = S.idx+1;
+  $('barFill').style.width = (S.idx/S.list.length*100)+'%';
+  const flagged = S.reported.has(S.idx);        // red only within this session
+  $('flagBtn').classList.toggle('flagged', flagged);
+  $('flagBtn').textContent = flagged ? 'Reported — grazie!' : 'Report this sentence';
+  document.querySelectorAll('#reps i').forEach((el,i)=>el.classList.toggle('on', i<S.rep));
+}
+
+function playCurrent(){
+  if(!S.playing) return;
+  clearTimeout(S.timer);
+  stopPlayback();
+  renderSentence();
+  savePos();
+  $('phase').textContent='listening…';
+  const rate = parseFloat(settings.speed);
+  const t0 = Date.now();
+  let done=false;
+  const after = ()=>{
+    if(done || !S.playing) return; done=true;
+    const dur = Math.max(Date.now()-t0, 700);
+    const bars = document.querySelectorAll('#reps i');
+    if(bars[S.rep]) bars[S.rep].classList.add('on');
+    $('phase').textContent = 'your turn — speak!';
+    S.timer = setTimeout(step, dur*parseFloat(settings.pause));
+  };
+  const speakTTS = ()=>{               // fallback: device TTS
+    if(done || !S.playing) return;
+    if(!synth){ after(); return; }
+    const u = new SpeechSynthesisUtterance(S.list[S.idx][0]);
+    u.lang='it-IT';
+    if(itVoice) u.voice=itVoice;
+    u.rate=rate;
+    u.onend = after;
+    u.onerror = after;
+    setTimeout(()=>{ if(!done && S.playing && !synth.speaking){ after(); } }, 15000);
+    setTimeout(()=>{ if(S.playing && !done) synth.speak(u); }, 80);
+  };
+  const src = S.list[S.idx][3];
+  if(src){                             // primary: recorded audio
+    player.src = src;
+    player.defaultPlaybackRate = rate;
+    player.playbackRate = rate;
+    player.onended = after;
+    player.onerror = speakTTS;
+    player.play().then(()=>{ player.playbackRate = rate; }).catch(speakTTS);
+  }else{
+    speakTTS();
+  }
+}
+
+function step(){
+  if(!S.playing) return;
+  S.rep++;
+  if(S.rep >= settings.reps){
+    S.rep=0; S.idx++; S.revealed=false;
+    if(S.idx >= S.list.length){ return sessionComplete(); }
+  }
+  playCurrent();
+}
+
+function sessionComplete(){
+  S.playing=false; stopPlayback(); clearTimeout(S.timer); releaseWake(); keeperOff();
+  const mins = (Date.now()-S.startTime)/60000;
+  creditTimeAndStreak(mins);
+  data.sessions++;
+  delete data.pos[settings.course];    // finished — clear resume point
+  store.save(data); renderStats();
+  $('doneSub').innerHTML = `${S.list.length} sentences × ${settings.reps} reps · ${Math.max(1,Math.round(mins))} min<br>Streak: ${data.streak} day${data.streak>1?'s':''}`;
+  show('done');
+  showDoneAd();                        // ad only on the completion screen (native app, ad-free未購入時のみ)
+}
+
+/* ================= CONTROLS ================= */
+$('playBtn').onclick = ()=>{
+  if(S.playing){
+    S.playing=false; stopPlayback(); clearTimeout(S.timer); keeperOff();
+    $('playBtn').innerHTML = ICON_PLAY; $('phase').textContent='paused';
+  }else{
+    S.playing=true; $('playBtn').innerHTML = ICON_PAUSE; keeperOn(); playCurrent();
+  }
+};
+$('nextBtn').onclick = ()=>{ stopPlayback(); clearTimeout(S.timer); S.rep=0; S.revealed=false;
+  if(S.idx < S.list.length-1){ S.idx++; } if(S.playing) playCurrent(); else renderSentence(); };
+$('prevBtn').onclick = ()=>{ stopPlayback(); clearTimeout(S.timer); S.rep=0; S.revealed=false;
+  if(S.idx>0){ S.idx--; } if(S.playing) playCurrent(); else renderSentence(); };
+$('exitBtn').onclick = ()=>{
+  S.playing=false; stopPlayback(); clearTimeout(S.timer); releaseWake(); keeperOff();
+  // partial credit: at least one sentence finished → count time & streak (not a full session)
+  if(S.idx >= 1){
+    creditTimeAndStreak((Date.now()-S.startTime)/60000);
+    store.save(data); renderStats();
+  }
+  savePos();
+  show('home');
+};
+$('revealBtn').onclick = ()=>{ S.revealed=true; renderSentence(); };
+$('homeBtn').onclick = ()=>{ hideDoneAd(); show('home'); };
+
+/* ================= REPORT MODAL ================= */
+let reportChoice = null;
+function wireChoices(boxId, cb){
+  document.querySelectorAll('#'+boxId+' .choice').forEach(b=>{
+    b.onclick=()=>{
+      document.querySelectorAll('#'+boxId+' .choice').forEach(x=>x.classList.remove('sel'));
+      b.classList.add('sel'); cb(b.dataset.v);
+    };
+  });
+}
+wireChoices('reportChoices', v=>reportChoice=v);
+$('flagBtn').onclick = ()=>{
+  reportChoice=null; $('reportComment').value='';
+  document.querySelectorAll('#reportChoices .choice').forEach(x=>x.classList.remove('sel'));
+  $('reportModal').classList.add('open');
+};
+$('reportCancel').onclick = ()=>$('reportModal').classList.remove('open');
+$('reportSend').onclick = ()=>{
+  data.reports.push({
+    sentence: S.list[S.idx][0],
+    course: settings.course,
+    reason: reportChoice||'unspecified',
+    comment: $('reportComment').value.trim(),
+    date: todayStr()
+  });
+  S.reported.add(S.idx);
+  store.save(data);
+  $('reportModal').classList.remove('open');
+  renderSentence();
+  toast('Reported — thank you!');
+};
+
+/* ================= APP FEEDBACK MODAL ================= */
+let fbChoice = null;
+wireChoices('fbChoices', v=>fbChoice=v);
+$('appFbBtn').onclick = ()=>{
+  fbChoice=null; $('fbComment').value='';
+  document.querySelectorAll('#fbChoices .choice').forEach(x=>x.classList.remove('sel'));
+  $('fbModal').classList.add('open');
+};
+$('fbCancel').onclick = ()=>$('fbModal').classList.remove('open');
+$('fbSend').onclick = ()=>{
+  data.appFeedback.push({ type: fbChoice||'unspecified', comment: $('fbComment').value.trim(), date: todayStr() });
+  store.save(data);
+  $('fbModal').classList.remove('open');
+  toast('Grazie! Feedback saved.');
+};
+
+/* ================= SUPPORT MODAL ================= */
+$('supportBtn').onclick = ()=>$('supportModal').classList.add('open');
+$('supportClose').onclick = ()=>$('supportModal').classList.remove('open');
+document.querySelectorAll('[data-support]').forEach(a=>{
+  a.addEventListener('click', e=>{
+    if(a.getAttribute('href')==='#'){ e.preventDefault(); toast('Link coming soon'); }
+  });
+});
+
+/* ================= NATIVE: IAP + ADS (Capacitor app only) ================= */
+/* PWA/ブラウザでは Capacitor が無いので全て何もしない（安全にスキップ） */
+const Cap = window.Capacitor;
+const isNative = !!(Cap && Cap.isNativePlatform && Cap.isNativePlatform());
+const NP  = (isNative && Cap.Plugins) ? Cap.Plugins.NativePurchases : null;
+const Ads = (isNative && Cap.Plugins) ? Cap.Plugins.AdMob : null;
+
+/* --- 設定（★なおが差し替える場所★） --- */
+const IAP_IDS = {
+  removeAds: 'com.naotabi.ombra.remove_ads',          // App Store Connectで同じIDで商品登録すること
+  tip_small: 'com.naotabi.ombra.tip_small',
+  tip_medium:'com.naotabi.ombra.tip_medium',
+  tip_large: 'com.naotabi.ombra.tip_large'
+};
+const ADS_CFG = {
+  testing: true,                                       // ★AdMob本番ID設定後に false にする
+  bannerId: 'ca-app-pub-3940256099942544/2934735716'   // ★Googleの公式テスト用バナーID。本番IDに差し替える
+};
+
+function isAdFree(){ return !!data.adFree; }
+function setAdFree(v){ data.adFree = v; store.save(data); renderIap(); }
+
+/* --- IAP --- */
+const iapPrices = {};                                  // productId → localized price string
+async function loadProducts(){
+  if(!NP) return;
+  try{
+    const ids = Object.values(IAP_IDS);
+    const { products } = await NP.getProducts({ productIdentifiers: ids, productType: 'inapp' });
+    (products||[]).forEach(p=>{ iapPrices[p.identifier] = p.priceString || ''; });
+    renderIap();
+  }catch(e){ /* ストア接続不可（オフライン等）→ 価格なしで表示 */ }
+}
+function renderIap(){
+  if(!NP) return;
+  $('iapBtn').hidden = false;
+  $('iapBtn').textContent = isAdFree() ? 'Support Ombra' : 'Remove ads & support Ombra';
+  $('buyRemoveAds').hidden = isAdFree();
+  $('adFreeMsg').hidden = !isAdFree();
+  const pr = $('priceRemoveAds'); if(pr) pr.textContent = iapPrices[IAP_IDS.removeAds] ? `— ${iapPrices[IAP_IDS.removeAds]}` : '';
+  document.querySelectorAll('.tipPrice').forEach(s=>{
+    const id = IAP_IDS[s.dataset.p];
+    s.textContent = iapPrices[id] ? `— ${iapPrices[id]}` : '';
+  });
+}
+async function refreshEntitlements(){
+  if(!NP) return;
+  try{
+    const { purchases } = await NP.getPurchases({ productType: 'inapp' });
+    if((purchases||[]).some(p=>p.productIdentifier===IAP_IDS.removeAds)) setAdFree(true);
+    /* 見つからなくても自動で取り消さない（オフライン誤判定を防ぐ。取り消しはAppleの返金時のみ） */
+  }catch(e){}
+}
+$('iapBtn').onclick = ()=>{ renderIap(); $('iapModal').classList.add('open'); };
+$('iapClose').onclick = ()=>$('iapModal').classList.remove('open');
+$('buyRemoveAds').onclick = async ()=>{
+  if(!NP) return;
+  try{
+    await NP.purchaseProduct({ productIdentifier: IAP_IDS.removeAds, productType:'inapp', quantity:1 });
+    setAdFree(true);
+    toast('Ads removed — grazie mille!');
+  }catch(e){ /* キャンセル時は何もしない */ }
+};
+document.querySelectorAll('[data-tip]').forEach(b=>{
+  b.onclick = async ()=>{
+    if(!NP) return;
+    try{
+      await NP.purchaseProduct({ productIdentifier: IAP_IDS[b.dataset.tip], productType:'inapp', quantity:1, isConsumable:true });
+      $('iapModal').classList.remove('open');
+      toast('Grazie mille! ❤️');
+    }catch(e){}
+  };
+});
+$('restoreBtn').onclick = async ()=>{
+  if(!NP) return;
+  try{
+    await NP.restorePurchases();
+    await refreshEntitlements();
+    toast(isAdFree() ? 'Purchases restored' : 'No purchases to restore');
+  }catch(e){ toast('Could not restore purchases'); }
+};
+
+/* --- ADS（セッション完了画面のみ・広告非表示購入済みなら出さない） --- */
+let adsReady = false;
+async function initAds(){
+  if(!Ads || isAdFree()) return;
+  try{
+    await Ads.initialize({ initializeForTesting: ADS_CFG.testing });
+    adsReady = true;
+  }catch(e){}
+}
+async function showDoneAd(){
+  if(!Ads || !adsReady || isAdFree()) return;
+  try{
+    await Ads.showBanner({
+      adId: ADS_CFG.bannerId,
+      adSize: 'ADAPTIVE_BANNER',
+      position: 'BOTTOM_CENTER',
+      margin: 0,
+      isTesting: ADS_CFG.testing,
+      npa: true                                        // 非パーソナライズ広告のみ（プライバシー配慮）
+    });
+  }catch(e){}
+}
+async function hideDoneAd(){
+  if(!Ads) return;
+  try{ await Ads.removeBanner(); }catch(e){}
+}
+
+/* --- native startup --- */
+if(isNative){
+  renderIap();
+  loadProducts();
+  refreshEntitlements();
+  initAds();
+}
+
+/* re-acquire wake lock when returning to tab */
+document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='visible' && S.playing) keepAwake(); });
+
+/* PWA: register service worker (no-op when opened as a local file) */
+if('serviceWorker' in navigator && location.protocol.startsWith('http')){
+  window.addEventListener('load', ()=>{ navigator.serviceWorker.register('sw.js').catch(()=>{}); });
+}
+</script>
+</body>
+</html>

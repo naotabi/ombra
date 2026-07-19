@@ -1,0 +1,310 @@
+{
+ "id": "corso4",
+ "title": "La mia giornata",
+ "subtitle": "Daily routine & time",
+ "level": "A1",
+ "sentences": [
+  {
+   "id": "corso4-001",
+   "it": "Mi sveglio alle sette.",
+   "en": "I wake up at seven.",
+   "audio": "content/it/audio/corso4/001.mp3"
+  },
+  {
+   "id": "corso4-002",
+   "it": "Mi alzo subito.",
+   "en": "I get up right away.",
+   "audio": "content/it/audio/corso4/002.mp3"
+  },
+  {
+   "id": "corso4-003",
+   "it": "Faccio la doccia ogni mattina.",
+   "en": "I take a shower every morning.",
+   "audio": "content/it/audio/corso4/003.mp3"
+  },
+  {
+   "id": "corso4-004",
+   "it": "Mi vesto in fretta.",
+   "en": "I get dressed quickly.",
+   "audio": "content/it/audio/corso4/004.mp3"
+  },
+  {
+   "id": "corso4-005",
+   "it": "Bevo un caffè a casa.",
+   "en": "I drink a coffee at home.",
+   "audio": "content/it/audio/corso4/005.mp3"
+  },
+  {
+   "id": "corso4-006",
+   "it": "Esco di casa alle otto.",
+   "en": "I leave home at eight.",
+   "audio": "content/it/audio/corso4/006.mp3"
+  },
+  {
+   "id": "corso4-007",
+   "it": "Vado al lavoro in bici.",
+   "en": "I go to work by bike.",
+   "audio": "content/it/audio/corso4/007.mp3"
+  },
+  {
+   "id": "corso4-008",
+   "it": "Il viaggio dura venti minuti.",
+   "en": "The trip takes twenty minutes.",
+   "audio": "content/it/audio/corso4/008.mp3"
+  },
+  {
+   "id": "corso4-009",
+   "it": "Comincio alle nove in punto.",
+   "en": "I start at nine sharp.",
+   "audio": "content/it/audio/corso4/009.mp3"
+  },
+  {
+   "id": "corso4-010",
+   "it": "Ho una pausa a mezzogiorno.",
+   "en": "I have a break at noon.",
+   "audio": "content/it/audio/corso4/010.mp3"
+  },
+  {
+   "id": "corso4-011",
+   "it": "Pranzo con i colleghi.",
+   "en": "I have lunch with my colleagues.",
+   "audio": "content/it/audio/corso4/011.mp3"
+  },
+  {
+   "id": "corso4-012",
+   "it": "Il pomeriggio passa veloce.",
+   "en": "The afternoon goes by fast.",
+   "audio": "content/it/audio/corso4/012.mp3"
+  },
+  {
+   "id": "corso4-013",
+   "it": "Finisco alle sei di sera.",
+   "en": "I finish at six in the evening.",
+   "audio": "content/it/audio/corso4/013.mp3"
+  },
+  {
+   "id": "corso4-014",
+   "it": "Torno a casa stanco.",
+   "en": "I come home tired.",
+   "audio": "content/it/audio/corso4/014.mp3",
+   "g": "m",
+   "note": "She says: ... stanca."
+  },
+  {
+   "id": "corso4-015",
+   "it": "Prima faccio la spesa.",
+   "en": "First I do the grocery shopping.",
+   "audio": "content/it/audio/corso4/015.mp3"
+  },
+  {
+   "id": "corso4-016",
+   "it": "Cucino la cena per due.",
+   "en": "I cook dinner for two.",
+   "audio": "content/it/audio/corso4/016.mp3"
+  },
+  {
+   "id": "corso4-017",
+   "it": "Ceniamo alle otto.",
+   "en": "We have dinner at eight.",
+   "audio": "content/it/audio/corso4/017.mp3"
+  },
+  {
+   "id": "corso4-018",
+   "it": "Dopo cena guardo un film.",
+   "en": "After dinner I watch a movie.",
+   "audio": "content/it/audio/corso4/018.mp3"
+  },
+  {
+   "id": "corso4-019",
+   "it": "Leggo un libro a letto.",
+   "en": "I read a book in bed.",
+   "audio": "content/it/audio/corso4/019.mp3"
+  },
+  {
+   "id": "corso4-020",
+   "it": "Vado a dormire a mezzanotte.",
+   "en": "I go to sleep at midnight.",
+   "audio": "content/it/audio/corso4/020.mp3"
+  },
+  {
+   "id": "corso4-021",
+   "it": "Dormo otto ore.",
+   "en": "I sleep eight hours.",
+   "audio": "content/it/audio/corso4/021.mp3"
+  },
+  {
+   "id": "corso4-022",
+   "it": "Il sabato è diverso.",
+   "en": "Saturday is different.",
+   "audio": "content/it/audio/corso4/022.mp3"
+  },
+  {
+   "id": "corso4-023",
+   "it": "Resto a letto fino a tardi.",
+   "en": "I stay in bed until late.",
+   "audio": "content/it/audio/corso4/023.mp3"
+  },
+  {
+   "id": "corso4-024",
+   "it": "Faccio colazione con calma.",
+   "en": "I have breakfast without rushing.",
+   "audio": "content/it/audio/corso4/024.mp3"
+  },
+  {
+   "id": "corso4-025",
+   "it": "Pulisco la casa il weekend.",
+   "en": "I clean the house on weekends.",
+   "audio": "content/it/audio/corso4/025.mp3"
+  },
+  {
+   "id": "corso4-026",
+   "it": "Lavo i vestiti la domenica.",
+   "en": "I wash clothes on Sundays.",
+   "audio": "content/it/audio/corso4/026.mp3"
+  },
+  {
+   "id": "corso4-027",
+   "it": "Vado in palestra due volte a settimana.",
+   "en": "I go to the gym twice a week.",
+   "audio": "content/it/audio/corso4/027.mp3"
+  },
+  {
+   "id": "corso4-028",
+   "it": "Corro nel parco la mattina.",
+   "en": "I run in the park in the morning.",
+   "audio": "content/it/audio/corso4/028.mp3"
+  },
+  {
+   "id": "corso4-029",
+   "it": "Non ho mai tempo.",
+   "en": "I never have time.",
+   "audio": "content/it/audio/corso4/029.mp3"
+  },
+  {
+   "id": "corso4-030",
+   "it": "Ogni tanto arrivo tardi.",
+   "en": "Sometimes I arrive late.",
+   "audio": "content/it/audio/corso4/030.mp3"
+  },
+  {
+   "id": "corso4-031",
+   "it": "Di solito prendo il treno.",
+   "en": "I usually take the train.",
+   "audio": "content/it/audio/corso4/031.mp3"
+  },
+  {
+   "id": "corso4-032",
+   "it": "Oggi lavoro da casa.",
+   "en": "Today I work from home.",
+   "audio": "content/it/audio/corso4/032.mp3"
+  },
+  {
+   "id": "corso4-033",
+   "it": "La riunione è alle dieci.",
+   "en": "The meeting is at ten.",
+   "audio": "content/it/audio/corso4/033.mp3"
+  },
+  {
+   "id": "corso4-034",
+   "it": "Scrivo molte email.",
+   "en": "I write a lot of emails.",
+   "audio": "content/it/audio/corso4/034.mp3"
+  },
+  {
+   "id": "corso4-035",
+   "it": "Telefono a mia madre.",
+   "en": "I call my mother.",
+   "audio": "content/it/audio/corso4/035.mp3"
+  },
+  {
+   "id": "corso4-036",
+   "it": "Parliamo per un'ora.",
+   "en": "We talk for an hour.",
+   "audio": "content/it/audio/corso4/036.mp3"
+  },
+  {
+   "id": "corso4-037",
+   "it": "Porto fuori il cane.",
+   "en": "I take the dog out.",
+   "audio": "content/it/audio/corso4/037.mp3"
+  },
+  {
+   "id": "corso4-038",
+   "it": "Il mio gatto dorme sempre.",
+   "en": "My cat always sleeps.",
+   "audio": "content/it/audio/corso4/038.mp3"
+  },
+  {
+   "id": "corso4-039",
+   "it": "Innaffio le piante.",
+   "en": "I water the plants.",
+   "audio": "content/it/audio/corso4/039.mp3"
+  },
+  {
+   "id": "corso4-040",
+   "it": "Butto la spazzatura.",
+   "en": "I take out the trash.",
+   "audio": "content/it/audio/corso4/040.mp3"
+  },
+  {
+   "id": "corso4-041",
+   "it": "Controllo troppo il telefono.",
+   "en": "I check my phone too much.",
+   "audio": "content/it/audio/corso4/041.mp3"
+  },
+  {
+   "id": "corso4-042",
+   "it": "Stasera esco con gli amici.",
+   "en": "Tonight I'm going out with friends.",
+   "audio": "content/it/audio/corso4/042.mp3"
+  },
+  {
+   "id": "corso4-043",
+   "it": "Domani mi riposo.",
+   "en": "Tomorrow I'll rest.",
+   "audio": "content/it/audio/corso4/043.mp3"
+  },
+  {
+   "id": "corso4-044",
+   "it": "Che giornata lunga!",
+   "en": "What a long day!",
+   "audio": "content/it/audio/corso4/044.mp3"
+  },
+  {
+   "id": "corso4-045",
+   "it": "Non vedo l'ora del weekend.",
+   "en": "I can't wait for the weekend.",
+   "audio": "content/it/audio/corso4/045.mp3"
+  },
+  {
+   "id": "corso4-046",
+   "it": "Il lunedì è sempre difficile.",
+   "en": "Monday is always hard.",
+   "audio": "content/it/audio/corso4/046.mp3"
+  },
+  {
+   "id": "corso4-047",
+   "it": "A pranzo mangio un panino.",
+   "en": "For lunch I eat a sandwich.",
+   "audio": "content/it/audio/corso4/047.mp3"
+  },
+  {
+   "id": "corso4-048",
+   "it": "Ripasso le parole ogni sera.",
+   "en": "I review words every evening.",
+   "audio": "content/it/audio/corso4/048.mp3"
+  },
+  {
+   "id": "corso4-049",
+   "it": "Ascolto musica in cucina.",
+   "en": "I listen to music in the kitchen.",
+   "audio": "content/it/audio/corso4/049.mp3"
+  },
+  {
+   "id": "corso4-050",
+   "it": "Mi piace questa vita semplice.",
+   "en": "I like this simple life.",
+   "audio": "content/it/audio/corso4/050.mp3"
+  }
+ ]
+}

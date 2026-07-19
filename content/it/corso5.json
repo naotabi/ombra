@@ -1,0 +1,318 @@
+{
+ "id": "corso5",
+ "title": "Parlare di sé",
+ "subtitle": "Family, hobbies & weather",
+ "level": "A1",
+ "sentences": [
+  {
+   "id": "corso5-001",
+   "it": "Sono sposato da cinque anni.",
+   "en": "I've been married for five years.",
+   "audio": "content/it/audio/corso5/001.mp3",
+   "g": "m",
+   "note": "She says: Sono sposata ..."
+  },
+  {
+   "id": "corso5-002",
+   "it": "Abbiamo due figli piccoli.",
+   "en": "We have two small children.",
+   "audio": "content/it/audio/corso5/002.mp3"
+  },
+  {
+   "id": "corso5-003",
+   "it": "Mia figlia ha sei anni.",
+   "en": "My daughter is six years old.",
+   "audio": "content/it/audio/corso5/003.mp3"
+  },
+  {
+   "id": "corso5-004",
+   "it": "I miei genitori vivono al mare.",
+   "en": "My parents live by the sea.",
+   "audio": "content/it/audio/corso5/004.mp3"
+  },
+  {
+   "id": "corso5-005",
+   "it": "Mio nonno ha novant'anni.",
+   "en": "My grandfather is ninety years old.",
+   "audio": "content/it/audio/corso5/005.mp3"
+  },
+  {
+   "id": "corso5-006",
+   "it": "Siamo una famiglia allegra.",
+   "en": "We're a cheerful family.",
+   "audio": "content/it/audio/corso5/006.mp3"
+  },
+  {
+   "id": "corso5-007",
+   "it": "Vivo da solo in città.",
+   "en": "I live alone in the city.",
+   "audio": "content/it/audio/corso5/007.mp3",
+   "g": "m",
+   "note": "She says: ... da sola ..."
+  },
+  {
+   "id": "corso5-008",
+   "it": "Il mio appartamento è piccolo.",
+   "en": "My apartment is small.",
+   "audio": "content/it/audio/corso5/008.mp3"
+  },
+  {
+   "id": "corso5-009",
+   "it": "Ho un balcone con fiori.",
+   "en": "I have a balcony with flowers.",
+   "audio": "content/it/audio/corso5/009.mp3"
+  },
+  {
+   "id": "corso5-010",
+   "it": "Nel tempo libero dipingo.",
+   "en": "In my free time I paint.",
+   "audio": "content/it/audio/corso5/010.mp3"
+  },
+  {
+   "id": "corso5-011",
+   "it": "Suono la chitarra da poco.",
+   "en": "I've been playing guitar for a short time.",
+   "audio": "content/it/audio/corso5/011.mp3"
+  },
+  {
+   "id": "corso5-012",
+   "it": "Gioco a calcio il giovedì.",
+   "en": "I play soccer on Thursdays.",
+   "audio": "content/it/audio/corso5/012.mp3"
+  },
+  {
+   "id": "corso5-013",
+   "it": "Amo viaggiare in treno.",
+   "en": "I love traveling by train.",
+   "audio": "content/it/audio/corso5/013.mp3"
+  },
+  {
+   "id": "corso5-014",
+   "it": "Faccio molte fotografie.",
+   "en": "I take a lot of photos.",
+   "audio": "content/it/audio/corso5/014.mp3"
+  },
+  {
+   "id": "corso5-015",
+   "it": "Il mio hobby è cucinare.",
+   "en": "My hobby is cooking.",
+   "audio": "content/it/audio/corso5/015.mp3"
+  },
+  {
+   "id": "corso5-016",
+   "it": "Preparo una torta ogni domenica.",
+   "en": "I make a cake every Sunday.",
+   "audio": "content/it/audio/corso5/016.mp3"
+  },
+  {
+   "id": "corso5-017",
+   "it": "Colleziono cartoline vecchie.",
+   "en": "I collect old postcards.",
+   "audio": "content/it/audio/corso5/017.mp3"
+  },
+  {
+   "id": "corso5-018",
+   "it": "Mi interessa la storia.",
+   "en": "I'm interested in history.",
+   "audio": "content/it/audio/corso5/018.mp3"
+  },
+  {
+   "id": "corso5-019",
+   "it": "Guardo poco la televisione.",
+   "en": "I don't watch much TV.",
+   "audio": "content/it/audio/corso5/019.mp3"
+  },
+  {
+   "id": "corso5-020",
+   "it": "Preferisco i libri gialli.",
+   "en": "I prefer mystery novels.",
+   "audio": "content/it/audio/corso5/020.mp3"
+  },
+  {
+   "id": "corso5-021",
+   "it": "Che tempo fa oggi?",
+   "en": "What's the weather like today?",
+   "audio": "content/it/audio/corso5/021.mp3"
+  },
+  {
+   "id": "corso5-022",
+   "it": "C'è il sole ma fa freddo.",
+   "en": "It's sunny but cold.",
+   "audio": "content/it/audio/corso5/022.mp3"
+  },
+  {
+   "id": "corso5-023",
+   "it": "Piove da tre giorni.",
+   "en": "It's been raining for three days.",
+   "audio": "content/it/audio/corso5/023.mp3"
+  },
+  {
+   "id": "corso5-024",
+   "it": "Domani arriva la neve.",
+   "en": "Tomorrow the snow is coming.",
+   "audio": "content/it/audio/corso5/024.mp3"
+  },
+  {
+   "id": "corso5-025",
+   "it": "Odio il vento forte.",
+   "en": "I hate strong wind.",
+   "audio": "content/it/audio/corso5/025.mp3"
+  },
+  {
+   "id": "corso5-026",
+   "it": "In estate fa molto caldo.",
+   "en": "In summer it's very hot.",
+   "audio": "content/it/audio/corso5/026.mp3"
+  },
+  {
+   "id": "corso5-027",
+   "it": "La primavera è la mia stagione.",
+   "en": "Spring is my season.",
+   "audio": "content/it/audio/corso5/027.mp3"
+  },
+  {
+   "id": "corso5-028",
+   "it": "Sono contento del mio lavoro.",
+   "en": "I'm happy with my job.",
+   "audio": "content/it/audio/corso5/028.mp3",
+   "g": "m",
+   "note": "She says: Sono contenta ..."
+  },
+  {
+   "id": "corso5-029",
+   "it": "A volte sono un po' pigro.",
+   "en": "Sometimes I'm a bit lazy.",
+   "audio": "content/it/audio/corso5/029.mp3",
+   "g": "m",
+   "note": "She says: ... pigra."
+  },
+  {
+   "id": "corso5-030",
+   "it": "Sono una persona curiosa.",
+   "en": "I'm a curious person.",
+   "audio": "content/it/audio/corso5/030.mp3"
+  },
+  {
+   "id": "corso5-031",
+   "it": "Parlo tre lingue.",
+   "en": "I speak three languages.",
+   "audio": "content/it/audio/corso5/031.mp3"
+  },
+  {
+   "id": "corso5-032",
+   "it": "Imparo parole nuove ogni giorno.",
+   "en": "I learn new words every day.",
+   "audio": "content/it/audio/corso5/032.mp3"
+  },
+  {
+   "id": "corso5-033",
+   "it": "Il mio sogno è vivere in Italia.",
+   "en": "My dream is to live in Italy.",
+   "audio": "content/it/audio/corso5/033.mp3"
+  },
+  {
+   "id": "corso5-034",
+   "it": "Vengo in Italia ogni anno.",
+   "en": "I come to Italy every year.",
+   "audio": "content/it/audio/corso5/034.mp3"
+  },
+  {
+   "id": "corso5-035",
+   "it": "Conosco bene Venezia.",
+   "en": "I know Venice well.",
+   "audio": "content/it/audio/corso5/035.mp3"
+  },
+  {
+   "id": "corso5-036",
+   "it": "Il mare mi rilassa.",
+   "en": "The sea relaxes me.",
+   "audio": "content/it/audio/corso5/036.mp3"
+  },
+  {
+   "id": "corso5-037",
+   "it": "Ho paura dei ragni.",
+   "en": "I'm afraid of spiders.",
+   "audio": "content/it/audio/corso5/037.mp3"
+  },
+  {
+   "id": "corso5-038",
+   "it": "Non mangio carne rossa.",
+   "en": "I don't eat red meat.",
+   "audio": "content/it/audio/corso5/038.mp3"
+  },
+  {
+   "id": "corso5-039",
+   "it": "Bevo solo acqua e tè.",
+   "en": "I drink only water and tea.",
+   "audio": "content/it/audio/corso5/039.mp3"
+  },
+  {
+   "id": "corso5-040",
+   "it": "Il caffè mi tiene sveglio.",
+   "en": "Coffee keeps me awake.",
+   "audio": "content/it/audio/corso5/040.mp3"
+  },
+  {
+   "id": "corso5-041",
+   "it": "Mia moglie lavora in ospedale.",
+   "en": "My wife works at the hospital.",
+   "audio": "content/it/audio/corso5/041.mp3",
+   "g": "m",
+   "note": "Or: Mio marito ... (my husband)"
+  },
+  {
+   "id": "corso5-042",
+   "it": "Mio cugino vive in Germania.",
+   "en": "My cousin lives in Germany.",
+   "audio": "content/it/audio/corso5/042.mp3"
+  },
+  {
+   "id": "corso5-043",
+   "it": "Ho tanti amici stranieri.",
+   "en": "I have many foreign friends.",
+   "audio": "content/it/audio/corso5/043.mp3"
+  },
+  {
+   "id": "corso5-044",
+   "it": "Scrivo un diario in italiano.",
+   "en": "I write a diary in Italian.",
+   "audio": "content/it/audio/corso5/044.mp3"
+  },
+  {
+   "id": "corso5-045",
+   "it": "La musica italiana mi piace molto.",
+   "en": "I really like Italian music.",
+   "audio": "content/it/audio/corso5/045.mp3"
+  },
+  {
+   "id": "corso5-046",
+   "it": "Canto sotto la doccia.",
+   "en": "I sing in the shower.",
+   "audio": "content/it/audio/corso5/046.mp3"
+  },
+  {
+   "id": "corso5-047",
+   "it": "Il weekend visito i musei.",
+   "en": "On weekends I visit museums.",
+   "audio": "content/it/audio/corso5/047.mp3"
+  },
+  {
+   "id": "corso5-048",
+   "it": "Sogno di parlare bene l'italiano.",
+   "en": "I dream of speaking Italian well.",
+   "audio": "content/it/audio/corso5/048.mp3"
+  },
+  {
+   "id": "corso5-049",
+   "it": "Ogni giorno faccio un piccolo passo.",
+   "en": "Every day I take a small step.",
+   "audio": "content/it/audio/corso5/049.mp3"
+  },
+  {
+   "id": "corso5-050",
+   "it": "Questa è la mia vita.",
+   "en": "This is my life.",
+   "audio": "content/it/audio/corso5/050.mp3"
+  }
+ ]
+}

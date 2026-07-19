@@ -1,0 +1,316 @@
+{
+ "id": "corso8",
+ "title": "Salute e benessere",
+ "subtitle": "Health & how you feel",
+ "level": "A1",
+ "sentences": [
+  {
+   "id": "corso8-001",
+   "it": "Come ti senti oggi?",
+   "en": "How do you feel today?",
+   "audio": "content/it/audio/corso8/001.mp3"
+  },
+  {
+   "id": "corso8-002",
+   "it": "Non mi sento bene.",
+   "en": "I don't feel well.",
+   "audio": "content/it/audio/corso8/002.mp3"
+  },
+  {
+   "id": "corso8-003",
+   "it": "Ho mal di testa.",
+   "en": "I have a headache.",
+   "audio": "content/it/audio/corso8/003.mp3"
+  },
+  {
+   "id": "corso8-004",
+   "it": "Ho anche mal di gola.",
+   "en": "I also have a sore throat.",
+   "audio": "content/it/audio/corso8/004.mp3"
+  },
+  {
+   "id": "corso8-005",
+   "it": "Forse ho la febbre.",
+   "en": "Maybe I have a fever.",
+   "audio": "content/it/audio/corso8/005.mp3"
+  },
+  {
+   "id": "corso8-006",
+   "it": "Ho misurato la temperatura.",
+   "en": "I took my temperature.",
+   "audio": "content/it/audio/corso8/006.mp3"
+  },
+  {
+   "id": "corso8-007",
+   "it": "Trentotto e mezzo, è alta.",
+   "en": "Thirty-eight point five, it's high.",
+   "audio": "content/it/audio/corso8/007.mp3"
+  },
+  {
+   "id": "corso8-008",
+   "it": "Devo restare a letto.",
+   "en": "I have to stay in bed.",
+   "audio": "content/it/audio/corso8/008.mp3"
+  },
+  {
+   "id": "corso8-009",
+   "it": "Hai preso una medicina?",
+   "en": "Did you take any medicine?",
+   "audio": "content/it/audio/corso8/009.mp3"
+  },
+  {
+   "id": "corso8-010",
+   "it": "Prendo la medicina dopo i pasti.",
+   "en": "I take the medicine after meals.",
+   "audio": "content/it/audio/corso8/010.mp3"
+  },
+  {
+   "id": "corso8-011",
+   "it": "Mi fa male la schiena.",
+   "en": "My back hurts.",
+   "audio": "content/it/audio/corso8/011.mp3"
+  },
+  {
+   "id": "corso8-012",
+   "it": "Le gambe sono pesanti oggi.",
+   "en": "My legs feel heavy today.",
+   "audio": "content/it/audio/corso8/012.mp3"
+  },
+  {
+   "id": "corso8-013",
+   "it": "Ho camminato troppo ieri.",
+   "en": "I walked too much yesterday.",
+   "audio": "content/it/audio/corso8/013.mp3"
+  },
+  {
+   "id": "corso8-014",
+   "it": "Devo andare dal medico.",
+   "en": "I have to go to the doctor.",
+   "audio": "content/it/audio/corso8/014.mp3"
+  },
+  {
+   "id": "corso8-015",
+   "it": "Il dottore può vedermi oggi?",
+   "en": "Can the doctor see me today?",
+   "audio": "content/it/audio/corso8/015.mp3"
+  },
+  {
+   "id": "corso8-016",
+   "it": "Ho un appuntamento alle undici.",
+   "en": "I have an appointment at eleven.",
+   "audio": "content/it/audio/corso8/016.mp3"
+  },
+  {
+   "id": "corso8-017",
+   "it": "La sala d'aspetto è piena.",
+   "en": "The waiting room is full.",
+   "audio": "content/it/audio/corso8/017.mp3"
+  },
+  {
+   "id": "corso8-018",
+   "it": "Respiri profondamente, per favore.",
+   "en": "Breathe deeply, please.",
+   "audio": "content/it/audio/corso8/018.mp3"
+  },
+  {
+   "id": "corso8-019",
+   "it": "Apra la bocca, per favore.",
+   "en": "Open your mouth, please.",
+   "audio": "content/it/audio/corso8/019.mp3"
+  },
+  {
+   "id": "corso8-020",
+   "it": "È solo un raffreddore.",
+   "en": "It's just a cold.",
+   "audio": "content/it/audio/corso8/020.mp3"
+  },
+  {
+   "id": "corso8-021",
+   "it": "Ho il naso chiuso.",
+   "en": "My nose is blocked.",
+   "audio": "content/it/audio/corso8/021.mp3"
+  },
+  {
+   "id": "corso8-022",
+   "it": "Ho la tosse da tre giorni.",
+   "en": "I've had a cough for three days.",
+   "audio": "content/it/audio/corso8/022.mp3"
+  },
+  {
+   "id": "corso8-023",
+   "it": "Mi gira la testa.",
+   "en": "I feel dizzy.",
+   "audio": "content/it/audio/corso8/023.mp3"
+  },
+  {
+   "id": "corso8-024",
+   "it": "Le arance hanno tanta vitamina C.",
+   "en": "Oranges have a lot of vitamin C.",
+   "audio": "content/it/audio/corso8/024.mp3"
+  },
+  {
+   "id": "corso8-025",
+   "it": "Bevi molta acqua calda.",
+   "en": "Drink plenty of warm water.",
+   "audio": "content/it/audio/corso8/025.mp3"
+  },
+  {
+   "id": "corso8-026",
+   "it": "Il riposo è la cura migliore.",
+   "en": "Rest is the best cure.",
+   "audio": "content/it/audio/corso8/026.mp3"
+  },
+  {
+   "id": "corso8-027",
+   "it": "Mi sento già meglio.",
+   "en": "I already feel better.",
+   "audio": "content/it/audio/corso8/027.mp3"
+  },
+  {
+   "id": "corso8-028",
+   "it": "Sono guarito in una settimana.",
+   "en": "I recovered in a week.",
+   "audio": "content/it/audio/corso8/028.mp3",
+   "g": "m",
+   "note": "She says: Sono guarita ..."
+  },
+  {
+   "id": "corso8-029",
+   "it": "Lo sport fa bene alla salute.",
+   "en": "Sport is good for your health.",
+   "audio": "content/it/audio/corso8/029.mp3"
+  },
+  {
+   "id": "corso8-030",
+   "it": "Faccio ginnastica ogni mattina.",
+   "en": "I exercise every morning.",
+   "audio": "content/it/audio/corso8/030.mp3"
+  },
+  {
+   "id": "corso8-031",
+   "it": "Mangio tanta frutta e verdura.",
+   "en": "I eat lots of fruit and vegetables.",
+   "audio": "content/it/audio/corso8/031.mp3"
+  },
+  {
+   "id": "corso8-032",
+   "it": "Dormo poco e male.",
+   "en": "I sleep little and badly.",
+   "audio": "content/it/audio/corso8/032.mp3"
+  },
+  {
+   "id": "corso8-033",
+   "it": "Sono sempre stressato per il lavoro.",
+   "en": "I'm always stressed about work.",
+   "audio": "content/it/audio/corso8/033.mp3",
+   "g": "m",
+   "note": "She says: ... stressata ..."
+  },
+  {
+   "id": "corso8-034",
+   "it": "Ho bisogno di una pausa.",
+   "en": "I need a break.",
+   "audio": "content/it/audio/corso8/034.mp3"
+  },
+  {
+   "id": "corso8-035",
+   "it": "Oggi ho molta energia.",
+   "en": "Today I have a lot of energy.",
+   "audio": "content/it/audio/corso8/035.mp3"
+  },
+  {
+   "id": "corso8-036",
+   "it": "Il mio cuore batte forte.",
+   "en": "My heart is beating fast.",
+   "audio": "content/it/audio/corso8/036.mp3"
+  },
+  {
+   "id": "corso8-037",
+   "it": "Sono caduto dalla bici.",
+   "en": "I fell off my bike.",
+   "audio": "content/it/audio/corso8/037.mp3",
+   "g": "m",
+   "note": "She says: Sono caduta ..."
+  },
+  {
+   "id": "corso8-038",
+   "it": "Mi sono fatto male al braccio.",
+   "en": "I hurt my arm.",
+   "audio": "content/it/audio/corso8/038.mp3",
+   "g": "m",
+   "note": "She says: ... fatta male ..."
+  },
+  {
+   "id": "corso8-039",
+   "it": "Non è rotto, per fortuna.",
+   "en": "It's not broken, luckily.",
+   "audio": "content/it/audio/corso8/039.mp3"
+  },
+  {
+   "id": "corso8-040",
+   "it": "Ho gli occhi stanchi.",
+   "en": "My eyes are tired.",
+   "audio": "content/it/audio/corso8/040.mp3"
+  },
+  {
+   "id": "corso8-041",
+   "it": "Guardo troppo lo schermo.",
+   "en": "I look at the screen too much.",
+   "audio": "content/it/audio/corso8/041.mp3"
+  },
+  {
+   "id": "corso8-042",
+   "it": "Porto gli occhiali da un anno.",
+   "en": "I've worn glasses for a year.",
+   "audio": "content/it/audio/corso8/042.mp3"
+  },
+  {
+   "id": "corso8-043",
+   "it": "Il dentista mi aspetta domani.",
+   "en": "The dentist is expecting me tomorrow.",
+   "audio": "content/it/audio/corso8/043.mp3"
+  },
+  {
+   "id": "corso8-044",
+   "it": "Ho paura del dentista.",
+   "en": "I'm afraid of the dentist.",
+   "audio": "content/it/audio/corso8/044.mp3"
+  },
+  {
+   "id": "corso8-045",
+   "it": "Un dente mi fa male.",
+   "en": "One of my teeth hurts.",
+   "audio": "content/it/audio/corso8/045.mp3"
+  },
+  {
+   "id": "corso8-046",
+   "it": "Mi lavo i denti tre volte al giorno.",
+   "en": "I brush my teeth three times a day.",
+   "audio": "content/it/audio/corso8/046.mp3"
+  },
+  {
+   "id": "corso8-047",
+   "it": "La farmacia è aperta fino alle otto.",
+   "en": "The pharmacy is open until eight.",
+   "audio": "content/it/audio/corso8/047.mp3"
+  },
+  {
+   "id": "corso8-048",
+   "it": "Serve la ricetta per questo?",
+   "en": "Do I need a prescription for this?",
+   "audio": "content/it/audio/corso8/048.mp3"
+  },
+  {
+   "id": "corso8-049",
+   "it": "Guarisci presto!",
+   "en": "Get well soon!",
+   "audio": "content/it/audio/corso8/049.mp3"
+  },
+  {
+   "id": "corso8-050",
+   "it": "La salute prima di tutto.",
+   "en": "Health comes first.",
+   "audio": "content/it/audio/corso8/050.mp3"
+  }
+ ]
+}
