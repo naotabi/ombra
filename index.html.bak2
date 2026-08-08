@@ -622,17 +622,13 @@ $('flagBtn').onclick = ()=>{
 };
 $('reportCancel').onclick = ()=>$('reportModal').classList.remove('open');
 $('reportSend').onclick = ()=>{
-  const _rep = {
+  data.reports.push({
     sentence: S.list[S.idx][0],
     course: settings.course,
     reason: reportChoice||'unspecified',
     comment: $('reportComment').value.trim(),
-    date: todayStr(),
-    sent: false
-  };
-  data.reports.push(_rep);
-  sendFeedback({ kind:'report', type:_rep.reason, sentence:_rep.sentence, course:_rep.course, comment:_rep.comment })
-    .then(ok=>{ if(ok){ _rep.sent = true; store.save(data); } });
+    date: todayStr()
+  });
   S.reported.add(S.idx);
   store.save(data);
   $('reportModal').classList.remove('open');
@@ -651,10 +647,7 @@ $('appFbBtn').onclick = ()=>{
 };
 $('fbCancel').onclick = ()=>$('fbModal').classList.remove('open');
 $('fbSend').onclick = ()=>{
-  const _fb = { type: fbChoice||'unspecified', comment: $('fbComment').value.trim(), date: todayStr(), sent: false };
-  data.appFeedback.push(_fb);
-  sendFeedback({ kind:'feedback', type:_fb.type, comment:_fb.comment })
-    .then(ok=>{ if(ok){ _fb.sent = true; store.save(data); } });
+  data.appFeedback.push({ type: fbChoice||'unspecified', comment: $('fbComment').value.trim(), date: todayStr() });
   store.save(data);
   $('fbModal').classList.remove('open');
   track('app_feedback_sent', { type: fbChoice||'unspecified', has_comment: $('fbComment').value.trim() ? 1 : 0 });
@@ -743,59 +736,6 @@ function maybeAskReview(){
       try{ (REV.requestReview || REV.requestReviewNow).call(REV); }catch(e){}
       track('review_prompted', { sessions: data.sessions });
     }, 1400);
-  }catch(e){}
-}
-
-/* ================= フィードバック送信（Cloudflare Worker → Discord） =================
-   ・Webhook URL はアプリに入れない。Worker側の Secret に置く
-   ・送信できなくても端末には必ず残り、次回起動時に自動リトライする
-   ・ユーザーが自分で書いて送信ボタンを押したときだけ送る */
-/* ⚠️ このリポジトリは Public。URLとキーを直接書かないこと。
-   値は ombra-app/feedback.config.json（git管理外）から、
-   npm run sync のときに www/index.html へ注入される。
-   → GitHub Pages版（PWA）では空のままなので送信は自動的に無効になる。 */
-const FEEDBACK_CFG = {
-  url: '__FEEDBACK_URL__',
-  key: '__FEEDBACK_KEY__'
-};
-if(FEEDBACK_CFG.url.indexOf('__') === 0) FEEDBACK_CFG.url = '';   // 未注入なら無効化
-if(FEEDBACK_CFG.key.indexOf('__') === 0) FEEDBACK_CFG.key = '';
-const APP_VERSION = '1.0.1';     // ★リリースごとに更新
-
-function feedbackEnabled(){ return !!(FEEDBACK_CFG.url && FEEDBACK_CFG.key); }
-
-async function sendFeedback(payload){
-  try{
-    if(!feedbackEnabled()) return false;
-    const res = await fetch(FEEDBACK_CFG.url, {
-      method: 'POST',
-      headers: { 'content-type':'application/json', 'x-ombra-key': FEEDBACK_CFG.key },
-      body: JSON.stringify(Object.assign({
-        version: APP_VERSION,
-        platform: isNative ? 'ios' : 'web'
-      }, payload))
-    });
-    return res.ok;
-  }catch(e){ return false; }
-}
-
-/* 未送信ぶんの再送（起動時に静かに実行。1回あたり最大5件） */
-async function flushPendingFeedback(){
-  try{
-    if(!feedbackEnabled()) return;
-    const queue = [];
-    (data.reports||[]).forEach(r=>{ if(!r.sent) queue.push(['report', r]); });
-    (data.appFeedback||[]).forEach(r=>{ if(!r.sent) queue.push(['feedback', r]); });
-    if(!queue.length) return;
-    let changed = false;
-    for(const [kind, r] of queue.slice(0, 5)){
-      const ok = await sendFeedback(kind === 'report'
-        ? { kind:'report', type:r.reason, sentence:r.sentence, course:r.course, comment:r.comment }
-        : { kind:'feedback', type:r.type, comment:r.comment });
-      if(ok){ r.sent = true; changed = true; }
-      else break;                                  // 落ちているなら諦めて次回に回す
-    }
-    if(changed) store.save(data);
   }catch(e){}
 }
 
@@ -909,9 +849,6 @@ if(isNative){
   initAds();
   initAnalytics();
 }
-
-/* 未送信フィードバックの再送（起動から少し置いて、静かに） */
-setTimeout(()=>{ flushPendingFeedback(); }, 4000);
 
 /* re-acquire wake lock when returning to tab */
 document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='visible' && S.playing) keepAwake(); });
