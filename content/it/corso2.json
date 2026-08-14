@@ -1,309 +1,316 @@
 {
+ "_schema": "ombra.course/1",
  "id": "corso2",
- "title": "Al bar e al ristorante",
- "subtitle": "Ordering food & drinks",
+ "target": "it",
  "level": "A1",
- "sentences": [
+ "order": 2,
+ "title": "Al bar e al ristorante",
+ "subtitle": {
+  "en": "Ordering food & drinks"
+ },
+ "items": [
   {
    "id": "corso2-001",
-   "it": "Un tavolo per due, per favore.",
-   "en": "A table for two, please.",
+   "concept": "c0051",
+   "text": "Un tavolo per due, per favore.",
    "audio": "content/it/audio/corso2/001.mp3"
   },
   {
    "id": "corso2-002",
-   "it": "Avete un menù in inglese?",
-   "en": "Do you have a menu in English?",
+   "concept": "c0052",
+   "text": "Avete un menù in inglese?",
    "audio": "content/it/audio/corso2/002.mp3"
   },
   {
    "id": "corso2-003",
-   "it": "Cosa mi consiglia?",
-   "en": "What do you recommend?",
+   "concept": "c0053",
+   "text": "Cosa mi consiglia?",
    "audio": "content/it/audio/corso2/003.mp3"
   },
   {
    "id": "corso2-004",
-   "it": "Prendo una pizza margherita.",
-   "en": "I'll have a margherita pizza.",
+   "concept": "c0054",
+   "text": "Prendo una pizza margherita.",
    "audio": "content/it/audio/corso2/004.mp3"
   },
   {
    "id": "corso2-005",
-   "it": "Per me, un bicchiere di vino rosso.",
-   "en": "For me, a glass of red wine.",
+   "concept": "c0055",
+   "text": "Per me, un bicchiere di vino rosso.",
    "audio": "content/it/audio/corso2/005.mp3"
   },
   {
    "id": "corso2-006",
-   "it": "Vorrei dell'acqua naturale.",
-   "en": "I'd like still water.",
+   "concept": "c0056",
+   "text": "Vorrei dell'acqua naturale.",
    "audio": "content/it/audio/corso2/006.mp3"
   },
   {
    "id": "corso2-007",
-   "it": "L'acqua frizzante, per favore.",
-   "en": "Sparkling water, please.",
+   "concept": "c0057",
+   "text": "L'acqua frizzante, per favore.",
    "audio": "content/it/audio/corso2/007.mp3"
   },
   {
    "id": "corso2-008",
-   "it": "Qual è il piatto del giorno?",
-   "en": "What's the dish of the day?",
+   "concept": "c0058",
+   "text": "Qual è il piatto del giorno?",
    "audio": "content/it/audio/corso2/008.mp3"
   },
   {
    "id": "corso2-009",
-   "it": "Sono vegetariano.",
-   "en": "I'm vegetarian.",
+   "concept": "c0059",
+   "text": "Sono vegetariano.",
    "audio": "content/it/audio/corso2/009.mp3",
    "g": "m",
-   "note": "She says: Sono vegetariana."
+   "note": {
+    "en": "She says: Sono vegetariana."
+   }
   },
   {
    "id": "corso2-010",
-   "it": "Senza cipolla, per favore.",
-   "en": "Without onion, please.",
+   "concept": "c0060",
+   "text": "Senza cipolla, per favore.",
    "audio": "content/it/audio/corso2/010.mp3"
   },
   {
    "id": "corso2-011",
-   "it": "Il pesce è fresco?",
-   "en": "Is the fish fresh?",
+   "concept": "c0061",
+   "text": "Il pesce è fresco?",
    "audio": "content/it/audio/corso2/011.mp3"
   },
   {
    "id": "corso2-012",
-   "it": "Un caffè macchiato, grazie.",
-   "en": "A macchiato, thanks.",
+   "concept": "c0062",
+   "text": "Un caffè macchiato, grazie.",
    "audio": "content/it/audio/corso2/012.mp3"
   },
   {
    "id": "corso2-013",
-   "it": "Posso avere ancora pane?",
-   "en": "Can I have more bread?",
+   "concept": "c0063",
+   "text": "Posso avere ancora pane?",
    "audio": "content/it/audio/corso2/013.mp3"
   },
   {
    "id": "corso2-014",
-   "it": "Questo è delizioso!",
-   "en": "This is delicious!",
+   "concept": "c0064",
+   "text": "Questo è delizioso!",
    "audio": "content/it/audio/corso2/014.mp3"
   },
   {
    "id": "corso2-015",
-   "it": "La pasta è troppo salata.",
-   "en": "The pasta is too salty.",
+   "concept": "c0065",
+   "text": "La pasta è troppo salata.",
    "audio": "content/it/audio/corso2/015.mp3"
   },
   {
    "id": "corso2-016",
-   "it": "Un gelato al cioccolato, per favore.",
-   "en": "A chocolate ice cream, please.",
+   "concept": "c0066",
+   "text": "Un gelato al cioccolato, per favore.",
    "audio": "content/it/audio/corso2/016.mp3"
   },
   {
    "id": "corso2-017",
-   "it": "Che gusti avete?",
-   "en": "What flavors do you have?",
+   "concept": "c0067",
+   "text": "Che gusti avete?",
    "audio": "content/it/audio/corso2/017.mp3"
   },
   {
    "id": "corso2-018",
-   "it": "Prendiamo un antipasto da dividere.",
-   "en": "We'll have an appetizer to share.",
+   "concept": "c0068",
+   "text": "Prendiamo un antipasto da dividere.",
    "audio": "content/it/audio/corso2/018.mp3"
   },
   {
    "id": "corso2-019",
-   "it": "A che ora chiudete?",
-   "en": "What time do you close?",
+   "concept": "c0069",
+   "text": "A che ora chiudete?",
    "audio": "content/it/audio/corso2/019.mp3"
   },
   {
    "id": "corso2-020",
-   "it": "È libero questo tavolo?",
-   "en": "Is this table free?",
+   "concept": "c0070",
+   "text": "È libero questo tavolo?",
    "audio": "content/it/audio/corso2/020.mp3"
   },
   {
    "id": "corso2-021",
-   "it": "Possiamo sederci fuori?",
-   "en": "Can we sit outside?",
+   "concept": "c0071",
+   "text": "Possiamo sederci fuori?",
    "audio": "content/it/audio/corso2/021.mp3"
   },
   {
    "id": "corso2-022",
-   "it": "Il servizio è incluso?",
-   "en": "Is service included?",
+   "concept": "c0072",
+   "text": "Il servizio è incluso?",
    "audio": "content/it/audio/corso2/022.mp3"
   },
   {
    "id": "corso2-023",
-   "it": "Posso pagare con la carta?",
-   "en": "Can I pay by card?",
+   "concept": "c0073",
+   "text": "Posso pagare con la carta?",
    "audio": "content/it/audio/corso2/023.mp3"
   },
   {
    "id": "corso2-024",
-   "it": "Solo contanti, mi dispiace.",
-   "en": "Cash only, I'm sorry.",
+   "concept": "c0074",
+   "text": "Solo contanti, mi dispiace.",
    "audio": "content/it/audio/corso2/024.mp3"
   },
   {
    "id": "corso2-025",
-   "it": "Tenga il resto.",
-   "en": "Keep the change.",
+   "concept": "c0075",
+   "text": "Tenga il resto.",
    "audio": "content/it/audio/corso2/025.mp3"
   },
   {
    "id": "corso2-026",
-   "it": "Era tutto buonissimo.",
-   "en": "Everything was very good.",
+   "concept": "c0076",
+   "text": "Era tutto buonissimo.",
    "audio": "content/it/audio/corso2/026.mp3"
   },
   {
    "id": "corso2-027",
-   "it": "Ho prenotato per le otto.",
-   "en": "I booked for eight o'clock.",
+   "concept": "c0077",
+   "text": "Ho prenotato per le otto.",
    "audio": "content/it/audio/corso2/027.mp3"
   },
   {
    "id": "corso2-028",
-   "it": "Siamo in quattro.",
-   "en": "There are four of us.",
+   "concept": "c0078",
+   "text": "Siamo in quattro.",
    "audio": "content/it/audio/corso2/028.mp3"
   },
   {
    "id": "corso2-029",
-   "it": "Aspettiamo un amico.",
-   "en": "We're waiting for a friend.",
+   "concept": "c0079",
+   "text": "Aspettiamo un amico.",
    "audio": "content/it/audio/corso2/029.mp3"
   },
   {
    "id": "corso2-030",
-   "it": "Prendo il dolce dopo.",
-   "en": "I'll have dessert later.",
+   "concept": "c0080",
+   "text": "Prendo il dolce dopo.",
    "audio": "content/it/audio/corso2/030.mp3"
   },
   {
    "id": "corso2-031",
-   "it": "Cameriere, scusi!",
-   "en": "Waiter, excuse me!",
+   "concept": "c0081",
+   "text": "Cameriere, scusi!",
    "audio": "content/it/audio/corso2/031.mp3"
   },
   {
    "id": "corso2-032",
-   "it": "Manca una forchetta.",
-   "en": "A fork is missing.",
+   "concept": "c0082",
+   "text": "Manca una forchetta.",
    "audio": "content/it/audio/corso2/032.mp3"
   },
   {
    "id": "corso2-033",
-   "it": "Mi porta il conto?",
-   "en": "Will you bring me the bill?",
+   "concept": "c0083",
+   "text": "Mi porta il conto?",
    "audio": "content/it/audio/corso2/033.mp3"
   },
   {
    "id": "corso2-034",
-   "it": "Facciamo alla romana.",
-   "en": "Let's split the bill.",
+   "concept": "c0084",
+   "text": "Facciamo alla romana.",
    "audio": "content/it/audio/corso2/034.mp3"
   },
   {
    "id": "corso2-035",
-   "it": "Offro io.",
-   "en": "It's my treat.",
+   "concept": "c0085",
+   "text": "Offro io.",
    "audio": "content/it/audio/corso2/035.mp3"
   },
   {
    "id": "corso2-036",
-   "it": "Vuoi assaggiare il mio?",
-   "en": "Do you want to taste mine?",
+   "concept": "c0086",
+   "text": "Vuoi assaggiare il mio?",
    "audio": "content/it/audio/corso2/036.mp3"
   },
   {
    "id": "corso2-037",
-   "it": "Non bevo alcolici.",
-   "en": "I don't drink alcohol.",
+   "concept": "c0087",
+   "text": "Non bevo alcolici.",
    "audio": "content/it/audio/corso2/037.mp3"
   },
   {
    "id": "corso2-038",
-   "it": "Una birra piccola, per favore.",
-   "en": "A small beer, please.",
+   "concept": "c0088",
+   "text": "Una birra piccola, per favore.",
    "audio": "content/it/audio/corso2/038.mp3"
   },
   {
    "id": "corso2-039",
-   "it": "Il cappuccino è per me.",
-   "en": "The cappuccino is for me.",
+   "concept": "c0089",
+   "text": "Il cappuccino è per me.",
    "audio": "content/it/audio/corso2/039.mp3"
   },
   {
    "id": "corso2-040",
-   "it": "Faccio colazione al bar.",
-   "en": "I have breakfast at the café.",
+   "concept": "c0090",
+   "text": "Faccio colazione al bar.",
    "audio": "content/it/audio/corso2/040.mp3"
   },
   {
    "id": "corso2-041",
-   "it": "Un cornetto e un succo, grazie.",
-   "en": "A croissant and a juice, thanks.",
+   "concept": "c0091",
+   "text": "Un cornetto e un succo, grazie.",
    "audio": "content/it/audio/corso2/041.mp3"
   },
   {
    "id": "corso2-042",
-   "it": "C'è troppo zucchero.",
-   "en": "There's too much sugar.",
+   "concept": "c0092",
+   "text": "C'è troppo zucchero.",
    "audio": "content/it/audio/corso2/042.mp3"
   },
   {
    "id": "corso2-043",
-   "it": "Preferisco il tè al caffè.",
-   "en": "I prefer tea to coffee.",
+   "concept": "c0093",
+   "text": "Preferisco il tè al caffè.",
    "audio": "content/it/audio/corso2/043.mp3"
   },
   {
    "id": "corso2-044",
-   "it": "Che cosa prendi tu?",
-   "en": "What are you having?",
+   "concept": "c0094",
+   "text": "Che cosa prendi tu?",
    "audio": "content/it/audio/corso2/044.mp3"
   },
   {
    "id": "corso2-045",
-   "it": "Ancora un momento, per favore.",
-   "en": "One more moment, please.",
+   "concept": "c0095",
+   "text": "Ancora un momento, per favore.",
    "audio": "content/it/audio/corso2/045.mp3"
   },
   {
    "id": "corso2-046",
-   "it": "Siamo pronti per ordinare.",
-   "en": "We're ready to order.",
+   "concept": "c0096",
+   "text": "Siamo pronti per ordinare.",
    "audio": "content/it/audio/corso2/046.mp3"
   },
   {
    "id": "corso2-047",
-   "it": "Com'è la zuppa oggi?",
-   "en": "How's the soup today?",
+   "concept": "c0097",
+   "text": "Com'è la zuppa oggi?",
    "audio": "content/it/audio/corso2/047.mp3"
   },
   {
    "id": "corso2-048",
-   "it": "Niente dolce per me, grazie.",
-   "en": "No dessert for me, thanks.",
+   "concept": "c0098",
+   "text": "Niente dolce per me, grazie.",
    "audio": "content/it/audio/corso2/048.mp3"
   },
   {
    "id": "corso2-049",
-   "it": "Era la mia prima volta qui.",
-   "en": "It was my first time here.",
+   "concept": "c0099",
+   "text": "Era la mia prima volta qui.",
    "audio": "content/it/audio/corso2/049.mp3"
   },
   {
    "id": "corso2-050",
-   "it": "Torniamo presto!",
-   "en": "We'll come back soon!",
+   "concept": "c0100",
+   "text": "Torniamo presto!",
    "audio": "content/it/audio/corso2/050.mp3"
   }
  ]

@@ -1,0 +1,3507 @@
+{
+ "_schema": "ombra.concepts/1",
+ "_note": "意味のマスター。どの言語にも属さない。gloss に言語を足すと全ターゲット言語に同時に効く。 tags / difficulty はフェーズ C-2 で埋める。",
+ "level": "A1",
+ "concepts": {
+  "c0001": {
+   "gloss": {
+    "en": "Hi, how are you?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0002": {
+   "gloss": {
+    "en": "I'm fine, thanks."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0003": {
+   "gloss": {
+    "en": "Good morning, Mrs. Rossi."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0004": {
+   "gloss": {
+    "en": "Good evening, everyone."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0005": {
+   "gloss": {
+    "en": "My name is Marco."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0006": {
+   "gloss": {
+    "en": "What's your name?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0007": {
+   "gloss": {
+    "en": "Nice to meet you."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0008": {
+   "gloss": {
+    "en": "Where are you from?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0009": {
+   "gloss": {
+    "en": "I'm from Tokyo."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0010": {
+   "gloss": {
+    "en": "I live in Rome."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0011": {
+   "gloss": {
+    "en": "Do you speak English?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0012": {
+   "gloss": {
+    "en": "I speak a little Italian."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0013": {
+   "gloss": {
+    "en": "I don't understand."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0014": {
+   "gloss": {
+    "en": "Can you repeat, please?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0015": {
+   "gloss": {
+    "en": "Speak more slowly, please."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0016": {
+   "gloss": {
+    "en": "Thanks a lot."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0017": {
+   "gloss": {
+    "en": "You're welcome!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0018": {
+   "gloss": {
+    "en": "Excuse me, where is the bathroom?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0019": {
+   "gloss": {
+    "en": "How much does this cost?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0020": {
+   "gloss": {
+    "en": "I'd like a coffee, please."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0021": {
+   "gloss": {
+    "en": "The bill, please."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0022": {
+   "gloss": {
+    "en": "What time is it?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0023": {
+   "gloss": {
+    "en": "It's three o'clock."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0024": {
+   "gloss": {
+    "en": "Today is Monday."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0025": {
+   "gloss": {
+    "en": "Tomorrow I work."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0026": {
+   "gloss": {
+    "en": "I'm hungry."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0027": {
+   "gloss": {
+    "en": "I'm thirsty."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0028": {
+   "gloss": {
+    "en": "I'm tired."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0029": {
+   "gloss": {
+    "en": "All right."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0030": {
+   "gloss": {
+    "en": "I don't know."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0031": {
+   "gloss": {
+    "en": "Sure, why not?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0032": {
+   "gloss": {
+    "en": "I like pizza."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0033": {
+   "gloss": {
+    "en": "I don't like fish."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0034": {
+   "gloss": {
+    "en": "I have a sister."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0035": {
+   "gloss": {
+    "en": "This is my brother."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0036": {
+   "gloss": {
+    "en": "My family is big."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0037": {
+   "gloss": {
+    "en": "Where do you live?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0038": {
+   "gloss": {
+    "en": "I work in an office."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0039": {
+   "gloss": {
+    "en": "I study Italian."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0040": {
+   "gloss": {
+    "en": "How old are you?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0041": {
+   "gloss": {
+    "en": "I'm thirty years old."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0042": {
+   "gloss": {
+    "en": "What do you do for work?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0043": {
+   "gloss": {
+    "en": "I'm a teacher."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0044": {
+   "gloss": {
+    "en": "See you tomorrow!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0045": {
+   "gloss": {
+    "en": "See you soon!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0046": {
+   "gloss": {
+    "en": "Have a good day!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0047": {
+   "gloss": {
+    "en": "Good night, sleep well."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0048": {
+   "gloss": {
+    "en": "Goodbye!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0049": {
+   "gloss": {
+    "en": "Welcome to Italy!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0050": {
+   "gloss": {
+    "en": "Good luck!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0051": {
+   "gloss": {
+    "en": "A table for two, please."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0052": {
+   "gloss": {
+    "en": "Do you have a menu in English?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0053": {
+   "gloss": {
+    "en": "What do you recommend?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0054": {
+   "gloss": {
+    "en": "I'll have a margherita pizza."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0055": {
+   "gloss": {
+    "en": "For me, a glass of red wine."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0056": {
+   "gloss": {
+    "en": "I'd like still water."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0057": {
+   "gloss": {
+    "en": "Sparkling water, please."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0058": {
+   "gloss": {
+    "en": "What's the dish of the day?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0059": {
+   "gloss": {
+    "en": "I'm vegetarian."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0060": {
+   "gloss": {
+    "en": "Without onion, please."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0061": {
+   "gloss": {
+    "en": "Is the fish fresh?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0062": {
+   "gloss": {
+    "en": "A macchiato, thanks."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0063": {
+   "gloss": {
+    "en": "Can I have more bread?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0064": {
+   "gloss": {
+    "en": "This is delicious!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0065": {
+   "gloss": {
+    "en": "The pasta is too salty."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0066": {
+   "gloss": {
+    "en": "A chocolate ice cream, please."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0067": {
+   "gloss": {
+    "en": "What flavors do you have?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0068": {
+   "gloss": {
+    "en": "We'll have an appetizer to share."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0069": {
+   "gloss": {
+    "en": "What time do you close?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0070": {
+   "gloss": {
+    "en": "Is this table free?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0071": {
+   "gloss": {
+    "en": "Can we sit outside?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0072": {
+   "gloss": {
+    "en": "Is service included?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0073": {
+   "gloss": {
+    "en": "Can I pay by card?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0074": {
+   "gloss": {
+    "en": "Cash only, I'm sorry."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0075": {
+   "gloss": {
+    "en": "Keep the change."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0076": {
+   "gloss": {
+    "en": "Everything was very good."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0077": {
+   "gloss": {
+    "en": "I booked for eight o'clock."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0078": {
+   "gloss": {
+    "en": "There are four of us."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0079": {
+   "gloss": {
+    "en": "We're waiting for a friend."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0080": {
+   "gloss": {
+    "en": "I'll have dessert later."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0081": {
+   "gloss": {
+    "en": "Waiter, excuse me!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0082": {
+   "gloss": {
+    "en": "A fork is missing."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0083": {
+   "gloss": {
+    "en": "Will you bring me the bill?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0084": {
+   "gloss": {
+    "en": "Let's split the bill."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0085": {
+   "gloss": {
+    "en": "It's my treat."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0086": {
+   "gloss": {
+    "en": "Do you want to taste mine?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0087": {
+   "gloss": {
+    "en": "I don't drink alcohol."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0088": {
+   "gloss": {
+    "en": "A small beer, please."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0089": {
+   "gloss": {
+    "en": "The cappuccino is for me."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0090": {
+   "gloss": {
+    "en": "I have breakfast at the café."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0091": {
+   "gloss": {
+    "en": "A croissant and a juice, thanks."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0092": {
+   "gloss": {
+    "en": "There's too much sugar."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0093": {
+   "gloss": {
+    "en": "I prefer tea to coffee."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0094": {
+   "gloss": {
+    "en": "What are you having?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0095": {
+   "gloss": {
+    "en": "One more moment, please."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0096": {
+   "gloss": {
+    "en": "We're ready to order."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0097": {
+   "gloss": {
+    "en": "How's the soup today?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0098": {
+   "gloss": {
+    "en": "No dessert for me, thanks."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0099": {
+   "gloss": {
+    "en": "It was my first time here."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0100": {
+   "gloss": {
+    "en": "We'll come back soon!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0101": {
+   "gloss": {
+    "en": "Where is the station?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0102": {
+   "gloss": {
+    "en": "Is it far from here?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0103": {
+   "gloss": {
+    "en": "Can you show me on the map?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0104": {
+   "gloss": {
+    "en": "Turn right at the traffic light."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0105": {
+   "gloss": {
+    "en": "Straight ahead, then left."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0106": {
+   "gloss": {
+    "en": "It's near the cathedral."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0107": {
+   "gloss": {
+    "en": "How long does it take on foot?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0108": {
+   "gloss": {
+    "en": "Ten minutes, more or less."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0109": {
+   "gloss": {
+    "en": "Which bus do I need to take?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0110": {
+   "gloss": {
+    "en": "The 23 comes every hour."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0111": {
+   "gloss": {
+    "en": "Where do you buy tickets?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0112": {
+   "gloss": {
+    "en": "A ticket to Florence, please."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0113": {
+   "gloss": {
+    "en": "One way or round trip?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0114": {
+   "gloss": {
+    "en": "The train leaves from platform two."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0115": {
+   "gloss": {
+    "en": "The next train is at nine."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0116": {
+   "gloss": {
+    "en": "I'm late!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0117": {
+   "gloss": {
+    "en": "Is the museum open today?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0118": {
+   "gloss": {
+    "en": "It's closed on Mondays."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0119": {
+   "gloss": {
+    "en": "Admission is free."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0120": {
+   "gloss": {
+    "en": "Two tickets for the museum."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0121": {
+   "gloss": {
+    "en": "Can I take a photo here?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0122": {
+   "gloss": {
+    "en": "What a beautiful square!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0123": {
+   "gloss": {
+    "en": "This church is old."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0124": {
+   "gloss": {
+    "en": "I'm looking for a pharmacy."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0125": {
+   "gloss": {
+    "en": "Is there a supermarket nearby?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0126": {
+   "gloss": {
+    "en": "It opens at half past eight."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0127": {
+   "gloss": {
+    "en": "How much are these shoes?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0128": {
+   "gloss": {
+    "en": "They're on sale."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0129": {
+   "gloss": {
+    "en": "Can I try it on?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0130": {
+   "gloss": {
+    "en": "What size do you wear?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0131": {
+   "gloss": {
+    "en": "I wear a forty-two."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0132": {
+   "gloss": {
+    "en": "It's too expensive for me."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0133": {
+   "gloss": {
+    "en": "Do you have something cheaper?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0134": {
+   "gloss": {
+    "en": "I'll take it!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0135": {
+   "gloss": {
+    "en": "Can you give me a bag, please?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0136": {
+   "gloss": {
+    "en": "Where can I change money?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0137": {
+   "gloss": {
+    "en": "Is there an ATM here?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0138": {
+   "gloss": {
+    "en": "I lost my wallet."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0139": {
+   "gloss": {
+    "en": "Help, please!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0140": {
+   "gloss": {
+    "en": "Should I call the police?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0141": {
+   "gloss": {
+    "en": "It's nothing serious."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0142": {
+   "gloss": {
+    "en": "The city is full of tourists."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0143": {
+   "gloss": {
+    "en": "Today there's the market."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0144": {
+   "gloss": {
+    "en": "I'm buying fruit and vegetables."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0145": {
+   "gloss": {
+    "en": "A kilo of apples, thanks."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0146": {
+   "gloss": {
+    "en": "Are these oranges sweet?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0147": {
+   "gloss": {
+    "en": "Go ahead and taste!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0148": {
+   "gloss": {
+    "en": "The center is closed to traffic."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0149": {
+   "gloss": {
+    "en": "Let's walk."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0150": {
+   "gloss": {
+    "en": "See you in front of the cinema."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0151": {
+   "gloss": {
+    "en": "I wake up at seven."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0152": {
+   "gloss": {
+    "en": "I get up right away."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0153": {
+   "gloss": {
+    "en": "I take a shower every morning."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0154": {
+   "gloss": {
+    "en": "I get dressed quickly."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0155": {
+   "gloss": {
+    "en": "I drink a coffee at home."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0156": {
+   "gloss": {
+    "en": "I leave home at eight."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0157": {
+   "gloss": {
+    "en": "I go to work by bike."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0158": {
+   "gloss": {
+    "en": "The trip takes twenty minutes."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0159": {
+   "gloss": {
+    "en": "I start at nine sharp."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0160": {
+   "gloss": {
+    "en": "I have a break at noon."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0161": {
+   "gloss": {
+    "en": "I have lunch with my colleagues."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0162": {
+   "gloss": {
+    "en": "The afternoon goes by fast."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0163": {
+   "gloss": {
+    "en": "I finish at six in the evening."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0164": {
+   "gloss": {
+    "en": "I come home tired."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0165": {
+   "gloss": {
+    "en": "First I do the grocery shopping."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0166": {
+   "gloss": {
+    "en": "I cook dinner for two."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0167": {
+   "gloss": {
+    "en": "We have dinner at eight."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0168": {
+   "gloss": {
+    "en": "After dinner I watch a movie."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0169": {
+   "gloss": {
+    "en": "I read a book in bed."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0170": {
+   "gloss": {
+    "en": "I go to sleep at midnight."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0171": {
+   "gloss": {
+    "en": "I sleep eight hours."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0172": {
+   "gloss": {
+    "en": "Saturday is different."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0173": {
+   "gloss": {
+    "en": "I stay in bed until late."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0174": {
+   "gloss": {
+    "en": "I have breakfast without rushing."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0175": {
+   "gloss": {
+    "en": "I clean the house on weekends."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0176": {
+   "gloss": {
+    "en": "I wash clothes on Sundays."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0177": {
+   "gloss": {
+    "en": "I go to the gym twice a week."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0178": {
+   "gloss": {
+    "en": "I run in the park in the morning."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0179": {
+   "gloss": {
+    "en": "I never have time."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0180": {
+   "gloss": {
+    "en": "Sometimes I arrive late."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0181": {
+   "gloss": {
+    "en": "I usually take the train."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0182": {
+   "gloss": {
+    "en": "Today I work from home."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0183": {
+   "gloss": {
+    "en": "The meeting is at ten."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0184": {
+   "gloss": {
+    "en": "I write a lot of emails."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0185": {
+   "gloss": {
+    "en": "I call my mother."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0186": {
+   "gloss": {
+    "en": "We talk for an hour."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0187": {
+   "gloss": {
+    "en": "I take the dog out."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0188": {
+   "gloss": {
+    "en": "My cat always sleeps."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0189": {
+   "gloss": {
+    "en": "I water the plants."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0190": {
+   "gloss": {
+    "en": "I take out the trash."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0191": {
+   "gloss": {
+    "en": "I check my phone too much."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0192": {
+   "gloss": {
+    "en": "Tonight I'm going out with friends."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0193": {
+   "gloss": {
+    "en": "Tomorrow I'll rest."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0194": {
+   "gloss": {
+    "en": "What a long day!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0195": {
+   "gloss": {
+    "en": "I can't wait for the weekend."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0196": {
+   "gloss": {
+    "en": "Monday is always hard."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0197": {
+   "gloss": {
+    "en": "For lunch I eat a sandwich."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0198": {
+   "gloss": {
+    "en": "I review words every evening."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0199": {
+   "gloss": {
+    "en": "I listen to music in the kitchen."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0200": {
+   "gloss": {
+    "en": "I like this simple life."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0201": {
+   "gloss": {
+    "en": "I've been married for five years."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0202": {
+   "gloss": {
+    "en": "We have two small children."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0203": {
+   "gloss": {
+    "en": "My daughter is six years old."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0204": {
+   "gloss": {
+    "en": "My parents live by the sea."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0205": {
+   "gloss": {
+    "en": "My grandfather is ninety years old."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0206": {
+   "gloss": {
+    "en": "We're a cheerful family."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0207": {
+   "gloss": {
+    "en": "I live alone in the city."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0208": {
+   "gloss": {
+    "en": "My apartment is small."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0209": {
+   "gloss": {
+    "en": "I have a balcony with flowers."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0210": {
+   "gloss": {
+    "en": "In my free time I paint."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0211": {
+   "gloss": {
+    "en": "I've been playing guitar for a short time."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0212": {
+   "gloss": {
+    "en": "I play soccer on Thursdays."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0213": {
+   "gloss": {
+    "en": "I love traveling by train."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0214": {
+   "gloss": {
+    "en": "I take a lot of photos."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0215": {
+   "gloss": {
+    "en": "My hobby is cooking."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0216": {
+   "gloss": {
+    "en": "I make a cake every Sunday."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0217": {
+   "gloss": {
+    "en": "I collect old postcards."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0218": {
+   "gloss": {
+    "en": "I'm interested in history."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0219": {
+   "gloss": {
+    "en": "I don't watch much TV."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0220": {
+   "gloss": {
+    "en": "I prefer mystery novels."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0221": {
+   "gloss": {
+    "en": "What's the weather like today?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0222": {
+   "gloss": {
+    "en": "It's sunny but cold."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0223": {
+   "gloss": {
+    "en": "It's been raining for three days."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0224": {
+   "gloss": {
+    "en": "Tomorrow the snow is coming."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0225": {
+   "gloss": {
+    "en": "I hate strong wind."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0226": {
+   "gloss": {
+    "en": "In summer it's very hot."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0227": {
+   "gloss": {
+    "en": "Spring is my season."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0228": {
+   "gloss": {
+    "en": "I'm happy with my job."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0229": {
+   "gloss": {
+    "en": "Sometimes I'm a bit lazy."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0230": {
+   "gloss": {
+    "en": "I'm a curious person."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0231": {
+   "gloss": {
+    "en": "I speak three languages."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0232": {
+   "gloss": {
+    "en": "I learn new words every day."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0233": {
+   "gloss": {
+    "en": "My dream is to live in Italy."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0234": {
+   "gloss": {
+    "en": "I come to Italy every year."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0235": {
+   "gloss": {
+    "en": "I know Venice well."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0236": {
+   "gloss": {
+    "en": "The sea relaxes me."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0237": {
+   "gloss": {
+    "en": "I'm afraid of spiders."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0238": {
+   "gloss": {
+    "en": "I don't eat red meat."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0239": {
+   "gloss": {
+    "en": "I drink only water and tea."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0240": {
+   "gloss": {
+    "en": "Coffee keeps me awake."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0241": {
+   "gloss": {
+    "en": "My wife works at the hospital."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0242": {
+   "gloss": {
+    "en": "My cousin lives in Germany."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0243": {
+   "gloss": {
+    "en": "I have many foreign friends."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0244": {
+   "gloss": {
+    "en": "I write a diary in Italian."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0245": {
+   "gloss": {
+    "en": "I really like Italian music."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0246": {
+   "gloss": {
+    "en": "I sing in the shower."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0247": {
+   "gloss": {
+    "en": "On weekends I visit museums."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0248": {
+   "gloss": {
+    "en": "I dream of speaking Italian well."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0249": {
+   "gloss": {
+    "en": "Every day I take a small step."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0250": {
+   "gloss": {
+    "en": "This is my life."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0251": {
+   "gloss": {
+    "en": "I have a reservation under the name Rossi."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0252": {
+   "gloss": {
+    "en": "I'd like a double room."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0253": {
+   "gloss": {
+    "en": "How much is it per night?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0254": {
+   "gloss": {
+    "en": "Is breakfast included?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0255": {
+   "gloss": {
+    "en": "What floor is the room on?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0256": {
+   "gloss": {
+    "en": "Here is my passport."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0257": {
+   "gloss": {
+    "en": "Is there wifi in the room?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0258": {
+   "gloss": {
+    "en": "Is there a balcony with a view?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0259": {
+   "gloss": {
+    "en": "Is the sea close to the hotel?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0260": {
+   "gloss": {
+    "en": "Can I leave my suitcase here?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0261": {
+   "gloss": {
+    "en": "My suitcase is heavy."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0262": {
+   "gloss": {
+    "en": "We leave Sunday morning."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0263": {
+   "gloss": {
+    "en": "The plane leaves at six."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0264": {
+   "gloss": {
+    "en": "The flight is delayed."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0265": {
+   "gloss": {
+    "en": "Where is gate four?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0266": {
+   "gloss": {
+    "en": "Do I have to change in Milan?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0267": {
+   "gloss": {
+    "en": "Is this seat taken?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0268": {
+   "gloss": {
+    "en": "May I open the window?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0269": {
+   "gloss": {
+    "en": "I get off at the next stop."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0270": {
+   "gloss": {
+    "en": "Where do you get a taxi?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0271": {
+   "gloss": {
+    "en": "How much is it to the center?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0272": {
+   "gloss": {
+    "en": "Is it much farther?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0273": {
+   "gloss": {
+    "en": "What a beautiful view!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0274": {
+   "gloss": {
+    "en": "Let's take a break here."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0275": {
+   "gloss": {
+    "en": "I need to rest."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0276": {
+   "gloss": {
+    "en": "The hotel is full."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0277": {
+   "gloss": {
+    "en": "Is there a room available for tonight?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0278": {
+   "gloss": {
+    "en": "The elevator doesn't work."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0279": {
+   "gloss": {
+    "en": "The key doesn't open the door."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0280": {
+   "gloss": {
+    "en": "I need a clean towel."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0281": {
+   "gloss": {
+    "en": "The air conditioning is broken."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0282": {
+   "gloss": {
+    "en": "Can I change rooms?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0283": {
+   "gloss": {
+    "en": "What time do I have to leave the room?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0284": {
+   "gloss": {
+    "en": "Do I pay now or later?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0285": {
+   "gloss": {
+    "en": "Will you call me a taxi, please?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0286": {
+   "gloss": {
+    "en": "We're renting two bikes tomorrow."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0287": {
+   "gloss": {
+    "en": "The beach is packed this morning."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0288": {
+   "gloss": {
+    "en": "I swim in the sea every morning."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0289": {
+   "gloss": {
+    "en": "Today I'm sunbathing."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0290": {
+   "gloss": {
+    "en": "After the swim, an ice cream!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0291": {
+   "gloss": {
+    "en": "I'm sending a postcard to my grandparents."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0292": {
+   "gloss": {
+    "en": "I'm bringing a gift for my mother."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0293": {
+   "gloss": {
+    "en": "The guide speaks very fast."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0294": {
+   "gloss": {
+    "en": "Does the castle open at ten?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0295": {
+   "gloss": {
+    "en": "Shall we take a photo here?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0296": {
+   "gloss": {
+    "en": "The boat trip is long."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0297": {
+   "gloss": {
+    "en": "I'm seasick."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0298": {
+   "gloss": {
+    "en": "We go back to the hotel towards evening."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0299": {
+   "gloss": {
+    "en": "The holidays end tomorrow."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0300": {
+   "gloss": {
+    "en": "I want to stay one more week."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0301": {
+   "gloss": {
+    "en": "What did you do yesterday?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0302": {
+   "gloss": {
+    "en": "I worked all day."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0303": {
+   "gloss": {
+    "en": "I slept in late."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0304": {
+   "gloss": {
+    "en": "I went to the movies."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0305": {
+   "gloss": {
+    "en": "I saw a wonderful film."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0306": {
+   "gloss": {
+    "en": "We ate a huge pizza."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0307": {
+   "gloss": {
+    "en": "I ran into an old friend."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0308": {
+   "gloss": {
+    "en": "We talked for hours."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0309": {
+   "gloss": {
+    "en": "I came home at midnight."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0310": {
+   "gloss": {
+    "en": "I missed the bus this morning."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0311": {
+   "gloss": {
+    "en": "I arrived late to work."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0312": {
+   "gloss": {
+    "en": "The boss didn't say anything."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0313": {
+   "gloss": {
+    "en": "Did you see the game last night?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0314": {
+   "gloss": {
+    "en": "Our team won!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0315": {
+   "gloss": {
+    "en": "I bought a new jacket."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0316": {
+   "gloss": {
+    "en": "How much did you pay?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0317": {
+   "gloss": {
+    "en": "I spent too much this month."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0318": {
+   "gloss": {
+    "en": "Where did you go on holiday?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0319": {
+   "gloss": {
+    "en": "I was at the seaside in Sicily."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0320": {
+   "gloss": {
+    "en": "We visited three cities."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0321": {
+   "gloss": {
+    "en": "The trip took ten hours."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0322": {
+   "gloss": {
+    "en": "I took the seven o'clock train."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0323": {
+   "gloss": {
+    "en": "I forgot my umbrella at home."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0324": {
+   "gloss": {
+    "en": "It rained all night."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0325": {
+   "gloss": {
+    "en": "Finally the sun came out."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0326": {
+   "gloss": {
+    "en": "I met a nice person."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0327": {
+   "gloss": {
+    "en": "We had a lot of fun."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0328": {
+   "gloss": {
+    "en": "Yesterday I did nothing."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0329": {
+   "gloss": {
+    "en": "I rested all weekend."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0330": {
+   "gloss": {
+    "en": "I cleaned the whole house."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0331": {
+   "gloss": {
+    "en": "I cooked for my friends."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0332": {
+   "gloss": {
+    "en": "The dinner turned out great."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0333": {
+   "gloss": {
+    "en": "We drank a good wine."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0334": {
+   "gloss": {
+    "en": "Who washed the dishes?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0335": {
+   "gloss": {
+    "en": "I read a book in two days."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0336": {
+   "gloss": {
+    "en": "I listened to music all evening."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0337": {
+   "gloss": {
+    "en": "We went out Saturday night."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0338": {
+   "gloss": {
+    "en": "I danced until two."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0339": {
+   "gloss": {
+    "en": "I woke up late on Sunday."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0340": {
+   "gloss": {
+    "en": "I had breakfast at the café."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0341": {
+   "gloss": {
+    "en": "Then I walked in the park."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0342": {
+   "gloss": {
+    "en": "I found a cat in the street."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0343": {
+   "gloss": {
+    "en": "It drank all the milk."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0344": {
+   "gloss": {
+    "en": "Have you heard the news?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0345": {
+   "gloss": {
+    "en": "Marco changed jobs."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0346": {
+   "gloss": {
+    "en": "What a surprise!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0347": {
+   "gloss": {
+    "en": "The weekend went by fast."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0348": {
+   "gloss": {
+    "en": "I studied Italian yesterday too."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0349": {
+   "gloss": {
+    "en": "I repeated the sentences out loud."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0350": {
+   "gloss": {
+    "en": "Today I start a new week."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0351": {
+   "gloss": {
+    "en": "How do you feel today?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0352": {
+   "gloss": {
+    "en": "I don't feel well."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0353": {
+   "gloss": {
+    "en": "I have a headache."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0354": {
+   "gloss": {
+    "en": "I also have a sore throat."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0355": {
+   "gloss": {
+    "en": "Maybe I have a fever."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0356": {
+   "gloss": {
+    "en": "I took my temperature."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0357": {
+   "gloss": {
+    "en": "Thirty-eight point five, it's high."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0358": {
+   "gloss": {
+    "en": "I have to stay in bed."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0359": {
+   "gloss": {
+    "en": "Did you take any medicine?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0360": {
+   "gloss": {
+    "en": "I take the medicine after meals."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0361": {
+   "gloss": {
+    "en": "My back hurts."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0362": {
+   "gloss": {
+    "en": "My legs feel heavy today."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0363": {
+   "gloss": {
+    "en": "I walked too much yesterday."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0364": {
+   "gloss": {
+    "en": "I have to go to the doctor."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0365": {
+   "gloss": {
+    "en": "Can the doctor see me today?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0366": {
+   "gloss": {
+    "en": "I have an appointment at eleven."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0367": {
+   "gloss": {
+    "en": "The waiting room is full."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0368": {
+   "gloss": {
+    "en": "Breathe deeply, please."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0369": {
+   "gloss": {
+    "en": "Open your mouth, please."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0370": {
+   "gloss": {
+    "en": "It's just a cold."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0371": {
+   "gloss": {
+    "en": "My nose is blocked."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0372": {
+   "gloss": {
+    "en": "I've had a cough for three days."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0373": {
+   "gloss": {
+    "en": "I feel dizzy."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0374": {
+   "gloss": {
+    "en": "Oranges have a lot of vitamin C."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0375": {
+   "gloss": {
+    "en": "Drink plenty of warm water."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0376": {
+   "gloss": {
+    "en": "Rest is the best cure."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0377": {
+   "gloss": {
+    "en": "I already feel better."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0378": {
+   "gloss": {
+    "en": "I recovered in a week."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0379": {
+   "gloss": {
+    "en": "Sport is good for your health."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0380": {
+   "gloss": {
+    "en": "I exercise every morning."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0381": {
+   "gloss": {
+    "en": "I eat lots of fruit and vegetables."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0382": {
+   "gloss": {
+    "en": "I sleep little and badly."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0383": {
+   "gloss": {
+    "en": "I'm always stressed about work."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0384": {
+   "gloss": {
+    "en": "I need a break."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0385": {
+   "gloss": {
+    "en": "Today I have a lot of energy."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0386": {
+   "gloss": {
+    "en": "My heart is beating fast."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0387": {
+   "gloss": {
+    "en": "I fell off my bike."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0388": {
+   "gloss": {
+    "en": "I hurt my arm."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0389": {
+   "gloss": {
+    "en": "It's not broken, luckily."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0390": {
+   "gloss": {
+    "en": "My eyes are tired."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0391": {
+   "gloss": {
+    "en": "I look at the screen too much."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0392": {
+   "gloss": {
+    "en": "I've worn glasses for a year."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0393": {
+   "gloss": {
+    "en": "The dentist is expecting me tomorrow."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0394": {
+   "gloss": {
+    "en": "I'm afraid of the dentist."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0395": {
+   "gloss": {
+    "en": "One of my teeth hurts."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0396": {
+   "gloss": {
+    "en": "I brush my teeth three times a day."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0397": {
+   "gloss": {
+    "en": "The pharmacy is open until eight."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0398": {
+   "gloss": {
+    "en": "Do I need a prescription for this?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0399": {
+   "gloss": {
+    "en": "Get well soon!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0400": {
+   "gloss": {
+    "en": "Health comes first."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0401": {
+   "gloss": {
+    "en": "Are you free tonight?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0402": {
+   "gloss": {
+    "en": "Do you feel like going out?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0403": {
+   "gloss": {
+    "en": "Gladly, at what time?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0404": {
+   "gloss": {
+    "en": "Eight o'clock works great."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0405": {
+   "gloss": {
+    "en": "Where shall we meet?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0406": {
+   "gloss": {
+    "en": "In front of the station, okay?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0407": {
+   "gloss": {
+    "en": "Perfect, see you tonight!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0408": {
+   "gloss": {
+    "en": "I'll call you later."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0409": {
+   "gloss": {
+    "en": "One moment, I have a call."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0410": {
+   "gloss": {
+    "en": "Hello? Who's speaking?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0411": {
+   "gloss": {
+    "en": "It's Anna, can you hear me?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0412": {
+   "gloss": {
+    "en": "Now I can hear you perfectly."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0413": {
+   "gloss": {
+    "en": "I'll call you back in five minutes."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0414": {
+   "gloss": {
+    "en": "Send me a message later."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0415": {
+   "gloss": {
+    "en": "I got your message."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0416": {
+   "gloss": {
+    "en": "Sorry, I replied late."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0417": {
+   "gloss": {
+    "en": "Are you coming to the party on Saturday?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0418": {
+   "gloss": {
+    "en": "Who's coming with us?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0419": {
+   "gloss": {
+    "en": "I'm bringing my sister."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0420": {
+   "gloss": {
+    "en": "Let's invite Paolo too."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0421": {
+   "gloss": {
+    "en": "What time does the party start?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0422": {
+   "gloss": {
+    "en": "Around nine, I think."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0423": {
+   "gloss": {
+    "en": "I'll bring the dessert."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0424": {
+   "gloss": {
+    "en": "I'll take care of the drinks."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0425": {
+   "gloss": {
+    "en": "What are you wearing tonight?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0426": {
+   "gloss": {
+    "en": "I'm wearing my new dress."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0427": {
+   "gloss": {
+    "en": "The party was a success."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0428": {
+   "gloss": {
+    "en": "Let's dance all night!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0429": {
+   "gloss": {
+    "en": "I really like this song."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0430": {
+   "gloss": {
+    "en": "Shall we go to a concert on Sunday?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0431": {
+   "gloss": {
+    "en": "The tickets cost twenty euros."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0432": {
+   "gloss": {
+    "en": "Unfortunately I can't on Sunday."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0433": {
+   "gloss": {
+    "en": "I already have a commitment."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0434": {
+   "gloss": {
+    "en": "Shall we do it another time?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0435": {
+   "gloss": {
+    "en": "On Tuesday I'm free all day."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0436": {
+   "gloss": {
+    "en": "I'm marking the date on the calendar."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0437": {
+   "gloss": {
+    "en": "Don't forget the appointment!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0438": {
+   "gloss": {
+    "en": "I always arrive on time."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0439": {
+   "gloss": {
+    "en": "Sorry I'm late!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0440": {
+   "gloss": {
+    "en": "I've been waiting for you for half an hour!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0441": {
+   "gloss": {
+    "en": "I hit a lot of traffic."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0442": {
+   "gloss": {
+    "en": "Let me buy you a coffee, come on."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0443": {
+   "gloss": {
+    "en": "Shall we stay a little longer?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0444": {
+   "gloss": {
+    "en": "It's gotten late."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0445": {
+   "gloss": {
+    "en": "I really have to go now."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0446": {
+   "gloss": {
+    "en": "Thanks for the lovely evening."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0447": {
+   "gloss": {
+    "en": "Let's talk tomorrow, okay?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0448": {
+   "gloss": {
+    "en": "Let's organize a dinner soon."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0449": {
+   "gloss": {
+    "en": "Will you come to dinner at my place?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0450": {
+   "gloss": {
+    "en": "How nice it is to be together!"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0451": {
+   "gloss": {
+    "en": "What plans do you have for tomorrow?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0452": {
+   "gloss": {
+    "en": "Tomorrow I'm getting a haircut."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0453": {
+   "gloss": {
+    "en": "Next weekend we're leaving for Naples."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0454": {
+   "gloss": {
+    "en": "I'm thinking of moving house."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0455": {
+   "gloss": {
+    "en": "I'm looking for a bigger apartment."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0456": {
+   "gloss": {
+    "en": "I want to learn to cook well."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0457": {
+   "gloss": {
+    "en": "I'm starting a cooking course in September."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0458": {
+   "gloss": {
+    "en": "Next year I'm studying in Italy."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0459": {
+   "gloss": {
+    "en": "First I have to save a little."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0460": {
+   "gloss": {
+    "en": "I put aside a hundred euros a month."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0461": {
+   "gloss": {
+    "en": "One day I'll open a little café."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0462": {
+   "gloss": {
+    "en": "It's my secret project."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0463": {
+   "gloss": {
+    "en": "What do you dream of?"
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0464": {
+   "gloss": {
+    "en": "I dream of a house with a garden."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0465": {
+   "gloss": {
+    "en": "I'd also like a big dog."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0466": {
+   "gloss": {
+    "en": "Summer is starting soon."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0467": {
+   "gloss": {
+    "en": "This summer I'm staying in the city."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0468": {
+   "gloss": {
+    "en": "Maybe in August I'll go to the mountains."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0469": {
+   "gloss": {
+    "en": "I love walking in nature."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0470": {
+   "gloss": {
+    "en": "I'm buying a new backpack."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0471": {
+   "gloss": {
+    "en": "After the summer I want to change jobs."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0472": {
+   "gloss": {
+    "en": "I'm studying English for work."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0473": {
+   "gloss": {
+    "en": "The future scares me a little."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0474": {
+   "gloss": {
+    "en": "But I'm also very curious."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0475": {
+   "gloss": {
+    "en": "One step at a time, always forward."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0476": {
+   "gloss": {
+    "en": "This year I'm reading twelve books."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0477": {
+   "gloss": {
+    "en": "One a month, it's possible."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0478": {
+   "gloss": {
+    "en": "I write my plans in a notebook."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0479": {
+   "gloss": {
+    "en": "On Sunday I'm planting new flowers on the balcony."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0480": {
+   "gloss": {
+    "en": "The balcony is becoming a garden."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0481": {
+   "gloss": {
+    "en": "I want to drink less coffee."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0482": {
+   "gloss": {
+    "en": "From Monday I'm going to bed early."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0483": {
+   "gloss": {
+    "en": "Good habits change your life."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0484": {
+   "gloss": {
+    "en": "This winter I'm trying skiing."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0485": {
+   "gloss": {
+    "en": "My daughter is learning to swim."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0486": {
+   "gloss": {
+    "en": "In two years I'll speak Italian well."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0487": {
+   "gloss": {
+    "en": "I review every day for ten minutes."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0488": {
+   "gloss": {
+    "en": "Little by little, no rush."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0489": {
+   "gloss": {
+    "en": "Next month I turn forty."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0490": {
+   "gloss": {
+    "en": "I'm organizing a big party."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0491": {
+   "gloss": {
+    "en": "I'm inviting all my friends."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0492": {
+   "gloss": {
+    "en": "Every age has something beautiful."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0493": {
+   "gloss": {
+    "en": "I'm planning a trip to Japan."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0494": {
+   "gloss": {
+    "en": "I'm leaving in spring, on my own."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0495": {
+   "gloss": {
+    "en": "I'm booking the flights in January."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0496": {
+   "gloss": {
+    "en": "The ticket costs a thousand euros."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0497": {
+   "gloss": {
+    "en": "It's worth it."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0498": {
+   "gloss": {
+    "en": "Dreams have no age."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0499": {
+   "gloss": {
+    "en": "The first step is today."
+   },
+   "tags": [],
+   "difficulty": null
+  },
+  "c0500": {
+   "gloss": {
+    "en": "The future starts now."
+   },
+   "tags": [],
+   "difficulty": null
+  }
+ }
+}

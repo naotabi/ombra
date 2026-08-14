@@ -1,311 +1,320 @@
 {
+ "_schema": "ombra.course/1",
  "id": "corso10",
- "title": "Progetti e sogni",
- "subtitle": "Plans & dreams",
+ "target": "it",
  "level": "A1",
- "sentences": [
+ "order": 10,
+ "title": "Progetti e sogni",
+ "subtitle": {
+  "en": "Plans & dreams"
+ },
+ "items": [
   {
    "id": "corso10-001",
-   "it": "Che programmi hai per domani?",
-   "en": "What plans do you have for tomorrow?",
+   "concept": "c0451",
+   "text": "Che programmi hai per domani?",
    "audio": "content/it/audio/corso10/001.mp3"
   },
   {
    "id": "corso10-002",
-   "it": "Domani mi taglio i capelli.",
-   "en": "Tomorrow I'm getting a haircut.",
+   "concept": "c0452",
+   "text": "Domani mi taglio i capelli.",
    "audio": "content/it/audio/corso10/002.mp3"
   },
   {
    "id": "corso10-003",
-   "it": "Il prossimo weekend partiamo per Napoli.",
-   "en": "Next weekend we're leaving for Naples.",
+   "concept": "c0453",
+   "text": "Il prossimo weekend partiamo per Napoli.",
    "audio": "content/it/audio/corso10/003.mp3"
   },
   {
    "id": "corso10-004",
-   "it": "Penso di cambiare casa.",
-   "en": "I'm thinking of moving house.",
+   "concept": "c0454",
+   "text": "Penso di cambiare casa.",
    "audio": "content/it/audio/corso10/004.mp3"
   },
   {
    "id": "corso10-005",
-   "it": "Cerco un appartamento più grande.",
-   "en": "I'm looking for a bigger apartment.",
+   "concept": "c0455",
+   "text": "Cerco un appartamento più grande.",
    "audio": "content/it/audio/corso10/005.mp3"
   },
   {
    "id": "corso10-006",
-   "it": "Voglio imparare a cucinare bene.",
-   "en": "I want to learn to cook well.",
+   "concept": "c0456",
+   "text": "Voglio imparare a cucinare bene.",
    "audio": "content/it/audio/corso10/006.mp3"
   },
   {
    "id": "corso10-007",
-   "it": "Comincio un corso di cucina a settembre.",
-   "en": "I'm starting a cooking course in September.",
+   "concept": "c0457",
+   "text": "Comincio un corso di cucina a settembre.",
    "audio": "content/it/audio/corso10/007.mp3"
   },
   {
    "id": "corso10-008",
-   "it": "L'anno prossimo studio in Italia.",
-   "en": "Next year I'm studying in Italy.",
+   "concept": "c0458",
+   "text": "L'anno prossimo studio in Italia.",
    "audio": "content/it/audio/corso10/008.mp3"
   },
   {
    "id": "corso10-009",
-   "it": "Prima devo risparmiare un po'.",
-   "en": "First I have to save a little.",
+   "concept": "c0459",
+   "text": "Prima devo risparmiare un po'.",
    "audio": "content/it/audio/corso10/009.mp3"
   },
   {
    "id": "corso10-010",
-   "it": "Metto da parte cento euro al mese.",
-   "en": "I put aside a hundred euros a month.",
+   "concept": "c0460",
+   "text": "Metto da parte cento euro al mese.",
    "audio": "content/it/audio/corso10/010.mp3"
   },
   {
    "id": "corso10-011",
-   "it": "Un giorno apro un piccolo bar.",
-   "en": "One day I'll open a little café.",
+   "concept": "c0461",
+   "text": "Un giorno apro un piccolo bar.",
    "audio": "content/it/audio/corso10/011.mp3"
   },
   {
    "id": "corso10-012",
-   "it": "È il mio progetto segreto.",
-   "en": "It's my secret project.",
+   "concept": "c0462",
+   "text": "È il mio progetto segreto.",
    "audio": "content/it/audio/corso10/012.mp3"
   },
   {
    "id": "corso10-013",
-   "it": "Tu che cosa sogni?",
-   "en": "What do you dream of?",
+   "concept": "c0463",
+   "text": "Tu che cosa sogni?",
    "audio": "content/it/audio/corso10/013.mp3"
   },
   {
    "id": "corso10-014",
-   "it": "Sogno una casa con giardino.",
-   "en": "I dream of a house with a garden.",
+   "concept": "c0464",
+   "text": "Sogno una casa con giardino.",
    "audio": "content/it/audio/corso10/014.mp3"
   },
   {
    "id": "corso10-015",
-   "it": "Vorrei anche un cane grande.",
-   "en": "I'd also like a big dog.",
+   "concept": "c0465",
+   "text": "Vorrei anche un cane grande.",
    "audio": "content/it/audio/corso10/015.mp3"
   },
   {
    "id": "corso10-016",
-   "it": "Presto comincia l'estate.",
-   "en": "Summer is starting soon.",
+   "concept": "c0466",
+   "text": "Presto comincia l'estate.",
    "audio": "content/it/audio/corso10/016.mp3"
   },
   {
    "id": "corso10-017",
-   "it": "Quest'estate resto in città.",
-   "en": "This summer I'm staying in the city.",
+   "concept": "c0467",
+   "text": "Quest'estate resto in città.",
    "audio": "content/it/audio/corso10/017.mp3"
   },
   {
    "id": "corso10-018",
-   "it": "Forse ad agosto vado in montagna.",
-   "en": "Maybe in August I'll go to the mountains.",
+   "concept": "c0468",
+   "text": "Forse ad agosto vado in montagna.",
    "audio": "content/it/audio/corso10/018.mp3"
   },
   {
    "id": "corso10-019",
-   "it": "Cammino volentieri nella natura.",
-   "en": "I love walking in nature.",
+   "concept": "c0469",
+   "text": "Cammino volentieri nella natura.",
    "audio": "content/it/audio/corso10/019.mp3"
   },
   {
    "id": "corso10-020",
-   "it": "Compro uno zaino nuovo.",
-   "en": "I'm buying a new backpack.",
+   "concept": "c0470",
+   "text": "Compro uno zaino nuovo.",
    "audio": "content/it/audio/corso10/020.mp3"
   },
   {
    "id": "corso10-021",
-   "it": "Dopo l'estate voglio cambiare lavoro.",
-   "en": "After the summer I want to change jobs.",
+   "concept": "c0471",
+   "text": "Dopo l'estate voglio cambiare lavoro.",
    "audio": "content/it/audio/corso10/021.mp3"
   },
   {
    "id": "corso10-022",
-   "it": "Studio l'inglese per il lavoro.",
-   "en": "I'm studying English for work.",
+   "concept": "c0472",
+   "text": "Studio l'inglese per il lavoro.",
    "audio": "content/it/audio/corso10/022.mp3"
   },
   {
    "id": "corso10-023",
-   "it": "Il futuro mi fa un po' paura.",
-   "en": "The future scares me a little.",
+   "concept": "c0473",
+   "text": "Il futuro mi fa un po' paura.",
    "audio": "content/it/audio/corso10/023.mp3"
   },
   {
    "id": "corso10-024",
-   "it": "Ma sono anche molto curioso.",
-   "en": "But I'm also very curious.",
+   "concept": "c0474",
+   "text": "Ma sono anche molto curioso.",
    "audio": "content/it/audio/corso10/024.mp3",
    "g": "m",
-   "note": "She says: ... curiosa."
+   "note": {
+    "en": "She says: ... curiosa."
+   }
   },
   {
    "id": "corso10-025",
-   "it": "Un passo alla volta, sempre avanti.",
-   "en": "One step at a time, always forward.",
+   "concept": "c0475",
+   "text": "Un passo alla volta, sempre avanti.",
    "audio": "content/it/audio/corso10/025.mp3"
   },
   {
    "id": "corso10-026",
-   "it": "Quest'anno leggo dodici libri.",
-   "en": "This year I'm reading twelve books.",
+   "concept": "c0476",
+   "text": "Quest'anno leggo dodici libri.",
    "audio": "content/it/audio/corso10/026.mp3"
   },
   {
    "id": "corso10-027",
-   "it": "Uno al mese, è possibile.",
-   "en": "One a month, it's possible.",
+   "concept": "c0477",
+   "text": "Uno al mese, è possibile.",
    "audio": "content/it/audio/corso10/027.mp3"
   },
   {
    "id": "corso10-028",
-   "it": "Scrivo i miei piani sul quaderno.",
-   "en": "I write my plans in a notebook.",
+   "concept": "c0478",
+   "text": "Scrivo i miei piani sul quaderno.",
    "audio": "content/it/audio/corso10/028.mp3"
   },
   {
    "id": "corso10-029",
-   "it": "Domenica pianto fiori nuovi sul balcone.",
-   "en": "On Sunday I'm planting new flowers on the balcony.",
+   "concept": "c0479",
+   "text": "Domenica pianto fiori nuovi sul balcone.",
    "audio": "content/it/audio/corso10/029.mp3"
   },
   {
    "id": "corso10-030",
-   "it": "Il balcone diventa un giardino.",
-   "en": "The balcony is becoming a garden.",
+   "concept": "c0480",
+   "text": "Il balcone diventa un giardino.",
    "audio": "content/it/audio/corso10/030.mp3"
   },
   {
    "id": "corso10-031",
-   "it": "Voglio bere meno caffè.",
-   "en": "I want to drink less coffee.",
+   "concept": "c0481",
+   "text": "Voglio bere meno caffè.",
    "audio": "content/it/audio/corso10/031.mp3"
   },
   {
    "id": "corso10-032",
-   "it": "Da lunedì vado a letto presto.",
-   "en": "From Monday I'm going to bed early.",
+   "concept": "c0482",
+   "text": "Da lunedì vado a letto presto.",
    "audio": "content/it/audio/corso10/032.mp3"
   },
   {
    "id": "corso10-033",
-   "it": "Le buone abitudini cambiano la vita.",
-   "en": "Good habits change your life.",
+   "concept": "c0483",
+   "text": "Le buone abitudini cambiano la vita.",
    "audio": "content/it/audio/corso10/033.mp3"
   },
   {
    "id": "corso10-034",
-   "it": "Quest'inverno provo a sciare.",
-   "en": "This winter I'm trying skiing.",
+   "concept": "c0484",
+   "text": "Quest'inverno provo a sciare.",
    "audio": "content/it/audio/corso10/034.mp3"
   },
   {
    "id": "corso10-035",
-   "it": "Mia figlia impara a nuotare.",
-   "en": "My daughter is learning to swim.",
+   "concept": "c0485",
+   "text": "Mia figlia impara a nuotare.",
    "audio": "content/it/audio/corso10/035.mp3"
   },
   {
    "id": "corso10-036",
-   "it": "Tra due anni parlo bene l'italiano.",
-   "en": "In two years I'll speak Italian well.",
+   "concept": "c0486",
+   "text": "Tra due anni parlo bene l'italiano.",
    "audio": "content/it/audio/corso10/036.mp3"
   },
   {
    "id": "corso10-037",
-   "it": "Ripasso ogni giorno per dieci minuti.",
-   "en": "I review every day for ten minutes.",
+   "concept": "c0487",
+   "text": "Ripasso ogni giorno per dieci minuti.",
    "audio": "content/it/audio/corso10/037.mp3"
   },
   {
    "id": "corso10-038",
-   "it": "Piano piano, senza fretta.",
-   "en": "Little by little, no rush.",
+   "concept": "c0488",
+   "text": "Piano piano, senza fretta.",
    "audio": "content/it/audio/corso10/038.mp3"
   },
   {
    "id": "corso10-039",
-   "it": "Il mese prossimo compio quarant'anni.",
-   "en": "Next month I turn forty.",
+   "concept": "c0489",
+   "text": "Il mese prossimo compio quarant'anni.",
    "audio": "content/it/audio/corso10/039.mp3"
   },
   {
    "id": "corso10-040",
-   "it": "Organizzo una grande festa.",
-   "en": "I'm organizing a big party.",
+   "concept": "c0490",
+   "text": "Organizzo una grande festa.",
    "audio": "content/it/audio/corso10/040.mp3"
   },
   {
    "id": "corso10-041",
-   "it": "Invito tutti i miei amici.",
-   "en": "I'm inviting all my friends.",
+   "concept": "c0491",
+   "text": "Invito tutti i miei amici.",
    "audio": "content/it/audio/corso10/041.mp3"
   },
   {
    "id": "corso10-042",
-   "it": "Ogni età ha qualcosa di bello.",
-   "en": "Every age has something beautiful.",
+   "concept": "c0492",
+   "text": "Ogni età ha qualcosa di bello.",
    "audio": "content/it/audio/corso10/042.mp3"
   },
   {
    "id": "corso10-043",
-   "it": "Preparo un viaggio in Giappone.",
-   "en": "I'm planning a trip to Japan.",
+   "concept": "c0493",
+   "text": "Preparo un viaggio in Giappone.",
    "audio": "content/it/audio/corso10/043.mp3"
   },
   {
    "id": "corso10-044",
-   "it": "Parto a primavera, da solo.",
-   "en": "I'm leaving in spring, on my own.",
+   "concept": "c0494",
+   "text": "Parto a primavera, da solo.",
    "audio": "content/it/audio/corso10/044.mp3",
    "g": "m",
-   "note": "She says: ... da sola."
+   "note": {
+    "en": "She says: ... da sola."
+   }
   },
   {
    "id": "corso10-045",
-   "it": "Prenoto i voli a gennaio.",
-   "en": "I'm booking the flights in January.",
+   "concept": "c0495",
+   "text": "Prenoto i voli a gennaio.",
    "audio": "content/it/audio/corso10/045.mp3"
   },
   {
    "id": "corso10-046",
-   "it": "Il biglietto costa mille euro.",
-   "en": "The ticket costs a thousand euros.",
+   "concept": "c0496",
+   "text": "Il biglietto costa mille euro.",
    "audio": "content/it/audio/corso10/046.mp3"
   },
   {
    "id": "corso10-047",
-   "it": "Ne vale la pena.",
-   "en": "It's worth it.",
+   "concept": "c0497",
+   "text": "Ne vale la pena.",
    "audio": "content/it/audio/corso10/047.mp3"
   },
   {
    "id": "corso10-048",
-   "it": "I sogni non hanno età.",
-   "en": "Dreams have no age.",
+   "concept": "c0498",
+   "text": "I sogni non hanno età.",
    "audio": "content/it/audio/corso10/048.mp3"
   },
   {
    "id": "corso10-049",
-   "it": "Il primo passo è oggi.",
-   "en": "The first step is today.",
+   "concept": "c0499",
+   "text": "Il primo passo è oggi.",
    "audio": "content/it/audio/corso10/049.mp3"
   },
   {
    "id": "corso10-050",
-   "it": "Il futuro comincia adesso.",
-   "en": "The future starts now.",
+   "concept": "c0500",
+   "text": "Il futuro comincia adesso.",
    "audio": "content/it/audio/corso10/050.mp3"
   }
  ]

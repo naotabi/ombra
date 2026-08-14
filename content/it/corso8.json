@@ -1,315 +1,328 @@
 {
+ "_schema": "ombra.course/1",
  "id": "corso8",
- "title": "Salute e benessere",
- "subtitle": "Health & how you feel",
+ "target": "it",
  "level": "A1",
- "sentences": [
+ "order": 8,
+ "title": "Salute e benessere",
+ "subtitle": {
+  "en": "Health & how you feel"
+ },
+ "items": [
   {
    "id": "corso8-001",
-   "it": "Come ti senti oggi?",
-   "en": "How do you feel today?",
+   "concept": "c0351",
+   "text": "Come ti senti oggi?",
    "audio": "content/it/audio/corso8/001.mp3"
   },
   {
    "id": "corso8-002",
-   "it": "Non mi sento bene.",
-   "en": "I don't feel well.",
+   "concept": "c0352",
+   "text": "Non mi sento bene.",
    "audio": "content/it/audio/corso8/002.mp3"
   },
   {
    "id": "corso8-003",
-   "it": "Ho mal di testa.",
-   "en": "I have a headache.",
+   "concept": "c0353",
+   "text": "Ho mal di testa.",
    "audio": "content/it/audio/corso8/003.mp3"
   },
   {
    "id": "corso8-004",
-   "it": "Ho anche mal di gola.",
-   "en": "I also have a sore throat.",
+   "concept": "c0354",
+   "text": "Ho anche mal di gola.",
    "audio": "content/it/audio/corso8/004.mp3"
   },
   {
    "id": "corso8-005",
-   "it": "Forse ho la febbre.",
-   "en": "Maybe I have a fever.",
+   "concept": "c0355",
+   "text": "Forse ho la febbre.",
    "audio": "content/it/audio/corso8/005.mp3"
   },
   {
    "id": "corso8-006",
-   "it": "Ho misurato la temperatura.",
-   "en": "I took my temperature.",
+   "concept": "c0356",
+   "text": "Ho misurato la temperatura.",
    "audio": "content/it/audio/corso8/006.mp3"
   },
   {
    "id": "corso8-007",
-   "it": "Trentotto e mezzo, è alta.",
-   "en": "Thirty-eight point five, it's high.",
+   "concept": "c0357",
+   "text": "Trentotto e mezzo, è alta.",
    "audio": "content/it/audio/corso8/007.mp3"
   },
   {
    "id": "corso8-008",
-   "it": "Devo restare a letto.",
-   "en": "I have to stay in bed.",
+   "concept": "c0358",
+   "text": "Devo restare a letto.",
    "audio": "content/it/audio/corso8/008.mp3"
   },
   {
    "id": "corso8-009",
-   "it": "Hai preso una medicina?",
-   "en": "Did you take any medicine?",
+   "concept": "c0359",
+   "text": "Hai preso una medicina?",
    "audio": "content/it/audio/corso8/009.mp3"
   },
   {
    "id": "corso8-010",
-   "it": "Prendo la medicina dopo i pasti.",
-   "en": "I take the medicine after meals.",
+   "concept": "c0360",
+   "text": "Prendo la medicina dopo i pasti.",
    "audio": "content/it/audio/corso8/010.mp3"
   },
   {
    "id": "corso8-011",
-   "it": "Mi fa male la schiena.",
-   "en": "My back hurts.",
+   "concept": "c0361",
+   "text": "Mi fa male la schiena.",
    "audio": "content/it/audio/corso8/011.mp3"
   },
   {
    "id": "corso8-012",
-   "it": "Le gambe sono pesanti oggi.",
-   "en": "My legs feel heavy today.",
+   "concept": "c0362",
+   "text": "Le gambe sono pesanti oggi.",
    "audio": "content/it/audio/corso8/012.mp3"
   },
   {
    "id": "corso8-013",
-   "it": "Ho camminato troppo ieri.",
-   "en": "I walked too much yesterday.",
+   "concept": "c0363",
+   "text": "Ho camminato troppo ieri.",
    "audio": "content/it/audio/corso8/013.mp3"
   },
   {
    "id": "corso8-014",
-   "it": "Devo andare dal medico.",
-   "en": "I have to go to the doctor.",
+   "concept": "c0364",
+   "text": "Devo andare dal medico.",
    "audio": "content/it/audio/corso8/014.mp3"
   },
   {
    "id": "corso8-015",
-   "it": "Il dottore può vedermi oggi?",
-   "en": "Can the doctor see me today?",
+   "concept": "c0365",
+   "text": "Il dottore può vedermi oggi?",
    "audio": "content/it/audio/corso8/015.mp3"
   },
   {
    "id": "corso8-016",
-   "it": "Ho un appuntamento alle undici.",
-   "en": "I have an appointment at eleven.",
+   "concept": "c0366",
+   "text": "Ho un appuntamento alle undici.",
    "audio": "content/it/audio/corso8/016.mp3"
   },
   {
    "id": "corso8-017",
-   "it": "La sala d'aspetto è piena.",
-   "en": "The waiting room is full.",
+   "concept": "c0367",
+   "text": "La sala d'aspetto è piena.",
    "audio": "content/it/audio/corso8/017.mp3"
   },
   {
    "id": "corso8-018",
-   "it": "Respiri profondamente, per favore.",
-   "en": "Breathe deeply, please.",
+   "concept": "c0368",
+   "text": "Respiri profondamente, per favore.",
    "audio": "content/it/audio/corso8/018.mp3"
   },
   {
    "id": "corso8-019",
-   "it": "Apra la bocca, per favore.",
-   "en": "Open your mouth, please.",
+   "concept": "c0369",
+   "text": "Apra la bocca, per favore.",
    "audio": "content/it/audio/corso8/019.mp3"
   },
   {
    "id": "corso8-020",
-   "it": "È solo un raffreddore.",
-   "en": "It's just a cold.",
+   "concept": "c0370",
+   "text": "È solo un raffreddore.",
    "audio": "content/it/audio/corso8/020.mp3"
   },
   {
    "id": "corso8-021",
-   "it": "Ho il naso chiuso.",
-   "en": "My nose is blocked.",
+   "concept": "c0371",
+   "text": "Ho il naso chiuso.",
    "audio": "content/it/audio/corso8/021.mp3"
   },
   {
    "id": "corso8-022",
-   "it": "Ho la tosse da tre giorni.",
-   "en": "I've had a cough for three days.",
+   "concept": "c0372",
+   "text": "Ho la tosse da tre giorni.",
    "audio": "content/it/audio/corso8/022.mp3"
   },
   {
    "id": "corso8-023",
-   "it": "Mi gira la testa.",
-   "en": "I feel dizzy.",
+   "concept": "c0373",
+   "text": "Mi gira la testa.",
    "audio": "content/it/audio/corso8/023.mp3"
   },
   {
    "id": "corso8-024",
-   "it": "Le arance hanno tanta vitamina C.",
-   "en": "Oranges have a lot of vitamin C.",
+   "concept": "c0374",
+   "text": "Le arance hanno tanta vitamina C.",
    "audio": "content/it/audio/corso8/024.mp3"
   },
   {
    "id": "corso8-025",
-   "it": "Bevi molta acqua calda.",
-   "en": "Drink plenty of warm water.",
+   "concept": "c0375",
+   "text": "Bevi molta acqua calda.",
    "audio": "content/it/audio/corso8/025.mp3"
   },
   {
    "id": "corso8-026",
-   "it": "Il riposo è la cura migliore.",
-   "en": "Rest is the best cure.",
+   "concept": "c0376",
+   "text": "Il riposo è la cura migliore.",
    "audio": "content/it/audio/corso8/026.mp3"
   },
   {
    "id": "corso8-027",
-   "it": "Mi sento già meglio.",
-   "en": "I already feel better.",
+   "concept": "c0377",
+   "text": "Mi sento già meglio.",
    "audio": "content/it/audio/corso8/027.mp3"
   },
   {
    "id": "corso8-028",
-   "it": "Sono guarito in una settimana.",
-   "en": "I recovered in a week.",
+   "concept": "c0378",
+   "text": "Sono guarito in una settimana.",
    "audio": "content/it/audio/corso8/028.mp3",
    "g": "m",
-   "note": "She says: Sono guarita ..."
+   "note": {
+    "en": "She says: Sono guarita ..."
+   }
   },
   {
    "id": "corso8-029",
-   "it": "Lo sport fa bene alla salute.",
-   "en": "Sport is good for your health.",
+   "concept": "c0379",
+   "text": "Lo sport fa bene alla salute.",
    "audio": "content/it/audio/corso8/029.mp3"
   },
   {
    "id": "corso8-030",
-   "it": "Faccio ginnastica ogni mattina.",
-   "en": "I exercise every morning.",
+   "concept": "c0380",
+   "text": "Faccio ginnastica ogni mattina.",
    "audio": "content/it/audio/corso8/030.mp3"
   },
   {
    "id": "corso8-031",
-   "it": "Mangio tanta frutta e verdura.",
-   "en": "I eat lots of fruit and vegetables.",
+   "concept": "c0381",
+   "text": "Mangio tanta frutta e verdura.",
    "audio": "content/it/audio/corso8/031.mp3"
   },
   {
    "id": "corso8-032",
-   "it": "Dormo poco e male.",
-   "en": "I sleep little and badly.",
+   "concept": "c0382",
+   "text": "Dormo poco e male.",
    "audio": "content/it/audio/corso8/032.mp3"
   },
   {
    "id": "corso8-033",
-   "it": "Sono sempre stressato per il lavoro.",
-   "en": "I'm always stressed about work.",
+   "concept": "c0383",
+   "text": "Sono sempre stressato per il lavoro.",
    "audio": "content/it/audio/corso8/033.mp3",
    "g": "m",
-   "note": "She says: ... stressata ..."
+   "note": {
+    "en": "She says: ... stressata ..."
+   }
   },
   {
    "id": "corso8-034",
-   "it": "Ho bisogno di una pausa.",
-   "en": "I need a break.",
+   "concept": "c0384",
+   "text": "Ho bisogno di una pausa.",
    "audio": "content/it/audio/corso8/034.mp3"
   },
   {
    "id": "corso8-035",
-   "it": "Oggi ho molta energia.",
-   "en": "Today I have a lot of energy.",
+   "concept": "c0385",
+   "text": "Oggi ho molta energia.",
    "audio": "content/it/audio/corso8/035.mp3"
   },
   {
    "id": "corso8-036",
-   "it": "Il mio cuore batte forte.",
-   "en": "My heart is beating fast.",
+   "concept": "c0386",
+   "text": "Il mio cuore batte forte.",
    "audio": "content/it/audio/corso8/036.mp3"
   },
   {
    "id": "corso8-037",
-   "it": "Sono caduto dalla bici.",
-   "en": "I fell off my bike.",
+   "concept": "c0387",
+   "text": "Sono caduto dalla bici.",
    "audio": "content/it/audio/corso8/037.mp3",
    "g": "m",
-   "note": "She says: Sono caduta ..."
+   "note": {
+    "en": "She says: Sono caduta ..."
+   }
   },
   {
    "id": "corso8-038",
-   "it": "Mi sono fatto male al braccio.",
-   "en": "I hurt my arm.",
+   "concept": "c0388",
+   "text": "Mi sono fatto male al braccio.",
    "audio": "content/it/audio/corso8/038.mp3",
    "g": "m",
-   "note": "She says: ... fatta male ..."
+   "note": {
+    "en": "She says: ... fatta male ..."
+   }
   },
   {
    "id": "corso8-039",
-   "it": "Non è rotto, per fortuna.",
-   "en": "It's not broken, luckily.",
+   "concept": "c0389",
+   "text": "Non è rotto, per fortuna.",
    "audio": "content/it/audio/corso8/039.mp3"
   },
   {
    "id": "corso8-040",
-   "it": "Ho gli occhi stanchi.",
-   "en": "My eyes are tired.",
+   "concept": "c0390",
+   "text": "Ho gli occhi stanchi.",
    "audio": "content/it/audio/corso8/040.mp3"
   },
   {
    "id": "corso8-041",
-   "it": "Guardo troppo lo schermo.",
-   "en": "I look at the screen too much.",
+   "concept": "c0391",
+   "text": "Guardo troppo lo schermo.",
    "audio": "content/it/audio/corso8/041.mp3"
   },
   {
    "id": "corso8-042",
-   "it": "Porto gli occhiali da un anno.",
-   "en": "I've worn glasses for a year.",
+   "concept": "c0392",
+   "text": "Porto gli occhiali da un anno.",
    "audio": "content/it/audio/corso8/042.mp3"
   },
   {
    "id": "corso8-043",
-   "it": "Il dentista mi aspetta domani.",
-   "en": "The dentist is expecting me tomorrow.",
+   "concept": "c0393",
+   "text": "Il dentista mi aspetta domani.",
    "audio": "content/it/audio/corso8/043.mp3"
   },
   {
    "id": "corso8-044",
-   "it": "Ho paura del dentista.",
-   "en": "I'm afraid of the dentist.",
+   "concept": "c0394",
+   "text": "Ho paura del dentista.",
    "audio": "content/it/audio/corso8/044.mp3"
   },
   {
    "id": "corso8-045",
-   "it": "Un dente mi fa male.",
-   "en": "One of my teeth hurts.",
+   "concept": "c0395",
+   "text": "Un dente mi fa male.",
    "audio": "content/it/audio/corso8/045.mp3"
   },
   {
    "id": "corso8-046",
-   "it": "Mi lavo i denti tre volte al giorno.",
-   "en": "I brush my teeth three times a day.",
+   "concept": "c0396",
+   "text": "Mi lavo i denti tre volte al giorno.",
    "audio": "content/it/audio/corso8/046.mp3"
   },
   {
    "id": "corso8-047",
-   "it": "La farmacia è aperta fino alle otto.",
-   "en": "The pharmacy is open until eight.",
+   "concept": "c0397",
+   "text": "La farmacia è aperta fino alle otto.",
    "audio": "content/it/audio/corso8/047.mp3"
   },
   {
    "id": "corso8-048",
-   "it": "Serve la ricetta per questo?",
-   "en": "Do I need a prescription for this?",
+   "concept": "c0398",
+   "text": "Serve la ricetta per questo?",
    "audio": "content/it/audio/corso8/048.mp3"
   },
   {
    "id": "corso8-049",
-   "it": "Guarisci presto!",
-   "en": "Get well soon!",
+   "concept": "c0399",
+   "text": "Guarisci presto!",
    "audio": "content/it/audio/corso8/049.mp3"
   },
   {
    "id": "corso8-050",
-   "it": "La salute prima di tutto.",
-   "en": "Health comes first.",
+   "concept": "c0400",
+   "text": "La salute prima di tutto.",
    "audio": "content/it/audio/corso8/050.mp3"
   }
  ]
