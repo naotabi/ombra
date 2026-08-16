@@ -1,5 +1,5 @@
 {
- "_schema": "ombra.course/1",
+ "_schema": "ombra.course/2",
  "id": "corso6",
  "target": "it",
  "level": "A1",
@@ -13,301 +13,665 @@
    "id": "corso6-001",
    "concept": "c0251",
    "text": "Ho una prenotazione a nome Rossi.",
-   "audio": "content/it/audio/corso6/001.mp3"
+   "audio": "content/it/audio/corso6/001.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso6-002",
    "concept": "c0252",
    "text": "Vorrei una camera doppia.",
-   "audio": "content/it/audio/corso6/002.mp3"
+   "audio": "content/it/audio/corso6/002.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "condizionale"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso6-003",
    "concept": "c0253",
    "text": "Quanto costa a notte?",
-   "audio": "content/it/audio/corso6/003.mp3"
+   "audio": "content/it/audio/corso6/003.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-004",
    "concept": "c0254",
    "text": "La colazione è inclusa?",
-   "audio": "content/it/audio/corso6/004.mp3"
+   "audio": "content/it/audio/corso6/004.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-005",
    "concept": "c0255",
    "text": "A che piano è la camera?",
-   "audio": "content/it/audio/corso6/005.mp3"
+   "audio": "content/it/audio/corso6/005.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-wh",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-006",
    "concept": "c0256",
    "text": "Ecco il mio passaporto.",
-   "audio": "content/it/audio/corso6/006.mp3"
+   "audio": "content/it/audio/corso6/006.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "frase-nominale",
+    "possessivo"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-007",
    "concept": "c0257",
    "text": "C'è il wifi in camera?",
-   "audio": "content/it/audio/corso6/007.mp3"
+   "audio": "content/it/audio/corso6/007.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "impersonale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso6-008",
    "concept": "c0258",
    "text": "C'è un balcone con vista?",
-   "audio": "content/it/audio/corso6/008.mp3"
+   "audio": "content/it/audio/corso6/008.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "impersonale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso6-009",
    "concept": "c0259",
    "text": "Il mare è vicino all'albergo?",
-   "audio": "content/it/audio/corso6/009.mp3"
+   "audio": "content/it/audio/corso6/009.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-010",
    "concept": "c0260",
    "text": "Posso lasciare qui la valigia?",
-   "audio": "content/it/audio/corso6/010.mp3"
+   "audio": "content/it/audio/corso6/010.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-si-no",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-011",
    "concept": "c0261",
    "text": "La mia valigia è pesante.",
-   "audio": "content/it/audio/corso6/011.mp3"
+   "audio": "content/it/audio/corso6/011.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-012",
    "concept": "c0262",
    "text": "Partiamo domenica mattina.",
-   "audio": "content/it/audio/corso6/012.mp3"
+   "audio": "content/it/audio/corso6/012.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-013",
    "concept": "c0263",
    "text": "L'aereo parte alle sei.",
-   "audio": "content/it/audio/corso6/013.mp3"
+   "audio": "content/it/audio/corso6/013.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-014",
    "concept": "c0264",
    "text": "Il volo è in ritardo.",
-   "audio": "content/it/audio/corso6/014.mp3"
+   "audio": "content/it/audio/corso6/014.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso6-015",
    "concept": "c0265",
    "text": "Dov'è l'uscita quattro?",
-   "audio": "content/it/audio/corso6/015.mp3"
+   "audio": "content/it/audio/corso6/015.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-wh",
+    "essere-avere-principale",
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-016",
    "concept": "c0266",
    "text": "Devo cambiare a Milano?",
-   "audio": "content/it/audio/corso6/016.mp3"
+   "audio": "content/it/audio/corso6/016.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-017",
    "concept": "c0267",
    "text": "Questo posto è occupato?",
-   "audio": "content/it/audio/corso6/017.mp3"
+   "audio": "content/it/audio/corso6/017.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "dimostrativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-018",
    "concept": "c0268",
    "text": "Posso aprire il finestrino?",
-   "audio": "content/it/audio/corso6/018.mp3"
+   "audio": "content/it/audio/corso6/018.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-si-no",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-019",
    "concept": "c0269",
    "text": "Scendo alla prossima fermata.",
-   "audio": "content/it/audio/corso6/019.mp3"
+   "audio": "content/it/audio/corso6/019.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-020",
    "concept": "c0270",
    "text": "Dove si prende il taxi?",
-   "audio": "content/it/audio/corso6/020.mp3"
+   "audio": "content/it/audio/corso6/020.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-wh",
+    "impersonale",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso6-021",
    "concept": "c0271",
    "text": "Quanto costa fino al centro?",
-   "audio": "content/it/audio/corso6/021.mp3"
+   "audio": "content/it/audio/corso6/021.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "espressione-tempo",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-022",
    "concept": "c0272",
    "text": "Manca molto?",
-   "audio": "content/it/audio/corso6/022.mp3"
+   "audio": "content/it/audio/corso6/022.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso6-023",
    "concept": "c0273",
    "text": "Che bel panorama!",
-   "audio": "content/it/audio/corso6/023.mp3"
+   "audio": "content/it/audio/corso6/023.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "esclamazione",
+    "frase-nominale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-024",
    "concept": "c0274",
    "text": "Facciamo una pausa qui.",
-   "audio": "content/it/audio/corso6/024.mp3"
+   "audio": "content/it/audio/corso6/024.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-025",
    "concept": "c0275",
    "text": "Ho bisogno di riposare.",
-   "audio": "content/it/audio/corso6/025.mp3"
+   "audio": "content/it/audio/corso6/025.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "infinito-dipendente",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-026",
    "concept": "c0276",
    "text": "L'albergo è pieno.",
-   "audio": "content/it/audio/corso6/026.mp3"
+   "audio": "content/it/audio/corso6/026.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-027",
    "concept": "c0277",
    "text": "C'è una camera libera per stasera?",
-   "audio": "content/it/audio/corso6/027.mp3"
+   "audio": "content/it/audio/corso6/027.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "impersonale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso6-028",
    "concept": "c0278",
    "text": "L'ascensore non funziona.",
-   "audio": "content/it/audio/corso6/028.mp3"
+   "audio": "content/it/audio/corso6/028.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "negazione",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso6-029",
    "concept": "c0279",
    "text": "La chiave non apre la porta.",
-   "audio": "content/it/audio/corso6/029.mp3"
+   "audio": "content/it/audio/corso6/029.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "negazione",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso6-030",
    "concept": "c0280",
    "text": "Mi serve un asciugamano pulito.",
-   "audio": "content/it/audio/corso6/030.mp3"
+   "audio": "content/it/audio/corso6/030.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "costruzione-piacere",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso6-031",
    "concept": "c0281",
    "text": "L'aria condizionata è rotta.",
-   "audio": "content/it/audio/corso6/031.mp3"
+   "audio": "content/it/audio/corso6/031.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-032",
    "concept": "c0282",
    "text": "Posso cambiare camera?",
-   "audio": "content/it/audio/corso6/032.mp3"
+   "audio": "content/it/audio/corso6/032.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-033",
    "concept": "c0283",
    "text": "A che ora devo lasciare la camera?",
-   "audio": "content/it/audio/corso6/033.mp3"
+   "audio": "content/it/audio/corso6/033.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-wh",
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso6-034",
    "concept": "c0284",
    "text": "Pago adesso o dopo?",
-   "audio": "content/it/audio/corso6/034.mp3"
+   "audio": "content/it/audio/corso6/034.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-035",
    "concept": "c0285",
    "text": "Mi chiama un taxi, per favore?",
-   "audio": "content/it/audio/corso6/035.mp3"
+   "audio": "content/it/audio/corso6/035.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "preposizione-semplice",
+    "presente",
+    "pronome-oggetto",
+    "registro-formale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso6-036",
    "concept": "c0286",
    "text": "Noleggiamo due biciclette domani.",
-   "audio": "content/it/audio/corso6/036.mp3"
+   "audio": "content/it/audio/corso6/036.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-037",
    "concept": "c0287",
    "text": "La spiaggia è piena stamattina.",
-   "audio": "content/it/audio/corso6/037.mp3"
+   "audio": "content/it/audio/corso6/037.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-038",
    "concept": "c0288",
    "text": "Nuoto ogni mattina in mare.",
-   "audio": "content/it/audio/corso6/038.mp3"
+   "audio": "content/it/audio/corso6/038.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-039",
    "concept": "c0289",
    "text": "Oggi prendo il sole.",
-   "audio": "content/it/audio/corso6/039.mp3"
+   "audio": "content/it/audio/corso6/039.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-040",
    "concept": "c0290",
    "text": "Dopo il bagno, un gelato!",
-   "audio": "content/it/audio/corso6/040.mp3"
+   "audio": "content/it/audio/corso6/040.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "articolo-indeterminativo",
+    "esclamazione",
+    "espressione-tempo",
+    "frase-nominale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-041",
    "concept": "c0291",
    "text": "Mando una cartolina ai nonni.",
-   "audio": "content/it/audio/corso6/041.mp3"
+   "audio": "content/it/audio/corso6/041.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-042",
    "concept": "c0292",
    "text": "Porto un regalo a mia madre.",
-   "audio": "content/it/audio/corso6/042.mp3"
+   "audio": "content/it/audio/corso6/042.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "possessivo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-043",
    "concept": "c0293",
    "text": "La guida parla molto veloce.",
-   "audio": "content/it/audio/corso6/043.mp3"
+   "audio": "content/it/audio/corso6/043.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-044",
    "concept": "c0294",
    "text": "Il castello apre alle dieci?",
-   "audio": "content/it/audio/corso6/044.mp3"
+   "audio": "content/it/audio/corso6/044.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-si-no",
+    "numerale",
+    "plurale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-045",
    "concept": "c0295",
    "text": "Facciamo una foto qui?",
-   "audio": "content/it/audio/corso6/045.mp3"
+   "audio": "content/it/audio/corso6/045.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-046",
    "concept": "c0296",
    "text": "Il viaggio in nave è lungo.",
-   "audio": "content/it/audio/corso6/046.mp3"
+   "audio": "content/it/audio/corso6/046.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-047",
    "concept": "c0297",
    "text": "Ho il mal di mare.",
-   "audio": "content/it/audio/corso6/047.mp3"
+   "audio": "content/it/audio/corso6/047.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso6-048",
    "concept": "c0298",
    "text": "Torniamo in albergo verso sera.",
-   "audio": "content/it/audio/corso6/048.mp3"
+   "audio": "content/it/audio/corso6/048.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-049",
    "concept": "c0299",
    "text": "Le vacanze finiscono domani.",
-   "audio": "content/it/audio/corso6/049.mp3"
+   "audio": "content/it/audio/corso6/049.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso6-050",
    "concept": "c0300",
    "text": "Voglio restare ancora una settimana.",
-   "audio": "content/it/audio/corso6/050.mp3"
+   "audio": "content/it/audio/corso6/050.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   }
  ]
 }

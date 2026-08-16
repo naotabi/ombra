@@ -1,5 +1,5 @@
 {
- "_schema": "ombra.course/1",
+ "_schema": "ombra.course/2",
  "id": "corso1",
  "target": "it",
  "level": "A1",
@@ -13,163 +13,321 @@
    "id": "corso1-001",
    "concept": "c0001",
    "text": "Ciao, come stai?",
-   "audio": "content/it/audio/corso1/001.mp3"
+   "audio": "content/it/audio/corso1/001.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-002",
    "concept": "c0002",
    "text": "Sto bene, grazie.",
-   "audio": "content/it/audio/corso1/002.mp3"
+   "audio": "content/it/audio/corso1/002.mp3",
+   "grammarTags": [
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-003",
    "concept": "c0003",
    "text": "Buongiorno, signora Rossi.",
-   "audio": "content/it/audio/corso1/003.mp3"
+   "audio": "content/it/audio/corso1/003.mp3",
+   "grammarTags": [
+    "frase-nominale"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-004",
    "concept": "c0004",
    "text": "Buonasera a tutti.",
-   "audio": "content/it/audio/corso1/004.mp3"
+   "audio": "content/it/audio/corso1/004.mp3",
+   "grammarTags": [
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-005",
    "concept": "c0005",
    "text": "Mi chiamo Marco.",
-   "audio": "content/it/audio/corso1/005.mp3"
+   "audio": "content/it/audio/corso1/005.mp3",
+   "grammarTags": [
+    "presente",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-006",
    "concept": "c0006",
    "text": "Come ti chiami?",
-   "audio": "content/it/audio/corso1/006.mp3"
+   "audio": "content/it/audio/corso1/006.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "presente",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-007",
    "concept": "c0007",
    "text": "Piacere di conoscerti.",
-   "audio": "content/it/audio/corso1/007.mp3"
+   "audio": "content/it/audio/corso1/007.mp3",
+   "grammarTags": [
+    "frase-nominale",
+    "preposizione-semplice",
+    "pronome-enclitico"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso1-008",
    "concept": "c0008",
    "text": "Di dove sei?",
-   "audio": "content/it/audio/corso1/008.mp3"
+   "audio": "content/it/audio/corso1/008.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-009",
    "concept": "c0009",
    "text": "Sono di Tokyo.",
-   "audio": "content/it/audio/corso1/009.mp3"
+   "audio": "content/it/audio/corso1/009.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-010",
    "concept": "c0010",
    "text": "Abito a Roma.",
-   "audio": "content/it/audio/corso1/010.mp3"
+   "audio": "content/it/audio/corso1/010.mp3",
+   "grammarTags": [
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-011",
    "concept": "c0011",
    "text": "Parli inglese?",
-   "audio": "content/it/audio/corso1/011.mp3"
+   "audio": "content/it/audio/corso1/011.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-012",
    "concept": "c0012",
    "text": "Parlo un po' di italiano.",
-   "audio": "content/it/audio/corso1/012.mp3"
+   "audio": "content/it/audio/corso1/012.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-013",
    "concept": "c0013",
    "text": "Non capisco.",
-   "audio": "content/it/audio/corso1/013.mp3"
+   "audio": "content/it/audio/corso1/013.mp3",
+   "grammarTags": [
+    "negazione",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-014",
    "concept": "c0014",
    "text": "Puoi ripetere, per favore?",
-   "audio": "content/it/audio/corso1/014.mp3"
+   "audio": "content/it/audio/corso1/014.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-015",
    "concept": "c0015",
    "text": "Parla più lentamente, per favore.",
-   "audio": "content/it/audio/corso1/015.mp3"
+   "audio": "content/it/audio/corso1/015.mp3",
+   "grammarTags": [
+    "comparativo",
+    "imperativo",
+    "preposizione-semplice"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso1-016",
    "concept": "c0016",
    "text": "Grazie mille.",
-   "audio": "content/it/audio/corso1/016.mp3"
+   "audio": "content/it/audio/corso1/016.mp3",
+   "grammarTags": [
+    "frase-nominale",
+    "numerale",
+    "plurale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-017",
    "concept": "c0017",
    "text": "Prego!",
-   "audio": "content/it/audio/corso1/017.mp3"
+   "audio": "content/it/audio/corso1/017.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "frase-nominale"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-018",
    "concept": "c0018",
    "text": "Scusa, dov'è il bagno?",
-   "audio": "content/it/audio/corso1/018.mp3"
+   "audio": "content/it/audio/corso1/018.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-wh",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-019",
    "concept": "c0019",
    "text": "Quanto costa questo?",
-   "audio": "content/it/audio/corso1/019.mp3"
+   "audio": "content/it/audio/corso1/019.mp3",
+   "grammarTags": [
+    "dimostrativo",
+    "domanda-wh",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-020",
    "concept": "c0020",
    "text": "Vorrei un caffè, per favore.",
-   "audio": "content/it/audio/corso1/020.mp3"
+   "audio": "content/it/audio/corso1/020.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "condizionale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso1-021",
    "concept": "c0021",
    "text": "Il conto, per favore.",
-   "audio": "content/it/audio/corso1/021.mp3"
+   "audio": "content/it/audio/corso1/021.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-022",
    "concept": "c0022",
    "text": "Che ore sono?",
-   "audio": "content/it/audio/corso1/022.mp3"
+   "audio": "content/it/audio/corso1/022.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-023",
    "concept": "c0023",
    "text": "Sono le tre.",
-   "audio": "content/it/audio/corso1/023.mp3"
+   "audio": "content/it/audio/corso1/023.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-024",
    "concept": "c0024",
    "text": "Oggi è lunedì.",
-   "audio": "content/it/audio/corso1/024.mp3"
+   "audio": "content/it/audio/corso1/024.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-025",
    "concept": "c0025",
    "text": "Domani lavoro.",
-   "audio": "content/it/audio/corso1/025.mp3"
+   "audio": "content/it/audio/corso1/025.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-026",
    "concept": "c0026",
    "text": "Ho fame.",
-   "audio": "content/it/audio/corso1/026.mp3"
+   "audio": "content/it/audio/corso1/026.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-027",
    "concept": "c0027",
    "text": "Ho sete.",
-   "audio": "content/it/audio/corso1/027.mp3"
+   "audio": "content/it/audio/corso1/027.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-028",
@@ -178,128 +336,261 @@
    "audio": "content/it/audio/corso1/028.mp3",
    "g": "m",
    "note": {
-    "en": "She says: Sono stanca."
-   }
+    "en": "She says: Sono stanca.",
+    "ja": "女性は Sono stanca."
+   },
+   "grammarTags": [
+    "accordo-aggettivo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-029",
    "concept": "c0029",
    "text": "Va bene.",
-   "audio": "content/it/audio/corso1/029.mp3"
+   "audio": "content/it/audio/corso1/029.mp3",
+   "grammarTags": [
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-030",
    "concept": "c0030",
    "text": "Non lo so.",
-   "audio": "content/it/audio/corso1/030.mp3"
+   "audio": "content/it/audio/corso1/030.mp3",
+   "grammarTags": [
+    "negazione",
+    "presente",
+    "pronome-oggetto",
+    "verbo-irregolare"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso1-031",
    "concept": "c0031",
    "text": "Certo, perché no?",
-   "audio": "content/it/audio/corso1/031.mp3"
+   "audio": "content/it/audio/corso1/031.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "frase-nominale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-032",
    "concept": "c0032",
    "text": "Mi piace la pizza.",
-   "audio": "content/it/audio/corso1/032.mp3"
+   "audio": "content/it/audio/corso1/032.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "costruzione-piacere",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso1-033",
    "concept": "c0033",
    "text": "Non mi piace il pesce.",
-   "audio": "content/it/audio/corso1/033.mp3"
+   "audio": "content/it/audio/corso1/033.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "costruzione-piacere",
+    "negazione",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso1-034",
    "concept": "c0034",
    "text": "Ho una sorella.",
-   "audio": "content/it/audio/corso1/034.mp3"
+   "audio": "content/it/audio/corso1/034.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-035",
    "concept": "c0035",
    "text": "Questo è mio fratello.",
-   "audio": "content/it/audio/corso1/035.mp3"
+   "audio": "content/it/audio/corso1/035.mp3",
+   "grammarTags": [
+    "dimostrativo",
+    "essere-avere-principale",
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-036",
    "concept": "c0036",
    "text": "La mia famiglia è grande.",
-   "audio": "content/it/audio/corso1/036.mp3"
+   "audio": "content/it/audio/corso1/036.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-037",
    "concept": "c0037",
    "text": "Dove abiti?",
-   "audio": "content/it/audio/corso1/037.mp3"
+   "audio": "content/it/audio/corso1/037.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-038",
    "concept": "c0038",
    "text": "Lavoro in un ufficio.",
-   "audio": "content/it/audio/corso1/038.mp3"
+   "audio": "content/it/audio/corso1/038.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-039",
    "concept": "c0039",
    "text": "Studio l'italiano.",
-   "audio": "content/it/audio/corso1/039.mp3"
+   "audio": "content/it/audio/corso1/039.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-040",
    "concept": "c0040",
    "text": "Quanti anni hai?",
-   "audio": "content/it/audio/corso1/040.mp3"
+   "audio": "content/it/audio/corso1/040.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-041",
    "concept": "c0041",
    "text": "Ho trent'anni.",
-   "audio": "content/it/audio/corso1/041.mp3"
+   "audio": "content/it/audio/corso1/041.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "essere-avere-principale",
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-042",
    "concept": "c0042",
    "text": "Che lavoro fai?",
-   "audio": "content/it/audio/corso1/042.mp3"
+   "audio": "content/it/audio/corso1/042.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-043",
    "concept": "c0043",
    "text": "Sono insegnante.",
-   "audio": "content/it/audio/corso1/043.mp3"
+   "audio": "content/it/audio/corso1/043.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-044",
    "concept": "c0044",
    "text": "A domani!",
-   "audio": "content/it/audio/corso1/044.mp3"
+   "audio": "content/it/audio/corso1/044.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "espressione-tempo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-045",
    "concept": "c0045",
    "text": "A presto!",
-   "audio": "content/it/audio/corso1/045.mp3"
+   "audio": "content/it/audio/corso1/045.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "espressione-tempo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-046",
    "concept": "c0046",
    "text": "Buona giornata!",
-   "audio": "content/it/audio/corso1/046.mp3"
+   "audio": "content/it/audio/corso1/046.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "esclamazione",
+    "espressione-tempo",
+    "frase-nominale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso1-047",
    "concept": "c0047",
    "text": "Buonanotte, dormi bene.",
-   "audio": "content/it/audio/corso1/047.mp3"
+   "audio": "content/it/audio/corso1/047.mp3",
+   "grammarTags": [
+    "imperativo"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso1-048",
    "concept": "c0048",
    "text": "Arrivederci!",
-   "audio": "content/it/audio/corso1/048.mp3"
+   "audio": "content/it/audio/corso1/048.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "frase-nominale"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-049",
@@ -308,14 +599,28 @@
    "audio": "content/it/audio/corso1/049.mp3",
    "g": "m",
    "note": {
-    "en": "To a woman: Benvenuta!"
-   }
+    "en": "To a woman: Benvenuta!",
+    "ja": "女性には Benvenuta!"
+   },
+   "grammarTags": [
+    "esclamazione",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso1-050",
    "concept": "c0050",
    "text": "In bocca al lupo!",
-   "audio": "content/it/audio/corso1/050.mp3"
+   "audio": "content/it/audio/corso1/050.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "frase-nominale",
+    "preposizione-articolata",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   }
  ]
 }

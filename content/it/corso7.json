@@ -1,5 +1,5 @@
 {
- "_schema": "ombra.course/1",
+ "_schema": "ombra.course/2",
  "id": "corso7",
  "target": "it",
  "level": "A1",
@@ -13,19 +13,38 @@
    "id": "corso7-001",
    "concept": "c0301",
    "text": "Che cosa hai fatto ieri?",
-   "audio": "content/it/audio/corso7/001.mp3"
+   "audio": "content/it/audio/corso7/001.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "espressione-tempo",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-002",
    "concept": "c0302",
    "text": "Ho lavorato tutto il giorno.",
-   "audio": "content/it/audio/corso7/002.mp3"
+   "audio": "content/it/audio/corso7/002.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-003",
    "concept": "c0303",
    "text": "Ho dormito fino a tardi.",
-   "audio": "content/it/audio/corso7/003.mp3"
+   "audio": "content/it/audio/corso7/003.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "passato-prossimo",
+    "preposizione-semplice"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-004",
@@ -34,32 +53,64 @@
    "audio": "content/it/audio/corso7/004.mp3",
    "g": "m",
    "note": {
-    "en": "She says: Sono andata ..."
-   }
+    "en": "She says: Sono andata ...",
+    "ja": "女性は Sono andata …"
+   },
+   "grammarTags": [
+    "aux-essere",
+    "passato-prossimo",
+    "preposizione-articolata"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-005",
    "concept": "c0305",
    "text": "Ho visto un film bellissimo.",
-   "audio": "content/it/audio/corso7/005.mp3"
+   "audio": "content/it/audio/corso7/005.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-006",
    "concept": "c0306",
    "text": "Abbiamo mangiato una pizza enorme.",
-   "audio": "content/it/audio/corso7/006.mp3"
+   "audio": "content/it/audio/corso7/006.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-007",
    "concept": "c0307",
    "text": "Ho incontrato un vecchio amico.",
-   "audio": "content/it/audio/corso7/007.mp3"
+   "audio": "content/it/audio/corso7/007.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-008",
    "concept": "c0308",
    "text": "Abbiamo parlato per ore.",
-   "audio": "content/it/audio/corso7/008.mp3"
+   "audio": "content/it/audio/corso7/008.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "passato-prossimo",
+    "preposizione-semplice"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-009",
@@ -68,14 +119,29 @@
    "audio": "content/it/audio/corso7/009.mp3",
    "g": "f",
    "note": {
-    "en": "He says: Sono tornato ..."
-   }
+    "en": "He says: Sono tornato ...",
+    "ja": "男性は Sono tornato …"
+   },
+   "grammarTags": [
+    "aux-essere",
+    "espressione-tempo",
+    "passato-prossimo",
+    "preposizione-semplice"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-010",
    "concept": "c0310",
    "text": "Ho perso l'autobus stamattina.",
-   "audio": "content/it/audio/corso7/010.mp3"
+   "audio": "content/it/audio/corso7/010.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-011",
@@ -84,44 +150,93 @@
    "audio": "content/it/audio/corso7/011.mp3",
    "g": "f",
    "note": {
-    "en": "He says: Sono arrivato ..."
-   }
+    "en": "He says: Sono arrivato ...",
+    "ja": "男性は Sono arrivato …"
+   },
+   "grammarTags": [
+    "aux-essere",
+    "passato-prossimo",
+    "preposizione-articolata",
+    "preposizione-semplice"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-012",
    "concept": "c0312",
    "text": "Il capo non ha detto niente.",
-   "audio": "content/it/audio/corso7/012.mp3"
+   "audio": "content/it/audio/corso7/012.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "negazione",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-013",
    "concept": "c0313",
    "text": "Hai visto la partita ieri sera?",
-   "audio": "content/it/audio/corso7/013.mp3"
+   "audio": "content/it/audio/corso7/013.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-si-no",
+    "espressione-tempo",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-014",
    "concept": "c0314",
    "text": "La nostra squadra ha vinto!",
-   "audio": "content/it/audio/corso7/014.mp3"
+   "audio": "content/it/audio/corso7/014.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "esclamazione",
+    "participio-irregolare",
+    "passato-prossimo",
+    "possessivo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-015",
    "concept": "c0315",
    "text": "Ho comprato una giacca nuova.",
-   "audio": "content/it/audio/corso7/015.mp3"
+   "audio": "content/it/audio/corso7/015.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-016",
    "concept": "c0316",
    "text": "Quanto hai pagato?",
-   "audio": "content/it/audio/corso7/016.mp3"
+   "audio": "content/it/audio/corso7/016.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-017",
    "concept": "c0317",
    "text": "Ho speso troppo questo mese.",
-   "audio": "content/it/audio/corso7/017.mp3"
+   "audio": "content/it/audio/corso7/017.mp3",
+   "grammarTags": [
+    "dimostrativo",
+    "espressione-tempo",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-018",
@@ -130,8 +245,17 @@
    "audio": "content/it/audio/corso7/018.mp3",
    "g": "m",
    "note": {
-    "en": "To a woman: sei stata?"
-   }
+    "en": "To a woman: sei stata?",
+    "ja": "女性には sei stata?"
+   },
+   "grammarTags": [
+    "aux-essere",
+    "domanda-wh",
+    "participio-irregolare",
+    "passato-prossimo",
+    "preposizione-semplice"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-019",
@@ -140,50 +264,108 @@
    "audio": "content/it/audio/corso7/019.mp3",
    "g": "f",
    "note": {
-    "en": "He says: Sono stato ..."
-   }
+    "en": "He says: Sono stato ...",
+    "ja": "男性は Sono stato …"
+   },
+   "grammarTags": [
+    "aux-essere",
+    "participio-irregolare",
+    "passato-prossimo",
+    "preposizione-articolata",
+    "preposizione-semplice"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-020",
    "concept": "c0320",
    "text": "Abbiamo visitato tre città.",
-   "audio": "content/it/audio/corso7/020.mp3"
+   "audio": "content/it/audio/corso7/020.mp3",
+   "grammarTags": [
+    "numerale",
+    "passato-prossimo",
+    "plurale"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-021",
    "concept": "c0321",
    "text": "Il viaggio è durato dieci ore.",
-   "audio": "content/it/audio/corso7/021.mp3"
+   "audio": "content/it/audio/corso7/021.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "aux-essere",
+    "espressione-tempo",
+    "numerale",
+    "passato-prossimo",
+    "plurale"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-022",
    "concept": "c0322",
    "text": "Ho preso il treno delle sette.",
-   "audio": "content/it/audio/corso7/022.mp3"
+   "audio": "content/it/audio/corso7/022.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "numerale",
+    "participio-irregolare",
+    "passato-prossimo",
+    "plurale",
+    "preposizione-articolata"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-023",
    "concept": "c0323",
    "text": "Ho dimenticato l'ombrello a casa.",
-   "audio": "content/it/audio/corso7/023.mp3"
+   "audio": "content/it/audio/corso7/023.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "passato-prossimo",
+    "preposizione-semplice"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-024",
    "concept": "c0324",
    "text": "È piovuto tutta la notte.",
-   "audio": "content/it/audio/corso7/024.mp3"
+   "audio": "content/it/audio/corso7/024.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "aux-essere",
+    "espressione-tempo",
+    "passato-prossimo"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-025",
    "concept": "c0325",
    "text": "Finalmente è uscito il sole.",
-   "audio": "content/it/audio/corso7/025.mp3"
+   "audio": "content/it/audio/corso7/025.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "aux-essere",
+    "passato-prossimo"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-026",
    "concept": "c0326",
    "text": "Ho conosciuto una persona simpatica.",
-   "audio": "content/it/audio/corso7/026.mp3"
+   "audio": "content/it/audio/corso7/026.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-027",
@@ -192,14 +374,28 @@
    "audio": "content/it/audio/corso7/027.mp3",
    "g": "m",
    "note": {
-    "en": "All women: divertite."
-   }
+    "en": "All women: divertite.",
+    "ja": "全員女性なら divertite."
+   },
+   "grammarTags": [
+    "aux-essere",
+    "passato-prossimo",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-028",
    "concept": "c0328",
    "text": "Ieri non ho fatto niente.",
-   "audio": "content/it/audio/corso7/028.mp3"
+   "audio": "content/it/audio/corso7/028.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "negazione",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-029",
@@ -208,62 +404,135 @@
    "audio": "content/it/audio/corso7/029.mp3",
    "g": "m",
    "note": {
-    "en": "She says: ... riposata ..."
-   }
+    "en": "She says: ... riposata ...",
+    "ja": "女性は … riposata …"
+   },
+   "grammarTags": [
+    "articolo-determinativo",
+    "aux-essere",
+    "espressione-tempo",
+    "passato-prossimo",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-030",
    "concept": "c0330",
    "text": "Ho pulito tutta la casa.",
-   "audio": "content/it/audio/corso7/030.mp3"
+   "audio": "content/it/audio/corso7/030.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-031",
    "concept": "c0331",
    "text": "Ho cucinato per i miei amici.",
-   "audio": "content/it/audio/corso7/031.mp3"
+   "audio": "content/it/audio/corso7/031.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "passato-prossimo",
+    "plurale",
+    "possessivo",
+    "preposizione-semplice"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-032",
    "concept": "c0332",
    "text": "La cena è venuta benissimo.",
-   "audio": "content/it/audio/corso7/032.mp3"
+   "audio": "content/it/audio/corso7/032.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "aux-essere",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-033",
    "concept": "c0333",
    "text": "Abbiamo bevuto un buon vino.",
-   "audio": "content/it/audio/corso7/033.mp3"
+   "audio": "content/it/audio/corso7/033.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-034",
    "concept": "c0334",
    "text": "Chi ha lavato i piatti?",
-   "audio": "content/it/audio/corso7/034.mp3"
+   "audio": "content/it/audio/corso7/034.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-wh",
+    "passato-prossimo",
+    "plurale"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-035",
    "concept": "c0335",
    "text": "Ho letto un libro in due giorni.",
-   "audio": "content/it/audio/corso7/035.mp3"
+   "audio": "content/it/audio/corso7/035.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "numerale",
+    "participio-irregolare",
+    "passato-prossimo",
+    "plurale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-036",
    "concept": "c0336",
    "text": "Ho ascoltato musica tutta la sera.",
-   "audio": "content/it/audio/corso7/036.mp3"
+   "audio": "content/it/audio/corso7/036.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-037",
    "concept": "c0337",
    "text": "Siamo usciti sabato sera.",
-   "audio": "content/it/audio/corso7/037.mp3"
+   "audio": "content/it/audio/corso7/037.mp3",
+   "grammarTags": [
+    "aux-essere",
+    "espressione-tempo",
+    "passato-prossimo"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-038",
    "concept": "c0338",
    "text": "Ho ballato fino alle due.",
-   "audio": "content/it/audio/corso7/038.mp3"
+   "audio": "content/it/audio/corso7/038.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "numerale",
+    "passato-prossimo",
+    "plurale",
+    "preposizione-articolata"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-039",
@@ -272,74 +541,150 @@
    "audio": "content/it/audio/corso7/039.mp3",
    "g": "f",
    "note": {
-    "en": "He says: ... svegliato ..."
-   }
+    "en": "He says: ... svegliato ...",
+    "ja": "男性は … svegliato …"
+   },
+   "grammarTags": [
+    "aux-essere",
+    "espressione-tempo",
+    "passato-prossimo",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-040",
    "concept": "c0340",
    "text": "Ho fatto colazione al bar.",
-   "audio": "content/it/audio/corso7/040.mp3"
+   "audio": "content/it/audio/corso7/040.mp3",
+   "grammarTags": [
+    "participio-irregolare",
+    "passato-prossimo",
+    "preposizione-articolata"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-041",
    "concept": "c0341",
    "text": "Poi ho camminato nel parco.",
-   "audio": "content/it/audio/corso7/041.mp3"
+   "audio": "content/it/audio/corso7/041.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "passato-prossimo",
+    "preposizione-articolata"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-042",
    "concept": "c0342",
    "text": "Ho trovato un gatto per strada.",
-   "audio": "content/it/audio/corso7/042.mp3"
+   "audio": "content/it/audio/corso7/042.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "passato-prossimo",
+    "preposizione-semplice"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-043",
    "concept": "c0343",
    "text": "Ha bevuto tutto il latte.",
-   "audio": "content/it/audio/corso7/043.mp3"
+   "audio": "content/it/audio/corso7/043.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-044",
    "concept": "c0344",
    "text": "Hai sentito la novità?",
-   "audio": "content/it/audio/corso7/044.mp3"
+   "audio": "content/it/audio/corso7/044.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-si-no",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-045",
    "concept": "c0345",
    "text": "Marco ha cambiato lavoro.",
-   "audio": "content/it/audio/corso7/045.mp3"
+   "audio": "content/it/audio/corso7/045.mp3",
+   "grammarTags": [
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-046",
    "concept": "c0346",
    "text": "Che sorpresa!",
-   "audio": "content/it/audio/corso7/046.mp3"
+   "audio": "content/it/audio/corso7/046.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "frase-nominale"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso7-047",
    "concept": "c0347",
    "text": "Il weekend è passato veloce.",
-   "audio": "content/it/audio/corso7/047.mp3"
+   "audio": "content/it/audio/corso7/047.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "aux-essere",
+    "espressione-tempo",
+    "passato-prossimo"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso7-048",
    "concept": "c0348",
    "text": "Ho studiato l'italiano anche ieri.",
-   "audio": "content/it/audio/corso7/048.mp3"
+   "audio": "content/it/audio/corso7/048.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "espressione-tempo",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-049",
    "concept": "c0349",
    "text": "Ho ripetuto le frasi ad alta voce.",
-   "audio": "content/it/audio/corso7/049.mp3"
+   "audio": "content/it/audio/corso7/049.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "passato-prossimo",
+    "plurale"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso7-050",
    "concept": "c0350",
    "text": "Oggi comincio una nuova settimana.",
-   "audio": "content/it/audio/corso7/050.mp3"
+   "audio": "content/it/audio/corso7/050.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   }
  ]
 }

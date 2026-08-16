@@ -1,5 +1,5 @@
 {
- "_schema": "ombra.course/1",
+ "_schema": "ombra.course/2",
  "id": "corso10",
  "target": "it",
  "level": "A1",
@@ -13,139 +13,302 @@
    "id": "corso10-001",
    "concept": "c0451",
    "text": "Che programmi hai per domani?",
-   "audio": "content/it/audio/corso10/001.mp3"
+   "audio": "content/it/audio/corso10/001.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-002",
    "concept": "c0452",
    "text": "Domani mi taglio i capelli.",
-   "audio": "content/it/audio/corso10/002.mp3"
+   "audio": "content/it/audio/corso10/002.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "plurale",
+    "presente",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-003",
    "concept": "c0453",
    "text": "Il prossimo weekend partiamo per Napoli.",
-   "audio": "content/it/audio/corso10/003.mp3"
+   "audio": "content/it/audio/corso10/003.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-004",
    "concept": "c0454",
    "text": "Penso di cambiare casa.",
-   "audio": "content/it/audio/corso10/004.mp3"
+   "audio": "content/it/audio/corso10/004.mp3",
+   "grammarTags": [
+    "infinito-dipendente",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-005",
    "concept": "c0455",
    "text": "Cerco un appartamento più grande.",
-   "audio": "content/it/audio/corso10/005.mp3"
+   "audio": "content/it/audio/corso10/005.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "comparativo",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso10-006",
    "concept": "c0456",
    "text": "Voglio imparare a cucinare bene.",
-   "audio": "content/it/audio/corso10/006.mp3"
+   "audio": "content/it/audio/corso10/006.mp3",
+   "grammarTags": [
+    "infinito-dipendente",
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-007",
    "concept": "c0457",
    "text": "Comincio un corso di cucina a settembre.",
-   "audio": "content/it/audio/corso10/007.mp3"
+   "audio": "content/it/audio/corso10/007.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-008",
    "concept": "c0458",
    "text": "L'anno prossimo studio in Italia.",
-   "audio": "content/it/audio/corso10/008.mp3"
+   "audio": "content/it/audio/corso10/008.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-009",
    "concept": "c0459",
    "text": "Prima devo risparmiare un po'.",
-   "audio": "content/it/audio/corso10/009.mp3"
+   "audio": "content/it/audio/corso10/009.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "numerale",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-010",
    "concept": "c0460",
    "text": "Metto da parte cento euro al mese.",
-   "audio": "content/it/audio/corso10/010.mp3"
+   "audio": "content/it/audio/corso10/010.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "numerale",
+    "plurale",
+    "preposizione-articolata",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso10-011",
    "concept": "c0461",
    "text": "Un giorno apro un piccolo bar.",
-   "audio": "content/it/audio/corso10/011.mp3"
+   "audio": "content/it/audio/corso10/011.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-012",
    "concept": "c0462",
    "text": "È il mio progetto segreto.",
-   "audio": "content/it/audio/corso10/012.mp3"
+   "audio": "content/it/audio/corso10/012.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-013",
    "concept": "c0463",
    "text": "Tu che cosa sogni?",
-   "audio": "content/it/audio/corso10/013.mp3"
+   "audio": "content/it/audio/corso10/013.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-014",
    "concept": "c0464",
    "text": "Sogno una casa con giardino.",
-   "audio": "content/it/audio/corso10/014.mp3"
+   "audio": "content/it/audio/corso10/014.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso10-015",
    "concept": "c0465",
    "text": "Vorrei anche un cane grande.",
-   "audio": "content/it/audio/corso10/015.mp3"
+   "audio": "content/it/audio/corso10/015.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "condizionale"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso10-016",
    "concept": "c0466",
    "text": "Presto comincia l'estate.",
-   "audio": "content/it/audio/corso10/016.mp3"
+   "audio": "content/it/audio/corso10/016.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-017",
    "concept": "c0467",
    "text": "Quest'estate resto in città.",
-   "audio": "content/it/audio/corso10/017.mp3"
+   "audio": "content/it/audio/corso10/017.mp3",
+   "grammarTags": [
+    "dimostrativo",
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-018",
    "concept": "c0468",
    "text": "Forse ad agosto vado in montagna.",
-   "audio": "content/it/audio/corso10/018.mp3"
+   "audio": "content/it/audio/corso10/018.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-019",
    "concept": "c0469",
    "text": "Cammino volentieri nella natura.",
-   "audio": "content/it/audio/corso10/019.mp3"
+   "audio": "content/it/audio/corso10/019.mp3",
+   "grammarTags": [
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-020",
    "concept": "c0470",
    "text": "Compro uno zaino nuovo.",
-   "audio": "content/it/audio/corso10/020.mp3"
+   "audio": "content/it/audio/corso10/020.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "numerale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-021",
    "concept": "c0471",
    "text": "Dopo l'estate voglio cambiare lavoro.",
-   "audio": "content/it/audio/corso10/021.mp3"
+   "audio": "content/it/audio/corso10/021.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-022",
    "concept": "c0472",
    "text": "Studio l'inglese per il lavoro.",
-   "audio": "content/it/audio/corso10/022.mp3"
+   "audio": "content/it/audio/corso10/022.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso10-023",
    "concept": "c0473",
    "text": "Il futuro mi fa un po' paura.",
-   "audio": "content/it/audio/corso10/023.mp3"
+   "audio": "content/it/audio/corso10/023.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "articolo-indeterminativo",
+    "costruzione-piacere",
+    "presente",
+    "pronome-oggetto",
+    "verbo-irregolare"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso10-024",
@@ -154,122 +317,269 @@
    "audio": "content/it/audio/corso10/024.mp3",
    "g": "m",
    "note": {
-    "en": "She says: ... curiosa."
-   }
+    "en": "She says: ... curiosa.",
+    "ja": "女性は … curiosa."
+   },
+   "grammarTags": [
+    "accordo-aggettivo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-025",
    "concept": "c0475",
    "text": "Un passo alla volta, sempre avanti.",
-   "audio": "content/it/audio/corso10/025.mp3"
+   "audio": "content/it/audio/corso10/025.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-026",
    "concept": "c0476",
    "text": "Quest'anno leggo dodici libri.",
-   "audio": "content/it/audio/corso10/026.mp3"
+   "audio": "content/it/audio/corso10/026.mp3",
+   "grammarTags": [
+    "dimostrativo",
+    "espressione-tempo",
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-027",
    "concept": "c0477",
    "text": "Uno al mese, è possibile.",
-   "audio": "content/it/audio/corso10/027.mp3"
+   "audio": "content/it/audio/corso10/027.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "impersonale",
+    "numerale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso10-028",
    "concept": "c0478",
    "text": "Scrivo i miei piani sul quaderno.",
-   "audio": "content/it/audio/corso10/028.mp3"
+   "audio": "content/it/audio/corso10/028.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "plurale",
+    "possessivo",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-029",
    "concept": "c0479",
    "text": "Domenica pianto fiori nuovi sul balcone.",
-   "audio": "content/it/audio/corso10/029.mp3"
+   "audio": "content/it/audio/corso10/029.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "espressione-tempo",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-030",
    "concept": "c0480",
    "text": "Il balcone diventa un giardino.",
-   "audio": "content/it/audio/corso10/030.mp3"
+   "audio": "content/it/audio/corso10/030.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "articolo-indeterminativo",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso10-031",
    "concept": "c0481",
    "text": "Voglio bere meno caffè.",
-   "audio": "content/it/audio/corso10/031.mp3"
+   "audio": "content/it/audio/corso10/031.mp3",
+   "grammarTags": [
+    "comparativo",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso10-032",
    "concept": "c0482",
    "text": "Da lunedì vado a letto presto.",
-   "audio": "content/it/audio/corso10/032.mp3"
+   "audio": "content/it/audio/corso10/032.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-033",
    "concept": "c0483",
    "text": "Le buone abitudini cambiano la vita.",
-   "audio": "content/it/audio/corso10/033.mp3"
+   "audio": "content/it/audio/corso10/033.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-034",
    "concept": "c0484",
    "text": "Quest'inverno provo a sciare.",
-   "audio": "content/it/audio/corso10/034.mp3"
+   "audio": "content/it/audio/corso10/034.mp3",
+   "grammarTags": [
+    "dimostrativo",
+    "espressione-tempo",
+    "infinito-dipendente",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-035",
    "concept": "c0485",
    "text": "Mia figlia impara a nuotare.",
-   "audio": "content/it/audio/corso10/035.mp3"
+   "audio": "content/it/audio/corso10/035.mp3",
+   "grammarTags": [
+    "infinito-dipendente",
+    "possessivo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-036",
    "concept": "c0486",
    "text": "Tra due anni parlo bene l'italiano.",
-   "audio": "content/it/audio/corso10/036.mp3"
+   "audio": "content/it/audio/corso10/036.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "espressione-tempo",
+    "numerale",
+    "plurale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-037",
    "concept": "c0487",
    "text": "Ripasso ogni giorno per dieci minuti.",
-   "audio": "content/it/audio/corso10/037.mp3"
+   "audio": "content/it/audio/corso10/037.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "numerale",
+    "plurale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-038",
    "concept": "c0488",
    "text": "Piano piano, senza fretta.",
-   "audio": "content/it/audio/corso10/038.mp3"
+   "audio": "content/it/audio/corso10/038.mp3",
+   "grammarTags": [
+    "frase-nominale"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso10-039",
    "concept": "c0489",
    "text": "Il mese prossimo compio quarant'anni.",
-   "audio": "content/it/audio/corso10/039.mp3"
+   "audio": "content/it/audio/corso10/039.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-040",
    "concept": "c0490",
    "text": "Organizzo una grande festa.",
-   "audio": "content/it/audio/corso10/040.mp3"
+   "audio": "content/it/audio/corso10/040.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-041",
    "concept": "c0491",
    "text": "Invito tutti i miei amici.",
-   "audio": "content/it/audio/corso10/041.mp3"
+   "audio": "content/it/audio/corso10/041.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "plurale",
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-042",
    "concept": "c0492",
    "text": "Ogni età ha qualcosa di bello.",
-   "audio": "content/it/audio/corso10/042.mp3"
+   "audio": "content/it/audio/corso10/042.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-043",
    "concept": "c0493",
    "text": "Preparo un viaggio in Giappone.",
-   "audio": "content/it/audio/corso10/043.mp3"
+   "audio": "content/it/audio/corso10/043.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso10-044",
@@ -278,44 +588,95 @@
    "audio": "content/it/audio/corso10/044.mp3",
    "g": "m",
    "note": {
-    "en": "She says: ... da sola."
-   }
+    "en": "She says: ... da sola.",
+    "ja": "女性は … da sola."
+   },
+   "grammarTags": [
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-045",
    "concept": "c0495",
    "text": "Prenoto i voli a gennaio.",
-   "audio": "content/it/audio/corso10/045.mp3"
+   "audio": "content/it/audio/corso10/045.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "plurale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-046",
    "concept": "c0496",
    "text": "Il biglietto costa mille euro.",
-   "audio": "content/it/audio/corso10/046.mp3"
+   "audio": "content/it/audio/corso10/046.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-047",
    "concept": "c0497",
    "text": "Ne vale la pena.",
-   "audio": "content/it/audio/corso10/047.mp3"
+   "audio": "content/it/audio/corso10/047.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "ne-partitivo",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso10-048",
    "concept": "c0498",
    "text": "I sogni non hanno età.",
-   "audio": "content/it/audio/corso10/048.mp3"
+   "audio": "content/it/audio/corso10/048.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "negazione",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-049",
    "concept": "c0499",
    "text": "Il primo passo è oggi.",
-   "audio": "content/it/audio/corso10/049.mp3"
+   "audio": "content/it/audio/corso10/049.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "numerale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso10-050",
    "concept": "c0500",
    "text": "Il futuro comincia adesso.",
-   "audio": "content/it/audio/corso10/050.mp3"
+   "audio": "content/it/audio/corso10/050.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "_schema": "ombra.course/1",
+ "_schema": "ombra.course/2",
  "id": "corso3",
  "target": "it",
  "level": "A1",
@@ -13,301 +13,660 @@
    "id": "corso3-001",
    "concept": "c0101",
    "text": "Dov'è la stazione?",
-   "audio": "content/it/audio/corso3/001.mp3"
+   "audio": "content/it/audio/corso3/001.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-wh",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-002",
    "concept": "c0102",
    "text": "È lontano da qui?",
-   "audio": "content/it/audio/corso3/002.mp3"
+   "audio": "content/it/audio/corso3/002.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso3-003",
    "concept": "c0103",
    "text": "Puoi mostrarmi sulla mappa?",
-   "audio": "content/it/audio/corso3/003.mp3"
+   "audio": "content/it/audio/corso3/003.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "preposizione-articolata",
+    "presente",
+    "pronome-enclitico",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso3-004",
    "concept": "c0104",
    "text": "Giri a destra al semaforo.",
-   "audio": "content/it/audio/corso3/004.mp3"
+   "audio": "content/it/audio/corso3/004.mp3",
+   "grammarTags": [
+    "imperativo",
+    "preposizione-articolata",
+    "preposizione-semplice",
+    "registro-formale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso3-005",
    "concept": "c0105",
    "text": "Sempre dritto, poi a sinistra.",
-   "audio": "content/it/audio/corso3/005.mp3"
+   "audio": "content/it/audio/corso3/005.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-006",
    "concept": "c0106",
    "text": "È vicino al duomo.",
-   "audio": "content/it/audio/corso3/006.mp3"
+   "audio": "content/it/audio/corso3/006.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-007",
    "concept": "c0107",
    "text": "Quanto ci vuole a piedi?",
-   "audio": "content/it/audio/corso3/007.mp3"
+   "audio": "content/it/audio/corso3/007.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "preposizione-semplice",
+    "presente",
+    "pronome-oggetto",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso3-008",
    "concept": "c0108",
    "text": "Dieci minuti, più o meno.",
-   "audio": "content/it/audio/corso3/008.mp3"
+   "audio": "content/it/audio/corso3/008.mp3",
+   "grammarTags": [
+    "comparativo",
+    "espressione-tempo",
+    "frase-nominale",
+    "numerale",
+    "plurale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso3-009",
    "concept": "c0109",
    "text": "Che autobus devo prendere?",
-   "audio": "content/it/audio/corso3/009.mp3"
+   "audio": "content/it/audio/corso3/009.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-010",
    "concept": "c0110",
    "text": "Il ventitré passa ogni ora.",
-   "audio": "content/it/audio/corso3/010.mp3"
+   "audio": "content/it/audio/corso3/010.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-011",
    "concept": "c0111",
    "text": "Dove si comprano i biglietti?",
-   "audio": "content/it/audio/corso3/011.mp3"
+   "audio": "content/it/audio/corso3/011.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-wh",
+    "impersonale",
+    "plurale",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso3-012",
    "concept": "c0112",
    "text": "Un biglietto per Firenze, per favore.",
-   "audio": "content/it/audio/corso3/012.mp3"
+   "audio": "content/it/audio/corso3/012.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso3-013",
    "concept": "c0113",
    "text": "Solo andata o andata e ritorno?",
-   "audio": "content/it/audio/corso3/013.mp3"
+   "audio": "content/it/audio/corso3/013.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "frase-nominale"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso3-014",
    "concept": "c0114",
    "text": "Il treno parte dal binario due.",
-   "audio": "content/it/audio/corso3/014.mp3"
+   "audio": "content/it/audio/corso3/014.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "numerale",
+    "plurale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-015",
    "concept": "c0115",
    "text": "Il prossimo treno è alle nove.",
-   "audio": "content/it/audio/corso3/015.mp3"
+   "audio": "content/it/audio/corso3/015.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "numerale",
+    "plurale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-016",
    "concept": "c0116",
    "text": "Sono in ritardo!",
-   "audio": "content/it/audio/corso3/016.mp3"
+   "audio": "content/it/audio/corso3/016.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso3-017",
    "concept": "c0117",
    "text": "Il museo è aperto oggi?",
-   "audio": "content/it/audio/corso3/017.mp3"
+   "audio": "content/it/audio/corso3/017.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "domanda-si-no",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-018",
    "concept": "c0118",
    "text": "Chiude il lunedì.",
-   "audio": "content/it/audio/corso3/018.mp3"
+   "audio": "content/it/audio/corso3/018.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-019",
    "concept": "c0119",
    "text": "L'ingresso è gratuito.",
-   "audio": "content/it/audio/corso3/019.mp3"
+   "audio": "content/it/audio/corso3/019.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-020",
    "concept": "c0120",
    "text": "Due biglietti per il museo.",
-   "audio": "content/it/audio/corso3/020.mp3"
+   "audio": "content/it/audio/corso3/020.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "frase-nominale",
+    "numerale",
+    "plurale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-021",
    "concept": "c0121",
    "text": "Posso fare una foto qui?",
-   "audio": "content/it/audio/corso3/021.mp3"
+   "audio": "content/it/audio/corso3/021.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-022",
    "concept": "c0122",
    "text": "Che bella piazza!",
-   "audio": "content/it/audio/corso3/022.mp3"
+   "audio": "content/it/audio/corso3/022.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "esclamazione",
+    "frase-nominale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-023",
    "concept": "c0123",
    "text": "Questa chiesa è antica.",
-   "audio": "content/it/audio/corso3/023.mp3"
+   "audio": "content/it/audio/corso3/023.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "dimostrativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-024",
    "concept": "c0124",
    "text": "Cerco una farmacia.",
-   "audio": "content/it/audio/corso3/024.mp3"
+   "audio": "content/it/audio/corso3/024.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso3-025",
    "concept": "c0125",
    "text": "C'è un supermercato qui vicino?",
-   "audio": "content/it/audio/corso3/025.mp3"
+   "audio": "content/it/audio/corso3/025.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "impersonale",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso3-026",
    "concept": "c0126",
    "text": "Apre alle otto e mezza.",
-   "audio": "content/it/audio/corso3/026.mp3"
+   "audio": "content/it/audio/corso3/026.mp3",
+   "grammarTags": [
+    "numerale",
+    "plurale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-027",
    "concept": "c0127",
    "text": "Quanto costano queste scarpe?",
-   "audio": "content/it/audio/corso3/027.mp3"
+   "audio": "content/it/audio/corso3/027.mp3",
+   "grammarTags": [
+    "dimostrativo",
+    "domanda-wh",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-028",
    "concept": "c0128",
    "text": "Sono in saldo.",
-   "audio": "content/it/audio/corso3/028.mp3"
+   "audio": "content/it/audio/corso3/028.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso3-029",
    "concept": "c0129",
    "text": "Posso provarlo?",
-   "audio": "content/it/audio/corso3/029.mp3"
+   "audio": "content/it/audio/corso3/029.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "presente",
+    "pronome-enclitico",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso3-030",
    "concept": "c0130",
    "text": "Che taglia porta?",
-   "audio": "content/it/audio/corso3/030.mp3"
+   "audio": "content/it/audio/corso3/030.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "presente",
+    "registro-formale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso3-031",
    "concept": "c0131",
    "text": "Porto la quarantadue.",
-   "audio": "content/it/audio/corso3/031.mp3"
+   "audio": "content/it/audio/corso3/031.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-032",
    "concept": "c0132",
    "text": "È troppo caro per me.",
-   "audio": "content/it/audio/corso3/032.mp3"
+   "audio": "content/it/audio/corso3/032.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-033",
    "concept": "c0133",
    "text": "Avete qualcosa di più economico?",
-   "audio": "content/it/audio/corso3/033.mp3"
+   "audio": "content/it/audio/corso3/033.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "comparativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso3-034",
    "concept": "c0134",
    "text": "Lo prendo!",
-   "audio": "content/it/audio/corso3/034.mp3"
+   "audio": "content/it/audio/corso3/034.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso3-035",
    "concept": "c0135",
    "text": "Mi dà una busta, per favore?",
-   "audio": "content/it/audio/corso3/035.mp3"
+   "audio": "content/it/audio/corso3/035.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "preposizione-semplice",
+    "presente",
+    "pronome-oggetto",
+    "registro-formale",
+    "verbo-irregolare"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso3-036",
    "concept": "c0136",
    "text": "Dove posso cambiare i soldi?",
-   "audio": "content/it/audio/corso3/036.mp3"
+   "audio": "content/it/audio/corso3/036.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-wh",
+    "plurale",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-037",
    "concept": "c0137",
    "text": "C'è un bancomat qui?",
-   "audio": "content/it/audio/corso3/037.mp3"
+   "audio": "content/it/audio/corso3/037.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "impersonale",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso3-038",
    "concept": "c0138",
    "text": "Ho perso il portafoglio.",
-   "audio": "content/it/audio/corso3/038.mp3"
+   "audio": "content/it/audio/corso3/038.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso3-039",
    "concept": "c0139",
    "text": "Aiuto, per favore!",
-   "audio": "content/it/audio/corso3/039.mp3"
+   "audio": "content/it/audio/corso3/039.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso3-040",
    "concept": "c0140",
    "text": "Chiamo la polizia?",
-   "audio": "content/it/audio/corso3/040.mp3"
+   "audio": "content/it/audio/corso3/040.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-si-no",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso3-041",
    "concept": "c0141",
    "text": "Non è niente di grave.",
-   "audio": "content/it/audio/corso3/041.mp3"
+   "audio": "content/it/audio/corso3/041.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "negazione",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso3-042",
    "concept": "c0142",
    "text": "La città è piena di turisti.",
-   "audio": "content/it/audio/corso3/042.mp3"
+   "audio": "content/it/audio/corso3/042.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-043",
    "concept": "c0143",
    "text": "Oggi c'è il mercato.",
-   "audio": "content/it/audio/corso3/043.mp3"
+   "audio": "content/it/audio/corso3/043.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "impersonale",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso3-044",
    "concept": "c0144",
    "text": "Compro frutta e verdura.",
-   "audio": "content/it/audio/corso3/044.mp3"
+   "audio": "content/it/audio/corso3/044.mp3",
+   "grammarTags": [
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso3-045",
    "concept": "c0145",
    "text": "Un chilo di mele, grazie.",
-   "audio": "content/it/audio/corso3/045.mp3"
+   "audio": "content/it/audio/corso3/045.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso3-046",
    "concept": "c0146",
    "text": "Queste arance sono dolci?",
-   "audio": "content/it/audio/corso3/046.mp3"
+   "audio": "content/it/audio/corso3/046.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "dimostrativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-047",
    "concept": "c0147",
    "text": "Assaggi pure!",
-   "audio": "content/it/audio/corso3/047.mp3"
+   "audio": "content/it/audio/corso3/047.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "imperativo",
+    "registro-formale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso3-048",
    "concept": "c0148",
    "text": "Il centro è chiuso al traffico.",
-   "audio": "content/it/audio/corso3/048.mp3"
+   "audio": "content/it/audio/corso3/048.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-049",
    "concept": "c0149",
    "text": "Andiamo a piedi.",
-   "audio": "content/it/audio/corso3/049.mp3"
+   "audio": "content/it/audio/corso3/049.mp3",
+   "grammarTags": [
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso3-050",
    "concept": "c0150",
    "text": "Ci vediamo davanti al cinema.",
-   "audio": "content/it/audio/corso3/050.mp3"
+   "audio": "content/it/audio/corso3/050.mp3",
+   "grammarTags": [
+    "preposizione-articolata",
+    "presente",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 2
   }
  ]
 }

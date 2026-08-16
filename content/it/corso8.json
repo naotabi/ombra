@@ -1,5 +1,5 @@
 {
- "_schema": "ombra.course/1",
+ "_schema": "ombra.course/2",
  "id": "corso8",
  "target": "it",
  "level": "A1",
@@ -13,163 +13,353 @@
    "id": "corso8-001",
    "concept": "c0351",
    "text": "Come ti senti oggi?",
-   "audio": "content/it/audio/corso8/001.mp3"
+   "audio": "content/it/audio/corso8/001.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "espressione-tempo",
+    "presente",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-002",
    "concept": "c0352",
    "text": "Non mi sento bene.",
-   "audio": "content/it/audio/corso8/002.mp3"
+   "audio": "content/it/audio/corso8/002.mp3",
+   "grammarTags": [
+    "negazione",
+    "presente",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-003",
    "concept": "c0353",
    "text": "Ho mal di testa.",
-   "audio": "content/it/audio/corso8/003.mp3"
+   "audio": "content/it/audio/corso8/003.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso8-004",
    "concept": "c0354",
    "text": "Ho anche mal di gola.",
-   "audio": "content/it/audio/corso8/004.mp3"
+   "audio": "content/it/audio/corso8/004.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso8-005",
    "concept": "c0355",
    "text": "Forse ho la febbre.",
-   "audio": "content/it/audio/corso8/005.mp3"
+   "audio": "content/it/audio/corso8/005.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso8-006",
    "concept": "c0356",
    "text": "Ho misurato la temperatura.",
-   "audio": "content/it/audio/corso8/006.mp3"
+   "audio": "content/it/audio/corso8/006.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso8-007",
    "concept": "c0357",
    "text": "Trentotto e mezzo, è alta.",
-   "audio": "content/it/audio/corso8/007.mp3"
+   "audio": "content/it/audio/corso8/007.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "essere-avere-principale",
+    "numerale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-008",
    "concept": "c0358",
    "text": "Devo restare a letto.",
-   "audio": "content/it/audio/corso8/008.mp3"
+   "audio": "content/it/audio/corso8/008.mp3",
+   "grammarTags": [
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-009",
    "concept": "c0359",
    "text": "Hai preso una medicina?",
-   "audio": "content/it/audio/corso8/009.mp3"
+   "audio": "content/it/audio/corso8/009.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso8-010",
    "concept": "c0360",
    "text": "Prendo la medicina dopo i pasti.",
-   "audio": "content/it/audio/corso8/010.mp3"
+   "audio": "content/it/audio/corso8/010.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-011",
    "concept": "c0361",
    "text": "Mi fa male la schiena.",
-   "audio": "content/it/audio/corso8/011.mp3"
+   "audio": "content/it/audio/corso8/011.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "costruzione-piacere",
+    "presente",
+    "pronome-oggetto",
+    "verbo-irregolare"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso8-012",
    "concept": "c0362",
    "text": "Le gambe sono pesanti oggi.",
-   "audio": "content/it/audio/corso8/012.mp3"
+   "audio": "content/it/audio/corso8/012.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-013",
    "concept": "c0363",
    "text": "Ho camminato troppo ieri.",
-   "audio": "content/it/audio/corso8/013.mp3"
+   "audio": "content/it/audio/corso8/013.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso8-014",
    "concept": "c0364",
    "text": "Devo andare dal medico.",
-   "audio": "content/it/audio/corso8/014.mp3"
+   "audio": "content/it/audio/corso8/014.mp3",
+   "grammarTags": [
+    "preposizione-articolata",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-015",
    "concept": "c0365",
    "text": "Il dottore può vedermi oggi?",
-   "audio": "content/it/audio/corso8/015.mp3"
+   "audio": "content/it/audio/corso8/015.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-si-no",
+    "espressione-tempo",
+    "presente",
+    "pronome-enclitico",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso8-016",
    "concept": "c0366",
    "text": "Ho un appuntamento alle undici.",
-   "audio": "content/it/audio/corso8/016.mp3"
+   "audio": "content/it/audio/corso8/016.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "essere-avere-principale",
+    "numerale",
+    "plurale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-017",
    "concept": "c0367",
    "text": "La sala d'aspetto è piena.",
-   "audio": "content/it/audio/corso8/017.mp3"
+   "audio": "content/it/audio/corso8/017.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-018",
    "concept": "c0368",
    "text": "Respiri profondamente, per favore.",
-   "audio": "content/it/audio/corso8/018.mp3"
+   "audio": "content/it/audio/corso8/018.mp3",
+   "grammarTags": [
+    "imperativo",
+    "preposizione-semplice",
+    "registro-formale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso8-019",
    "concept": "c0369",
    "text": "Apra la bocca, per favore.",
-   "audio": "content/it/audio/corso8/019.mp3"
+   "audio": "content/it/audio/corso8/019.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "imperativo",
+    "preposizione-semplice",
+    "registro-formale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso8-020",
    "concept": "c0370",
    "text": "È solo un raffreddore.",
-   "audio": "content/it/audio/corso8/020.mp3"
+   "audio": "content/it/audio/corso8/020.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso8-021",
    "concept": "c0371",
    "text": "Ho il naso chiuso.",
-   "audio": "content/it/audio/corso8/021.mp3"
+   "audio": "content/it/audio/corso8/021.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-022",
    "concept": "c0372",
    "text": "Ho la tosse da tre giorni.",
-   "audio": "content/it/audio/corso8/022.mp3"
+   "audio": "content/it/audio/corso8/022.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "numerale",
+    "plurale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-023",
    "concept": "c0373",
    "text": "Mi gira la testa.",
-   "audio": "content/it/audio/corso8/023.mp3"
+   "audio": "content/it/audio/corso8/023.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "costruzione-piacere",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso8-024",
    "concept": "c0374",
    "text": "Le arance hanno tanta vitamina C.",
-   "audio": "content/it/audio/corso8/024.mp3"
+   "audio": "content/it/audio/corso8/024.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-025",
    "concept": "c0375",
    "text": "Bevi molta acqua calda.",
-   "audio": "content/it/audio/corso8/025.mp3"
+   "audio": "content/it/audio/corso8/025.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "imperativo",
+    "verbo-irregolare"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso8-026",
    "concept": "c0376",
    "text": "Il riposo è la cura migliore.",
-   "audio": "content/it/audio/corso8/026.mp3"
+   "audio": "content/it/audio/corso8/026.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "comparativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso8-027",
    "concept": "c0377",
    "text": "Mi sento già meglio.",
-   "audio": "content/it/audio/corso8/027.mp3"
+   "audio": "content/it/audio/corso8/027.mp3",
+   "grammarTags": [
+    "comparativo",
+    "presente",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso8-028",
@@ -178,32 +368,62 @@
    "audio": "content/it/audio/corso8/028.mp3",
    "g": "m",
    "note": {
-    "en": "She says: Sono guarita ..."
-   }
+    "en": "She says: Sono guarita ...",
+    "ja": "女性は Sono guarita …"
+   },
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "aux-essere",
+    "espressione-tempo",
+    "passato-prossimo",
+    "preposizione-semplice"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso8-029",
    "concept": "c0379",
    "text": "Lo sport fa bene alla salute.",
-   "audio": "content/it/audio/corso8/029.mp3"
+   "audio": "content/it/audio/corso8/029.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "preposizione-articolata",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-030",
    "concept": "c0380",
    "text": "Faccio ginnastica ogni mattina.",
-   "audio": "content/it/audio/corso8/030.mp3"
+   "audio": "content/it/audio/corso8/030.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-031",
    "concept": "c0381",
    "text": "Mangio tanta frutta e verdura.",
-   "audio": "content/it/audio/corso8/031.mp3"
+   "audio": "content/it/audio/corso8/031.mp3",
+   "grammarTags": [
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso8-032",
    "concept": "c0382",
    "text": "Dormo poco e male.",
-   "audio": "content/it/audio/corso8/032.mp3"
+   "audio": "content/it/audio/corso8/032.mp3",
+   "grammarTags": [
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso8-033",
@@ -212,26 +432,56 @@
    "audio": "content/it/audio/corso8/033.mp3",
    "g": "m",
    "note": {
-    "en": "She says: ... stressata ..."
-   }
+    "en": "She says: ... stressata ...",
+    "ja": "女性は … stressata …"
+   },
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-034",
    "concept": "c0384",
    "text": "Ho bisogno di una pausa.",
-   "audio": "content/it/audio/corso8/034.mp3"
+   "audio": "content/it/audio/corso8/034.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso8-035",
    "concept": "c0385",
    "text": "Oggi ho molta energia.",
-   "audio": "content/it/audio/corso8/035.mp3"
+   "audio": "content/it/audio/corso8/035.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-036",
    "concept": "c0386",
    "text": "Il mio cuore batte forte.",
-   "audio": "content/it/audio/corso8/036.mp3"
+   "audio": "content/it/audio/corso8/036.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-037",
@@ -240,8 +490,15 @@
    "audio": "content/it/audio/corso8/037.mp3",
    "g": "m",
    "note": {
-    "en": "She says: Sono caduta ..."
-   }
+    "en": "She says: Sono caduta ...",
+    "ja": "女性は Sono caduta …"
+   },
+   "grammarTags": [
+    "aux-essere",
+    "passato-prossimo",
+    "preposizione-articolata"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso8-038",
@@ -250,80 +507,183 @@
    "audio": "content/it/audio/corso8/038.mp3",
    "g": "m",
    "note": {
-    "en": "She says: ... fatta male ..."
-   }
+    "en": "She says: ... fatta male ...",
+    "ja": "女性は … fatta male …"
+   },
+   "grammarTags": [
+    "aux-essere",
+    "participio-irregolare",
+    "passato-prossimo",
+    "preposizione-articolata",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso8-039",
    "concept": "c0389",
    "text": "Non è rotto, per fortuna.",
-   "audio": "content/it/audio/corso8/039.mp3"
+   "audio": "content/it/audio/corso8/039.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "essere-avere-principale",
+    "negazione",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-040",
    "concept": "c0390",
    "text": "Ho gli occhi stanchi.",
-   "audio": "content/it/audio/corso8/040.mp3"
+   "audio": "content/it/audio/corso8/040.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-041",
    "concept": "c0391",
    "text": "Guardo troppo lo schermo.",
-   "audio": "content/it/audio/corso8/041.mp3"
+   "audio": "content/it/audio/corso8/041.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso8-042",
    "concept": "c0392",
    "text": "Porto gli occhiali da un anno.",
-   "audio": "content/it/audio/corso8/042.mp3"
+   "audio": "content/it/audio/corso8/042.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "plurale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-043",
    "concept": "c0393",
    "text": "Il dentista mi aspetta domani.",
-   "audio": "content/it/audio/corso8/043.mp3"
+   "audio": "content/it/audio/corso8/043.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso8-044",
    "concept": "c0394",
    "text": "Ho paura del dentista.",
-   "audio": "content/it/audio/corso8/044.mp3"
+   "audio": "content/it/audio/corso8/044.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-045",
    "concept": "c0395",
    "text": "Un dente mi fa male.",
-   "audio": "content/it/audio/corso8/045.mp3"
+   "audio": "content/it/audio/corso8/045.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "costruzione-piacere",
+    "presente",
+    "pronome-oggetto",
+    "verbo-irregolare"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso8-046",
    "concept": "c0396",
    "text": "Mi lavo i denti tre volte al giorno.",
-   "audio": "content/it/audio/corso8/046.mp3"
+   "audio": "content/it/audio/corso8/046.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "numerale",
+    "plurale",
+    "preposizione-articolata",
+    "presente",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso8-047",
    "concept": "c0397",
    "text": "La farmacia è aperta fino alle otto.",
-   "audio": "content/it/audio/corso8/047.mp3"
+   "audio": "content/it/audio/corso8/047.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "numerale",
+    "plurale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso8-048",
    "concept": "c0398",
    "text": "Serve la ricetta per questo?",
-   "audio": "content/it/audio/corso8/048.mp3"
+   "audio": "content/it/audio/corso8/048.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "dimostrativo",
+    "domanda-si-no",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso8-049",
    "concept": "c0399",
    "text": "Guarisci presto!",
-   "audio": "content/it/audio/corso8/049.mp3"
+   "audio": "content/it/audio/corso8/049.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "espressione-tempo",
+    "imperativo"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso8-050",
    "concept": "c0400",
    "text": "La salute prima di tutto.",
-   "audio": "content/it/audio/corso8/050.mp3"
+   "audio": "content/it/audio/corso8/050.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "frase-nominale",
+    "numerale",
+    "preposizione-semplice",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   }
  ]
 }

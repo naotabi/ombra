@@ -1,5 +1,5 @@
 {
- "_schema": "ombra.course/1",
+ "_schema": "ombra.course/2",
  "id": "corso5",
  "target": "it",
  "level": "A1",
@@ -16,38 +16,89 @@
    "audio": "content/it/audio/corso5/001.mp3",
    "g": "m",
    "note": {
-    "en": "She says: Sono sposata ..."
-   }
+    "en": "She says: Sono sposata ...",
+    "ja": "女性は Sono sposata …"
+   },
+   "grammarTags": [
+    "accordo-aggettivo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "numerale",
+    "plurale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-002",
    "concept": "c0202",
    "text": "Abbiamo due figli piccoli.",
-   "audio": "content/it/audio/corso5/002.mp3"
+   "audio": "content/it/audio/corso5/002.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "essere-avere-principale",
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-003",
    "concept": "c0203",
    "text": "Mia figlia ha sei anni.",
-   "audio": "content/it/audio/corso5/003.mp3"
+   "audio": "content/it/audio/corso5/003.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "essere-avere-principale",
+    "numerale",
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-004",
    "concept": "c0204",
    "text": "I miei genitori vivono al mare.",
-   "audio": "content/it/audio/corso5/004.mp3"
+   "audio": "content/it/audio/corso5/004.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "plurale",
+    "possessivo",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-005",
    "concept": "c0205",
    "text": "Mio nonno ha novant'anni.",
-   "audio": "content/it/audio/corso5/005.mp3"
+   "audio": "content/it/audio/corso5/005.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "essere-avere-principale",
+    "numerale",
+    "plurale",
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-006",
    "concept": "c0206",
    "text": "Siamo una famiglia allegra.",
-   "audio": "content/it/audio/corso5/006.mp3"
+   "audio": "content/it/audio/corso5/006.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-007",
@@ -56,128 +107,268 @@
    "audio": "content/it/audio/corso5/007.mp3",
    "g": "m",
    "note": {
-    "en": "She says: ... da sola ..."
-   }
+    "en": "She says: ... da sola ...",
+    "ja": "女性は … da sola …"
+   },
+   "grammarTags": [
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso5-008",
    "concept": "c0208",
    "text": "Il mio appartamento è piccolo.",
-   "audio": "content/it/audio/corso5/008.mp3"
+   "audio": "content/it/audio/corso5/008.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-009",
    "concept": "c0209",
    "text": "Ho un balcone con fiori.",
-   "audio": "content/it/audio/corso5/009.mp3"
+   "audio": "content/it/audio/corso5/009.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso5-010",
    "concept": "c0210",
    "text": "Nel tempo libero dipingo.",
-   "audio": "content/it/audio/corso5/010.mp3"
+   "audio": "content/it/audio/corso5/010.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-011",
    "concept": "c0211",
    "text": "Suono la chitarra da poco.",
-   "audio": "content/it/audio/corso5/011.mp3"
+   "audio": "content/it/audio/corso5/011.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso5-012",
    "concept": "c0212",
    "text": "Gioco a calcio il giovedì.",
-   "audio": "content/it/audio/corso5/012.mp3"
+   "audio": "content/it/audio/corso5/012.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-013",
    "concept": "c0213",
    "text": "Amo viaggiare in treno.",
-   "audio": "content/it/audio/corso5/013.mp3"
+   "audio": "content/it/audio/corso5/013.mp3",
+   "grammarTags": [
+    "infinito-dipendente",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-014",
    "concept": "c0214",
    "text": "Faccio molte fotografie.",
-   "audio": "content/it/audio/corso5/014.mp3"
+   "audio": "content/it/audio/corso5/014.mp3",
+   "grammarTags": [
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-015",
    "concept": "c0215",
    "text": "Il mio hobby è cucinare.",
-   "audio": "content/it/audio/corso5/015.mp3"
+   "audio": "content/it/audio/corso5/015.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "infinito-dipendente",
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-016",
    "concept": "c0216",
    "text": "Preparo una torta ogni domenica.",
-   "audio": "content/it/audio/corso5/016.mp3"
+   "audio": "content/it/audio/corso5/016.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-017",
    "concept": "c0217",
    "text": "Colleziono cartoline vecchie.",
-   "audio": "content/it/audio/corso5/017.mp3"
+   "audio": "content/it/audio/corso5/017.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-018",
    "concept": "c0218",
    "text": "Mi interessa la storia.",
-   "audio": "content/it/audio/corso5/018.mp3"
+   "audio": "content/it/audio/corso5/018.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "costruzione-piacere",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso5-019",
    "concept": "c0219",
    "text": "Guardo poco la televisione.",
-   "audio": "content/it/audio/corso5/019.mp3"
+   "audio": "content/it/audio/corso5/019.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso5-020",
    "concept": "c0220",
    "text": "Preferisco i libri gialli.",
-   "audio": "content/it/audio/corso5/020.mp3"
+   "audio": "content/it/audio/corso5/020.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-021",
    "concept": "c0221",
    "text": "Che tempo fa oggi?",
-   "audio": "content/it/audio/corso5/021.mp3"
+   "audio": "content/it/audio/corso5/021.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "espressione-tempo",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-022",
    "concept": "c0222",
    "text": "C'è il sole ma fa freddo.",
-   "audio": "content/it/audio/corso5/022.mp3"
+   "audio": "content/it/audio/corso5/022.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "impersonale",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso5-023",
    "concept": "c0223",
    "text": "Piove da tre giorni.",
-   "audio": "content/it/audio/corso5/023.mp3"
+   "audio": "content/it/audio/corso5/023.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "numerale",
+    "plurale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-024",
    "concept": "c0224",
    "text": "Domani arriva la neve.",
-   "audio": "content/it/audio/corso5/024.mp3"
+   "audio": "content/it/audio/corso5/024.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-025",
    "concept": "c0225",
    "text": "Odio il vento forte.",
-   "audio": "content/it/audio/corso5/025.mp3"
+   "audio": "content/it/audio/corso5/025.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-026",
    "concept": "c0226",
    "text": "In estate fa molto caldo.",
-   "audio": "content/it/audio/corso5/026.mp3"
+   "audio": "content/it/audio/corso5/026.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-027",
    "concept": "c0227",
    "text": "La primavera è la mia stagione.",
-   "audio": "content/it/audio/corso5/027.mp3"
+   "audio": "content/it/audio/corso5/027.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-028",
@@ -186,8 +377,17 @@
    "audio": "content/it/audio/corso5/028.mp3",
    "g": "m",
    "note": {
-    "en": "She says: Sono contenta ..."
-   }
+    "en": "She says: Sono contenta ...",
+    "ja": "女性は Sono contenta …"
+   },
+   "grammarTags": [
+    "accordo-aggettivo",
+    "essere-avere-principale",
+    "possessivo",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-029",
@@ -196,74 +396,155 @@
    "audio": "content/it/audio/corso5/029.mp3",
    "g": "m",
    "note": {
-    "en": "She says: ... pigra."
-   }
+    "en": "She says: ... pigra.",
+    "ja": "女性は … pigra."
+   },
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-030",
    "concept": "c0230",
    "text": "Sono una persona curiosa.",
-   "audio": "content/it/audio/corso5/030.mp3"
+   "audio": "content/it/audio/corso5/030.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-031",
    "concept": "c0231",
    "text": "Parlo tre lingue.",
-   "audio": "content/it/audio/corso5/031.mp3"
+   "audio": "content/it/audio/corso5/031.mp3",
+   "grammarTags": [
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-032",
    "concept": "c0232",
    "text": "Imparo parole nuove ogni giorno.",
-   "audio": "content/it/audio/corso5/032.mp3"
+   "audio": "content/it/audio/corso5/032.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-033",
    "concept": "c0233",
    "text": "Il mio sogno è vivere in Italia.",
-   "audio": "content/it/audio/corso5/033.mp3"
+   "audio": "content/it/audio/corso5/033.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "infinito-dipendente",
+    "possessivo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso5-034",
    "concept": "c0234",
    "text": "Vengo in Italia ogni anno.",
-   "audio": "content/it/audio/corso5/034.mp3"
+   "audio": "content/it/audio/corso5/034.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-035",
    "concept": "c0235",
    "text": "Conosco bene Venezia.",
-   "audio": "content/it/audio/corso5/035.mp3"
+   "audio": "content/it/audio/corso5/035.mp3",
+   "grammarTags": [
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso5-036",
    "concept": "c0236",
    "text": "Il mare mi rilassa.",
-   "audio": "content/it/audio/corso5/036.mp3"
+   "audio": "content/it/audio/corso5/036.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso5-037",
    "concept": "c0237",
    "text": "Ho paura dei ragni.",
-   "audio": "content/it/audio/corso5/037.mp3"
+   "audio": "content/it/audio/corso5/037.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "plurale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-038",
    "concept": "c0238",
    "text": "Non mangio carne rossa.",
-   "audio": "content/it/audio/corso5/038.mp3"
+   "audio": "content/it/audio/corso5/038.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "negazione",
+    "presente",
+    "pronome-enclitico"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso5-039",
    "concept": "c0239",
    "text": "Bevo solo acqua e tè.",
-   "audio": "content/it/audio/corso5/039.mp3"
+   "audio": "content/it/audio/corso5/039.mp3",
+   "grammarTags": [
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-040",
    "concept": "c0240",
    "text": "Il caffè mi tiene sveglio.",
-   "audio": "content/it/audio/corso5/040.mp3"
+   "audio": "content/it/audio/corso5/040.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "presente",
+    "pronome-oggetto",
+    "verbo-irregolare"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso5-041",
@@ -272,62 +553,132 @@
    "audio": "content/it/audio/corso5/041.mp3",
    "g": "m",
    "note": {
-    "en": "Or: Mio marito ... (my husband)"
-   }
+    "en": "Or: Mio marito ... (my husband)",
+    "ja": "または Mio marito …（夫）"
+   },
+   "grammarTags": [
+    "possessivo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-042",
    "concept": "c0242",
    "text": "Mio cugino vive in Germania.",
-   "audio": "content/it/audio/corso5/042.mp3"
+   "audio": "content/it/audio/corso5/042.mp3",
+   "grammarTags": [
+    "possessivo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-043",
    "concept": "c0243",
    "text": "Ho tanti amici stranieri.",
-   "audio": "content/it/audio/corso5/043.mp3"
+   "audio": "content/it/audio/corso5/043.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-044",
    "concept": "c0244",
    "text": "Scrivo un diario in italiano.",
-   "audio": "content/it/audio/corso5/044.mp3"
+   "audio": "content/it/audio/corso5/044.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-045",
    "concept": "c0245",
    "text": "La musica italiana mi piace molto.",
-   "audio": "content/it/audio/corso5/045.mp3"
+   "audio": "content/it/audio/corso5/045.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "costruzione-piacere",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso5-046",
    "concept": "c0246",
    "text": "Canto sotto la doccia.",
-   "audio": "content/it/audio/corso5/046.mp3"
+   "audio": "content/it/audio/corso5/046.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso5-047",
    "concept": "c0247",
    "text": "Il weekend visito i musei.",
-   "audio": "content/it/audio/corso5/047.mp3"
+   "audio": "content/it/audio/corso5/047.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-048",
    "concept": "c0248",
    "text": "Sogno di parlare bene l'italiano.",
-   "audio": "content/it/audio/corso5/048.mp3"
+   "audio": "content/it/audio/corso5/048.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "infinito-dipendente",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-049",
    "concept": "c0249",
    "text": "Ogni giorno faccio un piccolo passo.",
-   "audio": "content/it/audio/corso5/049.mp3"
+   "audio": "content/it/audio/corso5/049.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso5-050",
    "concept": "c0250",
    "text": "Questa è la mia vita.",
-   "audio": "content/it/audio/corso5/050.mp3"
+   "audio": "content/it/audio/corso5/050.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "dimostrativo",
+    "essere-avere-principale",
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   }
  ]
 }

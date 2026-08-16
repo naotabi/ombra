@@ -1,5 +1,5 @@
 {
- "_schema": "ombra.course/1",
+ "_schema": "ombra.course/2",
  "id": "corso9",
  "target": "it",
  "level": "A1",
@@ -16,206 +16,445 @@
    "audio": "content/it/audio/corso9/001.mp3",
    "g": "m",
    "note": {
-    "en": "To a woman: libera?"
-   }
+    "en": "To a woman: libera?",
+    "ja": "女性には libera?"
+   },
+   "grammarTags": [
+    "accordo-aggettivo",
+    "domanda-si-no",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-002",
    "concept": "c0402",
    "text": "Ti va di uscire?",
-   "audio": "content/it/audio/corso9/002.mp3"
+   "audio": "content/it/audio/corso9/002.mp3",
+   "grammarTags": [
+    "costruzione-piacere",
+    "domanda-si-no",
+    "infinito-dipendente",
+    "preposizione-semplice",
+    "presente",
+    "pronome-oggetto",
+    "verbo-irregolare"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso9-003",
    "concept": "c0403",
    "text": "Volentieri, a che ora?",
-   "audio": "content/it/audio/corso9/003.mp3"
+   "audio": "content/it/audio/corso9/003.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "espressione-tempo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-004",
    "concept": "c0404",
    "text": "Alle otto va benissimo.",
-   "audio": "content/it/audio/corso9/004.mp3"
+   "audio": "content/it/audio/corso9/004.mp3",
+   "grammarTags": [
+    "numerale",
+    "plurale",
+    "preposizione-articolata",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-005",
    "concept": "c0405",
    "text": "Dove ci incontriamo?",
-   "audio": "content/it/audio/corso9/005.mp3"
+   "audio": "content/it/audio/corso9/005.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "presente",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-006",
    "concept": "c0406",
    "text": "Davanti alla stazione, va bene?",
-   "audio": "content/it/audio/corso9/006.mp3"
+   "audio": "content/it/audio/corso9/006.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "preposizione-articolata",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-007",
    "concept": "c0407",
    "text": "Perfetto, a stasera!",
-   "audio": "content/it/audio/corso9/007.mp3"
+   "audio": "content/it/audio/corso9/007.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "espressione-tempo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-008",
    "concept": "c0408",
    "text": "Ti chiamo più tardi.",
-   "audio": "content/it/audio/corso9/008.mp3"
+   "audio": "content/it/audio/corso9/008.mp3",
+   "grammarTags": [
+    "comparativo",
+    "espressione-tempo",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso9-009",
    "concept": "c0409",
    "text": "Un momento, ho una chiamata.",
-   "audio": "content/it/audio/corso9/009.mp3"
+   "audio": "content/it/audio/corso9/009.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso9-010",
    "concept": "c0410",
    "text": "Pronto? Chi parla?",
-   "audio": "content/it/audio/corso9/010.mp3"
+   "audio": "content/it/audio/corso9/010.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "domanda-wh",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-011",
    "concept": "c0411",
    "text": "Sono Anna, mi senti?",
-   "audio": "content/it/audio/corso9/011.mp3"
+   "audio": "content/it/audio/corso9/011.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "essere-avere-principale",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso9-012",
    "concept": "c0412",
    "text": "Adesso ti sento benissimo.",
-   "audio": "content/it/audio/corso9/012.mp3"
+   "audio": "content/it/audio/corso9/012.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso9-013",
    "concept": "c0413",
    "text": "Ti richiamo tra cinque minuti.",
-   "audio": "content/it/audio/corso9/013.mp3"
+   "audio": "content/it/audio/corso9/013.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "numerale",
+    "plurale",
+    "preposizione-semplice",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso9-014",
    "concept": "c0414",
    "text": "Mandami un messaggio dopo.",
-   "audio": "content/it/audio/corso9/014.mp3"
+   "audio": "content/it/audio/corso9/014.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "imperativo",
+    "pronome-enclitico"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso9-015",
    "concept": "c0415",
    "text": "Ho ricevuto il tuo messaggio.",
-   "audio": "content/it/audio/corso9/015.mp3"
+   "audio": "content/it/audio/corso9/015.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "passato-prossimo",
+    "possessivo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso9-016",
    "concept": "c0416",
    "text": "Scusa, ho risposto tardi.",
-   "audio": "content/it/audio/corso9/016.mp3"
+   "audio": "content/it/audio/corso9/016.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso9-017",
    "concept": "c0417",
    "text": "Vieni alla festa sabato?",
-   "audio": "content/it/audio/corso9/017.mp3"
+   "audio": "content/it/audio/corso9/017.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "espressione-tempo",
+    "preposizione-articolata",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-018",
    "concept": "c0418",
    "text": "Chi viene con noi?",
-   "audio": "content/it/audio/corso9/018.mp3"
+   "audio": "content/it/audio/corso9/018.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-019",
    "concept": "c0419",
    "text": "Porto mia sorella.",
-   "audio": "content/it/audio/corso9/019.mp3"
+   "audio": "content/it/audio/corso9/019.mp3",
+   "grammarTags": [
+    "possessivo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-020",
    "concept": "c0420",
    "text": "Invitiamo anche Paolo.",
-   "audio": "content/it/audio/corso9/020.mp3"
+   "audio": "content/it/audio/corso9/020.mp3",
+   "grammarTags": [
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso9-021",
    "concept": "c0421",
    "text": "A che ora comincia la festa?",
-   "audio": "content/it/audio/corso9/021.mp3"
+   "audio": "content/it/audio/corso9/021.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-wh",
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-022",
    "concept": "c0422",
    "text": "Verso le nove, credo.",
-   "audio": "content/it/audio/corso9/022.mp3"
+   "audio": "content/it/audio/corso9/022.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-023",
    "concept": "c0423",
    "text": "Porto io il dolce.",
-   "audio": "content/it/audio/corso9/023.mp3"
+   "audio": "content/it/audio/corso9/023.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-024",
    "concept": "c0424",
    "text": "Io penso alle bevande.",
-   "audio": "content/it/audio/corso9/024.mp3"
+   "audio": "content/it/audio/corso9/024.mp3",
+   "grammarTags": [
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-025",
    "concept": "c0425",
    "text": "Che cosa ti metti stasera?",
-   "audio": "content/it/audio/corso9/025.mp3"
+   "audio": "content/it/audio/corso9/025.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "espressione-tempo",
+    "presente",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-026",
    "concept": "c0426",
    "text": "Mi metto il vestito nuovo.",
-   "audio": "content/it/audio/corso9/026.mp3"
+   "audio": "content/it/audio/corso9/026.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "presente",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-027",
    "concept": "c0427",
    "text": "La festa è stata un successo.",
-   "audio": "content/it/audio/corso9/027.mp3"
+   "audio": "content/it/audio/corso9/027.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "articolo-indeterminativo",
+    "aux-essere",
+    "participio-irregolare",
+    "passato-prossimo"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso9-028",
    "concept": "c0428",
    "text": "Balliamo tutta la notte!",
-   "audio": "content/it/audio/corso9/028.mp3"
+   "audio": "content/it/audio/corso9/028.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "esclamazione",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-029",
    "concept": "c0429",
    "text": "Questa canzone mi piace tanto.",
-   "audio": "content/it/audio/corso9/029.mp3"
+   "audio": "content/it/audio/corso9/029.mp3",
+   "grammarTags": [
+    "costruzione-piacere",
+    "dimostrativo",
+    "espressione-tempo",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso9-030",
    "concept": "c0430",
    "text": "Andiamo a un concerto domenica?",
-   "audio": "content/it/audio/corso9/030.mp3"
+   "audio": "content/it/audio/corso9/030.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-031",
    "concept": "c0431",
    "text": "I biglietti costano venti euro.",
-   "audio": "content/it/audio/corso9/031.mp3"
+   "audio": "content/it/audio/corso9/031.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "numerale",
+    "plurale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-032",
    "concept": "c0432",
    "text": "Purtroppo domenica non posso.",
-   "audio": "content/it/audio/corso9/032.mp3"
+   "audio": "content/it/audio/corso9/032.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "negazione",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-033",
    "concept": "c0433",
    "text": "Ho già un impegno.",
-   "audio": "content/it/audio/corso9/033.mp3"
+   "audio": "content/it/audio/corso9/033.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso9-034",
    "concept": "c0434",
    "text": "Facciamo un'altra volta?",
-   "audio": "content/it/audio/corso9/034.mp3"
+   "audio": "content/it/audio/corso9/034.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "espressione-tempo",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-035",
@@ -224,98 +463,207 @@
    "audio": "content/it/audio/corso9/035.mp3",
    "g": "f",
    "note": {
-    "en": "He says: ... libero ..."
-   }
+    "en": "He says: ... libero ...",
+    "ja": "男性は … libero …"
+   },
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-036",
    "concept": "c0436",
    "text": "Segno la data sul calendario.",
-   "audio": "content/it/audio/corso9/036.mp3"
+   "audio": "content/it/audio/corso9/036.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-037",
    "concept": "c0437",
    "text": "Non dimenticare l'appuntamento!",
-   "audio": "content/it/audio/corso9/037.mp3"
+   "audio": "content/it/audio/corso9/037.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "esclamazione",
+    "imperativo",
+    "negazione"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso9-038",
    "concept": "c0438",
    "text": "Arrivo sempre puntuale.",
-   "audio": "content/it/audio/corso9/038.mp3"
+   "audio": "content/it/audio/corso9/038.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-039",
    "concept": "c0439",
    "text": "Scusa il ritardo!",
-   "audio": "content/it/audio/corso9/039.mp3"
+   "audio": "content/it/audio/corso9/039.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "esclamazione",
+    "imperativo"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso9-040",
    "concept": "c0440",
    "text": "Ti aspetto da mezz'ora!",
-   "audio": "content/it/audio/corso9/040.mp3"
+   "audio": "content/it/audio/corso9/040.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "espressione-tempo",
+    "numerale",
+    "plurale",
+    "preposizione-semplice",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso9-041",
    "concept": "c0441",
    "text": "Ho trovato tanto traffico.",
-   "audio": "content/it/audio/corso9/041.mp3"
+   "audio": "content/it/audio/corso9/041.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "passato-prossimo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso9-042",
    "concept": "c0442",
    "text": "Ti offro un caffè, dai.",
-   "audio": "content/it/audio/corso9/042.mp3"
+   "audio": "content/it/audio/corso9/042.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso9-043",
    "concept": "c0443",
    "text": "Restiamo ancora un po'?",
-   "audio": "content/it/audio/corso9/043.mp3"
+   "audio": "content/it/audio/corso9/043.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso9-044",
    "concept": "c0444",
    "text": "Si è fatto tardi.",
-   "audio": "content/it/audio/corso9/044.mp3"
+   "audio": "content/it/audio/corso9/044.mp3",
+   "grammarTags": [
+    "aux-essere",
+    "espressione-tempo",
+    "participio-irregolare",
+    "passato-prossimo",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 5
   },
   {
    "id": "corso9-045",
    "concept": "c0445",
    "text": "Devo proprio andare adesso.",
-   "audio": "content/it/audio/corso9/045.mp3"
+   "audio": "content/it/audio/corso9/045.mp3",
+   "grammarTags": [
+    "espressione-tempo",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-046",
    "concept": "c0446",
    "text": "Grazie per la bella serata.",
-   "audio": "content/it/audio/corso9/046.mp3"
+   "audio": "content/it/audio/corso9/046.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-047",
    "concept": "c0447",
    "text": "Ci sentiamo domani, ok?",
-   "audio": "content/it/audio/corso9/047.mp3"
+   "audio": "content/it/audio/corso9/047.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "espressione-tempo",
+    "presente",
+    "verbo-riflessivo"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-048",
    "concept": "c0448",
    "text": "Organizziamo una cena presto.",
-   "audio": "content/it/audio/corso9/048.mp3"
+   "audio": "content/it/audio/corso9/048.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-049",
    "concept": "c0449",
    "text": "Venite a cena da me?",
-   "audio": "content/it/audio/corso9/049.mp3"
+   "audio": "content/it/audio/corso9/049.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso9-050",
    "concept": "c0450",
    "text": "Che bello stare insieme!",
-   "audio": "content/it/audio/corso9/050.mp3"
+   "audio": "content/it/audio/corso9/050.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "esclamazione",
+    "frase-nominale"
+   ],
+   "difficulty": 2
   }
  ]
 }

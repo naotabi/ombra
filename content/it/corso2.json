@@ -1,5 +1,5 @@
 {
- "_schema": "ombra.course/1",
+ "_schema": "ombra.course/2",
  "id": "corso2",
  "target": "it",
  "level": "A1",
@@ -13,49 +13,107 @@
    "id": "corso2-001",
    "concept": "c0051",
    "text": "Un tavolo per due, per favore.",
-   "audio": "content/it/audio/corso2/001.mp3"
+   "audio": "content/it/audio/corso2/001.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "frase-nominale",
+    "numerale",
+    "plurale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-002",
    "concept": "c0052",
    "text": "Avete un menù in inglese?",
-   "audio": "content/it/audio/corso2/002.mp3"
+   "audio": "content/it/audio/corso2/002.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso2-003",
    "concept": "c0053",
    "text": "Cosa mi consiglia?",
-   "audio": "content/it/audio/corso2/003.mp3"
+   "audio": "content/it/audio/corso2/003.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "presente",
+    "pronome-oggetto",
+    "registro-formale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso2-004",
    "concept": "c0054",
    "text": "Prendo una pizza margherita.",
-   "audio": "content/it/audio/corso2/004.mp3"
+   "audio": "content/it/audio/corso2/004.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso2-005",
    "concept": "c0055",
    "text": "Per me, un bicchiere di vino rosso.",
-   "audio": "content/it/audio/corso2/005.mp3"
+   "audio": "content/it/audio/corso2/005.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-006",
    "concept": "c0056",
    "text": "Vorrei dell'acqua naturale.",
-   "audio": "content/it/audio/corso2/006.mp3"
+   "audio": "content/it/audio/corso2/006.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "condizionale",
+    "partitivo",
+    "preposizione-articolata"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso2-007",
    "concept": "c0057",
    "text": "L'acqua frizzante, per favore.",
-   "audio": "content/it/audio/corso2/007.mp3"
+   "audio": "content/it/audio/corso2/007.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-008",
    "concept": "c0058",
    "text": "Qual è il piatto del giorno?",
-   "audio": "content/it/audio/corso2/008.mp3"
+   "audio": "content/it/audio/corso2/008.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-wh",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-009",
@@ -64,254 +122,532 @@
    "audio": "content/it/audio/corso2/009.mp3",
    "g": "m",
    "note": {
-    "en": "She says: Sono vegetariana."
-   }
+    "en": "She says: Sono vegetariana.",
+    "ja": "女性は Sono vegetariana."
+   },
+   "grammarTags": [
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso2-010",
    "concept": "c0060",
    "text": "Senza cipolla, per favore.",
-   "audio": "content/it/audio/corso2/010.mp3"
+   "audio": "content/it/audio/corso2/010.mp3",
+   "grammarTags": [
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso2-011",
    "concept": "c0061",
    "text": "Il pesce è fresco?",
-   "audio": "content/it/audio/corso2/011.mp3"
+   "audio": "content/it/audio/corso2/011.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-012",
    "concept": "c0062",
    "text": "Un caffè macchiato, grazie.",
-   "audio": "content/it/audio/corso2/012.mp3"
+   "audio": "content/it/audio/corso2/012.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "frase-nominale"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso2-013",
    "concept": "c0063",
    "text": "Posso avere ancora pane?",
-   "audio": "content/it/audio/corso2/013.mp3"
+   "audio": "content/it/audio/corso2/013.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-014",
    "concept": "c0064",
    "text": "Questo è delizioso!",
-   "audio": "content/it/audio/corso2/014.mp3"
+   "audio": "content/it/audio/corso2/014.mp3",
+   "grammarTags": [
+    "dimostrativo",
+    "esclamazione",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-015",
    "concept": "c0065",
    "text": "La pasta è troppo salata.",
-   "audio": "content/it/audio/corso2/015.mp3"
+   "audio": "content/it/audio/corso2/015.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-016",
    "concept": "c0066",
    "text": "Un gelato al cioccolato, per favore.",
-   "audio": "content/it/audio/corso2/016.mp3"
+   "audio": "content/it/audio/corso2/016.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "frase-nominale",
+    "preposizione-articolata",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-017",
    "concept": "c0067",
    "text": "Che gusti avete?",
-   "audio": "content/it/audio/corso2/017.mp3"
+   "audio": "content/it/audio/corso2/017.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-018",
    "concept": "c0068",
    "text": "Prendiamo un antipasto da dividere.",
-   "audio": "content/it/audio/corso2/018.mp3"
+   "audio": "content/it/audio/corso2/018.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "infinito-dipendente",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-019",
    "concept": "c0069",
    "text": "A che ora chiudete?",
-   "audio": "content/it/audio/corso2/019.mp3"
+   "audio": "content/it/audio/corso2/019.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "espressione-tempo",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-020",
    "concept": "c0070",
    "text": "È libero questo tavolo?",
-   "audio": "content/it/audio/corso2/020.mp3"
+   "audio": "content/it/audio/corso2/020.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "dimostrativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-021",
    "concept": "c0071",
    "text": "Possiamo sederci fuori?",
-   "audio": "content/it/audio/corso2/021.mp3"
+   "audio": "content/it/audio/corso2/021.mp3",
+   "grammarTags": [
+    "domanda-si-no",
+    "presente",
+    "pronome-enclitico",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso2-022",
    "concept": "c0072",
    "text": "Il servizio è incluso?",
-   "audio": "content/it/audio/corso2/022.mp3"
+   "audio": "content/it/audio/corso2/022.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "domanda-si-no",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-023",
    "concept": "c0073",
    "text": "Posso pagare con la carta?",
-   "audio": "content/it/audio/corso2/023.mp3"
+   "audio": "content/it/audio/corso2/023.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-si-no",
+    "preposizione-semplice",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-024",
    "concept": "c0074",
    "text": "Solo contanti, mi dispiace.",
-   "audio": "content/it/audio/corso2/024.mp3"
+   "audio": "content/it/audio/corso2/024.mp3",
+   "grammarTags": [
+    "costruzione-piacere",
+    "presente",
+    "pronome-oggetto"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso2-025",
    "concept": "c0075",
    "text": "Tenga il resto.",
-   "audio": "content/it/audio/corso2/025.mp3"
+   "audio": "content/it/audio/corso2/025.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "imperativo",
+    "registro-formale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso2-026",
    "concept": "c0076",
    "text": "Era tutto buonissimo.",
-   "audio": "content/it/audio/corso2/026.mp3"
+   "audio": "content/it/audio/corso2/026.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "imperfetto"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso2-027",
    "concept": "c0077",
    "text": "Ho prenotato per le otto.",
-   "audio": "content/it/audio/corso2/027.mp3"
+   "audio": "content/it/audio/corso2/027.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "numerale",
+    "passato-prossimo",
+    "plurale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso2-028",
    "concept": "c0078",
    "text": "Siamo in quattro.",
-   "audio": "content/it/audio/corso2/028.mp3"
+   "audio": "content/it/audio/corso2/028.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "numerale",
+    "plurale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-029",
    "concept": "c0079",
    "text": "Aspettiamo un amico.",
-   "audio": "content/it/audio/corso2/029.mp3"
+   "audio": "content/it/audio/corso2/029.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso2-030",
    "concept": "c0080",
    "text": "Prendo il dolce dopo.",
-   "audio": "content/it/audio/corso2/030.mp3"
+   "audio": "content/it/audio/corso2/030.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-determinativo",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-031",
    "concept": "c0081",
    "text": "Cameriere, scusi!",
-   "audio": "content/it/audio/corso2/031.mp3"
+   "audio": "content/it/audio/corso2/031.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "imperativo",
+    "registro-formale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso2-032",
    "concept": "c0082",
    "text": "Manca una forchetta.",
-   "audio": "content/it/audio/corso2/032.mp3"
+   "audio": "content/it/audio/corso2/032.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso2-033",
    "concept": "c0083",
    "text": "Mi porta il conto?",
-   "audio": "content/it/audio/corso2/033.mp3"
+   "audio": "content/it/audio/corso2/033.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-si-no",
+    "presente",
+    "pronome-oggetto",
+    "registro-formale"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso2-034",
    "concept": "c0084",
    "text": "Facciamo alla romana.",
-   "audio": "content/it/audio/corso2/034.mp3"
+   "audio": "content/it/audio/corso2/034.mp3",
+   "grammarTags": [
+    "preposizione-articolata",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-035",
    "concept": "c0085",
    "text": "Offro io.",
-   "audio": "content/it/audio/corso2/035.mp3"
+   "audio": "content/it/audio/corso2/035.mp3",
+   "grammarTags": [
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso2-036",
    "concept": "c0086",
    "text": "Vuoi assaggiare il mio?",
-   "audio": "content/it/audio/corso2/036.mp3"
+   "audio": "content/it/audio/corso2/036.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-si-no",
+    "possessivo",
+    "presente",
+    "verbo-irregolare",
+    "verbo-modale"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-037",
    "concept": "c0087",
    "text": "Non bevo alcolici.",
-   "audio": "content/it/audio/corso2/037.mp3"
+   "audio": "content/it/audio/corso2/037.mp3",
+   "grammarTags": [
+    "negazione",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-038",
    "concept": "c0088",
    "text": "Una birra piccola, per favore.",
-   "audio": "content/it/audio/corso2/038.mp3"
+   "audio": "content/it/audio/corso2/038.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "articolo-indeterminativo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-039",
    "concept": "c0089",
    "text": "Il cappuccino è per me.",
-   "audio": "content/it/audio/corso2/039.mp3"
+   "audio": "content/it/audio/corso2/039.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso2-040",
    "concept": "c0090",
    "text": "Faccio colazione al bar.",
-   "audio": "content/it/audio/corso2/040.mp3"
+   "audio": "content/it/audio/corso2/040.mp3",
+   "grammarTags": [
+    "preposizione-articolata",
+    "presente",
+    "verbo-irregolare"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-041",
    "concept": "c0091",
    "text": "Un cornetto e un succo, grazie.",
-   "audio": "content/it/audio/corso2/041.mp3"
+   "audio": "content/it/audio/corso2/041.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "frase-nominale"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso2-042",
    "concept": "c0092",
    "text": "C'è troppo zucchero.",
-   "audio": "content/it/audio/corso2/042.mp3"
+   "audio": "content/it/audio/corso2/042.mp3",
+   "grammarTags": [
+    "essere-avere-principale",
+    "impersonale",
+    "presente"
+   ],
+   "difficulty": 3
   },
   {
    "id": "corso2-043",
    "concept": "c0093",
    "text": "Preferisco il tè al caffè.",
-   "audio": "content/it/audio/corso2/043.mp3"
+   "audio": "content/it/audio/corso2/043.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "preposizione-articolata",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-044",
    "concept": "c0094",
    "text": "Che cosa prendi tu?",
-   "audio": "content/it/audio/corso2/044.mp3"
+   "audio": "content/it/audio/corso2/044.mp3",
+   "grammarTags": [
+    "domanda-wh",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-045",
    "concept": "c0095",
    "text": "Ancora un momento, per favore.",
-   "audio": "content/it/audio/corso2/045.mp3"
+   "audio": "content/it/audio/corso2/045.mp3",
+   "grammarTags": [
+    "articolo-indeterminativo",
+    "frase-nominale",
+    "preposizione-semplice"
+   ],
+   "difficulty": 1
   },
   {
    "id": "corso2-046",
    "concept": "c0096",
    "text": "Siamo pronti per ordinare.",
-   "audio": "content/it/audio/corso2/046.mp3"
+   "audio": "content/it/audio/corso2/046.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "essere-avere-principale",
+    "preposizione-semplice",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-047",
    "concept": "c0097",
    "text": "Com'è la zuppa oggi?",
-   "audio": "content/it/audio/corso2/047.mp3"
+   "audio": "content/it/audio/corso2/047.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "domanda-wh",
+    "espressione-tempo",
+    "essere-avere-principale",
+    "presente"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-048",
    "concept": "c0098",
    "text": "Niente dolce per me, grazie.",
-   "audio": "content/it/audio/corso2/048.mp3"
+   "audio": "content/it/audio/corso2/048.mp3",
+   "grammarTags": [
+    "accordo-aggettivo",
+    "frase-nominale",
+    "negazione",
+    "preposizione-semplice"
+   ],
+   "difficulty": 2
   },
   {
    "id": "corso2-049",
    "concept": "c0099",
    "text": "Era la mia prima volta qui.",
-   "audio": "content/it/audio/corso2/049.mp3"
+   "audio": "content/it/audio/corso2/049.mp3",
+   "grammarTags": [
+    "articolo-determinativo",
+    "espressione-tempo",
+    "imperfetto",
+    "numerale",
+    "possessivo"
+   ],
+   "difficulty": 4
   },
   {
    "id": "corso2-050",
    "concept": "c0100",
    "text": "Torniamo presto!",
-   "audio": "content/it/audio/corso2/050.mp3"
+   "audio": "content/it/audio/corso2/050.mp3",
+   "grammarTags": [
+    "esclamazione",
+    "espressione-tempo",
+    "presente"
+   ],
+   "difficulty": 2
   }
  ]
 }

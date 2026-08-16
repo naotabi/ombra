@@ -1,3507 +1,4507 @@
 {
- "_schema": "ombra.concepts/1",
- "_note": "意味のマスター。どの言語にも属さない。gloss に言語を足すと全ターゲット言語に同時に効く。 tags / difficulty はフェーズ C-2 で埋める。",
+ "_schema": "ombra.concepts/2",
+ "_note": "意味のマスター。どの言語にも属さない。gloss=訳 / topics=話題の分類。文法タグと難易度は対象言語ごとに変わるので content/<lang>/ の item 側にある。",
  "level": "A1",
  "concepts": {
   "c0001": {
    "gloss": {
-    "en": "Hi, how are you?"
+    "en": "Hi, how are you?",
+    "ja": "やあ、元気？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0002": {
    "gloss": {
-    "en": "I'm fine, thanks."
+    "en": "I'm fine, thanks.",
+    "ja": "元気だよ、ありがとう。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0003": {
    "gloss": {
-    "en": "Good morning, Mrs. Rossi."
+    "en": "Good morning, Mrs. Rossi.",
+    "ja": "おはようございます、ロッシさん。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0004": {
    "gloss": {
-    "en": "Good evening, everyone."
+    "en": "Good evening, everyone.",
+    "ja": "みなさん、こんばんは。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0005": {
    "gloss": {
-    "en": "My name is Marco."
+    "en": "My name is Marco.",
+    "ja": "マルコといいます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0006": {
    "gloss": {
-    "en": "What's your name?"
+    "en": "What's your name?",
+    "ja": "名前は何ていうの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0007": {
    "gloss": {
-    "en": "Nice to meet you."
+    "en": "Nice to meet you.",
+    "ja": "会えてうれしいよ。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0008": {
    "gloss": {
-    "en": "Where are you from?"
+    "en": "Where are you from?",
+    "ja": "どこの出身なの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0009": {
    "gloss": {
-    "en": "I'm from Tokyo."
+    "en": "I'm from Tokyo.",
+    "ja": "東京の出身です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0010": {
    "gloss": {
-    "en": "I live in Rome."
+    "en": "I live in Rome.",
+    "ja": "ローマに住んでいます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0011": {
    "gloss": {
-    "en": "Do you speak English?"
+    "en": "Do you speak English?",
+    "ja": "英語は話せる？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0012": {
    "gloss": {
-    "en": "I speak a little Italian."
+    "en": "I speak a little Italian.",
+    "ja": "イタリア語を少し話します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0013": {
    "gloss": {
-    "en": "I don't understand."
+    "en": "I don't understand.",
+    "ja": "わかりません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0014": {
    "gloss": {
-    "en": "Can you repeat, please?"
+    "en": "Can you repeat, please?",
+    "ja": "もう一度言ってくれる？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0015": {
    "gloss": {
-    "en": "Speak more slowly, please."
+    "en": "Speak more slowly, please.",
+    "ja": "もっとゆっくり話してください。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0016": {
    "gloss": {
-    "en": "Thanks a lot."
+    "en": "Thanks a lot.",
+    "ja": "どうもありがとう。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0017": {
    "gloss": {
-    "en": "You're welcome!"
+    "en": "You're welcome!",
+    "ja": "どういたしまして！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0018": {
    "gloss": {
-    "en": "Excuse me, where is the bathroom?"
+    "en": "Excuse me, where is the bathroom?",
+    "ja": "ごめん、トイレはどこ？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0019": {
    "gloss": {
-    "en": "How much does this cost?"
+    "en": "How much does this cost?",
+    "ja": "これはいくらですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0020": {
    "gloss": {
-    "en": "I'd like a coffee, please."
+    "en": "I'd like a coffee, please.",
+    "ja": "コーヒーを一杯いただきたいのですが。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0021": {
    "gloss": {
-    "en": "The bill, please."
+    "en": "The bill, please.",
+    "ja": "お会計をお願いします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0022": {
    "gloss": {
-    "en": "What time is it?"
+    "en": "What time is it?",
+    "ja": "今何時ですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0023": {
    "gloss": {
-    "en": "It's three o'clock."
+    "en": "It's three o'clock.",
+    "ja": "3時です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0024": {
    "gloss": {
-    "en": "Today is Monday."
+    "en": "Today is Monday.",
+    "ja": "今日は月曜日です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0025": {
    "gloss": {
-    "en": "Tomorrow I work."
+    "en": "Tomorrow I work.",
+    "ja": "明日は仕事です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0026": {
    "gloss": {
-    "en": "I'm hungry."
+    "en": "I'm hungry.",
+    "ja": "お腹が空きました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0027": {
    "gloss": {
-    "en": "I'm thirsty."
+    "en": "I'm thirsty.",
+    "ja": "のどが渇きました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0028": {
    "gloss": {
-    "en": "I'm tired."
+    "en": "I'm tired.",
+    "ja": "疲れました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0029": {
    "gloss": {
-    "en": "All right."
+    "en": "All right.",
+    "ja": "いいですよ。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0030": {
    "gloss": {
-    "en": "I don't know."
+    "en": "I don't know.",
+    "ja": "それは知りません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0031": {
    "gloss": {
-    "en": "Sure, why not?"
+    "en": "Sure, why not?",
+    "ja": "もちろん、いいよ。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0032": {
    "gloss": {
-    "en": "I like pizza."
+    "en": "I like pizza.",
+    "ja": "ピザが好きです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0033": {
    "gloss": {
-    "en": "I don't like fish."
+    "en": "I don't like fish.",
+    "ja": "魚は好きではありません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0034": {
    "gloss": {
-    "en": "I have a sister."
+    "en": "I have a sister.",
+    "ja": "姉妹が一人います。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0035": {
    "gloss": {
-    "en": "This is my brother."
+    "en": "This is my brother.",
+    "ja": "こちらは私の兄弟です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0036": {
    "gloss": {
-    "en": "My family is big."
+    "en": "My family is big.",
+    "ja": "うちは大家族です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0037": {
    "gloss": {
-    "en": "Where do you live?"
+    "en": "Where do you live?",
+    "ja": "どこに住んでるの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0038": {
    "gloss": {
-    "en": "I work in an office."
+    "en": "I work in an office.",
+    "ja": "オフィスで働いています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0039": {
    "gloss": {
-    "en": "I study Italian."
+    "en": "I study Italian.",
+    "ja": "イタリア語を勉強しています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0040": {
    "gloss": {
-    "en": "How old are you?"
+    "en": "How old are you?",
+    "ja": "何歳なの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0041": {
    "gloss": {
-    "en": "I'm thirty years old."
+    "en": "I'm thirty years old.",
+    "ja": "30歳です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0042": {
    "gloss": {
-    "en": "What do you do for work?"
+    "en": "What do you do for work?",
+    "ja": "どんな仕事をしてるの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0043": {
    "gloss": {
-    "en": "I'm a teacher."
+    "en": "I'm a teacher.",
+    "ja": "教師です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0044": {
    "gloss": {
-    "en": "See you tomorrow!"
+    "en": "See you tomorrow!",
+    "ja": "また明日！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0045": {
    "gloss": {
-    "en": "See you soon!"
+    "en": "See you soon!",
+    "ja": "また近いうちに！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0046": {
    "gloss": {
-    "en": "Have a good day!"
+    "en": "Have a good day!",
+    "ja": "よい一日を！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0047": {
    "gloss": {
-    "en": "Good night, sleep well."
+    "en": "Good night, sleep well.",
+    "ja": "おやすみ、よく眠ってね。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0048": {
    "gloss": {
-    "en": "Goodbye!"
+    "en": "Goodbye!",
+    "ja": "さようなら！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0049": {
    "gloss": {
-    "en": "Welcome to Italy!"
+    "en": "Welcome to Italy!",
+    "ja": "イタリアへようこそ！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0050": {
    "gloss": {
-    "en": "Good luck!"
+    "en": "Good luck!",
+    "ja": "頑張って！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "saluti-presentarsi"
+   ]
   },
   "c0051": {
    "gloss": {
-    "en": "A table for two, please."
+    "en": "A table for two, please.",
+    "ja": "二人用のテーブルをお願いします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0052": {
    "gloss": {
-    "en": "Do you have a menu in English?"
+    "en": "Do you have a menu in English?",
+    "ja": "英語のメニューはありますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0053": {
    "gloss": {
-    "en": "What do you recommend?"
+    "en": "What do you recommend?",
+    "ja": "おすすめは何ですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0054": {
    "gloss": {
-    "en": "I'll have a margherita pizza."
+    "en": "I'll have a margherita pizza.",
+    "ja": "マルゲリータピザにします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0055": {
    "gloss": {
-    "en": "For me, a glass of red wine."
+    "en": "For me, a glass of red wine.",
+    "ja": "私は赤ワインをグラスで。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0056": {
    "gloss": {
-    "en": "I'd like still water."
+    "en": "I'd like still water.",
+    "ja": "炭酸なしの水をいただきたいのですが。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0057": {
    "gloss": {
-    "en": "Sparkling water, please."
+    "en": "Sparkling water, please.",
+    "ja": "炭酸水をお願いします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0058": {
    "gloss": {
-    "en": "What's the dish of the day?"
+    "en": "What's the dish of the day?",
+    "ja": "今日の日替わりは何ですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0059": {
    "gloss": {
-    "en": "I'm vegetarian."
+    "en": "I'm vegetarian.",
+    "ja": "私はベジタリアンです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0060": {
    "gloss": {
-    "en": "Without onion, please."
+    "en": "Without onion, please.",
+    "ja": "玉ねぎ抜きでお願いします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0061": {
    "gloss": {
-    "en": "Is the fish fresh?"
+    "en": "Is the fish fresh?",
+    "ja": "魚は新鮮ですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0062": {
    "gloss": {
-    "en": "A macchiato, thanks."
+    "en": "A macchiato, thanks.",
+    "ja": "カフェマキアートをひとつお願いします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0063": {
    "gloss": {
-    "en": "Can I have more bread?"
+    "en": "Can I have more bread?",
+    "ja": "パンをもう少しもらえますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0064": {
    "gloss": {
-    "en": "This is delicious!"
+    "en": "This is delicious!",
+    "ja": "これは美味しい！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0065": {
    "gloss": {
-    "en": "The pasta is too salty."
+    "en": "The pasta is too salty.",
+    "ja": "パスタが塩辛すぎます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0066": {
    "gloss": {
-    "en": "A chocolate ice cream, please."
+    "en": "A chocolate ice cream, please.",
+    "ja": "チョコレートのジェラートをひとつお願いします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0067": {
    "gloss": {
-    "en": "What flavors do you have?"
+    "en": "What flavors do you have?",
+    "ja": "どんな味がありますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0068": {
    "gloss": {
-    "en": "We'll have an appetizer to share."
+    "en": "We'll have an appetizer to share.",
+    "ja": "シェアする前菜を頼みましょう。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0069": {
    "gloss": {
-    "en": "What time do you close?"
+    "en": "What time do you close?",
+    "ja": "何時に閉まりますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0070": {
    "gloss": {
-    "en": "Is this table free?"
+    "en": "Is this table free?",
+    "ja": "このテーブルは空いていますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0071": {
    "gloss": {
-    "en": "Can we sit outside?"
+    "en": "Can we sit outside?",
+    "ja": "外に座ってもいいですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0072": {
    "gloss": {
-    "en": "Is service included?"
+    "en": "Is service included?",
+    "ja": "サービス料は含まれていますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0073": {
    "gloss": {
-    "en": "Can I pay by card?"
+    "en": "Can I pay by card?",
+    "ja": "カードで払えますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0074": {
    "gloss": {
-    "en": "Cash only, I'm sorry."
+    "en": "Cash only, I'm sorry.",
+    "ja": "現金のみです、すみません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0075": {
    "gloss": {
-    "en": "Keep the change."
+    "en": "Keep the change.",
+    "ja": "おつりは取っておいてください。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0076": {
    "gloss": {
-    "en": "Everything was very good."
+    "en": "Everything was very good.",
+    "ja": "全部とても美味しかったです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0077": {
    "gloss": {
-    "en": "I booked for eight o'clock."
+    "en": "I booked for eight o'clock.",
+    "ja": "8時に予約しました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0078": {
    "gloss": {
-    "en": "There are four of us."
+    "en": "There are four of us.",
+    "ja": "4人です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0079": {
    "gloss": {
-    "en": "We're waiting for a friend."
+    "en": "We're waiting for a friend.",
+    "ja": "友達を一人待っています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0080": {
    "gloss": {
-    "en": "I'll have dessert later."
+    "en": "I'll have dessert later.",
+    "ja": "デザートは後にします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0081": {
    "gloss": {
-    "en": "Waiter, excuse me!"
+    "en": "Waiter, excuse me!",
+    "ja": "すみません、店員さん！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0082": {
    "gloss": {
-    "en": "A fork is missing."
+    "en": "A fork is missing.",
+    "ja": "フォークが一本足りません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0083": {
    "gloss": {
-    "en": "Will you bring me the bill?"
+    "en": "Will you bring me the bill?",
+    "ja": "お会計を持ってきてもらえますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0084": {
    "gloss": {
-    "en": "Let's split the bill."
+    "en": "Let's split the bill.",
+    "ja": "割り勘にしましょう。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0085": {
    "gloss": {
-    "en": "It's my treat."
+    "en": "It's my treat.",
+    "ja": "私がおごります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0086": {
    "gloss": {
-    "en": "Do you want to taste mine?"
+    "en": "Do you want to taste mine?",
+    "ja": "私のを味見する？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0087": {
    "gloss": {
-    "en": "I don't drink alcohol."
+    "en": "I don't drink alcohol.",
+    "ja": "お酒は飲みません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0088": {
    "gloss": {
-    "en": "A small beer, please."
+    "en": "A small beer, please.",
+    "ja": "小さいビールをひとつお願いします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0089": {
    "gloss": {
-    "en": "The cappuccino is for me."
+    "en": "The cappuccino is for me.",
+    "ja": "カプチーノは私のです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0090": {
    "gloss": {
-    "en": "I have breakfast at the café."
+    "en": "I have breakfast at the café.",
+    "ja": "バールで朝食をとります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0091": {
    "gloss": {
-    "en": "A croissant and a juice, thanks."
+    "en": "A croissant and a juice, thanks.",
+    "ja": "コルネットとジュースをお願いします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0092": {
    "gloss": {
-    "en": "There's too much sugar."
+    "en": "There's too much sugar.",
+    "ja": "砂糖が多すぎます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0093": {
    "gloss": {
-    "en": "I prefer tea to coffee."
+    "en": "I prefer tea to coffee.",
+    "ja": "コーヒーより紅茶が好きです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0094": {
    "gloss": {
-    "en": "What are you having?"
+    "en": "What are you having?",
+    "ja": "君は何にする？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0095": {
    "gloss": {
-    "en": "One more moment, please."
+    "en": "One more moment, please.",
+    "ja": "もう少し待ってください。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0096": {
    "gloss": {
-    "en": "We're ready to order."
+    "en": "We're ready to order.",
+    "ja": "注文する準備ができました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0097": {
    "gloss": {
-    "en": "How's the soup today?"
+    "en": "How's the soup today?",
+    "ja": "今日のスープはどうですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0098": {
    "gloss": {
-    "en": "No dessert for me, thanks."
+    "en": "No dessert for me, thanks.",
+    "ja": "私はデザートはいりません、ありがとう。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0099": {
    "gloss": {
-    "en": "It was my first time here."
+    "en": "It was my first time here.",
+    "ja": "ここは初めてでした。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0100": {
    "gloss": {
-    "en": "We'll come back soon!"
+    "en": "We'll come back soon!",
+    "ja": "また近いうちに来ましょう！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "bar-ristorante"
+   ]
   },
   "c0101": {
    "gloss": {
-    "en": "Where is the station?"
+    "en": "Where is the station?",
+    "ja": "駅はどこですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0102": {
    "gloss": {
-    "en": "Is it far from here?"
+    "en": "Is it far from here?",
+    "ja": "ここから遠いですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0103": {
    "gloss": {
-    "en": "Can you show me on the map?"
+    "en": "Can you show me on the map?",
+    "ja": "地図で見せてくれる？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0104": {
    "gloss": {
-    "en": "Turn right at the traffic light."
+    "en": "Turn right at the traffic light.",
+    "ja": "信号を右に曲がってください。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0105": {
    "gloss": {
-    "en": "Straight ahead, then left."
+    "en": "Straight ahead, then left.",
+    "ja": "まっすぐ行って、それから左です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0106": {
    "gloss": {
-    "en": "It's near the cathedral."
+    "en": "It's near the cathedral.",
+    "ja": "大聖堂の近くです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0107": {
    "gloss": {
-    "en": "How long does it take on foot?"
+    "en": "How long does it take on foot?",
+    "ja": "歩いてどのくらいかかりますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0108": {
    "gloss": {
-    "en": "Ten minutes, more or less."
+    "en": "Ten minutes, more or less.",
+    "ja": "だいたい10分です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0109": {
    "gloss": {
-    "en": "Which bus do I need to take?"
+    "en": "Which bus do I need to take?",
+    "ja": "どのバスに乗ればいいですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0110": {
    "gloss": {
-    "en": "The 23 comes every hour."
+    "en": "The 23 comes every hour.",
+    "ja": "23番は1時間ごとに来ます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0111": {
    "gloss": {
-    "en": "Where do you buy tickets?"
+    "en": "Where do you buy tickets?",
+    "ja": "切符はどこで買えますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0112": {
    "gloss": {
-    "en": "A ticket to Florence, please."
+    "en": "A ticket to Florence, please.",
+    "ja": "フィレンツェまで一枚お願いします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0113": {
    "gloss": {
-    "en": "One way or round trip?"
+    "en": "One way or round trip?",
+    "ja": "片道ですか、往復ですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0114": {
    "gloss": {
-    "en": "The train leaves from platform two."
+    "en": "The train leaves from platform two.",
+    "ja": "電車は2番線から出ます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0115": {
    "gloss": {
-    "en": "The next train is at nine."
+    "en": "The next train is at nine.",
+    "ja": "次の電車は9時です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0116": {
    "gloss": {
-    "en": "I'm late!"
+    "en": "I'm late!",
+    "ja": "遅刻です！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0117": {
    "gloss": {
-    "en": "Is the museum open today?"
+    "en": "Is the museum open today?",
+    "ja": "美術館は今日開いていますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0118": {
    "gloss": {
-    "en": "It's closed on Mondays."
+    "en": "It's closed on Mondays.",
+    "ja": "月曜日は閉まっています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0119": {
    "gloss": {
-    "en": "Admission is free."
+    "en": "Admission is free.",
+    "ja": "入場は無料です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0120": {
    "gloss": {
-    "en": "Two tickets for the museum."
+    "en": "Two tickets for the museum.",
+    "ja": "美術館のチケットを2枚。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0121": {
    "gloss": {
-    "en": "Can I take a photo here?"
+    "en": "Can I take a photo here?",
+    "ja": "ここで写真を撮ってもいいですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0122": {
    "gloss": {
-    "en": "What a beautiful square!"
+    "en": "What a beautiful square!",
+    "ja": "なんてきれいな広場！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0123": {
    "gloss": {
-    "en": "This church is old."
+    "en": "This church is old.",
+    "ja": "この教会は古いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0124": {
    "gloss": {
-    "en": "I'm looking for a pharmacy."
+    "en": "I'm looking for a pharmacy.",
+    "ja": "薬局を探しています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0125": {
    "gloss": {
-    "en": "Is there a supermarket nearby?"
+    "en": "Is there a supermarket nearby?",
+    "ja": "この近くにスーパーはありますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0126": {
    "gloss": {
-    "en": "It opens at half past eight."
+    "en": "It opens at half past eight.",
+    "ja": "8時半に開きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0127": {
    "gloss": {
-    "en": "How much are these shoes?"
+    "en": "How much are these shoes?",
+    "ja": "この靴はいくらですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0128": {
    "gloss": {
-    "en": "They're on sale."
+    "en": "They're on sale.",
+    "ja": "セール中です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0129": {
    "gloss": {
-    "en": "Can I try it on?"
+    "en": "Can I try it on?",
+    "ja": "試着してもいいですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0130": {
    "gloss": {
-    "en": "What size do you wear?"
+    "en": "What size do you wear?",
+    "ja": "サイズはいくつですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0131": {
    "gloss": {
-    "en": "I wear a forty-two."
+    "en": "I wear a forty-two.",
+    "ja": "42を履いています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0132": {
    "gloss": {
-    "en": "It's too expensive for me."
+    "en": "It's too expensive for me.",
+    "ja": "私には高すぎます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0133": {
    "gloss": {
-    "en": "Do you have something cheaper?"
+    "en": "Do you have something cheaper?",
+    "ja": "もっと安いものはありますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0134": {
    "gloss": {
-    "en": "I'll take it!"
+    "en": "I'll take it!",
+    "ja": "これにします！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0135": {
    "gloss": {
-    "en": "Can you give me a bag, please?"
+    "en": "Can you give me a bag, please?",
+    "ja": "袋をもらえますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0136": {
    "gloss": {
-    "en": "Where can I change money?"
+    "en": "Where can I change money?",
+    "ja": "どこで両替できますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0137": {
    "gloss": {
-    "en": "Is there an ATM here?"
+    "en": "Is there an ATM here?",
+    "ja": "ここにATMはありますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0138": {
    "gloss": {
-    "en": "I lost my wallet."
+    "en": "I lost my wallet.",
+    "ja": "財布をなくしました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0139": {
    "gloss": {
-    "en": "Help, please!"
+    "en": "Help, please!",
+    "ja": "助けてください！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0140": {
    "gloss": {
-    "en": "Should I call the police?"
+    "en": "Should I call the police?",
+    "ja": "警察を呼びましょうか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0141": {
    "gloss": {
-    "en": "It's nothing serious."
+    "en": "It's nothing serious.",
+    "ja": "大したことではありません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0142": {
    "gloss": {
-    "en": "The city is full of tourists."
+    "en": "The city is full of tourists.",
+    "ja": "街は観光客でいっぱいです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0143": {
    "gloss": {
-    "en": "Today there's the market."
+    "en": "Today there's the market.",
+    "ja": "今日は市場が立ちます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0144": {
    "gloss": {
-    "en": "I'm buying fruit and vegetables."
+    "en": "I'm buying fruit and vegetables.",
+    "ja": "果物と野菜を買います。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0145": {
    "gloss": {
-    "en": "A kilo of apples, thanks."
+    "en": "A kilo of apples, thanks.",
+    "ja": "りんごを1キロお願いします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0146": {
    "gloss": {
-    "en": "Are these oranges sweet?"
+    "en": "Are these oranges sweet?",
+    "ja": "このオレンジは甘いですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0147": {
    "gloss": {
-    "en": "Go ahead and taste!"
+    "en": "Go ahead and taste!",
+    "ja": "どうぞ味見してください！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0148": {
    "gloss": {
-    "en": "The center is closed to traffic."
+    "en": "The center is closed to traffic.",
+    "ja": "中心街は車両通行止めです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0149": {
    "gloss": {
-    "en": "Let's walk."
+    "en": "Let's walk.",
+    "ja": "歩いて行きましょう。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0150": {
    "gloss": {
-    "en": "See you in front of the cinema."
+    "en": "See you in front of the cinema.",
+    "ja": "映画館の前で会いましょう。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "citta-acquisti"
+   ]
   },
   "c0151": {
    "gloss": {
-    "en": "I wake up at seven."
+    "en": "I wake up at seven.",
+    "ja": "7時に目が覚めます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0152": {
    "gloss": {
-    "en": "I get up right away."
+    "en": "I get up right away.",
+    "ja": "すぐに起き上がります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0153": {
    "gloss": {
-    "en": "I take a shower every morning."
+    "en": "I take a shower every morning.",
+    "ja": "毎朝シャワーを浴びます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0154": {
    "gloss": {
-    "en": "I get dressed quickly."
+    "en": "I get dressed quickly.",
+    "ja": "急いで服を着ます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0155": {
    "gloss": {
-    "en": "I drink a coffee at home."
+    "en": "I drink a coffee at home.",
+    "ja": "家でコーヒーを飲みます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0156": {
    "gloss": {
-    "en": "I leave home at eight."
+    "en": "I leave home at eight.",
+    "ja": "8時に家を出ます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0157": {
    "gloss": {
-    "en": "I go to work by bike."
+    "en": "I go to work by bike.",
+    "ja": "自転車で仕事に行きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0158": {
    "gloss": {
-    "en": "The trip takes twenty minutes."
+    "en": "The trip takes twenty minutes.",
+    "ja": "移動は20分かかります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0159": {
    "gloss": {
-    "en": "I start at nine sharp."
+    "en": "I start at nine sharp.",
+    "ja": "9時ちょうどに始めます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0160": {
    "gloss": {
-    "en": "I have a break at noon."
+    "en": "I have a break at noon.",
+    "ja": "昼に休憩があります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0161": {
    "gloss": {
-    "en": "I have lunch with my colleagues."
+    "en": "I have lunch with my colleagues.",
+    "ja": "同僚と昼食をとります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0162": {
    "gloss": {
-    "en": "The afternoon goes by fast."
+    "en": "The afternoon goes by fast.",
+    "ja": "午後は早く過ぎます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0163": {
    "gloss": {
-    "en": "I finish at six in the evening."
+    "en": "I finish at six in the evening.",
+    "ja": "夕方6時に終わります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0164": {
    "gloss": {
-    "en": "I come home tired."
+    "en": "I come home tired.",
+    "ja": "疲れて家に帰ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0165": {
    "gloss": {
-    "en": "First I do the grocery shopping."
+    "en": "First I do the grocery shopping.",
+    "ja": "その前に買い物をします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0166": {
    "gloss": {
-    "en": "I cook dinner for two."
+    "en": "I cook dinner for two.",
+    "ja": "二人分の夕食を作ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0167": {
    "gloss": {
-    "en": "We have dinner at eight."
+    "en": "We have dinner at eight.",
+    "ja": "8時に夕食を食べます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0168": {
    "gloss": {
-    "en": "After dinner I watch a movie."
+    "en": "After dinner I watch a movie.",
+    "ja": "夕食の後に映画を見ます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0169": {
    "gloss": {
-    "en": "I read a book in bed."
+    "en": "I read a book in bed.",
+    "ja": "ベッドで本を読みます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0170": {
    "gloss": {
-    "en": "I go to sleep at midnight."
+    "en": "I go to sleep at midnight.",
+    "ja": "夜中の12時に寝ます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0171": {
    "gloss": {
-    "en": "I sleep eight hours."
+    "en": "I sleep eight hours.",
+    "ja": "8時間眠ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0172": {
    "gloss": {
-    "en": "Saturday is different."
+    "en": "Saturday is different.",
+    "ja": "土曜日は違います。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0173": {
    "gloss": {
-    "en": "I stay in bed until late."
+    "en": "I stay in bed until late.",
+    "ja": "遅くまでベッドにいます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0174": {
    "gloss": {
-    "en": "I have breakfast without rushing."
+    "en": "I have breakfast without rushing.",
+    "ja": "ゆっくり朝食をとります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0175": {
    "gloss": {
-    "en": "I clean the house on weekends."
+    "en": "I clean the house on weekends.",
+    "ja": "週末に家を掃除します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0176": {
    "gloss": {
-    "en": "I wash clothes on Sundays."
+    "en": "I wash clothes on Sundays.",
+    "ja": "日曜日に洗濯をします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0177": {
    "gloss": {
-    "en": "I go to the gym twice a week."
+    "en": "I go to the gym twice a week.",
+    "ja": "週に2回ジムに行きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0178": {
    "gloss": {
-    "en": "I run in the park in the morning."
+    "en": "I run in the park in the morning.",
+    "ja": "朝、公園を走ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0179": {
    "gloss": {
-    "en": "I never have time."
+    "en": "I never have time.",
+    "ja": "時間が全然ありません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0180": {
    "gloss": {
-    "en": "Sometimes I arrive late."
+    "en": "Sometimes I arrive late.",
+    "ja": "たまに遅刻します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0181": {
    "gloss": {
-    "en": "I usually take the train."
+    "en": "I usually take the train.",
+    "ja": "たいてい電車に乗ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0182": {
    "gloss": {
-    "en": "Today I work from home."
+    "en": "Today I work from home.",
+    "ja": "今日は家で仕事をします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0183": {
    "gloss": {
-    "en": "The meeting is at ten."
+    "en": "The meeting is at ten.",
+    "ja": "会議は10時です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0184": {
    "gloss": {
-    "en": "I write a lot of emails."
+    "en": "I write a lot of emails.",
+    "ja": "メールをたくさん書きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0185": {
    "gloss": {
-    "en": "I call my mother."
+    "en": "I call my mother.",
+    "ja": "母に電話します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0186": {
    "gloss": {
-    "en": "We talk for an hour."
+    "en": "We talk for an hour.",
+    "ja": "1時間話します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0187": {
    "gloss": {
-    "en": "I take the dog out."
+    "en": "I take the dog out.",
+    "ja": "犬を散歩に連れて行きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0188": {
    "gloss": {
-    "en": "My cat always sleeps."
+    "en": "My cat always sleeps.",
+    "ja": "うちの猫はいつも寝ています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0189": {
    "gloss": {
-    "en": "I water the plants."
+    "en": "I water the plants.",
+    "ja": "植物に水をやります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0190": {
    "gloss": {
-    "en": "I take out the trash."
+    "en": "I take out the trash.",
+    "ja": "ゴミを捨てます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0191": {
    "gloss": {
-    "en": "I check my phone too much."
+    "en": "I check my phone too much.",
+    "ja": "スマホを見すぎます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0192": {
    "gloss": {
-    "en": "Tonight I'm going out with friends."
+    "en": "Tonight I'm going out with friends.",
+    "ja": "今夜は友達と出かけます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0193": {
    "gloss": {
-    "en": "Tomorrow I'll rest."
+    "en": "Tomorrow I'll rest.",
+    "ja": "明日は休みます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0194": {
    "gloss": {
-    "en": "What a long day!"
+    "en": "What a long day!",
+    "ja": "なんて長い一日！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0195": {
    "gloss": {
-    "en": "I can't wait for the weekend."
+    "en": "I can't wait for the weekend.",
+    "ja": "週末が待ちきれません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0196": {
    "gloss": {
-    "en": "Monday is always hard."
+    "en": "Monday is always hard.",
+    "ja": "月曜日はいつも大変です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0197": {
    "gloss": {
-    "en": "For lunch I eat a sandwich."
+    "en": "For lunch I eat a sandwich.",
+    "ja": "昼はパニーノを食べます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0198": {
    "gloss": {
-    "en": "I review words every evening."
+    "en": "I review words every evening.",
+    "ja": "毎晩単語を復習します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0199": {
    "gloss": {
-    "en": "I listen to music in the kitchen."
+    "en": "I listen to music in the kitchen.",
+    "ja": "台所で音楽を聴きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0200": {
    "gloss": {
-    "en": "I like this simple life."
+    "en": "I like this simple life.",
+    "ja": "このシンプルな生活が好きです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "giornata-routine"
+   ]
   },
   "c0201": {
    "gloss": {
-    "en": "I've been married for five years."
+    "en": "I've been married for five years.",
+    "ja": "結婚して5年になります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0202": {
    "gloss": {
-    "en": "We have two small children."
+    "en": "We have two small children.",
+    "ja": "小さい子どもが二人います。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0203": {
    "gloss": {
-    "en": "My daughter is six years old."
+    "en": "My daughter is six years old.",
+    "ja": "娘は6歳です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0204": {
    "gloss": {
-    "en": "My parents live by the sea."
+    "en": "My parents live by the sea.",
+    "ja": "両親は海の近くに住んでいます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0205": {
    "gloss": {
-    "en": "My grandfather is ninety years old."
+    "en": "My grandfather is ninety years old.",
+    "ja": "祖父は90歳です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0206": {
    "gloss": {
-    "en": "We're a cheerful family."
+    "en": "We're a cheerful family.",
+    "ja": "うちは明るい家族です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0207": {
    "gloss": {
-    "en": "I live alone in the city."
+    "en": "I live alone in the city.",
+    "ja": "街で一人暮らしをしています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0208": {
    "gloss": {
-    "en": "My apartment is small."
+    "en": "My apartment is small.",
+    "ja": "私のアパートは小さいです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0209": {
    "gloss": {
-    "en": "I have a balcony with flowers."
+    "en": "I have a balcony with flowers.",
+    "ja": "花のあるバルコニーがあります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0210": {
    "gloss": {
-    "en": "In my free time I paint."
+    "en": "In my free time I paint.",
+    "ja": "暇なときは絵を描きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0211": {
    "gloss": {
-    "en": "I've been playing guitar for a short time."
+    "en": "I've been playing guitar for a short time.",
+    "ja": "少し前からギターを弾いています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0212": {
    "gloss": {
-    "en": "I play soccer on Thursdays."
+    "en": "I play soccer on Thursdays.",
+    "ja": "木曜日にサッカーをします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0213": {
    "gloss": {
-    "en": "I love traveling by train."
+    "en": "I love traveling by train.",
+    "ja": "電車で旅行するのが大好きです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0214": {
    "gloss": {
-    "en": "I take a lot of photos."
+    "en": "I take a lot of photos.",
+    "ja": "写真をたくさん撮ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0215": {
    "gloss": {
-    "en": "My hobby is cooking."
+    "en": "My hobby is cooking.",
+    "ja": "私の趣味は料理です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0216": {
    "gloss": {
-    "en": "I make a cake every Sunday."
+    "en": "I make a cake every Sunday.",
+    "ja": "毎週日曜日にケーキを作ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0217": {
    "gloss": {
-    "en": "I collect old postcards."
+    "en": "I collect old postcards.",
+    "ja": "古い絵はがきを集めています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0218": {
    "gloss": {
-    "en": "I'm interested in history."
+    "en": "I'm interested in history.",
+    "ja": "歴史に興味があります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0219": {
    "gloss": {
-    "en": "I don't watch much TV."
+    "en": "I don't watch much TV.",
+    "ja": "テレビはあまり見ません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0220": {
    "gloss": {
-    "en": "I prefer mystery novels."
+    "en": "I prefer mystery novels.",
+    "ja": "推理小説のほうが好きです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0221": {
    "gloss": {
-    "en": "What's the weather like today?"
+    "en": "What's the weather like today?",
+    "ja": "今日の天気はどうですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0222": {
    "gloss": {
-    "en": "It's sunny but cold."
+    "en": "It's sunny but cold.",
+    "ja": "晴れていますが寒いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0223": {
    "gloss": {
-    "en": "It's been raining for three days."
+    "en": "It's been raining for three days.",
+    "ja": "3日前から雨が降っています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0224": {
    "gloss": {
-    "en": "Tomorrow the snow is coming."
+    "en": "Tomorrow the snow is coming.",
+    "ja": "明日は雪が降ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0225": {
    "gloss": {
-    "en": "I hate strong wind."
+    "en": "I hate strong wind.",
+    "ja": "強い風が嫌いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0226": {
    "gloss": {
-    "en": "In summer it's very hot."
+    "en": "In summer it's very hot.",
+    "ja": "夏はとても暑いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0227": {
    "gloss": {
-    "en": "Spring is my season."
+    "en": "Spring is my season.",
+    "ja": "春が私の季節です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0228": {
    "gloss": {
-    "en": "I'm happy with my job."
+    "en": "I'm happy with my job.",
+    "ja": "自分の仕事に満足しています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0229": {
    "gloss": {
-    "en": "Sometimes I'm a bit lazy."
+    "en": "Sometimes I'm a bit lazy.",
+    "ja": "時々少し怠け者になります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0230": {
    "gloss": {
-    "en": "I'm a curious person."
+    "en": "I'm a curious person.",
+    "ja": "私は好奇心の強い人間です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0231": {
    "gloss": {
-    "en": "I speak three languages."
+    "en": "I speak three languages.",
+    "ja": "3か国語を話します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0232": {
    "gloss": {
-    "en": "I learn new words every day."
+    "en": "I learn new words every day.",
+    "ja": "毎日新しい単語を覚えます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0233": {
    "gloss": {
-    "en": "My dream is to live in Italy."
+    "en": "My dream is to live in Italy.",
+    "ja": "私の夢はイタリアに住むことです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0234": {
    "gloss": {
-    "en": "I come to Italy every year."
+    "en": "I come to Italy every year.",
+    "ja": "毎年イタリアに来ます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0235": {
    "gloss": {
-    "en": "I know Venice well."
+    "en": "I know Venice well.",
+    "ja": "ヴェネツィアをよく知っています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0236": {
    "gloss": {
-    "en": "The sea relaxes me."
+    "en": "The sea relaxes me.",
+    "ja": "海に癒やされます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0237": {
    "gloss": {
-    "en": "I'm afraid of spiders."
+    "en": "I'm afraid of spiders.",
+    "ja": "クモが怖いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0238": {
    "gloss": {
-    "en": "I don't eat red meat."
+    "en": "I don't eat red meat.",
+    "ja": "赤身の肉は食べません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0239": {
    "gloss": {
-    "en": "I drink only water and tea."
+    "en": "I drink only water and tea.",
+    "ja": "水とお茶しか飲みません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0240": {
    "gloss": {
-    "en": "Coffee keeps me awake."
+    "en": "Coffee keeps me awake.",
+    "ja": "コーヒーを飲むと眠れなくなります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0241": {
    "gloss": {
-    "en": "My wife works at the hospital."
+    "en": "My wife works at the hospital.",
+    "ja": "妻は病院で働いています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0242": {
    "gloss": {
-    "en": "My cousin lives in Germany."
+    "en": "My cousin lives in Germany.",
+    "ja": "いとこはドイツに住んでいます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0243": {
    "gloss": {
-    "en": "I have many foreign friends."
+    "en": "I have many foreign friends.",
+    "ja": "外国人の友達がたくさんいます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0244": {
    "gloss": {
-    "en": "I write a diary in Italian."
+    "en": "I write a diary in Italian.",
+    "ja": "イタリア語で日記を書いています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0245": {
    "gloss": {
-    "en": "I really like Italian music."
+    "en": "I really like Italian music.",
+    "ja": "イタリアの音楽が大好きです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0246": {
    "gloss": {
-    "en": "I sing in the shower."
+    "en": "I sing in the shower.",
+    "ja": "シャワーを浴びながら歌います。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0247": {
    "gloss": {
-    "en": "On weekends I visit museums."
+    "en": "On weekends I visit museums.",
+    "ja": "週末は美術館を訪れます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0248": {
    "gloss": {
-    "en": "I dream of speaking Italian well."
+    "en": "I dream of speaking Italian well.",
+    "ja": "イタリア語を上手に話せるようになりたいです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0249": {
    "gloss": {
-    "en": "Every day I take a small step."
+    "en": "Every day I take a small step.",
+    "ja": "毎日小さな一歩を進みます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0250": {
    "gloss": {
-    "en": "This is my life."
+    "en": "This is my life.",
+    "ja": "これが私の人生です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "se-tempo-libero"
+   ]
   },
   "c0251": {
    "gloss": {
-    "en": "I have a reservation under the name Rossi."
+    "en": "I have a reservation under the name Rossi.",
+    "ja": "ロッシの名前で予約しています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0252": {
    "gloss": {
-    "en": "I'd like a double room."
+    "en": "I'd like a double room.",
+    "ja": "ダブルの部屋をお願いしたいのですが。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0253": {
    "gloss": {
-    "en": "How much is it per night?"
+    "en": "How much is it per night?",
+    "ja": "一泊いくらですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0254": {
    "gloss": {
-    "en": "Is breakfast included?"
+    "en": "Is breakfast included?",
+    "ja": "朝食は含まれていますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0255": {
    "gloss": {
-    "en": "What floor is the room on?"
+    "en": "What floor is the room on?",
+    "ja": "部屋は何階ですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0256": {
    "gloss": {
-    "en": "Here is my passport."
+    "en": "Here is my passport.",
+    "ja": "これが私のパスポートです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0257": {
    "gloss": {
-    "en": "Is there wifi in the room?"
+    "en": "Is there wifi in the room?",
+    "ja": "部屋にWi-Fiはありますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0258": {
    "gloss": {
-    "en": "Is there a balcony with a view?"
+    "en": "Is there a balcony with a view?",
+    "ja": "眺めのいいバルコニーはありますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0259": {
    "gloss": {
-    "en": "Is the sea close to the hotel?"
+    "en": "Is the sea close to the hotel?",
+    "ja": "海はホテルの近くですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0260": {
    "gloss": {
-    "en": "Can I leave my suitcase here?"
+    "en": "Can I leave my suitcase here?",
+    "ja": "ここにスーツケースを預けられますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0261": {
    "gloss": {
-    "en": "My suitcase is heavy."
+    "en": "My suitcase is heavy.",
+    "ja": "私のスーツケースは重いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0262": {
    "gloss": {
-    "en": "We leave Sunday morning."
+    "en": "We leave Sunday morning.",
+    "ja": "日曜日の朝に出発します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0263": {
    "gloss": {
-    "en": "The plane leaves at six."
+    "en": "The plane leaves at six.",
+    "ja": "飛行機は6時に出ます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0264": {
    "gloss": {
-    "en": "The flight is delayed."
+    "en": "The flight is delayed.",
+    "ja": "便が遅れています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0265": {
    "gloss": {
-    "en": "Where is gate four?"
+    "en": "Where is gate four?",
+    "ja": "4番出口はどこですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0266": {
    "gloss": {
-    "en": "Do I have to change in Milan?"
+    "en": "Do I have to change in Milan?",
+    "ja": "ミラノで乗り換えが必要ですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0267": {
    "gloss": {
-    "en": "Is this seat taken?"
+    "en": "Is this seat taken?",
+    "ja": "この席はふさがっていますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0268": {
    "gloss": {
-    "en": "May I open the window?"
+    "en": "May I open the window?",
+    "ja": "窓を開けてもいいですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0269": {
    "gloss": {
-    "en": "I get off at the next stop."
+    "en": "I get off at the next stop.",
+    "ja": "次の停留所で降ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0270": {
    "gloss": {
-    "en": "Where do you get a taxi?"
+    "en": "Where do you get a taxi?",
+    "ja": "タクシーはどこで乗れますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0271": {
    "gloss": {
-    "en": "How much is it to the center?"
+    "en": "How much is it to the center?",
+    "ja": "中心街までいくらですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0272": {
    "gloss": {
-    "en": "Is it much farther?"
+    "en": "Is it much farther?",
+    "ja": "まだかかりますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0273": {
    "gloss": {
-    "en": "What a beautiful view!"
+    "en": "What a beautiful view!",
+    "ja": "なんてきれいな景色！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0274": {
    "gloss": {
-    "en": "Let's take a break here."
+    "en": "Let's take a break here.",
+    "ja": "ここで休憩しましょう。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0275": {
    "gloss": {
-    "en": "I need to rest."
+    "en": "I need to rest.",
+    "ja": "休む必要があります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0276": {
    "gloss": {
-    "en": "The hotel is full."
+    "en": "The hotel is full.",
+    "ja": "ホテルは満室です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0277": {
    "gloss": {
-    "en": "Is there a room available for tonight?"
+    "en": "Is there a room available for tonight?",
+    "ja": "今夜空いている部屋はありますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0278": {
    "gloss": {
-    "en": "The elevator doesn't work."
+    "en": "The elevator doesn't work.",
+    "ja": "エレベーターが動きません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0279": {
    "gloss": {
-    "en": "The key doesn't open the door."
+    "en": "The key doesn't open the door.",
+    "ja": "鍵でドアが開きません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0280": {
    "gloss": {
-    "en": "I need a clean towel."
+    "en": "I need a clean towel.",
+    "ja": "きれいなタオルが必要です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0281": {
    "gloss": {
-    "en": "The air conditioning is broken."
+    "en": "The air conditioning is broken.",
+    "ja": "エアコンが壊れています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0282": {
    "gloss": {
-    "en": "Can I change rooms?"
+    "en": "Can I change rooms?",
+    "ja": "部屋を変えられますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0283": {
    "gloss": {
-    "en": "What time do I have to leave the room?"
+    "en": "What time do I have to leave the room?",
+    "ja": "何時に部屋を出ればいいですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0284": {
    "gloss": {
-    "en": "Do I pay now or later?"
+    "en": "Do I pay now or later?",
+    "ja": "今払いますか、それとも後ですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0285": {
    "gloss": {
-    "en": "Will you call me a taxi, please?"
+    "en": "Will you call me a taxi, please?",
+    "ja": "タクシーを呼んでもらえますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0286": {
    "gloss": {
-    "en": "We're renting two bikes tomorrow."
+    "en": "We're renting two bikes tomorrow.",
+    "ja": "明日自転車を2台借りましょう。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0287": {
    "gloss": {
-    "en": "The beach is packed this morning."
+    "en": "The beach is packed this morning.",
+    "ja": "今朝ビーチは人でいっぱいです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0288": {
    "gloss": {
-    "en": "I swim in the sea every morning."
+    "en": "I swim in the sea every morning.",
+    "ja": "毎朝海で泳ぎます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0289": {
    "gloss": {
-    "en": "Today I'm sunbathing."
+    "en": "Today I'm sunbathing.",
+    "ja": "今日は日光浴をします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0290": {
    "gloss": {
-    "en": "After the swim, an ice cream!"
+    "en": "After the swim, an ice cream!",
+    "ja": "ひと泳ぎしたあとはジェラート！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0291": {
    "gloss": {
-    "en": "I'm sending a postcard to my grandparents."
+    "en": "I'm sending a postcard to my grandparents.",
+    "ja": "祖父母に絵はがきを送ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0292": {
    "gloss": {
-    "en": "I'm bringing a gift for my mother."
+    "en": "I'm bringing a gift for my mother.",
+    "ja": "母にお土産を持って帰ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0293": {
    "gloss": {
-    "en": "The guide speaks very fast."
+    "en": "The guide speaks very fast.",
+    "ja": "ガイドはとても速く話します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0294": {
    "gloss": {
-    "en": "Does the castle open at ten?"
+    "en": "Does the castle open at ten?",
+    "ja": "お城は10時に開きますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0295": {
    "gloss": {
-    "en": "Shall we take a photo here?"
+    "en": "Shall we take a photo here?",
+    "ja": "ここで写真を撮りましょうか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0296": {
    "gloss": {
-    "en": "The boat trip is long."
+    "en": "The boat trip is long.",
+    "ja": "船の旅は長いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0297": {
    "gloss": {
-    "en": "I'm seasick."
+    "en": "I'm seasick.",
+    "ja": "船酔いしています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0298": {
    "gloss": {
-    "en": "We go back to the hotel towards evening."
+    "en": "We go back to the hotel towards evening.",
+    "ja": "夕方ごろホテルに戻ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0299": {
    "gloss": {
-    "en": "The holidays end tomorrow."
+    "en": "The holidays end tomorrow.",
+    "ja": "休暇は明日で終わります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0300": {
    "gloss": {
-    "en": "I want to stay one more week."
+    "en": "I want to stay one more week.",
+    "ja": "もう一週間いたいです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "viaggio-alloggio"
+   ]
   },
   "c0301": {
    "gloss": {
-    "en": "What did you do yesterday?"
+    "en": "What did you do yesterday?",
+    "ja": "昨日は何をしたの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0302": {
    "gloss": {
-    "en": "I worked all day."
+    "en": "I worked all day.",
+    "ja": "一日中働きました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0303": {
    "gloss": {
-    "en": "I slept in late."
+    "en": "I slept in late.",
+    "ja": "遅くまで寝ていました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0304": {
    "gloss": {
-    "en": "I went to the movies."
+    "en": "I went to the movies.",
+    "ja": "映画館に行きました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0305": {
    "gloss": {
-    "en": "I saw a wonderful film."
+    "en": "I saw a wonderful film.",
+    "ja": "とても素晴らしい映画を見ました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0306": {
    "gloss": {
-    "en": "We ate a huge pizza."
+    "en": "We ate a huge pizza.",
+    "ja": "巨大なピザを食べました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0307": {
    "gloss": {
-    "en": "I ran into an old friend."
+    "en": "I ran into an old friend.",
+    "ja": "昔の友人に会いました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0308": {
    "gloss": {
-    "en": "We talked for hours."
+    "en": "We talked for hours.",
+    "ja": "何時間も話しました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0309": {
    "gloss": {
-    "en": "I came home at midnight."
+    "en": "I came home at midnight.",
+    "ja": "夜中の12時に家に帰りました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0310": {
    "gloss": {
-    "en": "I missed the bus this morning."
+    "en": "I missed the bus this morning.",
+    "ja": "今朝バスに乗り遅れました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0311": {
    "gloss": {
-    "en": "I arrived late to work."
+    "en": "I arrived late to work.",
+    "ja": "仕事に遅刻しました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0312": {
    "gloss": {
-    "en": "The boss didn't say anything."
+    "en": "The boss didn't say anything.",
+    "ja": "上司は何も言いませんでした。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0313": {
    "gloss": {
-    "en": "Did you see the game last night?"
+    "en": "Did you see the game last night?",
+    "ja": "昨夜の試合を見た？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0314": {
    "gloss": {
-    "en": "Our team won!"
+    "en": "Our team won!",
+    "ja": "うちのチームが勝ちました！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0315": {
    "gloss": {
-    "en": "I bought a new jacket."
+    "en": "I bought a new jacket.",
+    "ja": "新しいジャケットを買いました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0316": {
    "gloss": {
-    "en": "How much did you pay?"
+    "en": "How much did you pay?",
+    "ja": "いくら払ったの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0317": {
    "gloss": {
-    "en": "I spent too much this month."
+    "en": "I spent too much this month.",
+    "ja": "今月は使いすぎました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0318": {
    "gloss": {
-    "en": "Where did you go on holiday?"
+    "en": "Where did you go on holiday?",
+    "ja": "休暇はどこに行ったの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0319": {
    "gloss": {
-    "en": "I was at the seaside in Sicily."
+    "en": "I was at the seaside in Sicily.",
+    "ja": "シチリアの海に行きました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0320": {
    "gloss": {
-    "en": "We visited three cities."
+    "en": "We visited three cities.",
+    "ja": "3つの街を訪れました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0321": {
    "gloss": {
-    "en": "The trip took ten hours."
+    "en": "The trip took ten hours.",
+    "ja": "移動は10時間かかりました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0322": {
    "gloss": {
-    "en": "I took the seven o'clock train."
+    "en": "I took the seven o'clock train.",
+    "ja": "7時の電車に乗りました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0323": {
    "gloss": {
-    "en": "I forgot my umbrella at home."
+    "en": "I forgot my umbrella at home.",
+    "ja": "家に傘を忘れました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0324": {
    "gloss": {
-    "en": "It rained all night."
+    "en": "It rained all night.",
+    "ja": "一晩中雨が降りました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0325": {
    "gloss": {
-    "en": "Finally the sun came out."
+    "en": "Finally the sun came out.",
+    "ja": "やっと太陽が出ました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0326": {
    "gloss": {
-    "en": "I met a nice person."
+    "en": "I met a nice person.",
+    "ja": "感じのいい人と知り合いました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0327": {
    "gloss": {
-    "en": "We had a lot of fun."
+    "en": "We had a lot of fun.",
+    "ja": "とても楽しかったです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0328": {
    "gloss": {
-    "en": "Yesterday I did nothing."
+    "en": "Yesterday I did nothing.",
+    "ja": "昨日は何もしませんでした。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0329": {
    "gloss": {
-    "en": "I rested all weekend."
+    "en": "I rested all weekend.",
+    "ja": "週末はずっと休みました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0330": {
    "gloss": {
-    "en": "I cleaned the whole house."
+    "en": "I cleaned the whole house.",
+    "ja": "家中を掃除しました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0331": {
    "gloss": {
-    "en": "I cooked for my friends."
+    "en": "I cooked for my friends.",
+    "ja": "友達のために料理を作りました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0332": {
    "gloss": {
-    "en": "The dinner turned out great."
+    "en": "The dinner turned out great.",
+    "ja": "夕食はとてもうまくできました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0333": {
    "gloss": {
-    "en": "We drank a good wine."
+    "en": "We drank a good wine.",
+    "ja": "おいしいワインを飲みました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0334": {
    "gloss": {
-    "en": "Who washed the dishes?"
+    "en": "Who washed the dishes?",
+    "ja": "誰が皿を洗ったの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0335": {
    "gloss": {
-    "en": "I read a book in two days."
+    "en": "I read a book in two days.",
+    "ja": "2日で本を1冊読みました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0336": {
    "gloss": {
-    "en": "I listened to music all evening."
+    "en": "I listened to music all evening.",
+    "ja": "一晩中音楽を聴きました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0337": {
    "gloss": {
-    "en": "We went out Saturday night."
+    "en": "We went out Saturday night.",
+    "ja": "土曜の夜に出かけました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0338": {
    "gloss": {
-    "en": "I danced until two."
+    "en": "I danced until two.",
+    "ja": "2時まで踊りました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0339": {
    "gloss": {
-    "en": "I woke up late on Sunday."
+    "en": "I woke up late on Sunday.",
+    "ja": "日曜日は遅く目が覚めました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0340": {
    "gloss": {
-    "en": "I had breakfast at the café."
+    "en": "I had breakfast at the café.",
+    "ja": "バールで朝食をとりました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0341": {
    "gloss": {
-    "en": "Then I walked in the park."
+    "en": "Then I walked in the park.",
+    "ja": "それから公園を歩きました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0342": {
    "gloss": {
-    "en": "I found a cat in the street."
+    "en": "I found a cat in the street.",
+    "ja": "道で猫を見つけました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0343": {
    "gloss": {
-    "en": "It drank all the milk."
+    "en": "It drank all the milk.",
+    "ja": "牛乳を全部飲んでしまいました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0344": {
    "gloss": {
-    "en": "Have you heard the news?"
+    "en": "Have you heard the news?",
+    "ja": "あのニュース聞いた？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0345": {
    "gloss": {
-    "en": "Marco changed jobs."
+    "en": "Marco changed jobs.",
+    "ja": "マルコは仕事を変えました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0346": {
    "gloss": {
-    "en": "What a surprise!"
+    "en": "What a surprise!",
+    "ja": "なんて驚き！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0347": {
    "gloss": {
-    "en": "The weekend went by fast."
+    "en": "The weekend went by fast.",
+    "ja": "週末はあっという間に過ぎました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0348": {
    "gloss": {
-    "en": "I studied Italian yesterday too."
+    "en": "I studied Italian yesterday too.",
+    "ja": "昨日もイタリア語を勉強しました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0349": {
    "gloss": {
-    "en": "I repeated the sentences out loud."
+    "en": "I repeated the sentences out loud.",
+    "ja": "文を声に出して繰り返しました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0350": {
    "gloss": {
-    "en": "Today I start a new week."
+    "en": "Today I start a new week.",
+    "ja": "今日から新しい一週間が始まります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "raccontare-passato"
+   ]
   },
   "c0351": {
    "gloss": {
-    "en": "How do you feel today?"
+    "en": "How do you feel today?",
+    "ja": "今日は気分どう？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0352": {
    "gloss": {
-    "en": "I don't feel well."
+    "en": "I don't feel well.",
+    "ja": "気分がよくありません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0353": {
    "gloss": {
-    "en": "I have a headache."
+    "en": "I have a headache.",
+    "ja": "頭が痛いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0354": {
    "gloss": {
-    "en": "I also have a sore throat."
+    "en": "I also have a sore throat.",
+    "ja": "のども痛いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0355": {
    "gloss": {
-    "en": "Maybe I have a fever."
+    "en": "Maybe I have a fever.",
+    "ja": "熱があるかもしれません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0356": {
    "gloss": {
-    "en": "I took my temperature."
+    "en": "I took my temperature.",
+    "ja": "熱を測りました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0357": {
    "gloss": {
-    "en": "Thirty-eight point five, it's high."
+    "en": "Thirty-eight point five, it's high.",
+    "ja": "38度5分、高いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0358": {
    "gloss": {
-    "en": "I have to stay in bed."
+    "en": "I have to stay in bed.",
+    "ja": "寝ていなければなりません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0359": {
    "gloss": {
-    "en": "Did you take any medicine?"
+    "en": "Did you take any medicine?",
+    "ja": "薬は飲んだ？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0360": {
    "gloss": {
-    "en": "I take the medicine after meals."
+    "en": "I take the medicine after meals.",
+    "ja": "食後に薬を飲みます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0361": {
    "gloss": {
-    "en": "My back hurts."
+    "en": "My back hurts.",
+    "ja": "背中が痛いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0362": {
    "gloss": {
-    "en": "My legs feel heavy today."
+    "en": "My legs feel heavy today.",
+    "ja": "今日は脚が重いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0363": {
    "gloss": {
-    "en": "I walked too much yesterday."
+    "en": "I walked too much yesterday.",
+    "ja": "昨日は歩きすぎました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0364": {
    "gloss": {
-    "en": "I have to go to the doctor."
+    "en": "I have to go to the doctor.",
+    "ja": "医者に行かなければなりません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0365": {
    "gloss": {
-    "en": "Can the doctor see me today?"
+    "en": "Can the doctor see me today?",
+    "ja": "先生は今日診てくれますか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0366": {
    "gloss": {
-    "en": "I have an appointment at eleven."
+    "en": "I have an appointment at eleven.",
+    "ja": "11時に予約があります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0367": {
    "gloss": {
-    "en": "The waiting room is full."
+    "en": "The waiting room is full.",
+    "ja": "待合室はいっぱいです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0368": {
    "gloss": {
-    "en": "Breathe deeply, please."
+    "en": "Breathe deeply, please.",
+    "ja": "深く息を吸ってください。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0369": {
    "gloss": {
-    "en": "Open your mouth, please."
+    "en": "Open your mouth, please.",
+    "ja": "口を開けてください。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0370": {
    "gloss": {
-    "en": "It's just a cold."
+    "en": "It's just a cold.",
+    "ja": "ただの風邪です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0371": {
    "gloss": {
-    "en": "My nose is blocked."
+    "en": "My nose is blocked.",
+    "ja": "鼻が詰まっています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0372": {
    "gloss": {
-    "en": "I've had a cough for three days."
+    "en": "I've had a cough for three days.",
+    "ja": "3日前から咳が出ています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0373": {
    "gloss": {
-    "en": "I feel dizzy."
+    "en": "I feel dizzy.",
+    "ja": "めまいがします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0374": {
    "gloss": {
-    "en": "Oranges have a lot of vitamin C."
+    "en": "Oranges have a lot of vitamin C.",
+    "ja": "オレンジにはビタミンCがたくさん入っています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0375": {
    "gloss": {
-    "en": "Drink plenty of warm water."
+    "en": "Drink plenty of warm water.",
+    "ja": "温かい水をたくさん飲んでね。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0376": {
    "gloss": {
-    "en": "Rest is the best cure."
+    "en": "Rest is the best cure.",
+    "ja": "休息が一番の薬です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0377": {
    "gloss": {
-    "en": "I already feel better."
+    "en": "I already feel better.",
+    "ja": "もう気分がよくなりました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0378": {
    "gloss": {
-    "en": "I recovered in a week."
+    "en": "I recovered in a week.",
+    "ja": "一週間で治りました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0379": {
    "gloss": {
-    "en": "Sport is good for your health."
+    "en": "Sport is good for your health.",
+    "ja": "スポーツは健康にいいです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0380": {
    "gloss": {
-    "en": "I exercise every morning."
+    "en": "I exercise every morning.",
+    "ja": "毎朝体操をします。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0381": {
    "gloss": {
-    "en": "I eat lots of fruit and vegetables."
+    "en": "I eat lots of fruit and vegetables.",
+    "ja": "果物と野菜をたくさん食べます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0382": {
    "gloss": {
-    "en": "I sleep little and badly."
+    "en": "I sleep little and badly.",
+    "ja": "睡眠が短く、質もよくありません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0383": {
    "gloss": {
-    "en": "I'm always stressed about work."
+    "en": "I'm always stressed about work.",
+    "ja": "仕事でいつもストレスを感じています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0384": {
    "gloss": {
-    "en": "I need a break."
+    "en": "I need a break.",
+    "ja": "休憩が必要です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0385": {
    "gloss": {
-    "en": "Today I have a lot of energy."
+    "en": "Today I have a lot of energy.",
+    "ja": "今日はとても元気です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0386": {
    "gloss": {
-    "en": "My heart is beating fast."
+    "en": "My heart is beating fast.",
+    "ja": "心臓がドキドキしています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0387": {
    "gloss": {
-    "en": "I fell off my bike."
+    "en": "I fell off my bike.",
+    "ja": "自転車から落ちました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0388": {
    "gloss": {
-    "en": "I hurt my arm."
+    "en": "I hurt my arm.",
+    "ja": "腕をけがしました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0389": {
    "gloss": {
-    "en": "It's not broken, luckily."
+    "en": "It's not broken, luckily.",
+    "ja": "幸い折れてはいません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0390": {
    "gloss": {
-    "en": "My eyes are tired."
+    "en": "My eyes are tired.",
+    "ja": "目が疲れています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0391": {
    "gloss": {
-    "en": "I look at the screen too much."
+    "en": "I look at the screen too much.",
+    "ja": "画面を見すぎています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0392": {
    "gloss": {
-    "en": "I've worn glasses for a year."
+    "en": "I've worn glasses for a year.",
+    "ja": "一年前からめがねをかけています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0393": {
    "gloss": {
-    "en": "The dentist is expecting me tomorrow."
+    "en": "The dentist is expecting me tomorrow.",
+    "ja": "明日歯医者の予約があります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0394": {
    "gloss": {
-    "en": "I'm afraid of the dentist."
+    "en": "I'm afraid of the dentist.",
+    "ja": "歯医者が怖いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0395": {
    "gloss": {
-    "en": "One of my teeth hurts."
+    "en": "One of my teeth hurts.",
+    "ja": "歯が一本痛いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0396": {
    "gloss": {
-    "en": "I brush my teeth three times a day."
+    "en": "I brush my teeth three times a day.",
+    "ja": "一日に3回歯を磨きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0397": {
    "gloss": {
-    "en": "The pharmacy is open until eight."
+    "en": "The pharmacy is open until eight.",
+    "ja": "薬局は8時まで開いています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0398": {
    "gloss": {
-    "en": "Do I need a prescription for this?"
+    "en": "Do I need a prescription for this?",
+    "ja": "これには処方箋が必要ですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0399": {
    "gloss": {
-    "en": "Get well soon!"
+    "en": "Get well soon!",
+    "ja": "早くよくなってね！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0400": {
    "gloss": {
-    "en": "Health comes first."
+    "en": "Health comes first.",
+    "ja": "何よりもまず健康です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "salute"
+   ]
   },
   "c0401": {
    "gloss": {
-    "en": "Are you free tonight?"
+    "en": "Are you free tonight?",
+    "ja": "今夜ひま？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0402": {
    "gloss": {
-    "en": "Do you feel like going out?"
+    "en": "Do you feel like going out?",
+    "ja": "出かけない？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0403": {
    "gloss": {
-    "en": "Gladly, at what time?"
+    "en": "Gladly, at what time?",
+    "ja": "喜んで、何時に？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0404": {
    "gloss": {
-    "en": "Eight o'clock works great."
+    "en": "Eight o'clock works great.",
+    "ja": "8時でぴったりです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0405": {
    "gloss": {
-    "en": "Where shall we meet?"
+    "en": "Where shall we meet?",
+    "ja": "どこで会う？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0406": {
    "gloss": {
-    "en": "In front of the station, okay?"
+    "en": "In front of the station, okay?",
+    "ja": "駅の前でいい？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0407": {
    "gloss": {
-    "en": "Perfect, see you tonight!"
+    "en": "Perfect, see you tonight!",
+    "ja": "完璧、また今夜！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0408": {
    "gloss": {
-    "en": "I'll call you later."
+    "en": "I'll call you later.",
+    "ja": "あとで電話するね。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0409": {
    "gloss": {
-    "en": "One moment, I have a call."
+    "en": "One moment, I have a call.",
+    "ja": "ちょっと待って、電話が入ってる。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0410": {
    "gloss": {
-    "en": "Hello? Who's speaking?"
+    "en": "Hello? Who's speaking?",
+    "ja": "もしもし、どちら様ですか？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0411": {
    "gloss": {
-    "en": "It's Anna, can you hear me?"
+    "en": "It's Anna, can you hear me?",
+    "ja": "アンナだけど、聞こえる？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0412": {
    "gloss": {
-    "en": "Now I can hear you perfectly."
+    "en": "Now I can hear you perfectly.",
+    "ja": "今はよく聞こえるよ。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0413": {
    "gloss": {
-    "en": "I'll call you back in five minutes."
+    "en": "I'll call you back in five minutes.",
+    "ja": "5分後にかけ直すね。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0414": {
    "gloss": {
-    "en": "Send me a message later."
+    "en": "Send me a message later.",
+    "ja": "あとでメッセージ送って。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0415": {
    "gloss": {
-    "en": "I got your message."
+    "en": "I got your message.",
+    "ja": "メッセージ受け取ったよ。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0416": {
    "gloss": {
-    "en": "Sorry, I replied late."
+    "en": "Sorry, I replied late.",
+    "ja": "ごめん、返事が遅くなった。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0417": {
    "gloss": {
-    "en": "Are you coming to the party on Saturday?"
+    "en": "Are you coming to the party on Saturday?",
+    "ja": "土曜のパーティー来る？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0418": {
    "gloss": {
-    "en": "Who's coming with us?"
+    "en": "Who's coming with us?",
+    "ja": "誰が一緒に来るの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0419": {
    "gloss": {
-    "en": "I'm bringing my sister."
+    "en": "I'm bringing my sister.",
+    "ja": "妹を連れて行きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0420": {
    "gloss": {
-    "en": "Let's invite Paolo too."
+    "en": "Let's invite Paolo too.",
+    "ja": "パオロも誘いましょう。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0421": {
    "gloss": {
-    "en": "What time does the party start?"
+    "en": "What time does the party start?",
+    "ja": "パーティーは何時に始まるの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0422": {
    "gloss": {
-    "en": "Around nine, I think."
+    "en": "Around nine, I think.",
+    "ja": "9時ごろだと思う。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0423": {
    "gloss": {
-    "en": "I'll bring the dessert."
+    "en": "I'll bring the dessert.",
+    "ja": "デザートは私が持って行きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0424": {
    "gloss": {
-    "en": "I'll take care of the drinks."
+    "en": "I'll take care of the drinks.",
+    "ja": "飲み物は私が用意します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0425": {
    "gloss": {
-    "en": "What are you wearing tonight?"
+    "en": "What are you wearing tonight?",
+    "ja": "今夜は何を着るの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0426": {
    "gloss": {
-    "en": "I'm wearing my new dress."
+    "en": "I'm wearing my new dress.",
+    "ja": "新しい服を着ます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0427": {
    "gloss": {
-    "en": "The party was a success."
+    "en": "The party was a success.",
+    "ja": "パーティーは大成功でした。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0428": {
    "gloss": {
-    "en": "Let's dance all night!"
+    "en": "Let's dance all night!",
+    "ja": "一晩中踊りましょう！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0429": {
    "gloss": {
-    "en": "I really like this song."
+    "en": "I really like this song.",
+    "ja": "この曲がとても好きです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0430": {
    "gloss": {
-    "en": "Shall we go to a concert on Sunday?"
+    "en": "Shall we go to a concert on Sunday?",
+    "ja": "日曜日にコンサートに行かない？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0431": {
    "gloss": {
-    "en": "The tickets cost twenty euros."
+    "en": "The tickets cost twenty euros.",
+    "ja": "チケットは20ユーロです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0432": {
    "gloss": {
-    "en": "Unfortunately I can't on Sunday."
+    "en": "Unfortunately I can't on Sunday.",
+    "ja": "残念だけど日曜日は無理です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0433": {
    "gloss": {
-    "en": "I already have a commitment."
+    "en": "I already have a commitment.",
+    "ja": "もう先約があります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0434": {
    "gloss": {
-    "en": "Shall we do it another time?"
+    "en": "Shall we do it another time?",
+    "ja": "また今度にしない？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0435": {
    "gloss": {
-    "en": "On Tuesday I'm free all day."
+    "en": "On Tuesday I'm free all day.",
+    "ja": "火曜日は一日中ひまです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0436": {
    "gloss": {
-    "en": "I'm marking the date on the calendar."
+    "en": "I'm marking the date on the calendar.",
+    "ja": "カレンダーに日付を書いておきます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0437": {
    "gloss": {
-    "en": "Don't forget the appointment!"
+    "en": "Don't forget the appointment!",
+    "ja": "約束を忘れないでね！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0438": {
    "gloss": {
-    "en": "I always arrive on time."
+    "en": "I always arrive on time.",
+    "ja": "いつも時間どおりに着きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0439": {
    "gloss": {
-    "en": "Sorry I'm late!"
+    "en": "Sorry I'm late!",
+    "ja": "遅れてごめん！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0440": {
    "gloss": {
-    "en": "I've been waiting for you for half an hour!"
+    "en": "I've been waiting for you for half an hour!",
+    "ja": "30分も待ってるんだけど！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0441": {
    "gloss": {
-    "en": "I hit a lot of traffic."
+    "en": "I hit a lot of traffic.",
+    "ja": "すごい渋滞だったんだ。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0442": {
    "gloss": {
-    "en": "Let me buy you a coffee, come on."
+    "en": "Let me buy you a coffee, come on.",
+    "ja": "コーヒーおごるよ、ほら。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0443": {
    "gloss": {
-    "en": "Shall we stay a little longer?"
+    "en": "Shall we stay a little longer?",
+    "ja": "もう少しいない？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0444": {
    "gloss": {
-    "en": "It's gotten late."
+    "en": "It's gotten late.",
+    "ja": "遅くなってしまいました。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0445": {
    "gloss": {
-    "en": "I really have to go now."
+    "en": "I really have to go now.",
+    "ja": "もう本当に行かないと。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0446": {
    "gloss": {
-    "en": "Thanks for the lovely evening."
+    "en": "Thanks for the lovely evening.",
+    "ja": "素敵な夜をありがとう。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0447": {
    "gloss": {
-    "en": "Let's talk tomorrow, okay?"
+    "en": "Let's talk tomorrow, okay?",
+    "ja": "また明日連絡するね。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0448": {
    "gloss": {
-    "en": "Let's organize a dinner soon."
+    "en": "Let's organize a dinner soon.",
+    "ja": "近いうちに食事会を開きましょう。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0449": {
    "gloss": {
-    "en": "Will you come to dinner at my place?"
+    "en": "Will you come to dinner at my place?",
+    "ja": "うちに夕食に来ない？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0450": {
    "gloss": {
-    "en": "How nice it is to be together!"
+    "en": "How nice it is to be together!",
+    "ja": "一緒にいられて嬉しい！"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "uscire-appuntamenti"
+   ]
   },
   "c0451": {
    "gloss": {
-    "en": "What plans do you have for tomorrow?"
+    "en": "What plans do you have for tomorrow?",
+    "ja": "明日の予定は？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0452": {
    "gloss": {
-    "en": "Tomorrow I'm getting a haircut."
+    "en": "Tomorrow I'm getting a haircut.",
+    "ja": "明日髪を切ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0453": {
    "gloss": {
-    "en": "Next weekend we're leaving for Naples."
+    "en": "Next weekend we're leaving for Naples.",
+    "ja": "来週末ナポリに出発します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0454": {
    "gloss": {
-    "en": "I'm thinking of moving house."
+    "en": "I'm thinking of moving house.",
+    "ja": "引っ越そうと思っています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0455": {
    "gloss": {
-    "en": "I'm looking for a bigger apartment."
+    "en": "I'm looking for a bigger apartment.",
+    "ja": "もっと大きいアパートを探しています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0456": {
    "gloss": {
-    "en": "I want to learn to cook well."
+    "en": "I want to learn to cook well.",
+    "ja": "料理を上手に作れるようになりたいです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0457": {
    "gloss": {
-    "en": "I'm starting a cooking course in September."
+    "en": "I'm starting a cooking course in September.",
+    "ja": "9月に料理教室を始めます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0458": {
    "gloss": {
-    "en": "Next year I'm studying in Italy."
+    "en": "Next year I'm studying in Italy.",
+    "ja": "来年イタリアで勉強します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0459": {
    "gloss": {
-    "en": "First I have to save a little."
+    "en": "First I have to save a little.",
+    "ja": "まず少し貯金しないといけません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0460": {
    "gloss": {
-    "en": "I put aside a hundred euros a month."
+    "en": "I put aside a hundred euros a month.",
+    "ja": "毎月100ユーロ貯めています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0461": {
    "gloss": {
-    "en": "One day I'll open a little café."
+    "en": "One day I'll open a little café.",
+    "ja": "いつか小さなバールを開きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0462": {
    "gloss": {
-    "en": "It's my secret project."
+    "en": "It's my secret project.",
+    "ja": "それが私の秘密の計画です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0463": {
    "gloss": {
-    "en": "What do you dream of?"
+    "en": "What do you dream of?",
+    "ja": "君は何を夢見てるの？"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0464": {
    "gloss": {
-    "en": "I dream of a house with a garden."
+    "en": "I dream of a house with a garden.",
+    "ja": "庭のある家を夢見ています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0465": {
    "gloss": {
-    "en": "I'd also like a big dog."
+    "en": "I'd also like a big dog.",
+    "ja": "大きな犬も飼いたいのですが。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0466": {
    "gloss": {
-    "en": "Summer is starting soon."
+    "en": "Summer is starting soon.",
+    "ja": "もうすぐ夏が始まります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0467": {
    "gloss": {
-    "en": "This summer I'm staying in the city."
+    "en": "This summer I'm staying in the city.",
+    "ja": "この夏は街に残ります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0468": {
    "gloss": {
-    "en": "Maybe in August I'll go to the mountains."
+    "en": "Maybe in August I'll go to the mountains.",
+    "ja": "8月には山に行くかもしれません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0469": {
    "gloss": {
-    "en": "I love walking in nature."
+    "en": "I love walking in nature.",
+    "ja": "自然の中を歩くのが好きです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0470": {
    "gloss": {
-    "en": "I'm buying a new backpack."
+    "en": "I'm buying a new backpack.",
+    "ja": "新しいリュックを買います。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0471": {
    "gloss": {
-    "en": "After the summer I want to change jobs."
+    "en": "After the summer I want to change jobs.",
+    "ja": "夏が終わったら仕事を変えたいです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0472": {
    "gloss": {
-    "en": "I'm studying English for work."
+    "en": "I'm studying English for work.",
+    "ja": "仕事のために英語を勉強しています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0473": {
    "gloss": {
-    "en": "The future scares me a little."
+    "en": "The future scares me a little.",
+    "ja": "将来が少し怖いです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0474": {
    "gloss": {
-    "en": "But I'm also very curious."
+    "en": "But I'm also very curious.",
+    "ja": "でもとても好奇心もあります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0475": {
    "gloss": {
-    "en": "One step at a time, always forward."
+    "en": "One step at a time, always forward.",
+    "ja": "一歩ずつ、前へ。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0476": {
    "gloss": {
-    "en": "This year I'm reading twelve books."
+    "en": "This year I'm reading twelve books.",
+    "ja": "今年は本を12冊読みます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0477": {
    "gloss": {
-    "en": "One a month, it's possible."
+    "en": "One a month, it's possible.",
+    "ja": "月に1冊なら可能です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0478": {
    "gloss": {
-    "en": "I write my plans in a notebook."
+    "en": "I write my plans in a notebook.",
+    "ja": "ノートに計画を書きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0479": {
    "gloss": {
-    "en": "On Sunday I'm planting new flowers on the balcony."
+    "en": "On Sunday I'm planting new flowers on the balcony.",
+    "ja": "日曜日にバルコニーに新しい花を植えます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0480": {
    "gloss": {
-    "en": "The balcony is becoming a garden."
+    "en": "The balcony is becoming a garden.",
+    "ja": "バルコニーが庭になります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0481": {
    "gloss": {
-    "en": "I want to drink less coffee."
+    "en": "I want to drink less coffee.",
+    "ja": "コーヒーを減らしたいです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0482": {
    "gloss": {
-    "en": "From Monday I'm going to bed early."
+    "en": "From Monday I'm going to bed early.",
+    "ja": "月曜日から早く寝ます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0483": {
    "gloss": {
-    "en": "Good habits change your life."
+    "en": "Good habits change your life.",
+    "ja": "よい習慣は人生を変えます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0484": {
    "gloss": {
-    "en": "This winter I'm trying skiing."
+    "en": "This winter I'm trying skiing.",
+    "ja": "この冬はスキーに挑戦してみます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0485": {
    "gloss": {
-    "en": "My daughter is learning to swim."
+    "en": "My daughter is learning to swim.",
+    "ja": "娘は泳ぎを習っています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0486": {
    "gloss": {
-    "en": "In two years I'll speak Italian well."
+    "en": "In two years I'll speak Italian well.",
+    "ja": "2年後にはイタリア語を上手に話します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0487": {
    "gloss": {
-    "en": "I review every day for ten minutes."
+    "en": "I review every day for ten minutes.",
+    "ja": "毎日10分復習します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0488": {
    "gloss": {
-    "en": "Little by little, no rush."
+    "en": "Little by little, no rush.",
+    "ja": "ゆっくり、急がずに。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0489": {
    "gloss": {
-    "en": "Next month I turn forty."
+    "en": "Next month I turn forty.",
+    "ja": "来月40歳になります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0490": {
    "gloss": {
-    "en": "I'm organizing a big party."
+    "en": "I'm organizing a big party.",
+    "ja": "大きなパーティーを開きます。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0491": {
    "gloss": {
-    "en": "I'm inviting all my friends."
+    "en": "I'm inviting all my friends.",
+    "ja": "友達を全員招待します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0492": {
    "gloss": {
-    "en": "Every age has something beautiful."
+    "en": "Every age has something beautiful.",
+    "ja": "どの年齢にも良いところがあります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0493": {
    "gloss": {
-    "en": "I'm planning a trip to Japan."
+    "en": "I'm planning a trip to Japan.",
+    "ja": "日本への旅行を準備しています。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0494": {
    "gloss": {
-    "en": "I'm leaving in spring, on my own."
+    "en": "I'm leaving in spring, on my own.",
+    "ja": "春に一人で出発します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0495": {
    "gloss": {
-    "en": "I'm booking the flights in January."
+    "en": "I'm booking the flights in January.",
+    "ja": "1月に航空券を予約します。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0496": {
    "gloss": {
-    "en": "The ticket costs a thousand euros."
+    "en": "The ticket costs a thousand euros.",
+    "ja": "チケットは1000ユーロです。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0497": {
    "gloss": {
-    "en": "It's worth it."
+    "en": "It's worth it.",
+    "ja": "その価値はあります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0498": {
    "gloss": {
-    "en": "Dreams have no age."
+    "en": "Dreams have no age.",
+    "ja": "夢に年齢は関係ありません。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0499": {
    "gloss": {
-    "en": "The first step is today."
+    "en": "The first step is today.",
+    "ja": "最初の一歩は今日です。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   },
   "c0500": {
    "gloss": {
-    "en": "The future starts now."
+    "en": "The future starts now.",
+    "ja": "未来は今始まります。"
    },
-   "tags": [],
-   "difficulty": null
+   "topics": [
+    "progetti-futuro"
+   ]
   }
  }
 }
