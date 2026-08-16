@@ -27,6 +27,13 @@
   .brand{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:34px;letter-spacing:.5px}
   .brand em{color:var(--terra);font-style:italic}
   .tagline{color:var(--sub);font-size:14px;margin-top:2px}
+  .home-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+  .globe{background:none;border:1px solid var(--line);border-radius:50%;width:40px;height:40px;
+         display:grid;place-items:center;cursor:pointer;color:var(--sub);flex:0 0 auto;margin-top:4px}
+  .globe svg{width:21px;height:21px;fill:currentColor}
+  .lang-sec{font-size:12px;font-weight:600;color:var(--sub);letter-spacing:.03em;margin:14px 0 6px}
+  .lang-sec:first-of-type{margin-top:4px}
+  .modal .seg{flex-wrap:wrap}
   .stats{display:flex;gap:10px;margin:22px 0}
   .stat{flex:1;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 8px;text-align:center}
   .stat b{font-size:22px;display:block;color:var(--green)}
@@ -260,68 +267,73 @@
 
 <!-- HOME -->
 <div class="screen" id="home">
-  <div class="brand">Ombra<em>.</em></div>
-  <div class="tagline">Speak Italian from day one — one sentence at a time.</div>
+  <div class="home-top">
+    <div>
+      <div class="brand">Ombra<em>.</em></div>
+      <div class="tagline" data-i18n="home.tagline">Speak Italian from day one — one sentence at a time.</div>
+    </div>
+    <button class="globe" id="globeBtn" aria-label="Language">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 6h-2.95a15.7 15.7 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.9 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14A7.9 7.9 0 0 1 4 12c0-.69.1-1.36.26-2h3.38a16.5 16.5 0 0 0 0 4H4.26zm.84 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.1 16zm2.95-8H5.1a7.99 7.99 0 0 1 4.33-3.56A15.7 15.7 0 0 0 8.05 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66a14.7 14.7 0 0 1 0-4h4.68a14.7 14.7 0 0 1 0 4zm.23 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14a16.5 16.5 0 0 0 0-4h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+    </button>
+  </div>
 
   <div class="stats">
-    <div class="stat"><b id="stStreak">0</b><span>day streak</span></div>
-    <div class="stat"><b id="stSessions">0</b><span>sessions</span></div>
-    <div class="stat"><b id="stMinutes">0</b><span>minutes</span></div>
+    <div class="stat"><b id="stStreak">0</b><span data-i18n="home.streak">day streak</span></div>
+    <div class="stat"><b id="stSessions">0</b><span data-i18n="home.sessions">sessions</span></div>
+    <div class="stat"><b id="stMinutes">0</b><span data-i18n="home.minutes">minutes</span></div>
   </div>
 
   <div class="card">
-    <h3>Session</h3>
-    <div class="row"><label>Course</label><select id="courseSel"></select></div>
-    <button class="btn-main" id="startBtn">Start session</button>
-  <button class="btn-sub" id="composeBtn">Compose <span class="cmp-badge">beta</span></button>
+    <h3 data-i18n="home.session">Session</h3>
+    <div class="row"><label data-i18n="home.course">Course</label><select id="courseSel"></select></div>
+    <button class="btn-main" id="startBtn" data-i18n="home.start">Start session</button>
+  <button class="btn-sub" id="composeBtn"><span data-i18n="home.compose">Compose</span> <span class="cmp-badge">beta</span></button>
   </div>
 
   <button class="settings-toggle" id="settingsToggle">
     <svg viewBox="0 0 24 24"><path d="M19.4 13c.04-.33.07-.66.07-1s-.03-.67-.07-1l2.1-1.65a.5.5 0 0 0 .12-.64l-2-3.46a.5.5 0 0 0-.6-.22l-2.49 1a7.3 7.3 0 0 0-1.73-1l-.38-2.65A.5.5 0 0 0 13.93 2h-4a.5.5 0 0 0-.5.42l-.37 2.65c-.63.26-1.2.6-1.74 1l-2.48-1a.5.5 0 0 0-.61.22l-2 3.46a.5.5 0 0 0 .12.64L4.47 11c-.04.33-.07.66-.07 1s.03.67.07 1l-2.1 1.65a.5.5 0 0 0-.12.64l2 3.46c.13.23.4.32.6.22l2.49-1c.54.42 1.11.76 1.74 1l.37 2.65c.05.24.25.42.5.42h4a.5.5 0 0 0 .5-.42l.37-2.65c.63-.26 1.2-.6 1.73-1l2.49 1c.23.1.48 0 .6-.22l2-3.46a.5.5 0 0 0-.12-.64L19.4 13zm-7.47 2.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/></svg>
-    Settings
+    <span data-i18n="set.open">Settings</span>
     <svg class="chev" viewBox="0 0 24 24"><path d="M12 15.5 4.5 8l1.4-1.4L12 12.7l6.1-6.1L19.5 8z"/></svg>
   </button>
 
   <div class="card" id="settingsCard">
-    <div class="row"><label>Text</label><div class="seg" data-k="text">
-      <button data-v="show">Show</button><button data-v="hide">Hide</button></div></div>
-    <div class="row" id="rowTransLang" hidden><label>Translation language</label>
-      <div class="seg" data-k="transLang"></div></div>
-    <div class="row"><label>Translation</label><div class="seg" data-k="trans">
-      <button data-v="show">Show</button><button data-v="hide">Hide</button></div></div>
-    <div class="row"><label>Order</label><div class="seg" data-k="order">
-      <button data-v="seq">In order</button><button data-v="random">Random</button></div></div>
-    <div class="row"><label>Sentences</label>
+    <div class="row"><label data-i18n="set.text">Text</label><div class="seg" data-k="text">
+      <button data-v="show" data-i18n="set.show">Show</button><button data-v="hide" data-i18n="set.hide">Hide</button></div></div>
+    <div class="row"><label data-i18n="set.trans">Translation</label><div class="seg" data-k="trans">
+      <button data-v="show" data-i18n="set.show">Show</button><button data-v="hide" data-i18n="set.hide">Hide</button></div></div>
+    <div class="row"><label data-i18n="set.order">Order</label><div class="seg" data-k="order">
+      <button data-v="seq" data-i18n="set.seq">In order</button><button data-v="random" data-i18n="set.random">Random</button></div></div>
+    <div class="row"><label data-i18n="set.count">Sentences</label>
       <div class="stepper">
         <button id="cntMinus">−</button>
         <input id="cntInput" type="number" inputmode="numeric" min="5" max="50" step="5">
         <button id="cntPlus">＋</button>
       </div></div>
-    <div class="row"><label>Speed</label><div class="seg" data-k="speed">
+    <div class="row"><label data-i18n="set.speed">Speed</label><div class="seg" data-k="speed">
       <button data-v="0.5">.5</button><button data-v="0.75">.75</button><button data-v="1">1</button><button data-v="1.25">1.25</button><button data-v="1.5">1.5</button></div></div>
-    <div class="row"><label>Repeats per sentence</label>
+    <div class="row"><label data-i18n="set.reps">Repeats per sentence</label>
       <div class="stepper">
         <button id="repMinus">−</button>
         <span class="val" id="repVal">3</span>
         <button id="repPlus">＋</button>
       </div></div>
-    <div class="row"><label>Your turn</label><div class="seg" data-k="pause">
+    <div class="row"><label data-i18n="set.pause">Your turn</label><div class="seg" data-k="pause">
       <button data-v="0.5">×.5</button><button data-v="0.75">×.75</button><button data-v="1">×1</button><button data-v="1.5">×1.5</button><button data-v="2">×2</button></div></div>
-    <div class="cmp-sec-h">Compose (beta)</div>
-    <div class="row"><label>Thinking time</label><div class="seg" data-k="cThink">
+    <div class="cmp-sec-h" data-i18n="set.cmpHead">Compose (beta)</div>
+    <div class="row"><label data-i18n="set.cThink">Thinking time</label><div class="seg" data-k="cThink">
       <button data-v="1">×1</button><button data-v="1.5">×1.5</button><button data-v="2">×2</button><button data-v="3">×3</button></div></div>
-    <div class="row"><label>Time after the answer</label><div class="seg" data-k="cEcho">
+    <div class="row"><label data-i18n="set.cEcho">Time after the answer</label><div class="seg" data-k="cEcho">
       <button data-v="1">×1</button><button data-v="1.5">×1.5</button><button data-v="2">×2</button><button data-v="3">×3</button></div></div>
-    <div class="row"><label>Read the English aloud</label><div class="seg" data-k="cPrompt">
-      <button data-v="on">On</button><button data-v="off">Off</button></div></div>
-    <button class="linkbtn" id="resetBtn">Reset settings to default</button>
+    <div class="row"><label data-i18n="set.cPrompt">Read the English aloud</label><div class="seg" data-k="cPrompt">
+      <button data-v="on" data-i18n="set.on">On</button><button data-v="off" data-i18n="set.off">Off</button></div></div>
+    <button class="linkbtn" id="resetBtn" data-i18n="set.reset">Reset settings to default</button>
   </div>
 
-  <div class="tip">New here? Keep <b>Text: Show</b> and speak along with the audio.<br>Once a sentence feels easy, set <b>Text: Hide</b> and echo it by ear.</div>
+  <div class="tip" data-i18n-html="home.tip">New here? Keep <b>Text: Show</b> and speak along with the audio.<br>Once a sentence feels easy, set <b>Text: Hide</b> and echo it by ear.</div>
   <button class="linkbtn" id="hiwBtn" data-i18n="hiw.open">How Ombra works</button>
-  <button class="linkbtn" id="appFbBtn">Send feedback about Ombra</button>
+  <button class="linkbtn" id="appFbBtn" data-i18n="set.feedback">Send feedback about Ombra</button>
   <!-- ネイティブアプリ（Capacitor）でのみ表示（JSで hidden を外す） -->
-  <button class="linkbtn" id="iapBtn" hidden>Remove ads &amp; support Ombra</button>
+  <button class="linkbtn" id="iapBtn" hidden data-i18n="set.iap">Remove ads &amp; support Ombra</button>
   <!-- 紹介リンクの広告主許可待ちのため一時非表示（hidden を外せば復活） -->
   <button class="linkbtn" id="supportBtn" data-i18n="sup.open">Support the developer</button>
 </div>
@@ -361,7 +373,7 @@
     <button id="nextBtn" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M5 6v12l9.5-6zM15.5 6H18v12h-2.5z"/></svg></button>
   </div>
   <div class="under">
-    <button class="flag" id="flagBtn">Report this sentence</button>
+    <button class="flag" id="flagBtn" data-i18n="sess.report">Report this sentence</button>
   </div>
 </div>
 
@@ -386,31 +398,31 @@
     <button id="cmpNext" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M5 6v12l9.5-6zM15.5 6H18v12h-2.5z"/></svg></button>
   </div>
 
-  <div class="cmp-hint" data-i18n="cmp.hint">Say the Italian out loud before the answer plays.<br>Then repeat it once more after you hear it.</div>
+  <div class="cmp-hint" data-i18n-html="cmp.hint">Say the Italian out loud before the answer plays.<br>Then repeat it once more after you hear it.</div>
 </div>
 
 <!-- DONE -->
 <div class="screen" id="done">
   <div class="done-emoji">🌿</div>
-  <div class="done-h">Ben fatto!</div>
+  <div class="done-h" data-i18n="done.title">Ben fatto!</div>
   <div class="done-sub" id="doneSub"></div>
-  <button class="btn-main" id="homeBtn">Back to home</button>
+  <button class="btn-main" id="homeBtn" data-i18n="done.home">Back to home</button>
 </div>
 
 <!-- REPORT MODAL -->
 <div class="modal-bg" id="reportModal">
   <div class="modal">
-    <h4>What's wrong with this sentence?</h4>
+    <h4 data-i18n="rep.title">What's wrong with this sentence?</h4>
     <div id="reportChoices">
-      <button class="choice" data-v="audio">Audio problem</button>
-      <button class="choice" data-v="italian">The Italian sounds wrong / unnatural</button>
-      <button class="choice" data-v="translation">Translation is wrong or unclear</button>
-      <button class="choice" data-v="other">Other</button>
+      <button class="choice" data-v="audio" data-i18n="rep.audio">Audio problem</button>
+      <button class="choice" data-v="italian" data-i18n="rep.italian">The Italian sounds wrong / unnatural</button>
+      <button class="choice" data-v="translation" data-i18n="rep.translation">Translation is wrong or unclear</button>
+      <button class="choice" data-v="other" data-i18n="common.other">Other</button>
     </div>
-    <textarea id="reportComment" placeholder="Comment (optional)" maxlength="1000"></textarea>
+    <textarea id="reportComment" placeholder="Comment (optional)" data-i18n-ph="rep.comment" maxlength="1000"></textarea>
     <div class="modal-actions">
-      <button class="btn-sec" id="reportCancel">Cancel</button>
-      <button class="btn-pri" id="reportSend">Send</button>
+      <button class="btn-sec" id="reportCancel" data-i18n="common.cancel">Cancel</button>
+      <button class="btn-pri" id="reportSend" data-i18n="common.send">Send</button>
     </div>
   </div>
 </div>
@@ -418,44 +430,57 @@
 <!-- APP FEEDBACK MODAL -->
 <div class="modal-bg" id="fbModal">
   <div class="modal">
-    <h4>Send feedback</h4>
+    <h4 data-i18n="fb.title">Send feedback</h4>
     <div id="fbChoices">
-      <button class="choice" data-v="bug">Something is broken</button>
-      <button class="choice" data-v="idea">Feature idea</button>
-      <button class="choice" data-v="content">About courses / sentences</button>
-      <button class="choice" data-v="other">Other</button>
+      <button class="choice" data-v="bug" data-i18n="fb.broken">Something is broken</button>
+      <button class="choice" data-v="idea" data-i18n="fb.idea">Feature idea</button>
+      <button class="choice" data-v="content" data-i18n="fb.content">About courses / sentences</button>
+      <button class="choice" data-v="other" data-i18n="common.other">Other</button>
     </div>
-    <textarea id="fbComment" placeholder="Tell us more (optional)" maxlength="1000"></textarea>
+    <textarea id="fbComment" placeholder="Tell us more (optional)" data-i18n-ph="fb.comment" maxlength="1000"></textarea>
     <div class="modal-actions">
-      <button class="btn-sec" id="fbCancel">Cancel</button>
-      <button class="btn-pri" id="fbSend">Send</button>
+      <button class="btn-sec" id="fbCancel" data-i18n="common.cancel">Cancel</button>
+      <button class="btn-pri" id="fbSend" data-i18n="common.send">Send</button>
     </div>
   </div>
 </div>
 
 <!-- RESUME MODAL -->
+<div class="modal-bg" id="langModal">
+  <div class="modal">
+    <h4 data-i18n="lang.title">Language</h4>
+    <div class="lang-sec" data-i18n="lang.learning">I'm learning</div>
+    <div class="seg" data-k="target"></div>
+    <div class="lang-sec" data-i18n="lang.mine">My language</div>
+    <div class="seg" data-k="native"></div>
+    <div class="modal-actions">
+      <button class="btn-pri" id="langClose" data-i18n="common.done">Done</button>
+    </div>
+  </div>
+</div>
+
 <div class="modal-bg" id="resumeModal">
   <div class="modal">
-    <h4 id="resumeTitle">Continue where you left off?</h4>
+    <h4 id="resumeTitle" data-i18n="resume.title">Continue where you left off?</h4>
     <div class="modal-actions">
-      <button class="btn-sec" id="resumeRestart">Start over</button>
-      <button class="btn-pri" id="resumeGo">Continue</button>
+      <button class="btn-sec" id="resumeRestart" data-i18n="resume.restart">Start over</button>
+      <button class="btn-pri" id="resumeGo" data-i18n="resume.go">Continue</button>
     </div>
   </div>
 </div>
 
 <div class="modal-bg" id="iapModal">
   <div class="modal">
-    <h4>Support Ombra</h4>
+    <h4 data-i18n="iap.title">Support Ombra</h4>
     <p class="support-note">Ombra is built by one person and all courses are free. If it helps you, you can support development here.</p>
-    <button class="choice" id="buyRemoveAds"><b>Remove ads</b> — no more ads, forever <span id="priceRemoveAds"></span></button>
+    <button class="choice" id="buyRemoveAds"><b data-i18n="iap.removeAds">Remove ads</b> — no more ads, forever <span id="priceRemoveAds"></span></button>
     <p class="support-note" id="adFreeMsg" hidden>✓ Ads are off — grazie for your support!</p>
     <button class="choice" data-tip="tip_small">☕ Offer a caffè <span class="tipPrice" data-p="tip_small"></span></button>
     <button class="choice" data-tip="tip_medium">🍹 Offer an aperitivo <span class="tipPrice" data-p="tip_medium"></span></button>
     <button class="choice" data-tip="tip_large">🍝 Offer a cena <span class="tipPrice" data-p="tip_large"></span></button>
-    <button class="linkbtn" id="restoreBtn">Restore purchases</button>
+    <button class="linkbtn" id="restoreBtn" data-i18n="iap.restore">Restore purchases</button>
     <div class="modal-actions">
-      <button class="btn-sec" id="iapClose">Close</button>
+      <button class="btn-sec" id="iapClose" data-i18n="iap.close">Close</button>
     </div>
   </div>
 </div>
@@ -594,6 +619,87 @@ function courseLabel(c){ return c.level + ' · ' + loc(c.title); }
    ・翻訳作業用のエクスポートは _work/phaseB/i18n/en.json（アプリ側の正はこちら）。 */
 const I18N = {
   en: {
+    "home.tip": "New here? Keep <b>Text: Show</b> and speak along with the audio.<br>Once a sentence feels easy, set <b>Text: Hide</b> and echo it by ear.",
+    "lang.title": "Language",
+    "lang.learning": "I'm learning",
+    "lang.mine": "My language",
+    "common.done": "Done",
+    "msg.settingsReset": "Settings reset",
+    "msg.noCourse": "No course data",
+    "msg.reported": "Reported — thank you!",
+    "msg.feedbackSaved": "Grazie! Feedback saved.",
+    "msg.adsRemoved": "Ads removed — grazie mille!",
+    "msg.thanks": "Grazie mille! ❤️",
+    "msg.restoreFailed": "Could not restore purchases",
+    "sess.masked": "Listen and echo…",
+    "sess.listening": "listening…",
+    "sess.yourTurn": "your turn — speak!",
+    "common.paused": "paused",
+    "common.day": "day",
+    "common.days": "days",
+    "cmp.readIt": "read it…",
+    "cmp.think": "your turn — say it in {lang}",
+    "cmp.listen": "listen",
+    "cmp.echo": "again — copy it",
+    "resume.fromN": "Continue from sentence {n}?",
+    "done.sub": "{n} sentences × {reps} reps · {min} min",
+    "done.cmpSub": "Compose · {n} sentences · {min} min",
+    "done.streak": "Streak: {n} {unit}",
+    "lang.it": "Italian",
+    "lang.en": "English",
+    "lang.ja": "Japanese",
+    "home.tagline": "Speak {lang} from day one — one sentence at a time.",
+    "home.streak": "day streak",
+    "home.sessions": "sessions",
+    "home.minutes": "minutes",
+    "home.session": "Session",
+    "home.course": "Course",
+    "home.start": "Start session",
+    "home.compose": "Compose",
+    "set.open": "Settings",
+    "set.text": "Text",
+    "set.show": "Show",
+    "set.hide": "Hide",
+    "set.trans": "Translation",
+    "set.order": "Order",
+    "set.seq": "In order",
+    "set.random": "Random",
+    "set.count": "Sentences",
+    "set.speed": "Speed",
+    "set.reps": "Repeats per sentence",
+    "set.pause": "Your turn",
+    "set.cmpHead": "Compose (beta)",
+    "set.cThink": "Thinking time",
+    "set.cEcho": "Time after the answer",
+    "set.cPrompt": "Read the {native} aloud",
+    "set.on": "On",
+    "set.off": "Off",
+    "set.reset": "Reset settings to default",
+    "set.feedback": "Send feedback about Ombra",
+    "set.iap": "Remove ads & support Ombra",
+    "sess.report": "Report this sentence",
+    "done.title": "Ben fatto!",
+    "done.home": "Back to home",
+    "rep.title": "What's wrong with this sentence?",
+    "rep.audio": "Audio problem",
+    "rep.italian": "The {lang} sounds wrong / unnatural",
+    "rep.translation": "Translation is wrong or unclear",
+    "common.other": "Other",
+    "common.cancel": "Cancel",
+    "common.send": "Send",
+    "fb.title": "Send feedback",
+    "fb.broken": "Something is broken",
+    "fb.idea": "Feature idea",
+    "fb.content": "About courses / sentences",
+    "resume.title": "Continue where you left off?",
+    "resume.restart": "Start over",
+    "resume.go": "Continue",
+    "iap.title": "Support Ombra",
+    "iap.removeAds": "Remove ads",
+    "iap.restore": "Restore purchases",
+    "iap.close": "Close",
+    "rep.comment": "Comment (optional)",
+    "fb.comment": "Tell us more (optional)",
     "onb.skip":"Skip", "onb.back":"Back", "onb.next":"Next", "onb.start":"Start learning",
     "onb.1.title":"Hear it. Then say it.",
     "onb.1.body":"Ombra plays one short Italian sentence, then leaves a gap for you to say it back out loud. That gap is the whole app.",
@@ -618,6 +724,118 @@ const I18N = {
     "hiw.3.body":"Pick a course, press Start, put the phone in your pocket. Twenty-five sentences takes roughly ten minutes at default settings. Do the same course again tomorrow: repetition is the point, not coverage.",
     "hiw.4.title":"The one thing that makes it work",
     "hiw.4.body":"Say it <b>out loud</b>, not in your head. Repeating silently feels like studying and produces almost nothing. If you're somewhere you can't speak, a quiet mumble still counts: moving your mouth is what matters."
+  },
+  ja: {
+    "home.tip": "はじめてですか？　まずは<b>本文：表示</b>のまま、音声に合わせて声を出してみてください。<br>その文が簡単に感じたら<b>本文：隠す</b>にして、耳だけでまねしてみましょう。",
+    "msg.settingsReset": "設定をリセットしました",
+    "msg.noCourse": "コースのデータがありません",
+    "msg.reported": "報告しました。ありがとうございます",
+    "msg.feedbackSaved": "グラッツェ！送信しました",
+    "msg.adsRemoved": "広告を非表示にしました。グラッツェ！",
+    "msg.thanks": "グラッツェ・ミッレ！❤️",
+    "msg.restoreFailed": "購入を復元できませんでした",
+    "sess.masked": "聞いて、まねして言う",
+    "sess.listening": "聞いています…",
+    "sess.yourTurn": "あなたの番 — 声に出して！",
+    "common.paused": "一時停止中",
+    "common.day": "日",
+    "common.days": "日",
+    "cmp.readIt": "読みましょう…",
+    "cmp.think": "あなたの番 — {lang}で言ってみる",
+    "cmp.listen": "聞く",
+    "cmp.echo": "もう一度 — まねして言う",
+    "resume.fromN": "{n}文目から続けますか？",
+    "done.sub": "{n}文 × {reps}回 · {min}分",
+    "done.cmpSub": "瞬間作文 · {n}文 · {min}分",
+    "done.streak": "連続 {n}{unit}",
+    "lang.it": "イタリア語",
+    "lang.en": "英語",
+    "lang.ja": "日本語",
+    "home.tagline": "初日から{lang}を話す。一文ずつ。",
+    "home.streak": "日連続",
+    "home.sessions": "回",
+    "home.minutes": "分",
+    "home.session": "練習",
+    "home.course": "コース",
+    "home.start": "はじめる",
+    "home.compose": "瞬間作文",
+    "set.open": "設定",
+    "set.text": "本文",
+    "set.show": "表示",
+    "set.hide": "隠す",
+    "set.trans": "訳",
+    "set.order": "順番",
+    "set.seq": "順番どおり",
+    "set.random": "ランダム",
+    "set.count": "文の数",
+    "set.speed": "速さ",
+    "set.reps": "1文の繰り返し",
+    "set.pause": "あなたの番の長さ",
+    "set.cmpHead": "瞬間作文（ベータ）",
+    "set.cThink": "考える時間",
+    "set.cEcho": "正解のあとの間",
+    "set.cPrompt": "{native}を読み上げる",
+    "set.on": "オン",
+    "set.off": "オフ",
+    "set.reset": "設定を初期値に戻す",
+    "set.feedback": "Ombraへの意見を送る",
+    "set.iap": "広告を消して応援する",
+    "sess.report": "この文を報告する",
+    "done.title": "Ben fatto!",
+    "done.home": "ホームに戻る",
+    "rep.title": "この文のどこが問題ですか？",
+    "rep.audio": "音声の問題",
+    "rep.italian": "{lang}が不自然",
+    "rep.translation": "訳が違う・分かりにくい",
+    "common.other": "その他",
+    "common.cancel": "キャンセル",
+    "common.send": "送信",
+    "fb.title": "意見を送る",
+    "fb.broken": "動かないところがある",
+    "fb.idea": "あったらいい機能",
+    "fb.content": "コースや例文について",
+    "resume.title": "続きから始めますか？",
+    "resume.restart": "最初から",
+    "resume.go": "続きから",
+    "iap.title": "Ombraを応援する",
+    "iap.removeAds": "広告を消す",
+    "iap.restore": "購入を復元",
+    "iap.close": "閉じる",
+    "rep.comment": "コメント（任意）",
+    "fb.comment": "詳しく教えてください（任意）",
+    "onb.skip": "スキップ",
+    "onb.back": "戻る",
+    "onb.next": "次へ",
+    "onb.start": "はじめる",
+    "onb.1.title": "聞いて、声に出す。",
+    "onb.1.body": "Ombraは短い{lang}の文を1つ流し、そのあとに声に出して言うための間をあけます。この「間」がこのアプリのすべてです。",
+    "onb.2.title": "まず文字あり。慣れたら文字なし。",
+    "onb.2.body": "新しい文のうちは<b>本文：表示</b>のまま読みながらで大丈夫です。慣れてきたら<b>本文：隠す</b>に切り替えて、耳だけで答えてください。話せるようになるのは、この2段目からです。",
+    "onb.3.title": "ポケットの中で続きます。",
+    "onb.3.body": "操作も、画面を見る必要もありません。画面をロックしたまま、歩きながら、料理をしながら、電車の中で繰り返せます。Ombraはそのまま流れ続けます。",
+    "onb.4.title": "自分の口に合わせる。",
+    "onb.4.body": "速すぎますか？　答える時間が足りませんか？　速さ・繰り返し回数・あなたの番の長さは<b>設定</b>にあり、コースの途中でもいつでも変えられます。",
+    "hiw.open": "Ombraの使い方",
+    "hiw.title": "Ombraの使い方",
+    "sup.open": "開発者を応援する",
+    "cmp.open": "瞬間作文",
+    "cmp.hint": "正解が流れる前に、声に出して{lang}で言ってみてください。<br>聞いたあとに、もう一度言います。",
+    "hiw.1.title": "1文ずつ、そしてあなたの番",
+    "hiw.1.body": "Ombraは短い{lang}の文を流し、数回繰り返してから待ちます。その静けさがあなたの番です。次の文が始まる前に、声に出して言ってください。",
+    "hiw.1.s1": "文が流れます。",
+    "hiw.1.s2": "既定では3回繰り返します。",
+    "hiw.1.s3": "間があきます。<b>声に出して言ってください。</b>",
+    "hiw.1.s4": "次の文が始まります。操作は不要です。",
+    "hiw.2.title": "本文：表示 &rarr; 本文：隠す",
+    "hiw.2.body": "新しい文のうちは読みながらで構いません。それが<b>本文：表示</b>です。でも目的は、そこから離れることです。その文に驚かなくなったら<b>本文：隠す</b>に切り替えて、耳だけで繰り返してください。Ombraの中で、この切り替えほど大事なものはありません。",
+    "hiw.3.title": "だいたい10分の流れ",
+    "hiw.3.body": "コースを選んで、開始を押して、スマホをポケットに入れる。既定の設定なら25文でおよそ10分です。明日も同じコースをやってください。大事なのは網羅ではなく繰り返しです。",
+    "hiw.4.title": "これだけは",
+    "hiw.4.body": "頭の中ではなく、<b>声に出して</b>ください。黙って繰り返すのは勉強している感じはしますが、ほとんど身につきません。声を出せない場所なら、小さくつぶやくだけでも構いません。口を動かすことが大事です。",
+    "lang.title": "言語",
+    "lang.learning": "学んでいる言語",
+    "lang.mine": "あなたの言語",
+    "common.done": "完了",
   }
 };
 let LANG = 'en';
@@ -626,10 +844,29 @@ function t(key){
   if(d && d[key] !== undefined) return d[key];
   return (I18N.en[key] !== undefined) ? I18N.en[key] : key;
 }
+/* t() の結果に {name} を差し込む。位置ではなく名前で入れるので、
+   訳文の語順が英語と違っても壊れない。 */
+function tf(key, vars){
+  return t(key).replace(/\{(\w+)\}/g, function(m, k){
+    return (vars && vars[k] !== undefined) ? vars[k] : m;
+  });
+}
+/* 言語の呼び名。ピッカーにはその言語自身の呼び方（自称）を出す。
+   文中に出すときは lang.<コード> のキーを使う（UI言語で言い換わる）。 */
+const LANG_ENDONYM = { en:'English', ja:'日本語', it:'Italiano', fr:'Français', es:'Español', de:'Deutsch' };
+function langName(code){ return t('lang.' + code) !== 'lang.' + code ? t('lang.' + code) : (LANG_ENDONYM[code] || code); }
+
+/* 文言に埋め込める値。学習言語名などは文面の中で言い換わる必要がある。 */
+function i18nVars(){
+  try{ return { lang: langName(settings.target), native: langName(settings.native) }; }
+  catch(e){ return {}; }
+}
 function applyI18n(root){
   const r = root || document;
-  r.querySelectorAll('[data-i18n]').forEach(el=>{ el.textContent = t(el.dataset.i18n); });
-  r.querySelectorAll('[data-i18n-html]').forEach(el=>{ el.innerHTML = t(el.dataset.i18nHtml); });
+  const v = i18nVars();
+  r.querySelectorAll('[data-i18n]').forEach(el=>{ el.textContent = tf(el.dataset.i18n, v); });
+  r.querySelectorAll('[data-i18n-html]').forEach(el=>{ el.innerHTML = tf(el.dataset.i18nHtml, v); });
+  r.querySelectorAll('[data-i18n-ph]').forEach(el=>{ el.placeholder = t(el.dataset.i18nPh); });
 }
 
 /* ================= STORAGE ================= */
@@ -645,7 +882,7 @@ if(!data.pos) data.pos={};
 /* ================= STATE SCHEMA =================
    保存データの版数。形を変えたら必ず上げて、migrateState に片道の移行を足すこと。
    版数を持たずに形を変えると、更新した利用者のデータが黙って壊れる。 */
-const STATE_V = 2;
+const STATE_V = 3;
 function migrateState(d){
   const from = d.v || 1;
   if(from >= STATE_V) return false;
@@ -657,6 +894,14 @@ function migrateState(d){
     Object.keys(d.pos || {}).forEach(k=>{ pos[k.indexOf(':') < 0 ? 'it:' + k : k] = d.pos[k]; });
     d.pos = pos;
     if(d.settings && !d.settings.target) d.settings.target = 'it';
+  }
+  if(from < 3){
+    /* v2 の transLang（訳文の言語）を native（母語＝UI文言＋訳文）に統合する。
+       利用者にとって「訳の言語」と「アプリの言語」は別物ではないので、設定を2つに割らない。 */
+    if(d.settings){
+      if(!d.settings.native) d.settings.native = d.settings.transLang || 'en';
+      delete d.settings.transLang;
+    }
   }
   d.v = STATE_V;
   return true;
@@ -705,7 +950,7 @@ function bump(itemId, field){
 const _devLang = (navigator.language || 'en').slice(0, 2).toLowerCase();
 const defaults = {text:'show', count:25, speed:'1', reps:3, pause:'1.5', trans:'show', order:'seq', cThink:'1.5', cEcho:'2', cPrompt:'on',
                   target: COURSES.length ? (COURSES[0].target || 'it') : 'it',
-                  transLang: TRANS_LANGS.indexOf(_devLang) >= 0 ? _devLang : 'en',
+                  native: TRANS_LANGS.indexOf(_devLang) >= 0 ? _devLang : 'en',
                   course:COURSES.length?COURSES[0].id:''};
 let settings = Object.assign({}, defaults, data.settings||{});
 if(settings.mode){                                            // migrate old mode setting → text show/hide
@@ -713,8 +958,11 @@ if(settings.mode){                                            // migrate old mod
   delete settings.mode;
 }
 if(!settings.target) settings.target = defaults.target;
-if(TRANS_LANGS.indexOf(settings.transLang) < 0) settings.transLang = defaults.transLang;
-TRANS_LANG = settings.transLang;
+if(TRANS_LANGS.indexOf(settings.native) < 0) settings.native = defaults.native;
+/* 母語ひとつで、訳文（TRANS_LANG）とUI文言（LANG）の両方が決まる。
+   UI辞書が無い言語を選んでも t() が英語に落ちるだけで壊れない。 */
+TRANS_LANG = settings.native;
+LANG = settings.native;
 /* コースは「対象言語 + ID」で一意。IDだけで探すと、将来 it と fr に同じIDがあったとき取り違える。 */
 if(!COURSES.some(c=>c.id===settings.course && (c.target||'it')===settings.target)){
   settings.target = defaults.target;
@@ -727,13 +975,31 @@ settings.count = Math.min(Math.max(parseInt(settings.count)||25, 5), curCourse()
 settings.reps  = Math.min(Math.max(parseInt(settings.reps)||3, 1), 5);
 /* 訳言語を切り替えたときの後始末。sentencesOf のキャッシュは訳言語ごとなので、
    TRANS_LANG を更新すれば次の呼び出しで作り直される（明示的な破棄は不要）。 */
-function applyTransLang(){
-  TRANS_LANG = settings.transLang;
+function applyLang(){
+  TRANS_LANG = settings.native;
+  LANG = settings.native;
+  applyI18n(document);
+  /* コース名は subtitle が訳言語ごとに違うので、一覧を作り直す */
+  try{
+    const keep = settings.course;
+    courseSel.innerHTML = '';
+    COURSES.filter(c => (c.target || 'it') === settings.target).forEach(c => {
+      const o = document.createElement('option');
+      o.value = c.id; o.textContent = courseLabel(c);
+      courseSel.appendChild(o);
+    });
+    if(!COURSES.some(c => c.id === keep && (c.target || 'it') === settings.target)){
+      const first = COURSES.filter(c => (c.target || 'it') === settings.target)[0];
+      if(first) settings.course = first.id;
+    }
+    courseSel.value = settings.course;
+    renderStats();
+  }catch(e){}
   try{ if(typeof renderSentence === 'function' && S && S.list && S.list.length){
     S.list = sentencesOf(curCourse()).map(s=>[s.text, s.gloss, s.note, s.audio, s.id]);
     renderSentence();
   } }catch(e){}
-  try{ track('trans_lang_change', { lang: settings.transLang }); }catch(e){}
+  try{ track('lang_change', { native: settings.native, target: settings.target }); }catch(e){}
 }
 
 function saveSettings(){ data.settings=settings; store.save(data); try{ trackSettingsDiff(); }catch(e){} }
@@ -741,29 +1007,34 @@ function saveSettings(){ data.settings=settings; store.save(data); try{ trackSet
 /* segmented controls */
 /* 訳言語のボタンはコンテンツ次第で増減するので、初期化時に組み立てる。
    1つしか無いなら行ごと隠す（選ばせる意味がないため）。 */
-function buildTransLangSeg(){
-  /* 属性セレクタを使わない。既存の initSegs と同じく '.seg' を引いてから絞る
-     （スモークテストのDOMスタブがこの形しか持っていないため、書き方を揃える） */
+/* 学習言語の候補はコンテンツ（コースが存在する対象言語）から導く。 */
+const TARGET_LANGS = (function(){
+  const seen = [];
+  COURSES.forEach(c => { const t = c.target || 'it'; if(seen.indexOf(t) < 0) seen.push(t); });
+  return seen.length ? seen : ['it'];
+})();
+
+function buildLangSeg(key, codes){
   let seg = null;
-  document.querySelectorAll('.seg').forEach(x => { if(x.dataset.k === 'transLang') seg = x; });
+  document.querySelectorAll('.seg').forEach(x => { if(x.dataset.k === key) seg = x; });
   if(!seg) return;
-  /* innerHTML ではなく createElement で組む。buildReps() と同じ書き方で、
-     DOMを差し替えずに済むぶん安全（スモークテストからも中身を数えられる）。 */
   seg.innerHTML = '';
-  TRANS_LANGS.forEach(l => {
+  codes.forEach(l => {
     const b = document.createElement('button');
     b.dataset.v = l;
-    b.textContent = TRANS_LANG_LABEL[l] || l;
+    /* ピッカーにはその言語自身の呼び方を出す（日本語話者にも Italiano と分かる） */
+    b.textContent = LANG_ENDONYM[l] || l;
     seg.appendChild(b);
   });
-  /* ここは $ の定義より前に走る（initSegs が設定の初期化時に呼ばれるため）。
-     $ を使うと Cannot access '$' before initialization で落ちる。 */
-  const row = document.getElementById('rowTransLang');
-  if(row) row.hidden = TRANS_LANGS.length < 2;
+}
+
+function buildLangPickers(){
+  buildLangSeg('native', TRANS_LANGS);
+  buildLangSeg('target', TARGET_LANGS);
 }
 
 function initSegs(){
-  buildTransLangSeg();
+  buildLangPickers();
   document.querySelectorAll('.seg').forEach(seg=>{
     const k = seg.dataset.k;
     seg.querySelectorAll('button').forEach(b=>{
@@ -772,7 +1043,7 @@ function initSegs(){
         seg.querySelectorAll('button').forEach(x=>x.classList.remove('sel'));
         b.classList.add('sel');
         settings[k]=b.dataset.v;
-        if(k === 'transLang') applyTransLang();
+        if(k === 'native' || k === 'target') applyLang();
         saveSettings();
       };
     });
@@ -837,7 +1108,7 @@ document.getElementById('resetBtn').onclick=()=>{
   cntInput.value = settings.count;
   repVal.textContent = settings.reps;
   initSegs();
-  toast('Settings reset');
+  toast(t('msg.settingsReset'));
 };
 
 /* ================= STATS ================= */
@@ -920,11 +1191,11 @@ function beginSession(startIdx){
 }
 
 $('startBtn').onclick = ()=>{
-  if(!curCourse()){ toast('No course data'); return; }
+  if(!curCourse()){ toast(t('msg.noCourse')); return; }
   pickVoice();
   const saved = data.pos[posKey()] || 0;
   if(settings.order==='seq' && saved > 0 && saved < settings.count){
-    $('resumeTitle').textContent = `Continue from sentence ${saved+1}?`;
+    $('resumeTitle').textContent = tf('resume.fromN', { n: saved + 1 });
     $('resumeModal').classList.add('open');
   }else{
     beginSession(0);
@@ -947,7 +1218,7 @@ function renderSentence(){
   const hintable = settings.text==='hide' || settings.trans==='hide';
   const itVisible = !(settings.text==='hide' && !S.revealed);
   if(!itVisible){
-    itEl.textContent='Listen and echo…';
+    itEl.textContent = t('sess.masked');
     itEl.classList.add('masked');
   }else{
     itEl.textContent=it;
@@ -971,7 +1242,7 @@ function playCurrent(){
   renderSentence();
   savePos();
   if(S.rep===0) bump(S.list[S.idx] && S.list[S.idx][4], 'p');
-  $('phase').textContent='listening…';
+  $('phase').textContent = t('sess.listening');
   const rate = parseFloat(settings.speed);
   const t0 = Date.now();
   let done=false;
@@ -980,7 +1251,7 @@ function playCurrent(){
     const dur = Math.max(Date.now()-t0, 700);
     const bars = document.querySelectorAll('#reps i');
     if(bars[S.rep]) bars[S.rep].classList.add('on');
-    $('phase').textContent = 'your turn — speak!';
+    $('phase').textContent = t('sess.yourTurn');
     S.timer = setTimeout(step, dur*parseFloat(settings.pause));
   };
   const speakTTS = ()=>{               // fallback: device TTS
@@ -1026,7 +1297,8 @@ function sessionComplete(){
   data.sessions++;
   delete data.pos[posKey()];           // finished — clear resume point
   store.save(data); renderStats();
-  $('doneSub').innerHTML = `${S.list.length} sentences × ${settings.reps} reps · ${Math.max(1,Math.round(mins))} min<br>Streak: ${data.streak} day${data.streak>1?'s':''}`;
+  $('doneSub').innerHTML = tf('done.sub', { n: S.list.length, reps: settings.reps, min: Math.max(1, Math.round(mins)) })
+    + '<br>' + tf('done.streak', { n: data.streak, unit: t(data.streak > 1 ? 'common.days' : 'common.day') });
   show('done');
   track('practice_complete', {
     course_id: settings.course, sentences: S.list.length, reps: settings.reps,
@@ -1042,7 +1314,7 @@ function sessionComplete(){
 $('playBtn').onclick = ()=>{
   if(S.playing){
     S.playing=false; stopPlayback(); clearTimeout(S.timer); keeperOff();
-    $('playBtn').innerHTML = ICON_PLAY; $('phase').textContent='paused';
+    $('playBtn').innerHTML = ICON_PLAY; $('phase').textContent = t('common.paused');
   }else{
     S.playing=true; $('playBtn').innerHTML = ICON_PAUSE; keeperOn(); playCurrent();
   }
@@ -1067,6 +1339,10 @@ $('exitBtn').onclick = ()=>{
   savePos();
   show('home');
 };
+/* 言語ピッカー。設定ではなく独立した選択にしてある（学習言語と母語は別の軸なので） */
+$('globeBtn').onclick = ()=>{ $('langModal').classList.add('open'); };
+$('langClose').onclick = ()=>{ $('langModal').classList.remove('open'); saveSettings(); };
+
 $('revealBtn').onclick = ()=>{ S.revealed=true; renderSentence(); };
 $('homeBtn').onclick = ()=>{ hideDoneAd(); show('home'); };
 
@@ -1104,7 +1380,7 @@ $('reportSend').onclick = ()=>{
   $('reportModal').classList.remove('open');
   renderSentence();
   track('sentence_reported', { course_id: settings.course, reason: reportChoice||'unspecified', sentence_index: S.idx });
-  toast('Reported — thank you!');
+  toast(t('msg.reported'));
 };
 
 /* ================= APP FEEDBACK MODAL ================= */
@@ -1124,7 +1400,7 @@ $('fbSend').onclick = ()=>{
   store.save(data);
   $('fbModal').classList.remove('open');
   track('app_feedback_sent', { type: fbChoice||'unspecified', has_comment: $('fbComment').value.trim() ? 1 : 0 });
-  toast('Grazie! Feedback saved.');
+  toast(t('msg.feedbackSaved'));
 };
 
 /* ================= SUPPORT（外部リンク・PHASE-B: LAYOUT FIX） =================
@@ -1337,7 +1613,7 @@ $('buyRemoveAds').onclick = async ()=>{
   try{
     await NP.purchaseProduct({ productIdentifier: IAP_IDS.removeAds, productType:'inapp', quantity:1 });
     setAdFree(true);
-    toast('Ads removed — grazie mille!');
+    toast(t('msg.adsRemoved'));
   }catch(e){ /* キャンセル時は何もしない */ }
 };
 document.querySelectorAll('[data-tip]').forEach(b=>{
@@ -1346,7 +1622,7 @@ document.querySelectorAll('[data-tip]').forEach(b=>{
     try{
       await NP.purchaseProduct({ productIdentifier: IAP_IDS[b.dataset.tip], productType:'inapp', quantity:1, isConsumable:true });
       $('iapModal').classList.remove('open');
-      toast('Grazie mille! ❤️');
+      toast(t('msg.thanks'));
     }catch(e){}
   };
 });
@@ -1356,7 +1632,7 @@ $('restoreBtn').onclick = async ()=>{
     await NP.restorePurchases();
     await refreshEntitlements();
     toast(isAdFree() ? 'Purchases restored' : 'No purchases to restore');
-  }catch(e){ toast('Could not restore purchases'); }
+  }catch(e){ toast(t('msg.restoreFailed')); }
 };
 
 /* --- ADS（セッション完了画面のみ・広告非表示購入済みなら出さない） --- */
@@ -1487,7 +1763,7 @@ function cmpPrepare(){
   C.step='prepare';
   bump(C.list[C.idx] && C.list[C.idx][4], 'p');
   cmpRender(false);
-  $('cmpPhase').textContent = 'read it…';
+  $('cmpPhase').textContent = t('cmp.readIt');
 
   const rate = parseFloat(settings.speed);
   const src  = C.list[C.idx][2];
@@ -1536,7 +1812,7 @@ function cmpThink(){
   if(!C.playing) return;
   clearTimeout(C.timer);
   C.step='think';
-  $('cmpPhase').textContent = 'your turn — say it in Italian';
+  $('cmpPhase').textContent = tf('cmp.think', { lang: langName(settings.target) });
   const ms = Math.max(1500, C.dur * 1000 * parseFloat(settings.cThink || '1.5'));
   C.timer = setTimeout(cmpReveal, ms);
 }
@@ -1547,7 +1823,7 @@ function cmpReveal(){
   clearTimeout(C.timer);
   C.step='reveal';
   cmpRender(true);
-  $('cmpPhase').textContent = 'listen';
+  $('cmpPhase').textContent = t('cmp.listen');
   const src = C.list[C.idx][2];
   const rate = parseFloat(settings.speed);
   if(src){
@@ -1568,7 +1844,7 @@ function cmpEcho(){
   if(!C.playing) return;
   clearTimeout(C.timer);
   C.step='echo';
-  $('cmpPhase').textContent = 'again — copy it';
+  $('cmpPhase').textContent = t('cmp.echo');
   /* なおの試用フィードバック（2026-08-13）:
      ここは「正解を見て自分で言う → 音声を聞く → もう一度言う」の3つが入るので、
      ×1.2 では足りない。既定を ×2 にしたうえで設定で変えられるようにした。 */
@@ -1589,7 +1865,8 @@ function cmpComplete(){
   creditTimeAndStreak(mins);
   data.sessions++;
   store.save(data); renderStats();
-  $('doneSub').innerHTML = `Compose · ${C.list.length} sentences · ${Math.max(1,Math.round(mins))} min<br>Streak: ${data.streak} day${data.streak>1?'s':''}`;
+  $('doneSub').innerHTML = tf('done.cmpSub', { n: C.list.length, min: Math.max(1, Math.round(mins)) })
+    + '<br>' + tf('done.streak', { n: data.streak, unit: t(data.streak > 1 ? 'common.days' : 'common.day') });
   show('done');
   track('compose_complete', { course_id: settings.course, sentences: C.list.length,
                               duration_sec: Math.round((Date.now()-C.startTime)/1000) });
@@ -1605,7 +1882,7 @@ function cmpQuit(){
 }
 
 $('composeBtn').onclick = ()=>{
-  if(!curCourse()){ toast('No course data'); return; }
+  if(!curCourse()){ toast(t('msg.noCourse')); return; }
   pickEnVoice();
   cmpBegin();
 };
@@ -1615,7 +1892,7 @@ $('cmpPlay').onclick = ()=>{
   if(C.playing){                       // 一時停止：今のステップを止める
     C.playing=false; cmpStop(); releaseWake();
     $('cmpPlay').innerHTML = ICON_PLAY;
-    $('cmpPhase').textContent = 'paused';
+    $('cmpPhase').textContent = t('common.paused');
   }else{                               // 再開：今の文を最初からやり直す
     C.playing=true; keepAwake(); keeperOn();
     $('cmpPlay').innerHTML = ICON_PAUSE;
