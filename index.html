@@ -1294,7 +1294,7 @@ const FEEDBACK_CFG = {
 };
 if(FEEDBACK_CFG.url.indexOf('__') === 0) FEEDBACK_CFG.url = '';   // 未注入なら無効化
 if(FEEDBACK_CFG.key.indexOf('__') === 0) FEEDBACK_CFG.key = '';
-const APP_VERSION = '1.0.1';     // ★リリースごとに更新
+const APP_VERSION = '1.1.0';     // ★リリースごとに更新
 
 function feedbackEnabled(){ return !!(FEEDBACK_CFG.url && FEEDBACK_CFG.key); }
 
